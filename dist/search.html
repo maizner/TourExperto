@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Portal administrador de afiliados y profesionales">
+<meta name="HandheldFriendly" content="true">
+<meta name="robots" content="index,follow">
+
+     
+    <title>Tour Experto</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="content/css/libs/libs.css">
+
+   <!--Estilos de página-->
+    
+    <link rel="stylesheet" type="text/css" href="content/css/search.css">
+ 
+
+</head>
+<body>
+
+
+            
+
+        <div id="main-container" style="opacity: 0;">
+        
+            <header id="header">
+    <div class="container-lg">
+        <div id="header-top" class="d-flex justify-content-end align-items-center flex-wrap ">
+            
+            <div id="header-search" class="flex-grow-1 me-3">
+                <i class="fas fa-search me-2"></i>
+                <input type="text" placeholder="Ingresá el producto o destino.">
+            </div>
+            
+
+            <a id="header-sign">Registrate</a>
+            <a id="header-login">Ingresa</a>
+            <div id="header-social" class="social">
+                <a class="social-item" href="#" ><i class="fab fa-instagram"></i></a>
+                <a class="social-item" href="#" ><i class="fab fa-facebook-f"></i></a>
+                <a class="social-item" href="#"><i class="fab fa-youtube"></i></a>
+                <a class="social-item" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="social-item" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-end header-bottom">
+            <a href="#" id="logo"><img src="content/img/logo.png" alt=""></a>
+            <nav id="nav">
+                <ul>
+                    <li class="nav-item"><a href="#">Destinos</a></li>
+                    <li class="nav-item"><a href="#">Productos</a></li>
+                    <li class="nav-item"><a href="#">Recomendados</a></li>
+                    <li class="nav-item"><a href="#">Covid</a></li>
+                    <li class="nav-item"><a href="#">Ofertas</a></li>
+                    <li class="nav-item"><a href="#">Blog</a></li>
+                    <li class="nav-item"><a href="#">Nosotros</a></li>
+                    <li class="nav-item"><a href="#">Contacto</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Paquetes Terrestres</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Circuitos</li>
+            </ol>
+        </nav>
+        
+    </div>
+</header>
+         
+        
+        
+ <div class="content" id="search">
+    <div class="container-lg">
+    
+        <div id="search-main">
+
+            <h1 class="d-flex align-items-center mb-2">
+                <img src="content/img/ico-search.png" alt="" class="me-2">
+                Circuitos
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                <div id="search-sidebar">
+                    <div class="applied filters">
+                        <h6>4 Filtros Aplicados</h6>
+                       
+                         <div class="form-group">
+                            <select  class="form-control select2" id="applied" name="applied[]" multiple="multiple" style="width:100%" >
+                                <option></option>
+                                
+                                    <option value=" América del Sur" selected> América del Sur</option>
+                                
+                                    <option value="Argentina" selected>Argentina</option>
+                                
+                                    <option value="Enero" selected>Enero</option>
+                                
+                                    <option value="Europamundo" selected>Europamundo</option>
+                                
+                            </select>
+                        </div>
+                        <button id="clearAllFilters">
+                            Limpiar filtros
+                        </button>
+                    </div>
+                    <div class="filters">
+                        <h5>Filtros</h5>
+                        <div class="filter-group">
+                            
+                        
+                            <!--Región-->
+                            <div class="form-group">
+                                <select  class="form-control select2" id="region" name="region" 
+                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Región" >
+                                    <option></option>
+                                    
+                                        <option value="América del Norte" >América del Norte</option>
+                                    
+                                        <option value="América Central" >América Central</option>
+                                    
+                                        <option value="América del Sur" >América del Sur</option>
+                                    
+                                        <option value="Antillas" >Antillas</option>
+                                    
+                                </select>
+                            </div>
+
+                            <!--País-->
+                            <div class="form-group">
+                                <select  class="form-control select2" id="pais" name="pais" 
+                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Paises" >
+                                    <option></option>
+                                    
+                                        <option value="Antigua y Barbuda" >Antigua y Barbuda</option>
+                                    
+                                        <option value="Argentina" >Argentina</option>
+                                    
+                                        <option value="Bahamas" >Bahamas</option>
+                                    
+                                        <option value="Barbados" >Barbados</option>
+                                    
+                                        <option value="Belice" >Belice</option>
+                                    
+                                        <option value="Bolivia" >Bolivia</option>
+                                    
+                                        <option value="Brasil" >Brasil</option>
+                                    
+                                        <option value="Canadá" >Canadá</option>
+                                    
+                                </select>
+                            </div>
+
+                            <!--Ciudad-->
+                            <div class="form-group">
+                                <select  class="form-control select2" id="ciudad" name="ciudad" 
+                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Ciudades" >
+                                    <option></option>
+                                    
+                                        <option value="Adrogué" >Adrogué</option>
+                                    
+                                        <option value="Alberti" >Alberti</option>
+                                    
+                                        <option value="Alejandro Korn" >Alejandro Korn</option>
+                                    
+                                        <option value="Balcarce" >Balcarce</option>
+                                    
+                                        <option value="Banfield​" >Banfield​</option>
+                                    
+                                        <option value="Baradero" >Baradero</option>
+                                    
+                                        <option value="Batán" >Batán</option>
+                                    
+                                        <option value="Béccar" >Béccar</option>
+                                    
+                                </select>
+                            </div>
+                            
+                            <!--Mes de salida-->
+                            <div class="form-group">
+                                <select  class="form-control select2" id="mes" name="mes" 
+                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Mes de salida" >
+                                    <option></option>
+                                    
+                                        <option value="Enero" >Enero</option>
+                                    
+                                        <option value="Febrero" >Febrero</option>
+                                    
+                                        <option value="Marzo" >Marzo</option>
+                                    
+                                        <option value="Abril" >Abril</option>
+                                    
+                                        <option value="Mayo" >Mayo</option>
+                                    
+                                        <option value="Junio" >Junio</option>
+                                    
+                                        <option value="Julio" >Julio</option>
+                                    
+                                        <option value="Agosto" >Agosto</option>
+                                    
+                                        <option value="Septiembre" >Septiembre</option>
+                                    
+                                        <option value="Octubre" >Octubre</option>
+                                    
+                                        <option value="Noviembre" >Noviembre</option>
+                                    
+                                        <option value="Diciembre" >Diciembre</option>
+                                    
+                                </select>
+                            </div>
+                       </div>
+                        <div class="filter-group divisor">
+                            <!--Acordión-->
+                            <div class="accordion accordion-flush" id="moreFilters">
+
+                                <div class="accordion-item">
+
+                                    <h2 class="accordion-header" id="heading-morefilters">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-morefilters" aria-expanded="false" aria-controls="content-morefilters">
+                                            Más Filtros
+                                        </button>
+                                    </h2>
+
+                                    <div id="content-morefilters" class="accordion-collapse collapse" aria-labelledby="heading-morefilters" data-bs-parent="#moreFilters">
+                                        <!--Interior Acordión-->
+
+                                        <!--Proveedor-->
+                                        <div class="form-group">
+                                            <select  class="form-control select2" id="supplier" name="supplier" 
+                                            tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Proveedor" >
+                                                <option></option>
+                                                
+                                                    <option value="Abreu" >Abreu</option>
+                                                
+                                                    <option value="Europamundo" >Europamundo</option>
+                                                
+                                                    <option value="Special Tours" >Special Tours</option>
+                                                
+                                                    <option value="Sato Tours" >Sato Tours</option>
+                                                
+                                                    <option value="Miller" >Miller</option>
+                                                
+                                                    <option value="Compas" >Compas</option>
+                                                
+                                                    <option value="Surland" >Surland</option>
+                                                
+                                            </select>
+                                        </div>
+
+                                        <!--Tipo de producto-->
+                                        <div class="form-group">
+                                            <select  class="form-control select2" id="prodtype" name="prodtype" 
+                                            tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Tipo de producto" >
+                                                <option></option>
+                                                
+                                                    <option value="Tipo A" >Tipo A</option>
+                                                
+                                                    <option value="Tipo B" >Tipo B</option>
+                                                
+                                                    <option value="Tipo C" >Tipo C</option>
+                                                
+                                                    <option value="Tipo D" >Tipo D</option>
+                                                
+                                                    <option value="Tipo E" >Tipo E</option>
+                                                
+                                            </select>
+                                        </div>
+
+                                    
+                                        <div class="slider-container">
+                                            <label for="sliderDias"> Duración (Días) </label>
+                                            <input type="text" id="sliderDias" class="slider" />
+                                        </div>
+                                        <div class="slider-container">
+                                            <label for="sliderPrecio"> Precio </label>
+                                            <input type="text" id="sliderPrecio" class="slider" />
+                                        </div>
+                                    
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-12 col-sm-12 col-12">
+                <div id="search-result" class="d-flex align-items-center">
+                    <h2 class="d-flex align-items-center"><i class="fas fa-list me-2"></i> 522 resultados totales</h2> <span class="mx-1">·</span> <p>Mostrando página <strong>1</strong> de 18</p>
+                </div>
+                <div id="search-currency">
+                    
+                   <div class="dropdown show">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <strong>USD</strong> Dolares Estadounidenses
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#"><strong>USD</strong> Dolares Estadounidenses</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    </div>
+                </div>
+                <div id="search-list">
+
+                    <!--PRODUCTO-->
+                    <div class="search-item">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                                <div class="search-item-img"><img src="content/img/search-prod-list/prod-1.jpg" alt=""></div>
+                            </div>
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                                <div class="search-item-info h-100">
+                                    <div class="row h-100">
+                                      
+                                        <div class="col-lg-8 col-md-12 col-sm-12 col-12 d-flex flex-column search-item-main">
+                                            <span class="search-item-tag">circuitos</span>
+                                            <h3>Europa Soñada</h3>
+                                            <span class="search-item-dates">Salidas de Noviembre 2021 a Marzo 2021</span>
+                                            <p>Traslado de llegada y salida en servicio regular 3 noches de alojamiento en hotel seleccionado</p>
+                                            <ul class="search-item-specs mt-auto">
+                                                <li><i class="me-1 fas fa-calendar"></i> 4 días - 3 noches</li>
+                                                <li><i class="me-1 fas fa-map-marker-alt"></i> Recorre: Madrid , Zaragoza , Barcelona , Costa azul, Monaco , Genova , Venecia , Florencia , Roma , Pisa , Turin</li>
+                                                <li><i class="me-1 fas fa-flag"></i> Proveedor  Europamundo</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="col-lg-4 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center">
+                                            <span class="search-item-price">
+                                                <strong><span class="curr-data">EUR</span> 1680 </strong>
+                                                
+                                            </span>
+                                            <span class="search-item-ref">
+                                                Precio de referencia <br>
+                                                <strong>USD 2032</strong> 
+                                            </span>
+                                            <div class="mt-auto">
+                                                <a href="#" class="btn md_btn linear radius-10 mb-2 brand-primary">Ver producto</a>
+                                                <a href="#" class="btn md_btn fill radius-10 brand-primary">Reservar</a>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--PRODUCTO-->
+
+                     <!--PRODUCTO-->
+                    <div class="search-item off">
+                        <div class="off-msg">
+                            10% off
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                                <div class="search-item-img"><img src="content/img/search-prod-list/prod-2.jpg" alt=""></div>
+                            </div>
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                                <div class="search-item-info h-100">
+                                    <div class="row h-100">
+                                        <div class="col-lg-8 col-md-12 col-sm-12 col-12 d-flex flex-column search-item-main">
+                                            <span class="search-item-tag">circuitos</span>
+                                            <h3>Turquía Esencial</h3>
+                                            <span class="search-item-dates">Salidas de Noviembre 2021 a Marzo 2021</span>
+                                            <p>Traslado de llegada y salida en servicio regular 3 noches de alojamiento en hotel seleccionado</p>
+                                            <ul class="search-item-specs mt-auto">
+                                                <li><i class="me-1 fas fa-calendar"></i> 4 días - 3 noches</li>
+                                                <li><i class="me-1 fas fa-map-marker-alt"></i> Recorre: Estambul, Ankara, Capadocia</li>
+                                                <li><i class="me-1 fas fa-flag"></i> Proveedor  Abreu</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center">
+                                            <span class="search-item-price-off"><span class="curr-data">USD</span> 328</span>
+                                            <span class="search-item-price">
+                                                <strong><span class="curr-data">USD</span> 299 </strong>
+                                                
+                                            </span>
+                                            <span class="search-item-ref">
+                                                Precio de referencia <br>
+                                                <strong>USD 2032</strong> 
+                                            </span>
+                                            <div class="mt-auto">
+                                                <a href="#" class="btn md_btn linear radius-10 mb-2 brand-primary">Ver producto</a>
+                                                <a href="#" class="btn md_btn fill radius-10 brand-primary">Reservar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!--PRODUCTO-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        
+        <footer id="footer">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <img id="footer-logo" src="content/img/logo.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                <span>TourExperto</span>
+                <span>texto texto</span>
+                <span>CUIT xxxxxxxxxxxx</span>
+                <span><a href="mailto:info@vietur.com.ar">mail</a></span>
+                <span>telefono</span>
+                <span>© Copyright 2022 TourExperto</span>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                <h5>Nosotros</h5>
+                <ul>
+                    <li><a href="">Quienes somos</a></li>
+                    <li><a href="">Chateá con nosotros</a></li>
+                    <li><a href="">Condiciones generales</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                <h5>Info útil</h5>
+                <ul>
+                    <li><a href="#">Cómo operar</a></li>
+                    <li><a href="#">Pagos con tarjetas de crédito</a></li>
+                    <li><a href="#">Calcuotas</a></li>
+                    <li><a href="#">BOTON DE ARREPENTIMIENTO</a></li>
+                   
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                <div id="footer-social">
+                    <h5>Seguinos en:</h5>
+                    <div class="social">
+                        <a class="social-item" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="social-item" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-item" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="social-item" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="social-item" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div id="footer-legal">
+                    <a href=""><img src="content/img/logo-afip.png" alt=""></a>
+                    <a href=""><img src="content/img/logo-turismo.png" alt=""></a>
+                    <a href=""><img src="content/img/logo-safetravel.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-12 col-12 text-center border-top mt-2 pt-2 ">
+                <span class="footer-copy" >DEFENSA DE LAS Y LOS CONSUMIDORES. PARA RECLAMOS <a href="#" title="" >INGRESAR AQUI</a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+         
+        </div>
+    
+    <script type="text/javascript" src="content/js/libs/libs.js"></script>
+    <!--BUNDLES de layout-->
+
+    <!--page sctipts-->
+    
+    <script type="text/javascript" src="content/js/search.js"></script>
+
+    
+
+</body>
+</html>

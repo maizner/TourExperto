@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Range Slider</title>
+    <style>
+
+        .container {
+            width: 15%;
+            margin: 70px auto;
+        }
+    
+
+    </style>
+    <link rel="stylesheet" href="css/rSlider.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="slider-container">
+            <input type="text" id="slider" class="slider" />
+        </div>
+        <div class="slider-container">
+            <input type="text" id="slider2" class="slider" />
+        </div>
+    </div>
+    
+    <script src="js/rSlider.min.js"></script>
+    <script>
+        (function () {
+            'use strict';
+
+            var init = function () {                
+                var slider = new rSlider({
+                    target: '#slider',
+                    values: ['$0', '$2517', '$5034', '$7551', '$10068', '$10.000'],
+                    range: true,
+                    set: ['$0', '$10.000'],
+                    onChange: function (vals) {
+                        console.log(vals);
+                    }
+                });
+                var slider2 = new rSlider({
+                    target: '#slider2',
+                    values: ['1 días', '10 días', '19 días', '27 días', '36 días'],
+                    range: true,
+                    set: ['1 días', '36 días'],
+                    onChange: function (vals) {
+                        console.log(vals);
+                    }
+                });
+            };
+            window.onload = init;
+        })();
+    </script>
+</body>
+</html>
