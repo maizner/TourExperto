@@ -19,7 +19,7 @@
 
    <!--Estilos de página-->
     
-    <link rel="stylesheet" type="text/css" href="content/css/producto.css">
+    <link rel="stylesheet" type="text/css" href="content/css/product.css">
  
 
 </head>
@@ -32,23 +32,19 @@
         
             <header id="header">
     <div class="container-lg">
-        <div id="header-top" class="d-flex justify-content-end align-items-center flex-wrap ">
-            
-
-            <a id="header-sign">Registrate</a>
-            <a id="header-login">Ingresa</a>
-            <div id="header-social" class="social">
-                <a class="social-item" href="#" ><i class="fab fa-instagram"></i></a>
-                <a class="social-item" href="#" ><i class="fab fa-facebook-f"></i></a>
-                <a class="social-item" href="#"><i class="fab fa-youtube"></i></a>
-                <a class="social-item" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="social-item" href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
+        
+        
 
         <div class="d-flex justify-content-between align-items-end header-bottom">
             <a href="#" id="logo"><img src="content/img/logo.png" alt=""></a>
             <nav id="nav">
+                
+                    <div id="header-search" class="flex-grow-1 me-3">
+                        <i class="fas fa-search me-2"></i>
+                        <input type="text" 
+                        placeholder="¿A dónde queres viajar?">
+                    </div>
+                
                 <ul>
                     <li class="nav-item"><a href="#">Destinos</a></li>
                     <li class="nav-item"><a href="#">Productos</a></li>
@@ -64,43 +60,512 @@
         </div>
 
         
+
+        
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Paquetes Terrestres</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Europa Soñada</li>
+            </ol>
+        </nav>
+        
     </div>
 </header>
          
         
         
-<div class="content producto" id="producto">
-    <div class="row">
-        <div class="col-lg-6 col-md-12">
-            <div class="flex flex-column">
-                <div class="container-lg carousel-container">
-                    <div class="main-slider slider" id="main-product-slider">
-                        <div class="slide d-flex flex-column align-items-center justify-content-center" style="background-image: url(content/img/home-hero-slider/slide-1.png);">
-                
-                        </div>
-                        <div class="slide d-flex flex-column align-items-center justify-content-center" style="background-image: url(content/img/home-hero-slider/slide-5.jpg);">
-                    
-                        </div>
-                    
-                        <div class="slide d-flex flex-column align-items-center justify-content-center" style="background-image: url(content/img/home-hero-slider/slide-3.jpg);">
-                
-                        </div>
+<div class="content product container-lg" id="product">
+    <!--Hero section-->
+    <section class="row hero-section">
 
-                        <div class="slide d-flex flex-column align-items-center justify-content-center" style="background-image: url(content/img/home-hero-slider/slide-6.jpg);">
+        <div class="col-lg-8 col-md-12">
+            <div class="d-flex flex-column">
+
+                <div class="carousel-container slider">
                     
-                        </div>
-                    
+                    <div class="main-slider carousel-fade" id="main-product-slider">
+                        <div class="slide d-flex flex-column align-items-center justify-content-center" style="background-image: url(content/img/home-hero-slider/slide-1.png);"></div>
+                        <div class="slide d-flex flex-column align-items-center justify-content-center" style="background-image: url(content/img/home-hero-slider/slide-5.jpg);"></div>
+                        <div class="slide d-flex flex-column align-items-center justify-content-center" style="background-image: url(content/img/home-hero-slider/slide-3.jpg);"></div>
+                        <div class="slide d-flex flex-column align-items-center justify-content-center" style="background-image: url(content/img/home-hero-slider/slide-6.jpg);"></div>
                     </div>
                 </div>
-                div
-             </div>
+
+                <div class="row mt-4 hero-cta" >
+                    <div class="col-lg-4 col-md-12 d-flex align-items-center" >
+                        <p>Empieza a planificar tu viaje</p>
+                    </div>
+                    <div class="col-lg-3 col-md-12 d-pr-0" >
+                        <a href="#" class="btn md_btn linear radius-10 brand-primary"><i class="fas fa-download"></i>Descargar PDF </a>
+                    </div>
+                    <div class="col-lg-5 col-md-12" >
+                        <a href="#" class="btn md_btn linear radius-10 brand-primary"><i class="fas fa-comment-alt"></i>Consultar con un experto </a>
+                    </div>
+                    
+                </div>
+                <div class="row mt-4 hero-map" >
+                    <div class="map-container" >
+                        <img src="content/img/product/map.png" width="100%" >
+                        <a href="#" class="btn md_btn fill shaddow radius-50 white">Ver el mapa completo </a>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6 col-md-12">
-            <h1>Un título</h1>
-            <p>UN párrafo</p>
+
+        <div class="col-lg-4 col-md-12">
+            <h1>Europa Soñada</h1>
+             <div class="d-flex flex-row position-relative">
+                <div class="d-flex flex-column  align-items-center">
+                    <div class="d-flex flex-column  align-items-start">
+                        <div class="prod-tit max-250 pt-0">Duración:</div>
+                        <div class="prod-desc max-250">4 días - 3 Noches</div>
+                        <div class="prod-tit max-250">Inicia/Finaliza:</div>
+                        <div class="prod-desc max-250">Madrid / Madrid</div>
+                        <div class="prod-tit">Recorre:</div>
+                        <div class="prod-desc">Madrid, Zaragoza, Barcelona, Costa Azul, Monaco, Genova, Venecia, Florencia,  Roma, Pisa, Turin.</div>
+                        <div class="d-flex flex-row justify-content-between id">
+                            <div class="d-flex flex-column">
+                                <div class="prod-tit">Proveedor:</div>
+                                <div class="prod-desc">Europamundo</div>
+                            </div>
+                            <div class="d-flex flex-column ">
+                                <div class="prod-tit ">ID:</div>
+                                <div class="prod-desc">123456</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <!--TAG CLOUDS-->
+                    <div class="d-flex flex-wrap mt-4">
+                        <button type="button" class="btn sm_btn btn-tag radius-50">Explorer</button>
+                        <button type="button" class="btn sm_btn btn-tag radius-50 ">Private</button>
+                        <button type="button" class="btn sm_btn btn-tag radius-50 ">Group</button>
+                        <button type="button" class="btn sm_btn btn-tag radius-50 ">Fully Guided</button>
+                        <button type="button" class="btn sm_btn btn-tag radius-50 ">Easy</button>
+                    </div>
+                    
+                    <!--PRICE CARD-->
+                    <div class="card price-card mt-5 ">
+                        
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="d-flex flex-row align-items-center">
+                                <img src="content/img/iso-sm.png" class="iso-sm card-price-img" title="">
+                                <div class="d-flex flex-column align-items-start card-price-price">
+                                <span class="price-off-title">Desde <span class="price-off">$2.049</span><span class="diff">-40%</span></span>
+                                <span class="currecy">US <span class="price">$1.229</span></span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="d-flex flex-row align-items-center">
+                                    <button type="button" class="btn md_btn fill radius-10 brand-primary">Ver disponibilidad</button>
+                                   <span class="bookmark"> <i class="far fa-heart"></i><span>
+                                </div>
+                                <p class="info-btn">Sin compromiso garantizá tu reserva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END PRICE CARD-->
+                </div>
+                <img class="position-absolute" src="content/img/product/prod-destaque.png" title="Con aereo incluido" style="right:0;top:0;">
+            </div>
         </div>
-        
+    </section>
+
+     <hr class="spacer w-100 mx-auto">
+    <!--Hero section-->
+
+    <section class="row main-section">
+
+        <div class="col-lg-8 col-md-12">
+
+            <!--Itinerario section-->
+            <section class="row itinerary">
+                
+                <div class="section-title simple">
+                    <h2>Itinerario:</h2>
+                </div>
+                <div class="accordion accordion-flush accordion-itinerary" id="itinerario">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="itiHOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#itiCOne" aria-expanded="true" aria-controls="itiCOne">
+                            <svg class="svg-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path  d="M77.9,82.7L77.9,82.7C90.4,72.1,96,55.1,90.6,38.9c-0.8-2.4-1.8-4.8-3.1-7c0,0,0,0,0,0c-4.4-8-11.3-14-19.5-17.8c0,0,0,0,0,0c-38.4-14.6-56.5,16-56.5,16s0,0,0,0C5.4,40,3.5,52.2,7.4,64.1c0.3,1,0.7,2,1.1,3l0,0c0-0.1,0-0.1-0.1-0.1c0,0,0,0,0,0c7.6,18.3,27.7,28.9,47.8,25.6c-0.4-0.2-1.5-0.6,0,0c1.1-0.2,1.1-0.2,0,0c19,7.9,36.6,6.9,36.6,6.9C86.5,94,81.7,88.4,77.9,82.7z M77.9,82.7L77.9,82.7C77.3,83.1,77.3,83.1,77.9,82.7C77.3,81.7,77.3,81.7,77.9,82.7z"/></svg>
+                            Day 1: Cairo
+                        </button>
+                        </h2>
+                        <div id="itiCOne" class="accordion-collapse collapse show" aria-labelledby="itiHOne" >
+                            <div class="accordion-body">
+                                Discover this ancient civilisation steeped in the history of the grand temples of the Gods and their tales of the past. This journey through Egypt packs in awe-inspiring culture and adventure in ten energetic days. But still manage to relax, at the Red Sea. Dive deep into the clear, warm waters.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="itiHTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#itiCTwo" aria-expanded="false" aria-controls="itiCTwo">
+                            <svg class="svg-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path  d="M77.9,82.7L77.9,82.7C90.4,72.1,96,55.1,90.6,38.9c-0.8-2.4-1.8-4.8-3.1-7c0,0,0,0,0,0c-4.4-8-11.3-14-19.5-17.8c0,0,0,0,0,0c-38.4-14.6-56.5,16-56.5,16s0,0,0,0C5.4,40,3.5,52.2,7.4,64.1c0.3,1,0.7,2,1.1,3l0,0c0-0.1,0-0.1-0.1-0.1c0,0,0,0,0,0c7.6,18.3,27.7,28.9,47.8,25.6c-0.4-0.2-1.5-0.6,0,0c1.1-0.2,1.1-0.2,0,0c19,7.9,36.6,6.9,36.6,6.9C86.5,94,81.7,88.4,77.9,82.7z M77.9,82.7L77.9,82.7C77.3,83.1,77.3,83.1,77.9,82.7C77.3,81.7,77.3,81.7,77.9,82.7z"/></svg>
+                            Día 2: Aswan
+                        </button>
+                        </h2>
+                        <div id="itiCTwo" class="accordion-collapse collapse" aria-labelledby="itiHTwo" >
+                            <div class="accordion-body">
+                                <article class="row pb-4">
+                                    <div class="col-lg-6 col-md-12">
+                                        <img src="https://cdn.tourradar.com/s3/city/11321/71274167_280.jpg" title="" width="100%">
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <p>Arrive in Aswan. You will be met by our representative who will transfer you to your hotel. We begin the day with a tour of the romantic Philae Temple – perched atop a picturesque island, its beautiful location is reached by small motor boat, making a truly magnificent approach to the site. Overnight stay at your hotel in Aswan.</p>                                    
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item last">
+                        <h2 class="accordion-header" id="itiHThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#itiCThree" aria-expanded="false" aria-controls="itiCThree">
+                            <svg class="svg-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path  d="M77.9,82.7L77.9,82.7C90.4,72.1,96,55.1,90.6,38.9c-0.8-2.4-1.8-4.8-3.1-7c0,0,0,0,0,0c-4.4-8-11.3-14-19.5-17.8c0,0,0,0,0,0c-38.4-14.6-56.5,16-56.5,16s0,0,0,0C5.4,40,3.5,52.2,7.4,64.1c0.3,1,0.7,2,1.1,3l0,0c0-0.1,0-0.1-0.1-0.1c0,0,0,0,0,0c7.6,18.3,27.7,28.9,47.8,25.6c-0.4-0.2-1.5-0.6,0,0c1.1-0.2,1.1-0.2,0,0c19,7.9,36.6,6.9,36.6,6.9C86.5,94,81.7,88.4,77.9,82.7z M77.9,82.7L77.9,82.7C77.3,83.1,77.3,83.1,77.9,82.7C77.3,81.7,77.3,81.7,77.9,82.7z"/></svg>
+                            Día 3: Salida
+                        </button>
+                        </h2>
+                        <div id="itiCThree" class="accordion-collapse collapse" aria-labelledby="itiHThree" >
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-end mt-3">
+                    <button type="button" class="btn md_btn fill radius-10 brand-primary">Ver disponibilidad</button>
+                    <p class="info-btn">Sin compromiso garantizá tu reserva</p>
+                </div>
+                
+            </section>
+            <!--Itinerario section-->
+
+            
+
+            <!--cta section-->
+            <section class="row cta-section align-items-center cta-1">
+                <div class="col-lg-8 col-md-12 text-container">
+                    <img class="absolute desktop_show" src="content/img/product/contact-support-man.png" title=""  >
+                    <h4>¿Querés compartir el tour o descargarlo en tu dispositivo?</h4>
+                </div>
+
+                <div class="col-lg-3 col-md-12 ">
+                    <a href="#" class="btn"><i class="far fa-share-square"></i><p>Compartir</p></a>
+                    <a href="#" class="btn"><i class="far fa-arrow-alt-circle-down"></i><p>Descargar</p></a>
+                </div>
+                
+            </section>
+            <!--cta section-->
+
+            <hr class="spacer w-100 mx-auto">
+            <h3>Incluye:</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consectetur iure nisi suscipit, hic accusamus asperiores pariatur aspernatur animi. Perferendis illo laborum fuga modi quisquam vitae amet ducimus. Ipsum, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consectetur iure nisi suscipit, hic accusamus asperiores pariatur aspernatur animi. Perferendis illo laborum fuga modi quisquam vitae amet ducimus. Ipsum, officia.</p>
+
+            <h3 class="mt-5">No Incluye:</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consectetur iure nisi suscipit, hic accusamus asperiores pariatur aspernatur animi. Perferendis illo laborum fuga modi quisquam vitae amet ducimus. Ipsum, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consectetur iure nisi suscipit, hic accusamus asperiores pariatur aspernatur animi. Perferendis illo laborum fuga modi quisquam vitae amet ducimus. Ipsum, officia.</p>
+            <hr class="spacer w-100 mx-auto">
+
+
+            <!--Reviews section-->
+             <section class="row suggestions-section align-items-center">
+                <h4>Customer Reviews</h4>
+               <p>Pendiente</p>
+
+            </section>
+            <!--Reviews section-->
+
+            <hr class="spacer w-100 mx-auto">
+
+            <!--suggestions section-->
+            <section class="row suggestions-section align-items-center">
+                <h4>Sugerencias para viajar con tranquilidad</h4>
+                    <div class="col-lg-6 col-md-12">
+                        <!--CARD-->
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    <i class="fas fa-bullseye"></i>
+                                    <p class="card-title">Autogestión de reservas</p>
+                                </div>
+                                <div class="card-body">
+                                    
+                                    <p class="card-text">Ingresá a Mis Viajes y gestioná todas tus reservas en un solo lugar, de forma fácil y rápido.</p>
+                                    <a class="card-link" href="#">Ir a mis viajes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END CARD-->
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <!--CARD-->
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    <i class="fas fa-bullseye"></i>
+                                    <p class="card-title">Reserva flexible</p>
+                                </div>
+                                <div class="card-body">
+                                    
+                                    <p class="card-text">Filtrá por reserva flexible y garantizá la cancelación o cambio de fechas, si tus planes cambian.</p>
+                                    <a class="card-link" href="#">Buscar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END CARD-->
+                    </div>
+
+            </section>
+            <!--suggestions section-->
+
+            <hr class="spacer w-100 mx-auto">
+             <!--available-dates section-->
+            <section class="available-dates">
+                <h4>Seleccione un mes de salida</h4>
+                <div class="d-flex flex-wrap justify-content-between">
+                    <button type="button" class="btn md_btn linear radius-10 brand-primary">Próximas salidas</button>
+                    <button type="button" class="btn md_btn linear radius-10 brand-primary">Enero 2022</button>
+                    <button type="button" class="btn md_btn linear radius-10 brand-primary">Febrero 2022</button>
+                    <button type="button" class="btn md_btn linear radius-10 brand-primary">Marzo 2022</button>
+                    <button type="button" class="btn md_btn linear radius-10 brand-primary active">Abril 2022</button>
+                    <button type="button" class="btn md_btn linear radius-10 brand-primary">Mayo 2022</button>
+                    <button type="button" class="btn md_btn linear radius-10 brand-primary">Agosto 2022</button>
+                    <button type="button" class="btn md_btn linear radius-10 brand-primary">Septiembre 2022</button>
+                </div>
+                <div class="accordion accordion-flush accordion-plus-minus mt-4" id="AvDatesAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="aDHOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aDCOne" aria-expanded="true" aria-controls="aDCOne">
+                            9 de Abril -  2022
+                        </button>
+                        </h2>
+                        <div id="aDCOne" class="accordion-collapse collapse show" aria-labelledby="aDHOne" >
+                            <div class="accordion-body">
+                                Pendiente 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="aDHTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aDCTwo" aria-expanded="false" aria-controls="aDCTwo">
+                            10 de Abril -  2022
+                        </button>
+                        </h2>
+                        <div id="aDCTwo" class="accordion-collapse collapse" aria-labelledby="aDHTwo" >
+                            <div class="accordion-body">
+                                Pendiente 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="aDHThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aDCThree" aria-expanded="false" aria-controls="aDCThree">
+                            11 de Abril -  2022
+                        </button>
+                        </h2>
+                        <div id="aDCThree" class="accordion-collapse collapse" aria-labelledby="aDHThree" >
+                            <div class="accordion-body">
+                                Pendiente 
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>  
+                 <div class="d-flex flex-column align-items-end mt-3">
+                    <button type="button" class="btn md_btn fill radius-10 brand-primary">Reservar</button>
+                    <p class="info-btn">Sin compromiso garantizá tu reserva</p>
+                </div>
+
+            </section>
+            <!--available-dates section-->
+
+            <hr class="spacer w-100 mx-auto">
+
+            <!--cta section-->
+            <section class="cta-section align-items-center cta-2 d-flex flex-lg-column flex-md-row">
+                <div class="row">
+                    <div class="col-12 d-flex flex-row align-items-center">
+                        <img  src="content/img/product/contact-support-man.png" title="" class="desktop_show" >
+                        <div class="d-flex flex-column text-container">
+                            <h4>Personaliza tu viaje! </h4>
+                            <p>Estas buscando una fecha de salida especial o una estadia antes o despues de iniciar el tour? Quieres agregar un servicio adicional, un ticket aereo? Nuestros expertos estan para ayudarte y adaptar nuestro tour a tu medida.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-row justify-content-end button-container">
+                        <a href="#" class="btn md_btn linear radius-50 white">Cotizar </a>
+                    </div>
+                </div>
+            </section>
+            <!--cta section-->
+
+            <!--observations section-->
+            <h3 class="mt-5"><strong>Observaciones:</strong></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consectetur iure nisi suscipit, hic accusamus asperiores pariatur aspernatur animi. Perferendis illo laborum fuga modi quisquam vitae amet ducimus. Ipsum, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consectetur iure nisi suscipit, hic accusamus asperiores pariatur aspernatur animi. Perferendis illo laborum fuga modi quisquam vitae amet ducimus. Ipsum, officia.</p>
+            <!--observations section-->
+            <hr class="spacer w-100 mx-auto">
+            
+
+
+            <!--FAQ section-->
+            <section class="row faq-section">
+                <div class="section-title simple">
+                    <h4>Preguntas Frecuentes</h4>
+                </div>
+                
+                <div class="col-12 w-100  mx-auto">
+                    <form class="d-flex flex-row justify-content-center faq-search">
+                        <input class="form-control" type="search" placeholder="Ingresa una pregunta" aria-label="Search">
+                        <button class="btn " type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div class="accordion accordion-flush mt-5" id="faq">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCOne" aria-expanded="false" aria-controls="faqCOne">
+                            Item #1
+                        </button>
+                        </h2>
+                        <div id="faqCOne" class="accordion-collapse collapse" aria-labelledby="faqHOne" data-bs-parent="#faq">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCTwo" aria-expanded="false" aria-controls="faqCTwo">
+                            Item #2
+                        </button>
+                        </h2>
+                        <div id="faqCTwo" class="accordion-collapse collapse" aria-labelledby="faqHTwo" data-bs-parent="#faq">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCThree" aria-expanded="false" aria-controls="faqCThree">
+                            Item #3
+                        </button>
+                        </h2>
+                        <div id="faqCThree" class="accordion-collapse collapse" aria-labelledby="faqHThree" data-bs-parent="#faq">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--FAQ section-->
+
+            <hr class="spacer w-100 mx-auto">
+
+            <!--Important info section-->
+            <section class="row inportant-info-section">
+             <h4><strong>Información Importante</strong></h4>
+                
+               
+                <div class="accordion accordion-flush" id="faq">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCOne" aria-expanded="false" aria-controls="faqCOne">
+                            Item #1
+                        </button>
+                        </h2>
+                        <div id="faqCOne" class="accordion-collapse collapse" aria-labelledby="faqHOne" data-bs-parent="#faq">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCTwo" aria-expanded="false" aria-controls="faqCTwo">
+                            Item #2
+                        </button>
+                        </h2>
+                        <div id="faqCTwo" class="accordion-collapse collapse" aria-labelledby="faqHTwo" data-bs-parent="#faq">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCThree" aria-expanded="false" aria-controls="faqCThree">
+                            Item #3
+                        </button>
+                        </h2>
+                        <div id="faqCThree" class="accordion-collapse collapse" aria-labelledby="faqHThree" data-bs-parent="#faq">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Important info section-->
+
+            <!--related-products slider section-->
+            <section class="row related-products">
+                <h5 class="section-title"><strong>Porque te gusta “EUROPA SOÑADA”</strong></h5>
+                <p class="section-subtitle"> Seleccionamos algunas otras opciones para ti.</p>
+                <div id="relProds" class="slider">
+                
+                    <div class="slide d-flex flex-column align-items-center justify-content-center" style="background-image: url(content/img/home-hero-slider/slide-1.png);"></div>
+                    <div class="slide d-flex flex-column align-items-center justify-content-center" style="background-image: url(content/img/home-hero-slider/slide-5.jpg);"></div>
+                    <div class="slide d-flex flex-column align-items-center justify-content-center" style="background-image: url(content/img/home-hero-slider/slide-3.jpg);"></div>
+                    <div class="slide d-flex flex-column align-items-center justify-content-center" style="background-image: url(content/img/home-hero-slider/slide-6.jpg);"></div>
+                
+                
+                </div>
+            </section>
+            <!--related-products-->
+
+        </div>
+        <div class="col-lg-4 col-md-12 d-flex flex-column align-items-end">
+            <p class="btn md_btn btn-alpha fill brand-primary radius-10 ">Salida garantizada</p>
+            <p class="btn md_btn btn-alpha fill brand-primary radius-10 ">Necesita visa</p>
+            <p class="btn md_btn btn-alpha fill brand-primary radius-10 ">Cupos confirmados</p>
+            <p class="btn md_btn btn-alpha fill brand-primary radius-10 ">Fully Guided</p>
+            <p class="btn md_btn btn-alpha fill brand-primary radius-10 ">Easy</p>
+        </div>
+    </section>
+
+    
+    <section id="home-contact-support" class="contact-support" >
+    <div class="container-lg">
+        <div class="row">
+            <div class="">
+                <div class="row">
+                    <div class="d-flex flex-column col-lg-6 col-md-12 col-sm-12 col-12 align-items-stretch order-lg-0 md-order-1">
+                        <div class="text">
+                            <h3>¿Alguna duda? Preguntale a un experto</h3>
+                            <p>Nuestro equipo ha viajado a cientos de países de todo el mundo y tiene años de experiencia para compartir contigo. 
+                            ¡Contáctanos ahora para que ellos respondan a todas las preguntas relacionadas con el tour que deseas!</p>
+                        </div>
+                        <div class="d-flex mt-3">
+                            <a class=" btn md_btn fill brand-primary radius-10" href="#" title="Contacta a un agente" >Contactate</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 align-items-stretch md-order-0">
+                        <div class="image-container">
+                            <img  src="content/img/support-agents.jpg" width="100%"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+
+     
+   
+
 </div>
 
 
@@ -169,7 +634,7 @@
 
     <!--page sctipts-->
     
-    <script type="text/javascript" src="content/js/producto.js"></script>
+    <script type="text/javascript" src="content/js/product.js"></script>
 
     
 
