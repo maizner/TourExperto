@@ -50,7 +50,7 @@ This is how the project structure looks like:
 
 
 ```
-AC-Front-Starter/
+Front-Starter/
 │
 │
 ├── dist/                     # Compiled, production-ready output
