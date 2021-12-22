@@ -82,12 +82,13 @@
 
             <h1 class="d-flex align-items-center mb-2">
                 <img src="content/img/ico-search.png" alt="" class="me-2">
-                Circuitos
+               Tours
             </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
         </div>
 
         <div class="row">
+
             <div class="col-lg-3 col-md-12 col-sm-12 col-12">
                 <div id="search-sidebar">
                      <!--Filtros Aplicados-->
@@ -121,8 +122,8 @@
                             
                             <!--Duración-->
                             <div class="slider-container">
-                                <label for="sliderDias"> Duración (Días) </label>
-                                <input type="text" id="sliderDias" class="slider" />
+                                <label for="sliderDuracion"> Duración (Días) </label>
+                                <input type="text" id="sliderDuracion" class="slider" />
                             </div>
                             <!--Duración-->
 
@@ -143,9 +144,9 @@
                                 </select>
                             </div>
 
-                            <!--País-->
+                            <!--Países multiselect-->
                             <div class="form-group">
-                                <select  class="form-control select2" id="pais" name="pais" 
+                                <select  class="form-control select2" id="paises" name="paises"   multiple="multiple"
                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Paises" >
                                     <option></option>
                                     
@@ -168,9 +169,9 @@
                                 </select>
                             </div>
 
-                            <!--Ciudad-->
+                            <!--Ciudades multiselect-->
                             <div class="form-group">
-                                <select  class="form-control select2" id="ciudad" name="ciudad" 
+                                <select  class="form-control select2" id="ciudades" name="ciudades"  multiple="multiple"
                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Ciudades" >
                                     <option></option>
                                     
@@ -192,38 +193,84 @@
                                     
                                 </select>
                             </div>
-                            
-                            <!--Mes de salida-->
-                            <div class="form-group">
-                                <select  class="form-control select2" id="mes" name="mes" 
-                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Mes de salida" >
-                                    <option></option>
-                                    
-                                        <option value="Enero" >Enero</option>
-                                    
-                                        <option value="Febrero" >Febrero</option>
-                                    
-                                        <option value="Marzo" >Marzo</option>
-                                    
-                                        <option value="Abril" >Abril</option>
-                                    
-                                        <option value="Mayo" >Mayo</option>
-                                    
-                                        <option value="Junio" >Junio</option>
-                                    
-                                        <option value="Julio" >Julio</option>
-                                    
-                                        <option value="Agosto" >Agosto</option>
-                                    
-                                        <option value="Septiembre" >Septiembre</option>
-                                    
-                                        <option value="Octubre" >Octubre</option>
-                                    
-                                        <option value="Noviembre" >Noviembre</option>
-                                    
-                                        <option value="Diciembre" >Diciembre</option>
-                                    
-                                </select>
+                            <div class="d-flex flex-lg-row w-100">
+                                <!--Mes de salida-->
+                                <div class="form-group w-50 pr-2">
+                                    <select  class="form-control select2" id="mes" name="mes" 
+                                    tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Mes de salida" >
+                                        <option></option>
+                                        
+                                            <option 
+                                            value="Enero" >Enero</option>
+                                        
+                                            <option 
+                                            value="Febrero" >Febrero</option>
+                                        
+                                            <option  selected 
+                                            value="Marzo" >Marzo</option>
+                                        
+                                            <option 
+                                            value="Abril" >Abril</option>
+                                        
+                                            <option 
+                                            value="Mayo" >Mayo</option>
+                                        
+                                            <option 
+                                            value="Junio" >Junio</option>
+                                        
+                                            <option 
+                                            value="Julio" >Julio</option>
+                                        
+                                            <option 
+                                            value="Agosto" >Agosto</option>
+                                        
+                                            <option 
+                                            value="Septiembre" >Septiembre</option>
+                                        
+                                            <option 
+                                            value="Octubre" >Octubre</option>
+                                        
+                                            <option 
+                                            value="Noviembre" >Noviembre</option>
+                                        
+                                            <option 
+                                            value="Diciembre" >Diciembre</option>
+                                        
+                                    </select>
+                                </div>
+
+                                <!--Año de salida-->
+                                <div class="form-group w-50 ">
+                                    <select  class="form-control select2" id="anio" name="anio" 
+                                    tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Año" >
+                                        <option></option>
+                                        
+                                            <option 
+                                            value="2015" >2015</option>
+                                        
+                                            <option 
+                                            value="2016" >2016</option>
+                                        
+                                            <option 
+                                            value="2017" >2017</option>
+                                        
+                                            <option 
+                                            value="2018" >2018</option>
+                                        
+                                            <option 
+                                            value="2019" >2019</option>
+                                        
+                                            <option 
+                                            value="2020" >2020</option>
+                                        
+                                            <option 
+                                            value="2021" >2021</option>
+                                        
+                                            <option  selected 
+                                            value="2022" >2022</option>
+                                        
+                                    </select>
+                                </div>
                             </div>
                        </div>
                         <div class="filter-group divisor">
@@ -265,28 +312,112 @@
                                         </div>
 
                                         <!--Tipo de producto-->
-                                        <div class="form-group">
-                                            <select  class="form-control select2" id="prodtype" name="prodtype" 
-                                            tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Tipo de producto" >
-                                                <option></option>
-                                                
-                                                    <option value="Tipo A" >Tipo A</option>
-                                                
-                                                    <option value="Tipo B" >Tipo B</option>
-                                                
-                                                    <option value="Tipo C" >Tipo C</option>
-                                                
-                                                    <option value="Tipo D" >Tipo D</option>
-                                                
-                                                    <option value="Tipo E" >Tipo E</option>
-                                                
-                                            </select>
+                                        <div class="checkboxes divisor">
+                                            <p class="filter-inner-title">Tipo de producto</p>
+                                            <!--Religiosos-->
+                                            <div class="d-flex checkbox">
+                                                <div class="col-10">
+                                                    <label class="container-check">Religiosos
+                                                        <input type="checkbox" >
+                                                        <span class="checkmark" ></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-2 text-right ">
+                                                    <p>1964</p>
+                                                </div>
+                                            </div>
+                                             <!--Exclusivos-->
+                                            <div class="d-flex checkbox">
+                                                <div class="col-10">
+                                                    <label class="container-check">Exclusivos
+                                                        <input type="checkbox" >
+                                                        <span class="checkmark" ></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-2 text-right ">
+                                                    <p>1951</p>
+                                                </div>
+                                            </div>
+                                             <!--Solos y solas-->
+                                            <div class="d-flex checkbox">
+                                                <div class="col-10">
+                                                    <label class="container-check">Solos y solas
+                                                        <input type="checkbox" >
+                                                        <span class="checkmark" ></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-2 text-right ">
+                                                    <p>1522</p>
+                                                </div>
+                                            </div>
+                                             <!--LGBTQ +-->
+                                            <div class="d-flex checkbox">
+                                                <div class="col-10">
+                                                    <label class="container-check">LGBTQ +
+                                                        <input type="checkbox" >
+                                                        <span class="checkmark" ></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-2 text-right ">
+                                                    <p>934</p>
+                                                </div>
+                                            </div>
+                                             <!--Romanticos-->
+                                            <div class="d-flex checkbox">
+                                                <div class="col-10">
+                                                    <label class="container-check">Romanticos
+                                                        <input type="checkbox" >
+                                                        <span class="checkmark" ></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-2 text-right ">
+                                                    <p>843</p>
+                                                </div>
+                                            </div>
+                                             <!--En Familia-->
+                                            <div class="d-flex checkbox">
+                                                <div class="col-10">
+                                                    <label class="container-check checked">En Familia
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-2 text-right ">
+                                                    <p>756</p>
+                                                </div>
+                                            </div>
+                                             <!--Con Aéreos Incluidos-->
+                                            <div class="d-flex checkbox">
+                                                <div class="col-10">
+                                                    <label class="container-check">Con Aéreos Incluidos
+                                                        <input type="checkbox">
+                                                        <span class="checkmark" ></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-2 text-right ">
+                                                    <p>546</p>
+                                                </div>
+                                            </div>
+                                             <!--Viajes de Mujeres-->
+                                            <div class="d-flex checkbox">
+                                                <div class="col-10">
+                                                    <label class="container-check">Viajes de Mujeres
+                                                        <input type="checkbox" >
+                                                        <span class="checkmark" ></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-2 text-right ">
+                                                    <p>320</p>
+                                                </div>
+                                            </div>
+                                          <a href="#" class="btn ms_btn fill radius-10 brand-primary load-more">Mostrar más</a>
                                         </div>
+                                        <!--Tipo de producto-->
 
                                     
                                        
-                                        <div class="slider-container">
-                                            <label for="sliderPrecio"> Precio </label>
+                                        <div class="slider-container divisor">
+                                            <label for="sliderPrecio" class="filter-inner-title"> Precio </label>
                                             <input type="text" id="sliderPrecio" class="slider" />
                                         </div>
                                     
@@ -321,39 +452,68 @@
                     </div>
                     </div>
                 </div>
+
                 <div id="search-list">
 
                     <!--PRODUCTO-->
                     <div class="search-item">
                         <div class="row">
-                            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
-                                <div class="search-item-img"><img src="content/img/search-prod-list/prod-1.jpg" alt=""></div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                                <div class="row p-0 m-0">
+                                    <div class="col-12 search-item-img">
+                                        <img class="iso-sm iso-slider" src="content/img/iso-sm.png"  title="Tour Experto">
+                                        <img class="image-product" src="content/img/search-prod-list/prod-1-short.jpg" alt="Europa Soñada">
+                                    </div>
+                                      <div class="col-12 search-item-map">
+                                          <p class="view-map"><i class="far fa-map"></i>ver mapa</p>
+                                        <a class="map-link" href="#" title="ver mapa" target="_blank"><img class="map-product" src="content/img/search-prod-list/map-prod-1.png" alt="Europa Soñada"></a>
+                                    </div>
+                                </div>
+                                
                             </div>
-                            <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
                                 <div class="search-item-info h-100">
                                     <div class="row h-100">
                                       
                                         <div class="col-lg-8 col-md-12 col-sm-12 col-12 d-flex flex-column search-item-main">
-                                            <span class="search-item-tag">circuitos</span>
+                                            
                                             <h3>Europa Soñada</h3>
-                                            <span class="search-item-dates">Salidas de Noviembre 2021 a Marzo 2021</span>
-                                            <p>Traslado de llegada y salida en servicio regular 3 noches de alojamiento en hotel seleccionado</p>
-                                            <ul class="search-item-specs mt-auto">
-                                                <li><i class="me-1 fas fa-calendar"></i> 4 días - 3 noches</li>
-                                                <li><i class="me-1 fas fa-map-marker-alt"></i> Recorre: Madrid , Zaragoza , Barcelona , Costa azul, Monaco , Genova , Venecia , Florencia , Roma , Pisa , Turin</li>
-                                                <li><i class="me-1 fas fa-flag"></i> Proveedor  Europamundo</li>
-                                            </ul>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span><span class="badge">5</span>214 reviews</span>
+                                            </div>
+                                            <p class="prod-description">Traslado de llegada y salida en servicio regular. 3 noches de alojamiento en hotel seleccionado</p>
+                                            <div class="d-flex flex-column align-items-start product-list">
+                                                <div class="d-flex flex-row">
+                                                    <div class="prod-tit">Duración:</div>
+                                                    <div class="prod-desc ">4 días - 3 Noches</div>
+                                                </div>
+                                                <div  class="d-flex flex-row">
+                                                    <div class="prod-tit">Inicia/Finaliza:</div>
+                                                    <div class="prod-desc">Madrid / Madrid</div>
+                                                </div>
+                                                <div  class="d-flex flex-row">
+                                                    <div class="prod-tit">Recorre:</div>
+                                                    <div class="prod-desc">Madrid, Zaragoza, Barcelona, Costa Azul, Monaco, Genova, Venecia, Florencia,  Roma, Pisa, Turin.</div>
+                                                </div>
+                                                 <div  class="d-flex flex-row">
+                                                    <div class="prod-tit">Proveedor:</div>
+                                                    <div class="prod-desc">Europamundo</div>
+                                                </div>
+                                            </div>
                                         </div>
                                         
-                                        <div class="col-lg-4 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center">
+                                        <div class="col-lg-4 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center w-lg-152 ml-auto">
                                             <span class="search-item-price">
                                                 <strong><span class="curr-data">EUR</span> 1680 </strong>
                                                 
                                             </span>
-                                            <span class="search-item-ref">
-                                                Precio de referencia <br>
-                                                <strong>USD 2032</strong> 
-                                            </span>
+                                            
                                             <div class="mt-auto">
                                                 <a href="#" class="btn md_btn linear radius-10 mb-2 brand-primary">Ver producto</a>
                                                 <a href="#" class="btn md_btn fill radius-10 brand-primary">Reservar</a>
@@ -373,33 +533,60 @@
                             10% off
                         </div>
                         <div class="row">
-                            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
-                                <div class="search-item-img"><img src="content/img/search-prod-list/prod-2.jpg" alt=""></div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                                <div class="row p-0 m-0">
+                                    <div class="col-12 search-item-img">
+                                        <img class="iso-sm iso-slider" src="content/img/iso-sm.png"  title="Tour Experto">
+                                        <img class="image-product" src="content/img/search-prod-list/prod-2-short.jpg" alt="Turquía Esencial">
+                                    </div>
+                                    <div class="col-12 search-item-map">
+                                        <p class="view-map"><i class="far fa-map"></i>ver mapa</p>
+                                        <a  class="map-link" href="#" title="ver mapa" target="_blank"><img class="map-product" src="content/img/search-prod-list/map-prod-2.png" alt="Turquía Esencial"></a>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
                                 <div class="search-item-info h-100">
                                     <div class="row h-100">
                                         <div class="col-lg-8 col-md-12 col-sm-12 col-12 d-flex flex-column search-item-main">
-                                            <span class="search-item-tag">circuitos</span>
+                                            
                                             <h3>Turquía Esencial</h3>
-                                            <span class="search-item-dates">Salidas de Noviembre 2021 a Marzo 2021</span>
-                                            <p>Traslado de llegada y salida en servicio regular 3 noches de alojamiento en hotel seleccionado</p>
-                                            <ul class="search-item-specs mt-auto">
-                                                <li><i class="me-1 fas fa-calendar"></i> 4 días - 3 noches</li>
-                                                <li><i class="me-1 fas fa-map-marker-alt"></i> Recorre: Estambul, Ankara, Capadocia</li>
-                                                <li><i class="me-1 fas fa-flag"></i> Proveedor  Abreu</li>
-                                            </ul>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <span><span class="badge">4</span>214 reviews</span>
+                                            </div>                                            
+                                            <p class="prod-description">Traslado de llegada y salida en servicio regular. 3 noches de alojamiento en hotel seleccionado</p>
+                                            <div class="d-flex flex-column align-items-start product-list">
+                                                <div class="d-flex flex-row">
+                                                    <div class="prod-tit">Duración:</div>
+                                                    <div class="prod-desc ">4 días - 3 Noches</div>
+                                                </div>
+                                                <div  class="d-flex flex-row">
+                                                    <div class="prod-tit">Inicia/Finaliza:</div>
+                                                    <div class="prod-desc">Estambul / Capadocia</div>
+                                                </div>
+                                                <div  class="d-flex flex-row">
+                                                    <div class="prod-tit">Recorre:</div>
+                                                    <div class="prod-desc">Estambul, Anara, Capadocia.</div>
+                                                </div>
+                                                 <div  class="d-flex flex-row">
+                                                    <div class="prod-tit">Proveedor:</div>
+                                                    <div class="prod-desc">Europamundo</div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center">
-                                            <span class="search-item-price-off"><span class="curr-data">USD</span> 328</span>
+                                        <div class="col-lg-4 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center w-lg-152 ml-auto">
+                                            <span class="search-item-price-off price-off"><span class="curr-data">USD</span> 328</span>
                                             <span class="search-item-price">
                                                 <strong><span class="curr-data">USD</span> 299 </strong>
-                                                
+                                      
                                             </span>
-                                            <span class="search-item-ref">
-                                                Precio de referencia <br>
-                                                <strong>USD 2032</strong> 
-                                            </span>
+                                            
                                             <div class="mt-auto">
                                                 <a href="#" class="btn md_btn linear radius-10 mb-2 brand-primary">Ver producto</a>
                                                 <a href="#" class="btn md_btn fill radius-10 brand-primary">Reservar</a>
@@ -411,8 +598,41 @@
                         </div>
                     </div>
                      <!--PRODUCTO-->
+                    <div class="d-flex flex-column align-items-center mb-5 mt-5">
+                        <a href="#" class="btn sm_btn linear radius-50 brand-secondary load-more">Cargar más</a>
+                    </div>
 
                 </div>
+            </div>
+            <div class=" mb-5 ">
+                
+                    <section id="home-contact-support" class="contact-support" >
+    <div class="container-lg">
+        <div class="row">
+            <div class="">
+                <div class="row">
+                    <div class="d-flex flex-column col-lg-6 col-md-12 col-sm-12 col-12 align-items-stretch order-lg-0 md-order-1">
+                        <div class="text">
+                            <h3>¿Alguna duda? Preguntale a un experto</h3>
+                            <p>Nuestro equipo ha viajado a cientos de países de todo el mundo y tiene años de experiencia para compartir contigo. 
+                            ¡Contáctanos ahora para que ellos respondan a todas las preguntas relacionadas con el tour que deseas!</p>
+                        </div>
+                        <div class="d-flex mt-3">
+                            <a class=" btn md_btn fill brand-primary radius-10" href="#" title="Contacta a un agente" >Contactate</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 align-items-stretch md-order-0">
+                        <div class="image-container">
+                            <img  src="content/img/support-agents.jpg" width="100%"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                 
             </div>
         </div>
     </div>
