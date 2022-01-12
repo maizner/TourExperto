@@ -152,7 +152,7 @@ gulp.task('views', function() {
      .pipe(plumber())
      .pipe(data(function() {
         return require(config.html.data)
-        return JSON.parse(fs.readFileSync(config.html.data))
+        // return JSON.parse(fs.readFileSync(config.html.data))
     }))
 
 
