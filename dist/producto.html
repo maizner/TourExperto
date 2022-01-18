@@ -320,7 +320,7 @@
 
 
             <!--Reviews section-->
-            <section class="row suggestions-section align-items-center">
+            <section class="row reviews-section align-items-center">
                 <h4>Customer Reviews</h4>
                 <table class="table table-bordered">
                     <thead>
@@ -523,51 +523,227 @@
         <button type="button" class="btn md_btn linear radius-10 brand-primary">Septiembre 2022</button>
         <button type="button" class="btn md_btn linear radius-10 brand-primary">Octubre 2022</button>
     </div>
-    <div class="accordion accordion-flush accordion-plus-minus mt-4" id="AvDatesAccordion">
+    <div class="accordion accordion-flush accordion-plus-minus mt-4 av-dates-accordion" id="avDatesAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header" id="aDHOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aDCOne" aria-expanded="true" aria-controls="aDCOne">
-                9 de Abril -  2022
-            </button>
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aDCOne" aria-expanded="true" aria-controls="aDCOne">
+                    <div class="col destaque">
+                        
+                    </div>
+                    <div class="col date">
+                    9 de Abril -  2022
+                    </div>
+                    <div class="col extra">
+                    Fecha a cotizar
+                    </div>
+                    
+                </button>
             </h2>
             <div id="aDCOne" class="accordion-collapse collapse show" aria-labelledby="aDHOne" >
                 <div class="accordion-body">
-                    Pendiente 
+                    <div class="accordion accordion-flush categ-accordion" id="categAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="catHOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#catCOne" aria-expanded="true" aria-controls="catCOne">
+
+                                    <div class="col cat">
+                                    Turista
+                                    </div>
+                                    <div class="col stars">
+                                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L6.73483 3.80041H10.7308L7.49799 6.14919L8.73282 9.94959L5.5 7.60081L2.26718 9.94959L3.50201 6.14919L0.269189 3.80041H4.26517L5.5 0Z" fill="#6759F9"/></svg>
+                                    </div>
+                                
+                                </button>
+                            </h2>
+                            <div id="catCOne" class="accordion-collapse collapse show" aria-labelledby="catHOne" >
+                                <div class="accordion-body">
+                                    
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="d-flex flex-row align-items-center justify-content-start">
+                                                        <div class="table-title">Capacidad</div>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="table-title">Categoría</div>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="table-title">Habitaciones</div>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="d-flex flex-row align-items-center justify-content-end">
+                                                        <div class="table-title selection">Seleccionar</div>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!--Single row-->
+                                            <tr>
+                                                
+                                                <td>
+                                                    <div class="table-item d-flex flex-row align-items-center justify-content-start">
+                                                        <div class="item-title">Single</div>
+                                                        <div class="item-value">SVG</div>
+                                                    </div>
+                                                </td>
+
+                                               <td>
+                                                    <div class="table-item d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="item-title">Single</div>
+                                                        <div class="item-value">SVG</div>
+                                                    </div>
+                                                </td>
+
+                                                <td>
+                                                   
+                                                    <div class="table-item d-flex flex-row">
+                                                        <div class="form-check ">
+                                                            <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio1">
+                                                            <label class="form-check-label" for="flexRadio1">
+                                                                1 Habitación
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio2" checked>
+                                                            <label class="form-check-label" for="flexRadio2">
+                                                                2 Habitaciones
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                        
+                                                </td>
+                                                <td>  
+                                                    <div class="table-item">
+                                                        <div class="checkboxes ">
+                                                            <div class="d-flex align-items-center justify-content-end checkbox">
+                                                                <label class="container-check form-check">
+                                                                    <input type="radio" name="selectradio" id="selectradio1" checked>
+                                                                    <span class="checkmark" ></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                
+                                                <td>
+                                                    <div class="table-item d-flex flex-row align-items-center justify-content-start">
+                                                        <div class="item-title">Single</div>
+                                                        <div class="item-value">SVG</div>
+                                                    </div>
+                                                </td>
+
+                                               <td>
+                                                    <div class="table-item d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="item-title">Single</div>
+                                                        <div class="item-value">SVG</div>
+                                                    </div>
+                                                </td>
+
+                                                <td>
+                                                    <div class="table-item d-flex flex-row">
+                                                        <div class="form-check ">
+                                                            <input class="form-check-input" type="radio" name="flexRadio1" id="flexRadio3">
+                                                            <label class="form-check-label" for="flexRadio3">
+                                                                1 Habitación
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="flexRadio1" id="flexRadio4" checked>
+                                                            <label class="form-check-label" for="flexRadio4">
+                                                                2 Habitaciones
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                               <td>  
+                                                    <div class="table-item">
+                                                        <div class="checkboxes ">
+                                                            <div class="d-flex align-items-center justify-content-end checkbox">
+                                                                <label class="container-check form-check">
+                                                                    <input type="radio" name="selectradio" id="selectradio1" checked>
+                                                                    <span class="checkmark" ></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                
+                                                <td>
+                                                    <div class="table-item d-flex flex-row align-items-center justify-content-start">
+                                                        <div class="item-title">Single</div>
+                                                        <div class="item-value">SVG</div>
+                                                    </div>
+                                                </td>
+
+                                               <td>
+                                                    <div class="table-item d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="item-title">Single</div>
+                                                        <div class="item-value">SVG</div>
+                                                    </div>
+                                                </td>
+
+                                                <td>
+                                                    <div class="table-item d-flex flex-row">
+                                                        <div class="form-check ">
+                                                            <input class="form-check-input" type="radio" name="flexRadio3" id="flexRadio5">
+                                                            <label class="form-check-label" for="flexRadio5">
+                                                                1 Habitación
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="flexRadio3" id="flexRadio6" checked>
+                                                            <label class="form-check-label" for="flexRadio6">
+                                                                2 Habitaciones
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                               <td>  
+                                                    <div class="table-item">
+                                                        <div class="checkboxes ">
+                                                            <div class="d-flex align-items-center justify-content-end checkbox">
+                                                                <label class="container-check form-check">
+                                                                    <input type="radio" name="selectradio" id="selectradio3" checked>
+                                                                    <span class="checkmark" ></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                    <div class="d-flex flex-column align-items-end">
+                                        <button type="button" class="btn md_btn linear radius-50 brand-primary">Reservar</button>
+                                        
+                                            <p class="info-btn">Sin compromiso garantiza tu reserva</p>
+                                         
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="aDHTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aDCTwo" aria-expanded="false" aria-controls="aDCTwo">
-                10 de Abril -  2022
-            </button>
-            </h2>
-            <div id="aDCTwo" class="accordion-collapse collapse" aria-labelledby="aDHTwo" >
-                <div class="accordion-body">
-                    Pendiente 
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="aDHThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aDCThree" aria-expanded="false" aria-controls="aDCThree">
-                11 de Abril -  2022
-            </button>
-            </h2>
-            <div id="aDCThree" class="accordion-collapse collapse" aria-labelledby="aDHThree" >
-                <div class="accordion-body">
-                    Pendiente 
-                </div>
-            </div>
-        </div>
+        
         
     </div>  
-        <div class="d-flex flex-column align-items-end mt-5">
-        <button type="button" class="btn md_btn fill radius-10 brand-primary">Reservar</button>
-        
-            <p class="info-btn">Sin compromiso garantiza tu reserva</p>
-         
-    </div>
+    
 
 </section>
             
