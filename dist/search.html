@@ -95,504 +95,526 @@
 
             <div class="col-lg-3 col-md-12 col-sm-12 col-12">
                 <div id="search-sidebar">
-                     <!--Filtros Aplicados-->
-                    <div class="applied filters">
-                        <h6>4 Filtros Aplicados</h6>
-                       
-                         <div class="form-group">
-                            <select  class="form-control select2" id="applied" name="applied[]" multiple="multiple" style="width:100%" >
-                                <option></option>
-                                
-                                    <option value=" América del Sur" selected> América del Sur</option>
-                                
-                                    <option value="Argentina" selected>Argentina</option>
-                                
-                                    <option value="Enero" selected>Enero</option>
-                                
-                                    <option value="Europamundo" selected>Europamundo</option>
-                                
-                            </select>
-                        </div>
-                        <button id="clearAllFilters">
-                            Limpiar filtros
-                        </button>
-                    </div>
+                    <!--Filtros Aplicados-->
+                    
+                        <div class="applied filters">
+    <h6>4 Filtros Aplicados</h6>
+    
+        <div class="form-group">
+        <select  class="form-control select2" id="applied" name="applied[]" multiple="multiple" style="width:100%" >
+            <option></option>
+            
+                <option value=" América del Sur" selected> América del Sur</option>
+            
+                <option value="Argentina" selected>Argentina</option>
+            
+                <option value="Enero" selected>Enero</option>
+            
+                <option value="Europamundo" selected>Europamundo</option>
+            
+        </select>
+    </div>
+    <button id="clearAllFilters">
+        Limpiar filtros
+    </button>
+</div>
+                    
                     <!--Filtros Aplicados-->
 
-                    <!--Filtros-->
-                    <div class="filters">
-                        <h5>Filtros</h5>
-                        <div class="filter-group">
+                    <!--Filtros sidebar-->
+                    
+                         <div class="filters">
+    <h5>Filtros</h5>
+    <div class="filter-group">
+        
+        <!--Duración-->
+        <div class="slider-container">
+            <label for="sliderDuracion"> Duración (Días) </label>
+            <input type="text" id="sliderDuracion" class="slider" />
+        </div>
+        <!--Duración-->
+
+        <!--Región-->
+        <div class="form-group">
+            <select  class="form-control select2" id="region" name="region" 
+            tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Región" >
+                <option></option>
+                
+                    <option value="América del Norte" >América del Norte</option>
+                
+                    <option value="América Central" >América Central</option>
+                
+                    <option value="América del Sur" >América del Sur</option>
+                
+                    <option value="Antillas" >Antillas</option>
+                
+            </select>
+        </div>
+
+        <!--Países multiselect-->
+        <div class="form-group">
+            <select  class="form-control select2" id="paises" name="paises"   multiple="multiple"
+            tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Paises" >
+                <option></option>
+                
+                    <option value="Antigua y Barbuda" >Antigua y Barbuda</option>
+                
+                    <option value="Argentina" >Argentina</option>
+                
+                    <option value="Bahamas" >Bahamas</option>
+                
+                    <option value="Barbados" >Barbados</option>
+                
+                    <option value="Belice" >Belice</option>
+                
+                    <option value="Bolivia" >Bolivia</option>
+                
+                    <option value="Brasil" >Brasil</option>
+                
+                    <option value="Canadá" >Canadá</option>
+                
+            </select>
+        </div>
+
+        <!--Ciudades multiselect-->
+        <div class="form-group">
+            <select  class="form-control select2" id="ciudades" name="ciudades"  multiple="multiple"
+            tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Ciudades" >
+                <option></option>
+                
+                    <option value="Adrogué" >Adrogué</option>
+                
+                    <option value="Alberti" >Alberti</option>
+                
+                    <option value="Alejandro Korn" >Alejandro Korn</option>
+                
+                    <option value="Balcarce" >Balcarce</option>
+                
+                    <option value="Banfield​" >Banfield​</option>
+                
+                    <option value="Baradero" >Baradero</option>
+                
+                    <option value="Batán" >Batán</option>
+                
+                    <option value="Béccar" >Béccar</option>
+                
+            </select>
+        </div>
+
+            <!--Mes y año de salida-->
+            <div class="form-group">
+                <select  class="form-control select2" id="mes" name="mes" 
+                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Mes de salida" >
+                    <option></option>
+                    
+                        <option 
+                        value="Enero 2022" >Enero 2022</option>
+                    
+                        <option 
+                        value="Febrero 2022" >Febrero 2022</option>
+                    
+                        <option 
+                        value="Marzo 2022" >Marzo 2022</option>
+                    
+                        <option 
+                        value="Abril 2022" >Abril 2022</option>
+                    
+                        <option 
+                        value="Mayo 2022" >Mayo 2022</option>
+                    
+                        <option 
+                        value="Junio 2022" >Junio 2022</option>
+                    
+                        <option 
+                        value="Julio 2022" >Julio 2022</option>
+                    
+                        <option 
+                        value="Agosto 2022" >Agosto 2022</option>
+                    
+                        <option 
+                        value="Septiembre 2022" >Septiembre 2022</option>
+                    
+                        <option 
+                        value="Octubre 2022" >Octubre 2022</option>
+                    
+                        <option 
+                        value="Noviembre 2022" >Noviembre 2022</option>
+                    
+                        <option 
+                        value="Diciembre 2022" >Diciembre 2022</option>
+                    
+                </select>
+            </div>
+        
+    </div>
+    <div class="filter-group divisor">
+        <!--Acordión-->
+        <div class="accordion accordion-flush" id="moreFilters">
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header" id="heading-morefilters">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-morefilters" aria-expanded="false" aria-controls="content-morefilters">
+                        Más Filtros
+                    </button>
+                </h2>
+
+                <div id="content-morefilters" class="accordion-collapse collapse" aria-labelledby="heading-morefilters" data-bs-parent="#moreFilters">
+                    <!--Interior Acordión-->
+
+                    <!--Proveedor-->
+                    <div class="form-group">
+                        <select  class="form-control select2" id="supplier" name="supplier" 
+                        tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Proveedor" >
+                            <option></option>
                             
-                            <!--Duración-->
-                            <div class="slider-container">
-                                <label for="sliderDuracion"> Duración (Días) </label>
-                                <input type="text" id="sliderDuracion" class="slider" />
-                            </div>
-                            <!--Duración-->
-
-                            <!--Región-->
-                            <div class="form-group">
-                                <select  class="form-control select2" id="region" name="region" 
-                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Región" >
-                                    <option></option>
-                                    
-                                        <option value="América del Norte" >América del Norte</option>
-                                    
-                                        <option value="América Central" >América Central</option>
-                                    
-                                        <option value="América del Sur" >América del Sur</option>
-                                    
-                                        <option value="Antillas" >Antillas</option>
-                                    
-                                </select>
-                            </div>
-
-                            <!--Países multiselect-->
-                            <div class="form-group">
-                                <select  class="form-control select2" id="paises" name="paises"   multiple="multiple"
-                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Paises" >
-                                    <option></option>
-                                    
-                                        <option value="Antigua y Barbuda" >Antigua y Barbuda</option>
-                                    
-                                        <option value="Argentina" >Argentina</option>
-                                    
-                                        <option value="Bahamas" >Bahamas</option>
-                                    
-                                        <option value="Barbados" >Barbados</option>
-                                    
-                                        <option value="Belice" >Belice</option>
-                                    
-                                        <option value="Bolivia" >Bolivia</option>
-                                    
-                                        <option value="Brasil" >Brasil</option>
-                                    
-                                        <option value="Canadá" >Canadá</option>
-                                    
-                                </select>
-                            </div>
-
-                            <!--Ciudades multiselect-->
-                            <div class="form-group">
-                                <select  class="form-control select2" id="ciudades" name="ciudades"  multiple="multiple"
-                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Ciudades" >
-                                    <option></option>
-                                    
-                                        <option value="Adrogué" >Adrogué</option>
-                                    
-                                        <option value="Alberti" >Alberti</option>
-                                    
-                                        <option value="Alejandro Korn" >Alejandro Korn</option>
-                                    
-                                        <option value="Balcarce" >Balcarce</option>
-                                    
-                                        <option value="Banfield​" >Banfield​</option>
-                                    
-                                        <option value="Baradero" >Baradero</option>
-                                    
-                                        <option value="Batán" >Batán</option>
-                                    
-                                        <option value="Béccar" >Béccar</option>
-                                    
-                                </select>
-                            </div>
-
-                             <!--Mes y año de salida-->
-                                <div class="form-group">
-                                    <select  class="form-control select2" id="mes" name="mes" 
-                                    tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Mes de salida" >
-                                        <option></option>
-                                        
-                                            <option 
-                                            value="Enero 2022" >Enero 2022</option>
-                                        
-                                            <option 
-                                            value="Febrero 2022" >Febrero 2022</option>
-                                        
-                                            <option 
-                                            value="Marzo 2022" >Marzo 2022</option>
-                                        
-                                            <option 
-                                            value="Abril 2022" >Abril 2022</option>
-                                        
-                                            <option 
-                                            value="Mayo 2022" >Mayo 2022</option>
-                                        
-                                            <option 
-                                            value="Junio 2022" >Junio 2022</option>
-                                        
-                                            <option 
-                                            value="Julio 2022" >Julio 2022</option>
-                                        
-                                            <option 
-                                            value="Agosto 2022" >Agosto 2022</option>
-                                        
-                                            <option 
-                                            value="Septiembre 2022" >Septiembre 2022</option>
-                                        
-                                            <option 
-                                            value="Octubre 2022" >Octubre 2022</option>
-                                        
-                                            <option 
-                                            value="Noviembre 2022" >Noviembre 2022</option>
-                                        
-                                            <option 
-                                            value="Diciembre 2022" >Diciembre 2022</option>
-                                        
-                                    </select>
-                                </div>
+                                <option value="Abreu" >Abreu</option>
                             
-                       </div>
-                        <div class="filter-group divisor">
-                            <!--Acordión-->
-                            <div class="accordion accordion-flush" id="moreFilters">
+                                <option value="Europamundo" >Europamundo</option>
+                            
+                                <option value="Special Tours" >Special Tours</option>
+                            
+                                <option value="Sato Tours" >Sato Tours</option>
+                            
+                                <option value="Miller" >Miller</option>
+                            
+                                <option value="Compas" >Compas</option>
+                            
+                                <option value="Surland" >Surland</option>
+                            
+                        </select>
+                    </div>
 
-                                <div class="accordion-item">
-
-                                    <h2 class="accordion-header" id="heading-morefilters">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-morefilters" aria-expanded="false" aria-controls="content-morefilters">
-                                            Más Filtros
-                                        </button>
-                                    </h2>
-
-                                    <div id="content-morefilters" class="accordion-collapse collapse" aria-labelledby="heading-morefilters" data-bs-parent="#moreFilters">
-                                        <!--Interior Acordión-->
-
-                                        <!--Proveedor-->
-                                        <div class="form-group">
-                                            <select  class="form-control select2" id="supplier" name="supplier" 
-                                            tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Proveedor" >
-                                                <option></option>
-                                                
-                                                    <option value="Abreu" >Abreu</option>
-                                                
-                                                    <option value="Europamundo" >Europamundo</option>
-                                                
-                                                    <option value="Special Tours" >Special Tours</option>
-                                                
-                                                    <option value="Sato Tours" >Sato Tours</option>
-                                                
-                                                    <option value="Miller" >Miller</option>
-                                                
-                                                    <option value="Compas" >Compas</option>
-                                                
-                                                    <option value="Surland" >Surland</option>
-                                                
-                                            </select>
-                                        </div>
-
-                                        <!--Tipo de producto-->
-                                        <div class="checkboxes divisor">
-                                            <p class="filter-inner-title">Tipo de producto</p>
-                                            <!--Religiosos-->
-                                            <div class="d-flex checkbox">
-                                                <div class="col-10">
-                                                    <label class="container-check">Religiosos
-                                                        <input type="checkbox" >
-                                                        <span class="checkmark" ></span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-2 text-right ">
-                                                    <p>1964</p>
-                                                </div>
-                                            </div>
-                                             <!--Exclusivos-->
-                                            <div class="d-flex checkbox">
-                                                <div class="col-10">
-                                                    <label class="container-check">Exclusivos
-                                                        <input type="checkbox" >
-                                                        <span class="checkmark" ></span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-2 text-right ">
-                                                    <p>1951</p>
-                                                </div>
-                                            </div>
-                                             <!--Solos y solas-->
-                                            <div class="d-flex checkbox">
-                                                <div class="col-10">
-                                                    <label class="container-check">Solos y solas
-                                                        <input type="checkbox" >
-                                                        <span class="checkmark" ></span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-2 text-right ">
-                                                    <p>1522</p>
-                                                </div>
-                                            </div>
-                                             <!--LGBTQ +-->
-                                            <div class="d-flex checkbox">
-                                                <div class="col-10">
-                                                    <label class="container-check">LGBTQ +
-                                                        <input type="checkbox" >
-                                                        <span class="checkmark" ></span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-2 text-right ">
-                                                    <p>934</p>
-                                                </div>
-                                            </div>
-                                             <!--Romanticos-->
-                                            <div class="d-flex checkbox">
-                                                <div class="col-10">
-                                                    <label class="container-check">Romanticos
-                                                        <input type="checkbox" >
-                                                        <span class="checkmark" ></span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-2 text-right ">
-                                                    <p>843</p>
-                                                </div>
-                                            </div>
-                                             <!--En Familia-->
-                                            <div class="d-flex checkbox">
-                                                <div class="col-10">
-                                                    <label class="container-check checked">En Familia
-                                                        <input type="checkbox" checked="checked">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-2 text-right ">
-                                                    <p>756</p>
-                                                </div>
-                                            </div>
-                                             <!--Con Aéreos Incluidos-->
-                                            <div class="d-flex checkbox">
-                                                <div class="col-10">
-                                                    <label class="container-check">Con Aéreos Incluidos
-                                                        <input type="checkbox">
-                                                        <span class="checkmark" ></span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-2 text-right ">
-                                                    <p>546</p>
-                                                </div>
-                                            </div>
-                                             <!--Viajes de Mujeres-->
-                                            <div class="d-flex checkbox">
-                                                <div class="col-10">
-                                                    <label class="container-check">Viajes de Mujeres
-                                                        <input type="checkbox" >
-                                                        <span class="checkmark" ></span>
-                                                    </label>
-                                                </div>
-                                                <div class="col-2 text-right ">
-                                                    <p>320</p>
-                                                </div>
-                                            </div>
-                                          <a href="#" class="btn ms_btn fill radius-10 brand-primary load-more">Mostrar más</a>
-                                        </div>
-                                        <!--Tipo de producto-->
-
-                                    
-                                       
-                                        <div class="slider-container divisor">
-                                            <label for="sliderPrecio" class="filter-inner-title"> Precio </label>
-                                            <input type="text" id="sliderPrecio" class="slider" />
-                                        </div>
-                                    
-
-                                    </div>
-                                </div>
+                    <!--Tipo de producto-->
+                    <div class="checkboxes divisor">
+                        <p class="filter-inner-title">Tipo de producto</p>
+                        <!--Religiosos-->
+                        <div class="d-flex checkbox">
+                            <div class="col-10">
+                                <label class="container-check">Religiosos
+                                    <input type="checkbox" >
+                                    <span class="checkmark" ></span>
+                                </label>
+                            </div>
+                            <div class="col-2 text-right ">
+                                <p>1964</p>
                             </div>
                         </div>
-                    </div>
-                    <!--Filtros-->
+                            <!--Exclusivos-->
+                        <div class="d-flex checkbox">
+                            <div class="col-10">
+                                <label class="container-check">Exclusivos
+                                    <input type="checkbox" >
+                                    <span class="checkmark" ></span>
+                                </label>
+                            </div>
+                            <div class="col-2 text-right ">
+                                <p>1951</p>
+                            </div>
+                        </div>
+                            <!--Solos y solas-->
+                        <div class="d-flex checkbox">
+                            <div class="col-10">
+                                <label class="container-check">Solos y solas
+                                    <input type="checkbox" >
+                                    <span class="checkmark" ></span>
+                                </label>
+                            </div>
+                            <div class="col-2 text-right ">
+                                <p>1522</p>
+                            </div>
+                        </div>
+                            <!--LGBTQ +-->
+                        <div class="d-flex checkbox">
+                            <div class="col-10">
+                                <label class="container-check">LGBTQ +
+                                    <input type="checkbox" >
+                                    <span class="checkmark" ></span>
+                                </label>
+                            </div>
+                            <div class="col-2 text-right ">
+                                <p>934</p>
+                            </div>
+                        </div>
+                            <!--Romanticos-->
+                        <div class="d-flex checkbox">
+                            <div class="col-10">
+                                <label class="container-check">Romanticos
+                                    <input type="checkbox" >
+                                    <span class="checkmark" ></span>
+                                </label>
+                            </div>
+                            <div class="col-2 text-right ">
+                                <p>843</p>
+                            </div>
+                        </div>
+                            <!--En Familia-->
+                        <div class="d-flex checkbox">
+                            <div class="col-10">
+                                <label class="container-check checked">En Familia
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col-2 text-right ">
+                                <p>756</p>
+                            </div>
+                        </div>
+                        
+                        <!--Viajes de Mujeres-->
+                        <div class="d-flex checkbox">
+                            <div class="col-10">
+                                <label class="container-check">Viajes de Mujeres
+                                    <input type="checkbox" >
+                                    <span class="checkmark" ></span>
+                                </label>
+                            </div>
+                            <div class="col-2 text-right ">
+                                <p>320</p>
+                            </div>
+                        </div>
+                        
+                        <!--Btn -->
+                        <a href="#" class="btn ms_btn fill radius-10 brand-primary load-more">Mostrar más</a>
 
-                   
+                        <!--Con Aéreos Incluidos-->
+                        <div class="d-flex checkbox mt-4">
+                            <div class="col-10">
+                                <label class="container-check">Con Aéreos Incluidos
+                                    <input type="checkbox">
+                                    <span class="checkmark" ></span>
+                                </label>
+                            </div>
+                            <div class="col-2 text-right ">
+                                <p>546</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Tipo de producto-->
+
+                
+                    
+                    <div class="slider-container divisor">
+                        <label for="sliderPrecio" class="filter-inner-title"> Precio </label>
+                        <input type="text" id="sliderPrecio" class="slider" />
+                    </div>
+                
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    
+                    <!--Filtros sidebar-->
+
                 </div>
             </div>
             <div class="col-lg-9 col-md-12 col-sm-12 col-12">
+
                 <div id="search-result" class="d-flex align-items-center">
                     <h2 class="d-flex align-items-center"><i class="fas fa-list me-2"></i> 522 resultados totales</h2> 
                 </div>
 
-                <div  class="dropdown-filters">
-                    <div id="dropdownCurrecy" class="dropdown-filter">
-                        <div class="dropdown show">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownCurrecyLink" 
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>USD</strong> Dolares estadounidenses</a>
+                <!--Filtros dropdown-->
+                
+                    <div  class="dropdown-filters">
+    <div id="dropdownCurrecy" class="dropdown-filter">
+        <div class="dropdown show">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownCurrecyLink" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>USD</strong> Dolares estadounidenses</a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownCurrecyLink">
-                                <a class="dropdown-item" href="#"><strong>USD</strong> Dolares estadounidenses</a>
-                                <a class="dropdown-item" href="#">Otra opción</a>
-                                <a class="dropdown-item" href="#">Una opción más</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownCurrecyLink">
+                <a class="dropdown-item" href="#"><strong>USD</strong> Dolares estadounidenses</a>
+                <a class="dropdown-item" href="#">Otra opción</a>
+                <a class="dropdown-item" href="#">Una opción más</a>
+            </div>
+        </div>
+    </div>
+    <div id="dropdownOrder" class="dropdown-filter">
+        <div class="dropdown show">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownOrderLink" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ordenar por</a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownOrderLink">
+                <a class="dropdown-item" href="#">Recomendados</a>
+                <a class="dropdown-item" href="#">Ofertas</a>
+                <a class="dropdown-item" href="#"><strong>Precio:</strong> más bajo</a>
+                <a class="dropdown-item" href="#"><strong>Precio:</strong> más alto</a>
+                <a class="dropdown-item" href="#"><strong>Duración:</strong> más largo</a>
+                <a class="dropdown-item" href="#"><strong>Duración:</strong> más corto</a>
+            </div>
+        </div>
+    </div>
+</div>
+                
+                <!--Filtros dropdown-->
+
+                <!--Resultado de búsqueda-->
+                <div id="search-list">
+
+                    <!--Listado de productos-->
+                    
+                    <!--PRODUCTO-->
+<div class="search-item">
+    <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="row p-0 m-0">
+                <div class="col-12 search-item-img">
+                    <img class="iso-sm iso-slider" src="content/img/iso-sm.png"  title="Tour Experto">
+                    <img class="image-product" src="content/img/search-prod-list/prod-1-short.jpg" alt="Europa Soñada">
+                </div>
+                    <div class="col-12 search-item-map">
+                        <p class="view-map"><i class="far fa-map"></i>ver mapa</p>
+                    <a class="map-link" href="#" title="ver mapa" target="_blank"><img class="map-product" src="content/img/search-prod-list/map-prod-1.png" alt="Europa Soñada"></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+            <div class="search-item-info">
+                <div class="row">
+                    
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-12 d-flex flex-column search-item-main">
+                        
+                        <h3>Europa Soñada</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span><span class="badge">5</span>214 reviews</span>
+                        </div>
+                        <p class="prod-description">Traslado de llegada y salida en servicio regular. 3 noches de alojamiento en hotel seleccionado</p>
+                        <div class="d-flex flex-column align-items-start product-list">
+                            <div class="d-flex flex-row">
+                                <div class="prod-tit">Duración:</div>
+                                <div class="prod-desc ">4 días - 3 Noches</div>
+                            </div>
+                            <div  class="d-flex flex-row">
+                                <div class="prod-tit">Inicia/Finaliza:</div>
+                                <div class="prod-desc">Madrid / Madrid</div>
+                            </div>
+                            <div  class="d-flex flex-row">
+                                <div class="prod-tit">Recorre:</div>
+                                <div class="prod-desc">Madrid, Zaragoza, Barcelona, Costa Azul, Monaco, Genova, Venecia, Florencia,  Roma, Pisa, Turin.</div>
+                            </div>
+                                <div  class="d-flex flex-row">
+                                <div class="prod-tit">Proveedor:</div>
+                                <div class="prod-desc">Europamundo</div>
                             </div>
                         </div>
                     </div>
-                    <div id="dropdownOrder" class="dropdown-filter">
-                        <div class="dropdown show">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownOrderLink" 
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ordenar por</a>
+                    
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center w-lg-152 ml-auto">
+                        <div class="price-container">
+                            <span class="search-item-price">
+                                <strong><span class="curr-data">EUR</span> 1680 </strong>
+                            </span>
+                        </div>
+                        
+                        <div class="mt-auto button-container">
+                            <a href="#" class="btn md_btn linear radius-10 mb-2 brand-primary">Ver producto</a>
+                            <a href="#" class="btn md_btn fill radius-10 brand-primary">Reservar</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--PRODUCTO-->
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownOrderLink">
-                                <a class="dropdown-item" href="#">Recomendados</a>
-                                <a class="dropdown-item" href="#">Ofertas</a>
-                                <a class="dropdown-item" href="#"><strong>Precio:</strong> más bajo</a>
-                                <a class="dropdown-item" href="#"><strong>Precio:</strong> más alto</a>
-                                <a class="dropdown-item" href="#"><strong>Duración:</strong> más largo</a>
-                                <a class="dropdown-item" href="#"><strong>Duración:</strong> más corto</a>
+    <!--PRODUCTO-->
+<div class="search-item off">
+    <div class="off-msg">
+        10% off
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="row p-0 m-0">
+                <div class="col-12 search-item-img">
+                    <img class="iso-sm iso-slider" src="content/img/iso-sm.png"  title="Tour Experto">
+                    <img class="image-product" src="content/img/search-prod-list/prod-2-short.jpg" alt="Turquía Esencial">
+                </div>
+                <div class="col-12 search-item-map">
+                    <p class="view-map"><i class="far fa-map"></i>ver mapa</p>
+                    <a  class="map-link" href="#" title="ver mapa" target="_blank"><img class="map-product" src="content/img/search-prod-list/map-prod-2.png" alt="Turquía Esencial"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+            <div class="search-item-info">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-12 d-flex flex-column search-item-main">
+                        
+                        <h3>Turquía Esencial</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span><span class="badge">4</span>214 reviews</span>
+                        </div>                                            
+                        <p class="prod-description">Traslado de llegada y salida en servicio regular. 3 noches de alojamiento en hotel seleccionado</p>
+                        <div class="d-flex flex-column align-items-start product-list">
+                            <div class="d-flex flex-row">
+                                <div class="prod-tit">Duración:</div>
+                                <div class="prod-desc ">4 días - 3 Noches</div>
                             </div>
+                            <div  class="d-flex flex-row">
+                                <div class="prod-tit">Inicia/Finaliza:</div>
+                                <div class="prod-desc">Estambul / Capadocia</div>
+                            </div>
+                            <div  class="d-flex flex-row">
+                                <div class="prod-tit">Recorre:</div>
+                                <div class="prod-desc">Estambul, Anara, Capadocia.</div>
+                            </div>
+                                <div  class="d-flex flex-row">
+                                <div class="prod-tit">Proveedor:</div>
+                                <div class="prod-desc">Europamundo</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center w-lg-152 ml-auto">
+                        <div class="price-container">
+                            <span class="search-item-price-off price-off">
+                                <span class="curr-data">USD</span> 328
+                            </span>
+                            <span class="search-item-price">
+                                <strong><span class="curr-data">USD</span> 299 </strong>
+                            </span>
+                        </div>
+                        
+                        <div class="mt-auto button-container">
+                            <a href="#" class="btn md_btn linear radius-10 mb-2 brand-primary">Ver producto</a>
+                            <a href="#" class="btn md_btn fill radius-10 brand-primary">Reservar</a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--PRODUCTO-->
+                    
+                    <!--Listado de productos-->
 
-                <div id="search-list">
-
-                    <!--PRODUCTO-->
-                    <div class="search-item">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                                <div class="row p-0 m-0">
-                                    <div class="col-12 search-item-img">
-                                        <img class="iso-sm iso-slider" src="content/img/iso-sm.png"  title="Tour Experto">
-                                        <img class="image-product" src="content/img/search-prod-list/prod-1-short.jpg" alt="Europa Soñada">
-                                    </div>
-                                      <div class="col-12 search-item-map">
-                                          <p class="view-map"><i class="far fa-map"></i>ver mapa</p>
-                                        <a class="map-link" href="#" title="ver mapa" target="_blank"><img class="map-product" src="content/img/search-prod-list/map-prod-1.png" alt="Europa Soñada"></a>
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
-                                <div class="search-item-info">
-                                    <div class="row">
-                                      
-                                        <div class="col-lg-8 col-md-12 col-sm-12 col-12 d-flex flex-column search-item-main">
-                                            
-                                            <h3>Europa Soñada</h3>
-                                            <div class="rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <span><span class="badge">5</span>214 reviews</span>
-                                            </div>
-                                            <p class="prod-description">Traslado de llegada y salida en servicio regular. 3 noches de alojamiento en hotel seleccionado</p>
-                                            <div class="d-flex flex-column align-items-start product-list">
-                                                <div class="d-flex flex-row">
-                                                    <div class="prod-tit">Duración:</div>
-                                                    <div class="prod-desc ">4 días - 3 Noches</div>
-                                                </div>
-                                                <div  class="d-flex flex-row">
-                                                    <div class="prod-tit">Inicia/Finaliza:</div>
-                                                    <div class="prod-desc">Madrid / Madrid</div>
-                                                </div>
-                                                <div  class="d-flex flex-row">
-                                                    <div class="prod-tit">Recorre:</div>
-                                                    <div class="prod-desc">Madrid, Zaragoza, Barcelona, Costa Azul, Monaco, Genova, Venecia, Florencia,  Roma, Pisa, Turin.</div>
-                                                </div>
-                                                 <div  class="d-flex flex-row">
-                                                    <div class="prod-tit">Proveedor:</div>
-                                                    <div class="prod-desc">Europamundo</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-lg-4 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center w-lg-152 ml-auto">
-                                            <div class="price-container">
-                                                <span class="search-item-price">
-                                                    <strong><span class="curr-data">EUR</span> 1680 </strong>
-                                                </span>
-                                            </div>
-                                            
-                                            <div class="mt-auto button-container">
-                                                <a href="#" class="btn md_btn linear radius-10 mb-2 brand-primary">Ver producto</a>
-                                                <a href="#" class="btn md_btn fill radius-10 brand-primary">Reservar</a>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--PRODUCTO-->
-
-                     <!--PRODUCTO-->
-                    <div class="search-item off">
-                        <div class="off-msg">
-                            10% off
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                                <div class="row p-0 m-0">
-                                    <div class="col-12 search-item-img">
-                                        <img class="iso-sm iso-slider" src="content/img/iso-sm.png"  title="Tour Experto">
-                                        <img class="image-product" src="content/img/search-prod-list/prod-2-short.jpg" alt="Turquía Esencial">
-                                    </div>
-                                    <div class="col-12 search-item-map">
-                                        <p class="view-map"><i class="far fa-map"></i>ver mapa</p>
-                                        <a  class="map-link" href="#" title="ver mapa" target="_blank"><img class="map-product" src="content/img/search-prod-list/map-prod-2.png" alt="Turquía Esencial"></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
-                                <div class="search-item-info">
-                                    <div class="row">
-                                        <div class="col-lg-8 col-md-12 col-sm-12 col-12 d-flex flex-column search-item-main">
-                                            
-                                            <h3>Turquía Esencial</h3>
-                                            <div class="rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <span><span class="badge">4</span>214 reviews</span>
-                                            </div>                                            
-                                            <p class="prod-description">Traslado de llegada y salida en servicio regular. 3 noches de alojamiento en hotel seleccionado</p>
-                                            <div class="d-flex flex-column align-items-start product-list">
-                                                <div class="d-flex flex-row">
-                                                    <div class="prod-tit">Duración:</div>
-                                                    <div class="prod-desc ">4 días - 3 Noches</div>
-                                                </div>
-                                                <div  class="d-flex flex-row">
-                                                    <div class="prod-tit">Inicia/Finaliza:</div>
-                                                    <div class="prod-desc">Estambul / Capadocia</div>
-                                                </div>
-                                                <div  class="d-flex flex-row">
-                                                    <div class="prod-tit">Recorre:</div>
-                                                    <div class="prod-desc">Estambul, Anara, Capadocia.</div>
-                                                </div>
-                                                 <div  class="d-flex flex-row">
-                                                    <div class="prod-tit">Proveedor:</div>
-                                                    <div class="prod-desc">Europamundo</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center w-lg-152 ml-auto">
-                                            <div class="price-container">
-                                                <span class="search-item-price-off price-off">
-                                                    <span class="curr-data">USD</span> 328
-                                                </span>
-                                                <span class="search-item-price">
-                                                    <strong><span class="curr-data">USD</span> 299 </strong>
-                                                </span>
-                                            </div>
-                                            
-                                            <div class="mt-auto button-container">
-                                                <a href="#" class="btn md_btn linear radius-10 mb-2 brand-primary">Ver producto</a>
-                                                <a href="#" class="btn md_btn fill radius-10 brand-primary">Reservar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <!--PRODUCTO-->
                     <div class="d-flex flex-column align-items-center mb-5 mt-5">
                         <a href="#" class="btn sm_btn linear radius-50 brand-secondary load-more">Cargar más</a>
                     </div>
 
                 </div>
+                <!--Resultado de búsqueda-->
+
             </div>
+
             <div class=" mb-5 ">
                 
                     <section class="contact-support" >
