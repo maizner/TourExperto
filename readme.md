@@ -135,7 +135,7 @@ scss/
 Our Nunjucks folder structure looks like this: 
 
 ```
-Views/
+Views/                                                                       
 │
 ├── layout/                 
 │   │   
