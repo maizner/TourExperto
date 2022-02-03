@@ -98,9 +98,9 @@ scss/
 │   ├── _page1.scss           # Only Related global pages styles          
 │   └── _page2.scss           #...
 │        
-├── sections/
+├── pages/mainPage/
 │   │   
-│	  └── _jumbotron.scss       # EG: Section specific styles if needed
+│	  └── _jumbotron.scss       # EG: Section specific styles of each page
 │	
 ├── shared/
 │   │   
