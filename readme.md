@@ -139,10 +139,10 @@ Views/
 │
 ├── layout/                                                                                                                       
 │   │   
-│   └── default.njk                      # Default template you can reuse (extend)        
+│   └── default.njk                      # Default template you can reuse (extend)                                                              
 │  
 ├── partials/                            #Partial sections. Easy to change folder to shared in case another page will use it.                   
-│   │   
+│   │                                                                                                                                           
 │   ├── _page1/...njk                    # Only Related global pages styles          
 │   └── _page2/...njk                    # Only Related global pages styles 
 │        
