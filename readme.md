@@ -141,18 +141,18 @@ Views/
 │   │   
 │   └── default.njk                      # Default template you can reuse (extend)        
 │  
-├── partials/                            #Partial sections. Easy to change folder to shared in case another page will use it.
+├── partials/                            #Partial sections. Easy to change folder to shared in case another page will use it.                   
 │   │   
 │   ├── _page1/...njk                    # Only Related global pages styles          
 │   └── _page2/...njk                    # Only Related global pages styles 
 │        
 ├── macros/
 │   │   
-│	  └── _macro-formField.njk             #allows you to define reusable chunks of content.
+│	  └── _macro-formField.njk             #allows you to define reusable chunks of content.                                                      
 │	
 ├── shared/
 │   │   
-│   ├── _meta.njk                        # Components that shared with other views
+│   ├── _meta.njk                        # Components that shared with other views                                                              
 │   ├── _loader.njk                      
 │   └── _...njk                          
 │  
