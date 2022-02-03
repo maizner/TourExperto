@@ -136,27 +136,31 @@ Our Nunjucks folder structure looks like this:
 
 ```
 Views/
-│    
-├── layout/
-│   │  
-│   └── default.njk                         # Default template you can reuse (extend)
-│        ├── _header.njk       
-│	       └── _footer.njk             
-│   		
-├── Partials/						
-│	    └── pageOne/                          #Partial sections. Easy to change folder to shared in case another page will use it.
-│        ├── _section1.njk       
-│	       └── _....njk          			 
-├── macros/	
-│	       └── macro-formField.njk            #allows you to define reusable chunks of content. 
 │
-├── shared/                    
-│       │  
-│       ├── meta.njk                        # Social media meta tags
-│       └── loader.njk                      # Loader
-│   
-└── pageOne.njk                             # The result of all partials(shared, partials, layout). In charge of HTML page in ./dist folder
-```
+├── layout/                 
+│   │   
+│   └── default.njk                      # Default template you can reuse (extend)
+│            ├── _header.njk         
+│            └── _footer.njk          
+│  
+├── partials/                            #Partial sections. Easy to change folder to shared in case another page will use it.
+│   │   
+│   ├── _page1/...njk                    # Only Related global pages styles          
+│   └── _page2/...njk                    # Only Related global pages styles 
+│        
+├── macros/
+│   │   
+│	  └── _macro-formField.njk             #allows you to define reusable chunks of content.
+│	
+├── shared/
+│   │   
+│   ├── _meta.njk                        # Components that shared with other views
+│   ├── _loader.njk                      
+│   └── _...njk                          
+│  
+│  
+└── pageOne.njk                          # The result of all partials(shared, partials, layout). In charge of HTML page in ./dist folder
+
 
 
 <a name="dependencies"></a>Dependencias
