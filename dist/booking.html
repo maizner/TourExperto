@@ -109,51 +109,107 @@
         
         
 <div class="content booking container-lg" id="booking">
-    <!--Hero section-->
-    <section class="row hero-section">
+   
+    <section class="row">
 
+        <!--Left side-->
         <div class="col-lg-8 col-md-12 left-col">
 
             <div class="d-flex flex-column">
 
+                <!--Check dates-->
                 <section class="program-data">
                     <div class="card card-radius-40 card-borderless card-background-7">            
-                        <div class="card-body d-flex flex-column">
-                            <div class="d-flex flex-row">
+                        <div class="card-body">
+                            <div class="d-flex flex-column steps">
                                 <h3><strong>Nombre del Programa</strong></h3>
+                                <div class="step step-1 d-lg-flex">
+                                    <div class="step-block d-flex flex-row">
+                                        <div class="d-flex flex-row align-items-center position-relative ">
+                                            <span class="step-number">1</span>
+                                            <svg class="svg-logo purple-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M77.9,82.7L77.9,82.7C90.4,72.1,96,55.1,90.6,38.9c-0.8-2.4-1.8-4.8-3.1-7c0,0,0,0,0,0c-4.4-8-11.3-14-19.5-17.8c0,0,0,0,0,0c-38.4-14.6-56.5,16-56.5,16s0,0,0,0C5.4,40,3.5,52.2,7.4,64.1c0.3,1,0.7,2,1.1,3l0,0c0-0.1,0-0.1-0.1-0.1c0,0,0,0,0,0c7.6,18.3,27.7,28.9,47.8,25.6c-0.4-0.2-1.5-0.6,0,0c1.1-0.2,1.1-0.2,0,0c19,7.9,36.6,6.9,36.6,6.9C86.5,94,81.7,88.4,77.9,82.7z M77.9,82.7L77.9,82.7C77.3,83.1,77.3,83.1,77.9,82.7C77.3,81.7,77.3,81.7,77.9,82.7z"></path></svg>
+                                        </div>
+                                        <p class="step-title">Revisa tus fechas </p>
+                                    </div>
+                                     <div class="step-block">
+                                        <p class="step-text"><b>Martes 13 noviembre 2022</b></p>
+                                        <p class="step-text">al jueves 15 noviembre 2022</p>
+                                        <a class="btn sm_btn btn-alpha fill brand-primary radius-5 mt-3 step-btn" href="#" title="" >Cambiar fecha</a>
+                                    </div>
+                                   
+                                </div>
                             </div>
                             
                         </div>
                     </div>
                 </section>
+                <!--Check dates-->
 
-                <section class="booking-form">
-
-                    <div class="card card-radius-40 contact-data">            
-                        <div class="card-body d-flex flex-column">
-                            <div class="d-flex flex-row ">
-                                <h4>Nombre del Programa</h4>
-                            </div>
-                            
-                        </div>
+                <!--Bullets ( hasta 3)-->
+                <div class="bullets">            
+                    <div class="d-flex flex-row ">
+                        <span>Mejor precio garantizado</span>
+                        <span>Pago Seguro</span>
                     </div>
+                </div>
+                <!--Bullets-->
 
-                    <div class="card card-radius-40 passenger-data">            
-                        <div class="card-body d-flex flex-column">
-                            <div class="d-flex flex-row ">
-                            
-                                <h4>Pasajeros</h4>
+                <!--Form-->
+                <form action="#" class="form_content parsley js_form_validation editar">
+                    <section class="booking-form">
+
+                        <!--Contacto-->
+                        <div class="card card-radius-40 contact-data">            
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex flex-column">
+                                    <h4>Datos de Contacto</h4>
+                                    <p class="section-subtitle"> ¿Ya eres cliente? Gestiona tus reservas Online fácil. <a class="link" href="#" title="Ingresa">Ingresa</a></p>
+                                </div>
+                                
                             </div>
-                            
                         </div>
-                    </div>
+                        <!--Contacto-->
 
-                    
+                        <!--Pasajeros-->
+                        <div class="card card-radius-40 pax-data">            
+                            <div class="card-body">
+                                <div class="d-flex flex-column ">
+                                
+                                    <h4>Pasajeros</h4>
+                                    <div class="d-flex flex-column pax-container">
+                                        <p class="pax-title">Pasajero 1</p>
+                                        <div class="d-flex flex-row pax-items">
+
+                                        
+                                            
+                                            
+  <div class="form-group default">
+        <label for="name">Nombre</label>
+        <input type="text" class="form-control" 
+        name="name" id="name" 
+        placeholder="Ingresa tu nombre" 
+        value=""
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Debes completar este campo"
+        data-parsley-required >
+    </div>
+
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--Pasajeros-->
 
                         
+
+                            
+                            
  <section class="expert-section align-items-center expert-2">
     <div class="row">
-        <div class="d-flex align-items-center cta-content">
+        <div class="d-lg-flex align-items-center cta-content">
             <img  src="content/img/product/contact-support-woman.png" title="Personaliza tu viaje!" class="desktop_show">
             <div class="d-flex flex-column text-container">
                 <h4 class="cta-title">Personaliza tu viaje!</h4>
@@ -165,78 +221,74 @@
 </section>
 
 
-                    
-
-                    <div class="card card-radius-40 aditional-data">            
-                        <div class="card-body d-flex flex-column ">
-                            <div class="d-flex flex-row ">
-                            
-                                <h4>Adicionales</h4>
+                        
+                        <!--Datos adicionales-->
+                        <div class="card card-radius-40 aditional-data">            
+                            <div class="card-body d-flex flex-column ">
+                                <div class="d-flex flex-row ">
+                                
+                                    <h4>Adicionales</h4>
+                                </div>
+                                
                             </div>
-                            
                         </div>
-                    </div>
-                    
-                    <div class="d-flex checkbox">
-                        <label class="container-check">
-                            <input type="checkbox" >
-                            <span class="checkmark" ></span>
-                        </label>
-                        Acepto los <a class="link" href="#" title="Términos y condiciones">Términos y condiciones </a> y la Política de privacidad de TourExperto.
-                    </div>
+                        <!--Datos adicionales-->
+                        
+                        <!--TYC check-->
+                        <div class="d-flex checkbox">
+                            <label class="container-check">
+                                <input type="checkbox" >
+                                <span class="checkmark" ></span>
+                            </label>
+                            Acepto los <a class="link" href="#" title="Términos y condiciones">Términos y condiciones </a> y la Política de privacidad de TourExperto.
+                        </div>
+                        <!--TYC check-->
 
-                    <div class="mt-auto button-container">
-                        <button type="submit" class="btn md_btn fill radius-5 brand-primary">Reservar</button>
-                    </div>   
-                   
-                    <p>Sin compromiso garantiza tu reserva. Congelamos tu lugar hasta que decidas efectuar el pago.  </p>
-                </section>
+                        <div class="mt-auto button-container">
+                            <button type="submit" class="btn md_btn fill radius-5 brand-primary">Reservar</button>
+                        </div>   
+                    
+                        <p>Sin compromiso garantiza tu reserva. Congelamos tu lugar hasta que decidas efectuar el pago.  </p>
+                    </section>
+                </form>
+                <!--Form-->
 
             </div>
 
         </div>
+        <!--Left side-->
 
+        <!--Right side-->
         <div class="col-lg-4 col-md-12 right-col">
-
+            <!--Resumen-->
             <div class="card card-radius-40 card-borderless card-background-7">            
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <div class="d-flex flex-row align-items-center">
-                            <img src="content/img/iso-sm.png" class="iso-sm card-price-img" title="">
-                            <div class="d-flex flex-column align-items-start card-price-price">
-                            <span class="price-off-title">Desde <span class="price-off">$2.049</span><span class="diff">-40%</span></span>
-                            <span class="currecy">US <span class="price">$1.229</span></span>
-                            </div>
-                        </div>
-                        
+                <div class="card-body d-flex flex-column align-items-center">
+                    <div class="d-flex flex-row align-items-center">
+                        <h5>Mi Viaje</h5>
                     </div>
+                    
                 </div>
-                <div class="card card-radius-40 card-borderless card-background-7">            
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <div class="d-flex flex-row align-items-center">
-                            <img src="content/img/iso-sm.png" class="iso-sm card-price-img" title="">
-                            <div class="d-flex flex-column align-items-start card-price-price">
-                            <span class="price-off-title">Desde <span class="price-off">$2.049</span><span class="diff">-40%</span></span>
-                            <span class="currecy">US <span class="price">$1.229</span></span>
-                            </div>
-                        </div>
-                        
+            </div>
+            <!--Resumen-->
+
+            <!--Detalle-->
+            <div class="card card-radius-40 card-borderless card-background-7">            
+                <div class="card-body d-flex flex-column align-items-center">
+                    <div class="d-flex flex-row align-items-center">
+                        <h5>Detalle</h5>
                     </div>
+                    
                 </div>
+            </div>
+            <!--Detalle-->
 
         </div>
+        <!--Right side-->
     </section>
 
      <hr class="spacer w-100 mx-auto">
     <!--Hero section-->
-
-    <!--secondary section-->
-    <section class="row secondary-section">
-
-      
-    </section>
-    <!--secondary section-->
-  
-
+    
     
     <section class="contact-support" >
     <div class="container-lg">

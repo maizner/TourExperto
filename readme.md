@@ -59,10 +59,12 @@ Front-Starter/
 │   │ 
 │   ├── fonts/                # Project fonts; Overpass font is included by default
 │   ├── images/               # Images folder; can have subdirectories
-│   ├── scripts/              # Scripts folder; can have subdirectories
+│   ├── js/                   # Scripts folder; can have subdirectories
 │   ├── scss/                 # Sass folder; more information below
 │   ├── views/                # Nunjucks templates; more information below
-│   ├── vendors/              # Complete 3rd party for the project
+│   ├── libs/                 # Complete 3rd party for the project     
+│   │   ├── js/               # 3rd parties javascript compiled in a bundle call libs.js in dist/js/libs
+│   │   └── scss/             # 3rd parties sass compiled in a bundle call libs.css in dist/css/libs
 │   └── data.json             # JSON data; used to populate Nunjucks templates
 │
 │
@@ -77,7 +79,7 @@ Static files can be placed in the root of the `src` folder and they will be copi
 ------
 ### <a name="sass"></a>Sass
 
-This boilerplate uses Sass as its CSS preprocessor. To keep our code clean and DRY (Don't Repeat Yourself), we split our Sass code into multiple files and folders. This boilerplate is based on the [Sass Guidelines architecture](https://sass-guidelin.es/#architecture "Sass Guidelines")
+This boilerplate uses Sass as its CSS preprocessor. To keep our code clean and DRY (Don't Repeat Yourself), we split our Sass code into multiple files and folders. 
 
 Our Sass folder structure looks like this:
 
@@ -87,7 +89,9 @@ scss/
 ├── base/
 │   │   
 │   ├── _base.scsss           # Commonly used standard styles
-│   └── _variables.scss       # Variables
+│   ├── _fonts.scss           # Font styles
+│   ├── _helpers.scss         # Helpers styles to use in all site
+│   └── _Typography.scss      # group of base typography stiles
 │  
 ├── pages/
 │   │   
@@ -96,31 +100,25 @@ scss/
 │        
 ├── sections/
 │   │   
-│	└── _jumbotron.scss       # EG: Section specific styles if needed
+│	  └── _jumbotron.scss       # EG: Section specific styles if needed
 │	
 ├── shared/
 │   │   
 │   ├── _modal.scss           # Components that shared with other views
-│   └── _loader.scss          # Navigation
-│   ├── _fonts.scss           # Font styles
-│   └── _helpers.scss         # Helper classes
-│   ├── _mask.scss            # Components that shared with other views
-│   └── _typography.scss      # group of styles for titles, subtitles, etc
+│   ├── _loader.scss          # Navigation
+│   └── _mask.scss            # Components that shared with other views
+│  
 │  
 ├── layout/  
 │   │    
 │   ├── _Header.scss          # Buttons
 │   └──_footer.scss           # Footer
 │  
-├── utils/     				  
+├── utilities/     				  
 │   │              
 │   ├── _functions.scss       # Sass funtions
-│   ├── _helpers.scss         # Helper classes
+│   ├── _variables.scss       # variables
 │   └── _mixins.scss          # Sass mixins
-│   
-├── vendor/
-│   │   
-│   └── _bootstrap.scss       # 3rd parties manipulated partially or totally by the team (being incorpored)
 │  
 ├── Components/ 
 │   │     
@@ -132,13 +130,7 @@ scss/
 │  
 └── mainPage.scss             # Main Sass files. The main compiling files of each page (we will compile a main css file for page)
 
-```
-> **Note**: You can modify this structure to your liking or your project needs. I highly suggest reading the [Sass Guidelines 7-1 pattern](https://sass-guidelin.es/#the-7-1-pattern "Sass Guidelines") if you want a more in-depth explanation.  
 
-### <a name="nunjucks"></a>Nunjucks
-With [Nunjucks](https://mozilla.github.io/nunjucks/ "Nunjucks") we can modularize our HTML files. In other words, we can break our HTML code in smaller pieces and reuse them freely throughout our project. Nunjucks also lets you use data to populate your markup.
-
-The key features of Nunjucks are **template inheritance**, **includes** (partials), **macros**, **logic - If / For / While** and **filters**. I will not be elaborating on these features since Nunjucks already has good [documentation available](https://mozilla.github.io/nunjucks/templating.html "Nunjucks templatings docs").
 
 Our Nunjucks folder structure looks like this: 
 
@@ -147,29 +139,23 @@ Views/
 │    
 ├── layout/
 │   │  
-│   ├── default.njk                         # Default template you can reuse (extend)
-│   │ 		
+│   └── default.njk                         # Default template you can reuse (extend)
+│        ├── _header.njk       
+│	       └── _footer.njk             
+│   		
 ├── Partials/						
-│	│   └── macros/             			#allows you to define reusable chunks of content. 
-│	│		│								It is similar to a function in a
-│	│   	│                       		programming language. Is what we call "components" in SASS,
-│	│		│								just is more appropiate call it for it´s tag in nunjucks.
-│	│       │
-│	│       │── marcro-formField.njk        # Eg Formfields (input, textarea, submit)
-│	│       └── macro-grid.njk              # Eg Card grid  
-│	│ 
-│	└── list.njk
+│	    └── pageOne/                          #Partial sections. Easy to change folder to shared in case another page will use it.
+│        ├── _section1.njk       
+│	       └── _....njk          			 
+├── macros/	
+│	       └── macro-formField.njk            #allows you to define reusable chunks of content. 
 │
-├── shared/  
-│	└── macros/             		
-│	    │										
-│	    │   	                       		
-│	    │── marcro-footer.njk                    
+├── shared/                    
 │       │  
-│       ├── meta.njk                      # Social media meta tags
-│       └── nav.njk                       # Navigation 
+│       ├── meta.njk                        # Social media meta tags
+│       └── loader.njk                      # Loader
 │   
-└── pageOne.njk                   # The result of all partials(shared, partials, layout). In charge of HTML page in ./dist folder
+└── pageOne.njk                             # The result of all partials(shared, partials, layout). In charge of HTML page in ./dist folder
 ```
 
 
