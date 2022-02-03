@@ -139,9 +139,7 @@ Views/
 │
 ├── layout/                 
 │   │   
-│   └── default.njk                      # Default template you can reuse (extend)
-│            ├── _header.njk         
-│            └── _footer.njk          
+│   └── default.njk                      # Default template you can reuse (extend)        
 │  
 ├── partials/                            #Partial sections. Easy to change folder to shared in case another page will use it.
 │   │   
