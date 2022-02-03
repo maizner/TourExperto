@@ -99,7 +99,7 @@ scss/
 │   └── _page2.scss           #...
 │        
 ├── pages/mainPage/
-│   │   
+│   │
 │	  └── _jumbotron.scss       # EG: Section specific styles of each page
 │	
 ├── shared/
