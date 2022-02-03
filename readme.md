@@ -137,7 +137,7 @@ Our Nunjucks folder structure looks like this:
 ```
 Views/                                                                       
 │
-├── layout/                 
+├── layout/                                                                                                                       
 │   │   
 │   └── default.njk                      # Default template you can reuse (extend)        
 │  
