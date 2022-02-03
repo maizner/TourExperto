@@ -146,11 +146,11 @@ Views/
 │   ├── _page1/...njk                    # Only Related global pages styles          
 │   └── _page2/...njk                    # Only Related global pages styles 
 │        
-├── macros/
+├── macros/                                                                                                                                     
 │   │   
 │	  └── _macro-formField.njk             #allows you to define reusable chunks of content.                                                      
 │	
-├── shared/
+├── shared/                                                                                                                                     
 │   │   
 │   ├── _meta.njk                        # Components that shared with other views                                                              
 │   ├── _loader.njk                      
