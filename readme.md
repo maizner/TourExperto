@@ -1,7 +1,7 @@
-Gulp Nunjucks sass boilerplate
+Gulp Nunjucks sass framework
 ======
 
-What this boilerplate does for you:
+What this framework does for you:
 
 * Lints and minifies JavaScript.
 * Compiles Sass with [`libSass`](https://github.com/sass/libsass "libsass"). 
@@ -79,9 +79,10 @@ Static files can be placed in the root of the `src` folder and they will be copi
 ------
 ### <a name="sass"></a>Sass
 
-This boilerplate uses Sass as its CSS preprocessor. To keep our code clean and DRY (Don't Repeat Yourself), we split our Sass code into multiple files and folders. 
 
-Our Sass folder structure looks like this:
+
+Sass folder structure looks like this:
+
 
 ```
 scss/
@@ -129,39 +130,41 @@ scss/
 │   └── _....scss 
 │  
 └── mainPage.scss             # Main Sass files. The main compiling files of each page (we will compile a main css file for page)
-
-
-
-Our Nunjucks folder structure looks like this: 
-
 ```
+
+
+Nunjucks folder structure looks like this: 
+
+
+``` 
 Views/                                                                       
 │
-├── layout/                                                                                                                       
+├── layout/                                                                                           
 │      │   
-│      └── default.njk                   # Default template you can reuse(extend)                                                            
+│      └── default.njk                   # Default template you can reuse(extend) 
 │  
-├── partials/                            #Partial sections. Easy to change folder to shared in case another page will use it.                   
-│       │                                                                                                                                       
-│       ├── _page1/...njk                    # Only Related global pages styles                                                                 
-│       └── _page2/...njk                    # Only Related global pages styles                                                                 
+├── partials/                            #Partial sections. Easy to change folder to shared.                 
+│       │                                                                                  
+│       ├── _page1/...njk                # Only Related global pages styles   │
+│       └── _page2/...njk                # Only Related global pages styles 
 │        
-├── macros/                                                                                                                                     
-│      │                                                                                                                                        
-│	     └── _macro-formField.njk             #allows you to define reusable chunks of content.                                                   
+├── macros/
+│	     └── _macro-formField.njk          #allows you to define reusable chunks of content.
 │	
-├── shared/                                                                                                                                     
+├── shared/                                     
 │      │   
-│      ├── _meta.njk                        # Components that shared with other views                                                           
-│      ├── _loader.njk                                                                                                                          
-│      └── _...njk                                                                                                                              
-│                                                                                                                                               
-│                                                                                                                                               
+│      ├── _meta.njk                     # Components that shared with other views
+│      ├── _loader.njk             
+│      └── _...njk                                                                                    
+│                                                                                                    
+│                                                                              
 └── pageOne.njk                          # The result of all partials(shared, partials, layout). In charge of HTML page in ./dist folder
 
+```
 
 
-<a name="dependencies"></a>Dependencias
+
+<a name="dependencies"></a>Dependencies
 ------  
 A list of all the dependencies used in this project and a brief explanation for what it is used.  
 ### NPM
@@ -187,5 +190,7 @@ A list of all the dependencies used in this project and a brief explanation for 
 * [`gulp-useref`](https://github.com/jonkemp/gulp-useref "gulp-useref"): Concatenates files between `build` blocks in your HTML.
 * [`jshint`](https://github.com/jshint/jshint "jshint"): Detects errors in your JavaScript code.
 * [`lazypipe`](https://github.com/OverZealous/lazypipe "lazypipe"): Allows you to create a lazily-initialized pipeline.
+
+
 
 

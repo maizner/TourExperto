@@ -21,7 +21,7 @@
 //Prefijo CSS 
 var autoprefixer = require('autoprefixer'),
 //Sirve y sincroniza los últimos cambios
-browserSync = require('browser-sync'),
+// browserSync = require('browser-sync'),
 //Un archivo temporal basada almacenamiento en caché de proxy ( en este caso para la task images)
 cache = require('gulp-cache'),
 //Min de css de salida
@@ -62,7 +62,7 @@ sourcemaps = require('gulp-sourcemaps');
 * --------------------------------------------------
 *  Variables and project paths
 * -------------------------------------------------- */
-var reload = browserSync.reload,
+// var reload = browserSync.reload,
 autoprefixList = ['last 2 versions', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'];
 
 var config = {
