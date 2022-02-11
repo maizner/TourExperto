@@ -14,14 +14,13 @@ Lo que este marco hace por usted:
 Empezando:
 ------  
 
-1. [Installation](#installation)
-  * [Requirements](#requirements)
-2. [Project structure](#structure)  
-3. [Configuration](#config)  
+1. [Instalación](#installation)
+  * [Requerimientos](#requirements)
+2. [Estructura del proyecto](#structure)  
+3. [Configuración](#config)  
   * [Sass](#sass)
   * [Nunjucks](#nunjucks)
-  * [Changing the folder structure](#changestructure)
-4. [Dependencies](#dependencies)  
+4. [Dependencias](#dependencies)  
 
 <a name="installation"></a> Instalación
 ------
