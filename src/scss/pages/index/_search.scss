@@ -1,0 +1,175 @@
+
+#home-search {
+    color: white;
+    width: 100%;
+    max-width: 950px;
+    min-height:84px;
+    border-radius: 40px;
+    background-color: $brand-color;
+    padding: 10px 30px;
+    transform: translateY(-50%);
+    margin: 0 auto -50px;
+   
+}
+
+#searchForm{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.turismo-nacional #home-search {
+    background-color: $brand-color;
+}
+
+#home-search-tabs {
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+#home-search-tabs button {
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 15px;
+    background: unset;
+    border: unset;
+    color: #7891e6;
+    transition: color .3s;
+    padding: 0;
+}
+
+#home-search-tabs button {
+    color: $brand-color;
+}
+
+#home-search-tabs button.active,
+#home-search-tabs button:hover {
+    color: white;
+}
+
+
+
+#home-search label.search-label {
+    font-family: $text-font-stack;
+    font-size: $t17;
+    font-weight: $bold-font-weight;
+    letter-spacing: -0.2px;
+}
+
+
+
+
+#home-search .calendar-icon{
+    font-size: 45px;
+}
+#home-search form button {
+    font-weight: 700;
+    color: white;
+    border: unset;
+    background: unset;
+    vertical-align: middle;
+    transition: color .3s;
+}
+
+#home-search form button:hover {
+    color: white;
+}
+
+#home-search button:hover{
+    span{
+        color:$Pink-brand-1;
+        background:white;
+    }
+}
+#home-search button span {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background-color: $Pink-brand-1;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+    transition: color .3s, background .3s;
+}
+#home-search .search-input{
+    max-width:270px ;
+    font-size: $t14;
+}
+
+.turismo-nacional #home-search button span {
+    background: white;
+    color: $brand-color;
+}
+
+#datepicker{
+    text-align: center;
+}
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+    #searchForm{
+        min-height: 44px;
+    }
+    #home-search form button {
+        font-size: 21px;
+      
+    }
+    #home-search #datepicker {
+        height: 45px;
+        max-width:190px;
+        min-width:120px;
+        font-size: $t14;
+      }
+
+}
+@include media(mb){
+    #home-search {
+        height: auto;
+        margin-bottom: 30px;
+        padding: 15px;
+        transform: unset;
+        border-radius: 10px;
+    }
+    #home-search form button {
+        font-size: 14px;
+      
+    }
+    #home-search-tabs button {
+        font-size: 14px;
+    }
+
+    #home-search label.search-label {
+        width: 100%;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    #home-search form input {
+        // margin-bottom: 15px;
+        height: 40px;
+        line-height: 40px;
+        font-size: $t16;
+        padding: 15px;
+
+        &.search-input{
+            max-width:300px;
+        }
+
+       
+    }
+
+   
+
+    #home-search button span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+}

@@ -1,0 +1,247 @@
+/* -----------------------------------------------------------------------------*/
+/* This file contains all styles related to the button component.*/
+/* -----------------------------------------------------------------------------*/
+.btn {
+	font-family: $text-font-stack;
+	font-weight: $bold-font-weight;
+	display:flex;
+    align-items: center;
+    justify-content: center;
+  	text-align: center;
+  	vertical-align: middle;
+  	user-select: none;
+  	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius:1px;
+	text-decoration:none;
+	@include transition(all,.2s,ease-in-out);
+	cursor:pointer;
+	
+	&:focus {
+
+		outline:none;
+	}
+
+	&:disabled,
+	&.disabled {
+		opacity:.5;
+		cursor: not-allowed
+
+	}
+	&.d-none {
+
+		display:none;
+	}
+	
+
+
+  	@include media(dk) {
+
+  	
+  	}
+
+  	@include media(mb) {
+
+  	
+  	}
+}
+
+/*button sizes*/
+
+
+.btn.md_btn {
+
+	font-size: $md-font-size-btn;
+	height:46px;
+	// min-width:200px;
+
+}
+
+.btn.sm_btn {
+
+	font-size: 14px;
+	height:35px;
+	min-width:72px;
+
+
+}
+
+.btn.xs_btn {
+
+	font-size: 10px;
+	height:20px;
+	min-width:72px;
+
+
+}
+
+//Buttons options
+
+//LINEAR
+
+.btn.linear.brand-primary{
+	border:2px solid $brand-color;
+	background-color: transparent;
+	color: $brand-color;
+	&:hover, &.active{
+		background-color: $brand-color;
+		color:white;
+	}
+}
+.btn.linear.brand-secondary{
+	
+	border:2px solid $Pink-brand-1;
+	background-color: transparent;
+	color: $Pink-brand-1;
+	&:hover, &.active{
+		background-color: $Pink-brand-1;
+		color:white;
+	}
+}
+
+
+.btn.linear.white{
+	border:2px solid white;
+	background-color: transparent;
+	color: white;
+	&:hover, &.active{
+		background-color: $Pink-brand-1;
+		color:white;
+		border-color:$Pink-brand-1;
+	}
+}
+
+//OUTLINE
+.btn.outline.brand-primary{
+	border:2px solid transparent;
+	background-color: transparent;
+	color: $brand-color;
+	&:hover, &.active{
+		border:2px solid $brand-color;
+		
+	}
+}
+.btn.outline.brand-secondary{
+	
+	border:2px solid transparent;
+	background-color: transparent;
+	color: $Pink-brand-1;
+	&:hover, &.active{
+		border:2px solid $Pink-brand-1;
+		
+	}
+}
+
+//FILL
+.btn.fill.brand-primary{
+	border-color:$brand-color;
+	background-color: $brand-color;
+	color: white;
+	&:hover, &.active{
+		background-color: darken($brand-color, 10%);
+		color:white;
+	}
+
+	&.btn-alpha{
+		background-color: rgba($brand-color, 0.16);
+		color: darken($brand-color, 45%) ;
+		border-color:transparent;
+		font-weight: 400;
+
+		&:hover,&:active,&.active{
+			background-color: rgba($brand-color, 0.22);
+		}
+
+	}
+	
+	
+}
+.btn.fill.blueish{
+	border-color:$blue-color;
+	background-color: $blue-color;
+	color: white;
+	&:hover, &.active{
+		background-color: darken($blue-color, 10%);
+		color:white;
+	}
+
+	&.btn-alpha{
+		background-color: rgba($blue-color, 0.16);
+		color: darken($blue-color, 45%) ;
+		border-color:transparent;
+		font-weight: 400;
+
+		&:hover,&:active,&.active{
+			background-color: rgba($blue-color, 0.22);
+		}
+
+	}
+	
+	
+}
+.btn.fill.brand-secondary{
+	border-color:$Pink-brand-1;
+	background-color: $Pink-brand-1;
+	color: white;
+	&:hover, &.active{
+		background-color: darken($Pink-brand-1, 10%);
+		color:white;
+	}
+
+	&.btn-alpha{
+		background-color: rgba($Pink-brand-1, 0.16);
+		color: darken($Pink-brand-1, 45%) ;
+		border-color:transparent;
+		font-weight: 400;
+
+		&:hover,&:active,&.active{
+			background-color: rgba($Pink-brand-1, 0.22);
+		}
+
+	}
+}
+.btn.fill.white{
+	border-color:transparent;
+	background-color: white;
+	color: $grey-text-default;
+	&:hover, &.active{
+		color: $brand-color;
+	}
+}
+
+.btn.btn-tag {
+	background-color: $grey-7;
+	color: $grey-2;
+	margin:3px;
+	&:hover, &.active, &:active{
+		background-color: $grey-6;
+	}
+}
+.btn.btn-grey {
+	background-color: lighten($grey-5,20%);
+	color: $grey-2;
+	margin:3px;
+	&:hover, &.active, &:active{
+		background-color: lighten($grey-5,10%);
+	}
+}
+
+
+.btn.radius-5{
+	border-radius:5px;
+}
+.btn.radius-10{
+	border-radius:10px;
+}
+
+.btn.radius-50{
+	border-radius:50px;
+
+}
+.btn.shaddow{
+	box-shadow: 0 1px 2px rgba(darken($brand-color, 45%), .4), 0 -1px 2px rgba(darken($brand-color, 45%), .04);
+	&:hover, &.active{
+		box-shadow: 0 1px 2px rgba(darken($brand-color, 45%), .8), 0 -1px 2px rgba(darken($brand-color, 45%) , .08);
+	}
+
+}

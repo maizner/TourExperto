@@ -1,0 +1,66 @@
+ <div class="card card-radius-40 aditional-data">            
+    <div class="card-body d-flex flex-column step">
+        <div class="d-flex flex-column">
+            <div class="step-block d-flex flex-row">
+                <div class="d-flex flex-row align-items-center step-number-container ">
+                    <span class="step-number">4</span>
+                    <svg class="svg-logo purple-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M77.9,82.7L77.9,82.7C90.4,72.1,96,55.1,90.6,38.9c-0.8-2.4-1.8-4.8-3.1-7c0,0,0,0,0,0c-4.4-8-11.3-14-19.5-17.8c0,0,0,0,0,0c-38.4-14.6-56.5,16-56.5,16s0,0,0,0C5.4,40,3.5,52.2,7.4,64.1c0.3,1,0.7,2,1.1,3l0,0c0-0.1,0-0.1-0.1-0.1c0,0,0,0,0,0c7.6,18.3,27.7,28.9,47.8,25.6c-0.4-0.2-1.5-0.6,0,0c1.1-0.2,1.1-0.2,0,0c19,7.9,36.6,6.9,36.6,6.9C86.5,94,81.7,88.4,77.9,82.7z M77.9,82.7L77.9,82.7C77.3,83.1,77.3,83.1,77.9,82.7C77.3,81.7,77.3,81.7,77.9,82.7z"></path></svg>
+                </div>
+                <div >
+                    <h5 class="step-title">Adicionales </h5>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column">
+            {% block nighstpretour %}
+                {# {% macro comboSingle(name,formGroupClass, searchclass, label, placeholder, style, o0,o1,o2,o3) %} #}
+                {{ formfield.comboSingle("nightspretour", "default","nosearch","Noches pre tour", "Noches pre tour","width:100%","1 Noche pre 75 usd.","2 Noche pre 140 usd.", "3 Noche post 210 usd.", "...") }}
+            {% endblock %}
+            
+            {% block nighstpostour %}
+                {# {% macro comboSingle(name,formGroupClass, searchclass, label, placeholder, style, o0,o1,o2,o3) %} #}
+                {{ formfield.comboSingle("nightspostour","default","nosearch","Noches post tour", "Noches post tour","width:100%","1 Noche post 75 usd.","2 Noche post 140 usd.", "3 Noche post 210 usd.", "...") }}
+            {% endblock %}
+
+            {% block arrival %}
+                {# {% macro comboSingle(name,formGroupClass, searchclass, label, placeholder, style, o0,o1,o2,o3) %} #}
+                {{ formfield.comboSingle("arrival", "default","nosearch","Transfer de llegada", "Transfer de llegada","width:100%","Trfs desde Aerop. 25 usd.","Trfs desde Aerop. 25 usd.", "Trfs desde Aerop. 25 usd.", "...") }}
+            {% endblock %}
+
+            {% block departure %}
+                {# {% macro comboSingle(name,formGroupClass, searchclass, label, placeholder, style, o0,o1,o2,o3) %} #}
+                {{ formfield.comboSingle("departure","default", "nosearch","Transfer de salida", "Transfer de salida","width:100%","Trfs a Aerop. 25 usd.","Trfs a Aerop. 25 usd.", "Trfs a Aerop. 25 usd.", "...") }}
+            {% endblock %}
+
+            
+            <div class="d-flex flex-row">
+                
+                <div class="form-group default">
+                    <div class="position-relative">
+                        <label for="paxday{{paxNumber}}">Suplemento de comidas</label>
+                        <span class="label-healp"></span>
+                    </div>
+                    <div class="d-flex flex-row two_elem_cont">
+                        <div class="form-group two_elem">
+                            <input type="text" class="form-control " name="foodSuplement" id="foodSuplement" placeholder="M.Pension 75 usd" value="" autocomplete="off">
+                        </div>
+                        <div class="form-group two_elem">
+                            <select class="form-control select2 two_elem nosearch" id="paxNumber" name="paxNumber" tabindex="-1" aria-hidden="true" style="width:100%" data-placeholder="Cant. de pasajeros" >
+                                <option></option>
+                                <option value="0" >1</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                                <option value="3">...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+</div>

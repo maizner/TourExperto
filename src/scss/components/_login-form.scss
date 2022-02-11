@@ -1,0 +1,40 @@
+/* -----------------------------------------------------------------------------*/
+/* related to components/login-form styles .*/
+/* -----------------------------------------------------------------------------*/
+
+form.form_content{
+
+    display:flex;
+    flex-direction:column;
+    background:white;
+
+    @include media(mb){	
+        padding:1.5em;
+        min-height:367px;
+    }
+
+    @include media(dk){	
+        padding:2.5em;
+        height:482px;
+    }
+ 
+    .form_title{
+        font-family: $text-font-stack;
+        color: $grey-text-default-color;
+        font-weight: $bold-font-weight;
+        font-size: $t22;
+        line-height:$t22;
+        margin-bottom:0;
+    }
+    .btn.brand_color{
+        margin-top:auto;
+    }
+} 
+
+
+@include media(dk){
+	form.form_content{
+    width:422px;
+    margin-left:auto;
+	}
+}

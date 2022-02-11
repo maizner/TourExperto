@@ -1,0 +1,15 @@
+.header-promo{
+    background-color: $grey-6;
+    min-height:40px;
+
+    p{
+        font-size: $t16;
+        color: $grey-text-default;
+    }
+
+    a{
+        font-size: $t16;
+        color: $brand-color;
+        margin-left:20px;
+    }
+}

@@ -1,0 +1,48 @@
+.paymode {
+    .slide {
+    
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    img{
+        display:block;
+        width:100%;
+        height:auto;
+    }
+    
+}
+
+
+/*MQ
+--------------------------------------*/
+
+
+@include media(dk){
+    .paymode .slide {
+        height: 174px;
+       
+    }
+    .paymode-container{
+        margin-bottom:50px;
+    }
+    .paymode-container.mb4{
+        margin-bottom:100px;
+    }
+
+   
+   
+}
+@include media(mb){
+    .paymode .slide {
+        height: auto;
+       
+    }
+
+    .paymode-container{
+        margin-bottom:30px;
+    }
+
+   
+   
+}

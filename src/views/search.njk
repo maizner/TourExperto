@@ -1,0 +1,87 @@
+{# import macros #}
+{# {% import "macros/macro-formField.njk" as campos %} #}
+
+{# extending #}
+{% extends "layout/_default.njk" %}
+{% set pgSearch = true %}
+{% block bodyClass %} pgsearch {% endblock %}
+
+{% block pagestyle %}
+    <link rel="stylesheet" type="text/css" href="content/css/search.css">
+{% endblock %} 
+
+{% block content %}
+ <div class="content" id="search">
+    <div class="container-lg">
+    
+        <div id="search-main">
+
+            <h1 class="d-flex align-items-center mb-2">
+                <img src="content/img/ico-search.png" alt="" class="me-2">
+               Tours
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                <div id="search-sidebar">
+                    <!--Filtros Aplicados-->
+                    {% block appliedFilters %}
+                        {% include "partials/search/_applied-filters.njk" %}
+                    {% endblock %}
+                    <!--Filtros Aplicados-->
+
+                    <!--Filtros sidebar-->
+                    {% block leftsideFilters %}
+                        {% include "partials/search/_leftside-filters.njk" %}
+                    {% endblock %}
+                    <!--Filtros sidebar-->
+
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-12 col-sm-12 col-12">
+
+                <div id="search-result" class="d-flex align-items-center">
+                    <h2 class="d-flex align-items-center"><i class="fas fa-list me-2"></i> 522 resultados totales</h2> 
+                </div>
+
+                <!--Filtros dropdown-->
+                {% block dropdownFilters %}
+                    {% include "partials/search/_dropdown-filters.njk" %}
+                {% endblock %}
+                <!--Filtros dropdown-->
+
+                <!--Resultado de búsqueda-->
+                <div id="search-list">
+
+                    <!--Listado de productos-->
+                    {% block productList %}
+                    {% include "partials/search/_product-list.njk" %}
+                    {% endblock %}
+                    <!--Listado de productos-->
+
+                    <div class="d-flex flex-column align-items-center mb-5 mt-5">
+                        <a href="#" class="btn sm_btn linear radius-50 brand-secondary load-more">Cargar más</a>
+                    </div>
+
+                </div>
+                <!--Resultado de búsqueda-->
+
+            </div>
+
+            <div class=" mb-5 ">
+                {% block contactSupport %}
+                    {% include "shared/_contact-support.njk" %}
+                {% endblock %} 
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block pagescript %}
+    <script type="text/javascript" src="content/js/search.js"></script>
+{% endblock %}
+  

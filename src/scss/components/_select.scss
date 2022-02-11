@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the select component.
+// -----------------------------------------------------------------------------
+
+select {
+	
+	height:50px;
+	padding: 8px 20px;
+	font-size: 13px;
+	color: $purple-brand-3;
+	border:1px solid lighten($grey-5, 15%);
+	position:relative;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	
+	&::-ms-expand {
+		display: none;
+	}
+}
+
+//IE hide arrow
+select::-ms-expand {
+    display: none;
+}
+
+
+

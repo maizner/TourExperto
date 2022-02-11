@@ -1,0 +1,248 @@
+/* -----------------------------------------------------------------------------*/
+/* This file contains CSS accordion components
+/* -----------------------------------------------------------------------------*/
+.accordion-button{
+    font-family: $text-font-stack;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0px;
+
+    &:after{
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 16 16' style='enable-background:new 0 0 16 16;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill-rule:evenodd;clip-rule:evenodd;fill:%23DB326E;%7d %3c/style%3e%3cpath class='st0' d='M1.6,4.6c0.2-0.2,0.5-0.2,0.7,0c0,0,0,0,0,0L8,10.3l5.6-5.6c0.2-0.2,0.5-0.2,0.7,0s0.2,0.5,0,0.7l-6,6 c-0.2,0.2-0.5,0.2-0.7,0c0,0,0,0,0,0l-6-6C1.5,5.2,1.5,4.8,1.6,4.6C1.6,4.6,1.6,4.6,1.6,4.6z'/%3e%3c/svg%3e ");    
+    }
+}
+.accordion-button.collapsed{
+    color: $grey-5;
+}
+.accordion-button:not(.collapsed){
+    background-color: #fff;
+    color: $brand-color;
+    // box-shadow: inset 0 -1px 0 rgba($brand-color , 0);
+    
+    &:after{
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 16 16' style='enable-background:new 0 0 16 16;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill-rule:evenodd;clip-rule:evenodd;fill:%23DB326E;%7d %3c/style%3e%3cpath class='st0' d='M1.6,4.6c0.2-0.2,0.5-0.2,0.7,0c0,0,0,0,0,0L8,10.3l5.6-5.6c0.2-0.2,0.5-0.2,0.7,0s0.2,0.5,0,0.7l-6,6 c-0.2,0.2-0.5,0.2-0.7,0c0,0,0,0,0,0l-6-6C1.5,5.2,1.5,4.8,1.6,4.6C1.6,4.6,1.6,4.6,1.6,4.6z'/%3e%3c/svg%3e ");    
+    }
+}
+//Para uso header en colapsables
+.accordion-flush {
+
+	.accordion-flush .accordion-item .accordion-button{
+		background: transparent !important;
+	}
+	
+	.accordion-button:focus{
+		z-index: 1 !important;
+    	border-color: #ffffff00 !important;
+		background: transparent ;
+        box-shadow: 0 0 0 0.25rem rgba(white,0);
+	}
+
+   
+  
+}
+//Itinerario acordion 
+.accordion-itinerary .accordion-button:not(.collapsed){
+    background: transparent !important;
+    color: $brand-color;
+}
+.accordion-itinerary .accordion-button{
+    font-family: $text-font-stack;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0px;
+
+    &:after{
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 16 16' style='enable-background:new 0 0 16 16;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill-rule:evenodd;clip-rule:evenodd;fill:%23DB326E;%7d %3c/style%3e%3cpath class='st0' d='M1.6,4.6c0.2-0.2,0.5-0.2,0.7,0c0,0,0,0,0,0L8,10.3l5.6-5.6c0.2-0.2,0.5-0.2,0.7,0s0.2,0.5,0,0.7l-6,6 c-0.2,0.2-0.5,0.2-0.7,0c0,0,0,0,0,0l-6-6C1.5,5.2,1.5,4.8,1.6,4.6C1.6,4.6,1.6,4.6,1.6,4.6z'/%3e%3c/svg%3e ") !important;    
+    }
+}
+.accordion-item .parent-header{
+    position: relative;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+//Cuadro tarifario acordion 
+.accordion.accordion-parent{
+   
+    
+        .accordion-button{
+            border:1px solid $grey-6 !important;
+            padding: 10px;
+            color:$grey-5;
+            font-weight: 700;
+
+           
+            
+            //plus svg
+            &:after{
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:%238E8E93;%7d %3c/style%3e%3cg%3e%3cpolygon class='st0' points='23,38 27,38 27,27 38,27 38,23 27,23 27,12 23,12 23,23 12,23 12,27 23,27 '/%3e%3cpath class='st0' d='M25,1C11.8,1,1,11.8,1,25s10.8,24,24,24s24-10.8,24-24S38.2,1,25,1z M25,5c11,0,20,9,20,20s-9,20-20,20 S5,36,5,25S14,5,25,5z'/%3e%3c/g%3e%3c/svg%3e");
+            }
+            .destaque{
+                position: relative;
+                display:block;
+                max-width: 92px;
+
+                .text{
+                    // font-family:  Arial, sans-serif;
+                    text-align: left;
+                    color: white;
+                    font-size: 10px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+                    position:absolute;
+                    left:-10px;
+                    top: -10px;
+                    z-index: 2;
+                    letter-spacing: .5px;
+                }
+
+                img{
+                    position:absolute;
+                    left: -20px;
+                    top: -22px;
+                    z-index: 1;
+                }
+
+                .val{
+                    font-size: 16px;
+                    font-weight: 900;
+                    
+                }
+            }
+
+            
+            .extra{
+                font-size: 13px;
+                font-weight: 400;
+                color:$grey-text-default;
+                text-align: right;
+                padding-right: 10px;
+            }
+            
+        }
+        .accordion-body {
+            padding: 0.2rem 1.25rem 1rem 1.25rem;
+
+            &.children-container{
+                padding: 0.2rem 1.25rem .5rem 1.25rem;
+            }
+          
+        }
+        .accordion-button:not(.collapsed){
+            border:1px solid lighten($Pink-brand-1, 20%) !important;
+            font-weight: 700;
+            color:lighten($Pink-brand-1, 10%);
+            background: linear-gradient(180deg,rgba(103,28,217,.1) 2%,rgba(253,29,191,.1) 80%,rgba(238,69,252,.1));
+            //minus svg
+            &:after{
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:%23db326e;%7d %3c/style%3e%3cg%3e%3cpath class='st0' d='M25,1C11.8,1,1,11.8,1,25s10.8,24,24,24s24-10.8,24-24S38.2,1,25,1z M25,5c11,0,20,9,20,20s-9,20-20,20 S5,36,5,25S14,5,25,5z'/%3e%3crect x='12' y='23' class='st0' width='26' height='4'/%3e%3c/g%3e%3c/svg%3e");
+            }
+        }
+        .accordion-item{
+            border:none;
+            margin-bottom:0px;
+            
+        }
+    
+    
+}
+
+//Colapsable interno de categorias en cuadro tarifario
+.categ-accordion.accordion-children {
+
+    .accordion-button{
+        padding: 5px 10px;
+
+        font-weight: 700;
+        color:$grey-5;
+        font-size: 13px;
+        
+        //plus svg
+        &:after{
+            background-image: none;
+            width:0px;
+        }
+    }
+
+    .accordion-button.collapsed{
+        background: $grey-7;
+        border:1px solid $grey-6 !important;
+    }
+    
+    .accordion-button:not(.collapsed){
+        border:1px solid $grey-6 !important;
+        background: rgba($brand-color, .15) !important;
+        font-weight: 700;
+        color:$grey-4;
+        font-size: 13px;
+        box-shadow: none;
+        //minus none
+        &:after{
+            background-image: none;
+            width:0px;
+        }
+    }
+    .accordion-item{
+        border:none;
+        margin-bottom:0px;
+        // border-bottom: 1px solid $grey-7 ;
+    }
+
+    .stars{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .accordion-body{
+        background: lighten($grey-7, 1%);
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius:3px ;
+        border: 1px solid #ebebeb;
+    }
+
+    .cat{
+        text-align: center;
+    }
+   
+  
+}
+
+
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+
+    //Cuadro tarifario acordion 
+    .accordion.accordion-parent{
+        .accordion-button .date{
+            text-align: center;
+            font-size: 18px;   
+            margin: 0px 10px;  
+            margin-right: 70px;
+           
+        }
+
+    }
+
+   
+}
+
+
+@include media(mb){
+    //Cuadro tarifario acordion 
+    .accordion.accordion-parent{
+
+        .accordion-button .date{
+            text-align: left;
+            font-size: 16px;   
+            margin: 0px 10px;  
+           
+        }
+        
+    }
+
+}

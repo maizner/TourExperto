@@ -1,0 +1,351 @@
+/* -----------------------------------------------------------------------------*/
+/* This file contains CSS helper classes.*/
+/* -----------------------------------------------------------------------------*/
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+
+.container-small  {
+	max-width: $narrow-max-width; /* 1 */
+	margin-left: auto; /* 2 */
+	margin-right: auto; /* 2 */
+	width: 100%; /* 1 */
+
+	@include media(dk) {
+		padding-left: 20px; /* 3 */
+		padding-right: 20px; /* 3 */
+
+	}
+	@include media(mb) {
+		padding-left: 10px; /* 3 */
+		padding-right: 10px; /* 3 */
+		
+	}
+ }
+ .container {
+	max-width: $max-width; /* 1 */
+	margin-left: auto; /* 2 */
+	margin-right: auto; /* 2 */
+	width: 100%; /* 1 */
+
+	@include media(dk) {
+		padding-left: 20px; /* 3 */
+		padding-right: 20px; /* 3 */
+
+	}
+	@include media(mb) {
+		padding-left: 10px; /* 3 */
+		padding-right: 10px; /* 3 */
+		
+	}
+ }
+ .container-large {
+	max-width: $max-width-2; /* 1 */
+	margin-left: auto; /* 2 */
+	margin-right: auto; /* 2 */
+	width: 100%; /* 1 */
+
+	@include media(dk) {
+		padding-left: 20px; /* 3 */
+		padding-right: 20px; /* 3 */
+
+	}
+	@include media(mb) {
+		padding-left: 10px; /* 3 */
+		padding-right: 10px; /* 3 */
+		
+	}
+ }
+
+
+
+
+
+ @include media(dk){
+	 //necesidad puntual en columna de precios search
+	.w-lg-152{width:152px;}
+	.lg-w100{width:100%;}
+	.lg-padding-y1{padding: $space-y1;}
+	.lg-padding-0{padding: 0;}
+
+	.lg-margin-y1{margin: $space-y1;}
+	.lg-margin-x1{margin: $space-x1;}
+	.lg-margin-0{margin: 0;}
+ 
+}
+@include media(mb){
+	.sm-w100{width:100%;}
+	.sm-padding-y1{padding: $space-y1;}
+	.sm-padding-x1{padding: $space-x1;}
+	.sm-padding-0{padding:0}
+
+	.sm-margin-y1{margin: $space-y1}
+	.sm-margin-x1{margin: $space-x1;}
+	.sm-margin-0{margin: 0;}
+
+}
+.w100{
+  	width:100%;
+}
+
+.height-100vh{
+  	height: 100vh;
+}
+
+
+.capitalize {
+
+	text-transform: capitalize;
+	
+}   
+.invisible {
+
+	visibility: hidden !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+@include media(mb){
+
+	.desktop_show{
+		display:none !important;
+	}
+}
+@include media(dk){
+
+	.mobile_show{
+		display:none !important;
+	}
+}
+
+//Button containers
+.button_container {
+	display:flex;
+	flex-wrap: wrap;    
+	align-items: center;
+	min-height: 50px;
+
+	&.d-none {
+		display:none;
+	}
+	@include media(mb) {
+		padding:3em 10px;
+        flex-direction:row;
+        
+	}
+	@include media(dk) {
+		padding:20px 10px;
+        flex-direction:row;
+        
+	}
+	
+	
+   
+}
+.tab_pane.third_content .button_container{	
+	@include media(mb) {
+        flex-direction:column;
+        padding-top:20px;
+    }
+}
+
+.button_container_left {
+
+    justify-content: flex-start;
+}
+.button_container_right{
+
+    justify-content: flex-end;
+}
+.button_container_center{
+    justify-content: center;
+}
+
+
+.buttons {
+    display:flex;
+    flex-direction:row;
+}
+
+
+.feature_row_bg_color {
+	background: lighten($grey-7, 2%);
+}
+
+
+//ellipsis para agregar tooltips a los tds
+.ellipsis{
+	max-width: 110px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display:block;
+	margin:0 auto;
+	font-size: inherit;
+}
+
+.bg-image-gradient-1{
+	background: -moz-linear-gradient(top,  #160404 0%, $brand-color 50%, #110c0c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #160404 0%,$brand-color 50%,#110c0c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #160404 0%,$brand-color 50%,#110c0c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#160404', endColorstr='#110c0c',GradientType=0 ); /* IE6-9 */
+}
+
+
+.hover-scale{
+	transition: all .8s;
+
+	&:hover{
+		transform: scale(1.05);
+	}
+}
+
+
+
+@include media(mb){
+	.image-container{
+		width: 100%;
+	}
+}
+
+
+
+/*Reset spacing styles*/
+.pr-0{
+	padding-right:0px !important;
+}
+.pl-0{
+	padding-left:0px !important;
+}
+.mr-0{
+	margin-right:0px !important;
+}
+.pl-0{
+	margin-left:0px !important;
+}
+
+.pt-0{
+	margin-top:0px !important;
+}
+@include media(dk){
+	.d-pr-0{
+		padding-right:0px !important;
+	}
+	.d-pl-0{
+		padding-left:0px !important;
+	}
+	.d-mr-0{
+		margin-right:0px !important;
+	}
+	.d-pl-0{
+		margin-left:0px !important;
+	}
+}
+
+@include media(mb){
+	.m-pr-0{
+		padding-right:0px !important;
+	}
+	.m-pl-0{
+		padding-left:0px !important;
+	}
+	.m-mr-0{
+		margin-right:0px !important;
+	}
+	.m-pl-0{
+		margin-left:0px !important;
+	}
+}
+
+.absolute{
+	position:absolute;
+}
+
+.divisor {
+    border-top: 1px solid $grey-7;
+}
+
+.ml-auto{
+	margin-left:auto;
+}
+.prod-tit{
+	font-size: $t13;
+	color: $grey-2;
+	font-weight: 700;
+}
+.prod-desc{
+	color: $brand-color;
+	font-size: $t12;
+	font-weight: 500;
+}
+.price-off{
+	color: $Pink-brand-1;
+}
+
+
+.link{
+	color: $Pink-brand-1 !important;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+//ISOLOGO STYLES
+
+//vector logo
+.svg-logo{
+	width:40px;
+	transition: all 0.3s ease;
+
+	&.purple-logo{
+		fill: darken( $brand-color, 10%);
+
+	}
+
+	&.pinkcolor-logo{
+		fill: darken( $Pink-brand-1, 10%);
+	
+	}
+}
+
+
+.iso-slider{
+	position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+	z-index: 2;
+}
+
+//image logo
+.iso-xs{
+	display:block;
+	width: 20px;
+}
+
+.iso-sm{
+	display:block;
+	width: 40px;
+}
+
+.iso-md{
+	display:block;
+	width: 100px;
+}

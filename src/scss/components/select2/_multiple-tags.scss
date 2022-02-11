@@ -1,0 +1,155 @@
+/* -----------------------------------------------------------------------------*/
+/* ./Multiple ( select de etiquetas) 
+/* -----------------------------------------------------------------------------*/
+
+
+.select2-container--default .select2-selection--multiple {
+	box-sizing: border-box;
+	cursor: pointer;
+	display: block;
+	// min-height: 50px;
+	user-select: none;
+    background-color: transparent;
+    border: 1px solid $brand-color;
+    border-radius: 4px;
+	cursor: text; 
+	width: auto;
+    min-width: auto;
+
+	&:after{
+		content: "";
+		position: absolute;
+		right: 13px;
+		top: 17px;
+		width: 8px;
+		height: 8px;
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 185.3 185.3' style='enable-background:new 0 0 185.3 185.3;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:%23DB326E;%7d %3c/style%3e%3cg%3e%3cg%3e%3cpath class='st0' d='M0,51.7c0-2.7,1-5.5,3.1-7.6c4.2-4.2,11-4.2,15.2,0l74.3,74.4L167,44.1c4.2-4.2,11-4.2,15.2,0 c4.2,4.2,4.2,11,0,15.2l-81.9,81.9c-4.2,4.2-11,4.2-15.2,0L3.1,59.3C1,57.2,0,54.5,0,51.7z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
+		clear: both;
+		background-repeat: no-repeat;
+	}
+
+	.select2-selection__rendered {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		list-style: none;
+		margin: 0;
+		padding: 7px;
+		width: 100%; 
+		height:auto;
+
+		&:focus{
+			height:auto;
+		}
+
+		input{
+			height:auto;
+			line-height: 1em;
+			color: $brand-color;
+		}
+		// .select2-search--inline {
+		// 	height: 5px;
+		// }
+		.select2-search__field {
+			font-size: $t13;
+			width: auto;
+    		min-width: auto;
+			
+		}
+
+		&:focus{
+			border:1px solid $grey-text-default;
+			
+		}
+		
+		
+	
+	}
+	.select2-selection__rendered li {
+		list-style: none; 
+	}
+	.select2-selection__placeholder {
+		color: lighten($grey-5, 15%);
+		margin-top: 5px;
+		float: left; 
+	}
+	.select2-selection__clear {
+		cursor: pointer;
+		float: right;
+		font-weight: bold;
+		margin-top: 5px;
+		margin-right: 10px; 
+	}
+	.select2-selection__choice {
+		display: flex;
+		align-items: center;
+		letter-spacing: .5px;
+		background-color: white;
+		border: 1px solid #aaa;
+		border-radius: 0px;
+		margin:0px 2px;
+		padding: 0px 5px;
+		font-size: 8px;
+		font-weight: normal;	
+	}
+	.select2-selection__choice__remove {
+		color:  $grey-text-default;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: bold;
+		margin-right: 3px; 
+		font-size:12px;
+	}
+	.select2-selection__choice__remove:hover {
+		color: black; 
+		
+	}
+}
+
+.select2-container--default[dir="rtl"] .select2-selection--multiple {
+	.select2-selection__choice,
+	.select2-selection__placeholder,
+	.select2-search--inline {
+		float: right;
+	}
+
+	.select2-selection__choice {
+		margin-left: 5px;
+		margin-right: auto; 
+	}
+	.select2-selection__choice__remove {
+		margin-left: 2px;
+		margin-right: auto; 
+	}
+}
+
+.select2-container--default {
+
+	&.select2-container--focus .select2-selection--multiple { 
+		border: 1px solid $brand-color ;
+		outline: 1px solid $brand-color  ;
+	}
+
+	&.select2-container--disabled .select2-selection--multiple {
+		border: solid $brand-color  1px;
+		outline: 0; 
+		cursor: not-allowed;
+		
+		.select2-selection__choice__remove {
+			display: none; 
+		}
+		&:hover {
+			outline: 0; 
+		}
+	}
+
+	&.select2-container--open.select2-container--above {
+		.select2-selection--single,
+		.select2-selection--multiple {
+			border-radius: 0;
+		}
+	}
+
+}

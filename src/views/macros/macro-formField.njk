@@ -1,0 +1,117 @@
+{#  FIN Elementos SIN validaciones. #}
+{% macro input(type, name, class,label,labelhelp,  placeholder, value) %}
+  <div class="form-group {{ class }}">
+        <div class="position-relative">
+            <label for="{{ name }}">{{ label }}</label>
+            <span class="label-help">{{ labelhelp }}</span>
+        </div>
+        <input type="{{ type }}" class="form-control" 
+        name="{{ name }}" id="{{ name }}" 
+        placeholder="{{ placeholder }}" 
+        value="{{ value }}"
+        autocomplete="off">
+    </div>
+{% endmacro %}
+{% macro comboSingle(name,formGroupClass, searchclass, label, placeholder, style, o0,o1,o2,o3) %}
+  <div class="form-group {{ formGroupClass}}">
+        <div class="position-relative">
+            <label for="{{ name }}">{{ label }}</label>
+        </div>
+        <select  class="form-control select2 {{searchclass}}" id="{{ name }}" name="{{ name }}" 
+        tabindex="-1" aria-hidden="true"  style="{{ style }}" data-placeholder="{{ placeholder }}" >
+            <option></option>
+            <option value="0" >{{ o0 }}</option>
+            <option value="1" >{{ o1 }}</option>
+            <option value="2" >{{ o2 }}</option>
+            <option value="3" >{{ o3 }}</option>
+        </select>
+    </div>
+{% endmacro %}
+
+{% macro comboMultiple(name, placeholder, o0, o1, o2, o3,o4, o5, o6, o7,o8, o9, o10) %}
+    <div class="form-group tags">
+        <select class="form-control select2 tag" multiple id="{{ name }}" name="{{ name }}"  
+        tabindex="-1" aria-hidden="true"  style="{{ style }}" data-placeholder="{{ placeholder }}">
+            <option></option>
+            <option value="0">{{ o0 }}</option>
+            <option value="1">{{ o1 }}</option>
+            <option value="2">{{ o2 }}</option>
+            <option value="3">{{ o3 }}</option>
+            <option value="0">{{ o4 }}</option>
+            <option value="1">{{ o5 }}</option>
+            <option value="2">{{ o6 }}</option>
+            <option value="3">{{ o7 }}</option>
+            <option value="0">{{ o8 }}</option>
+            <option value="1">{{ o9 }}</option>
+            <option value="2">{{ o10 }}</option>
+        </select>
+    </div>
+{% endmacro %}
+{#  FIN Elementos sin validaciones. #}
+
+{#  Elementos con validaciones. #}
+{% macro inputTextValid(type, name, class,label,labelhelp,  placeholder, value) %}
+  <div class="form-group {{ class }}">
+        <div class="position-relative">
+            <label for="{{ name }}">{{ label }}</label>
+            <span class="label-help">{{ labelhelp }}</span>
+        </div>
+        <input type="{{ type }}" class="form-control" 
+        name="{{ name }}" id="{{ name }}" 
+        placeholder="{{ placeholder }}" 
+        value="{{ value }}"
+        autocomplete="off"
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Debes completar este campo"
+        data-parsley-required >
+    </div>
+{% endmacro %}
+
+{% macro inputMailValid(type="email", name, class,label,  placeholder, value) %}
+  <div class="form-group {{ class }}">
+        <label for="{{ name }}">{{ label }}</label>
+        <input type="{{ type }}" class="form-control" 
+        name="{{ name }}" id="{{ name }}" 
+        placeholder="{{ placeholder }}" 
+        value="{{ value }}"
+        autocomplete="off"
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Debes completar este campo"
+        data-parsley-type-message= "Debes ingresar un mail válido."
+        data-parsley-required >
+    </div>
+{% endmacro %}
+
+{% macro comboSingleValid(name, class,label, placeholder, style, o0, o1, o2, o3, selected) %}
+  <div class="form-group {{ class }}">
+        <label for="{{ name }}">{{ label }}</label>
+        <select id="{{ name }}" name="{{ name }}" class="form-control select2" 
+        tabindex="-1" aria-hidden="true"  style="{{ style }}" data-placeholder="{{ placeholder }}"
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Seleccionar"
+        data-parsley-required>
+            <option></option>
+            <option value="0" {{ selected }}>{{ o0 }}</option>
+            <option value="1" >{{ o1 }}</option>
+            <option value="2" >{{ o2 }}</option>
+            <option value="3" >{{ o3 }}</option>
+        </select>
+    </div>
+{% endmacro %}
+
+{% macro comboMultipleValid(name, label, placeholder, o0, o1, o2, o3, selected) %}
+    <div class="form-group tags">
+        <label for="{{ name }}">{{ label }}</label>
+        <select class="form-control select2 tag" multiple id="{{ name }}" name="{{ name }}"  data-placeholder="{{ placeholder }}" 
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Seleccionar"
+        data-parsley-required>
+            <option></option>
+            <option value="0">{{ o0 }}</option>
+            <option value="1" {{ selected }}>{{ o1 }}</option>
+            <option value="2">{{ o2 }}</option>
+            <option value="3">{{ o3 }}</option>
+        </select>
+    </div>
+{% endmacro %}
+

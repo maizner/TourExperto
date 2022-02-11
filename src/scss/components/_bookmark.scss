@@ -1,0 +1,24 @@
+.fa-heart{
+    height:15px;
+    width:15px;
+    color:$grey-6;
+    &:hover,&:active,&.active{
+        color: $brand-color;
+    }
+}
+
+.bookmark{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50px;
+    height:40px;
+    width:40px;
+    margin-left:10px;
+    border:2px solid $grey-7;
+    cursor:pointer;
+
+    &:hover,&:active,&.active{
+    background-color: $grey-7;
+    }
+}

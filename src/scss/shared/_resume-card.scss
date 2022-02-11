@@ -1,0 +1,65 @@
+   
+.resume-trip .label-text, .resume-details .label-text{
+
+    display: inline-block;
+    font-family: $text-font-stack;
+    color: $grey-2;
+    font-size: $t13;
+    vertical-align: middle;
+    background-color: transparent;
+
+}
+.resume-trip .label-text{
+
+    font-weight: bold;
+}
+.resume-details .label-text{
+    font-weight: normal;
+    letter-spacing: 0px;
+    width:65%;
+}
+.resume-trip .value-text, 
+.resume-details .value-text{
+    display: inline-block;
+    font-family: $text-font-stack;
+    color: $grey-text-default;
+    font-weight: 500;
+    // letter-spacing: $letter-spacing-half;
+    vertical-align: middle;
+    background-color: transparent;
+}
+.resume-trip .card-item{
+
+    .value-text{
+        font-size: $t12;
+        color: $grey-5;
+    }
+
+    
+} 
+.resume-details .value-text{
+    font-size: $t13;
+    width:35%;
+}
+
+
+
+button[type=submit],input[type=submit]{
+    width: 150px;
+    letter-spacing: .5px;
+}
+
+.text-help{
+    display: flex;
+    font-size: $t12;
+    color: $Pink-brand-1;
+    font-style:italic  ;
+    margin-top:20px
+
+}
+
+@include media(dk){
+    button[type=submit],input[type=submit]{
+        width: 150px;
+    }
+}

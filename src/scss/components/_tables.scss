@@ -1,0 +1,273 @@
+/* -----------------------------------------------------------------------------*/
+/* This file contains all styles related to the Table component.*/
+/* -----------------------------------------------------------------------------*/
+
+//-------Reviews section
+.reviews-section .table{
+    border-radius: 15px;
+    overflow: hidden;
+    
+    .rating{
+        margin:0px;
+    }
+    .rating svg{
+        margin:0px 5px;
+        font-size:12px;
+    }
+    .svg-icon{
+        margin:0px 5px;
+        fill:$brand-color;
+    }
+    tr{
+        border:2px solid white;
+    }
+    td{
+        background-color: lighten($grey-7, 1%);
+        border:2px solid white;
+        min-height:60px;
+    }
+    th{
+        background-color: rgba($brand-color,.17);
+        border-color: transparent;
+        font-size: $t16;
+        height:60px;
+        vertical-align: middle;
+        
+    }
+    .table-item{
+        margin-left:15px;
+    }
+    .table-title,
+    .table-value,
+    .table-num{
+        color:darken($brand-color,40%);
+        
+    }
+    
+    .table-num,.table-title{
+        font-weight: bold;
+    }
+    .table-num{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+//-------Cuadro tarifario 
+.accordion-children .table{
+
+    
+    td .item-value{
+        display:flex;
+        flex-direction:row;
+    }
+    .table-item{
+        .table-item-wrapper{
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            
+        }
+    
+    }
+    
+
+  
+    td .first-item .item-value{
+        svg,
+        i{
+            fill: $brand-color;
+            height:25px;
+            color:$brand-color;
+
+            &.menor{
+                height:20px;
+            }
+        }
+        
+    }
+
+
+    .select2-container--default .select2-selection--single{
+        border-color: transparent;
+        background-color: transparent;
+        min-width: 130px;
+    }
+    
+}
+
+//-------Planned or Similar Hotels
+
+.similar-hotels{
+
+    th{
+        font-size: $t13;
+        color: $grey-5;
+        vertical-align: middle;
+    }
+    td{
+        font-size: $t14;
+        vertical-align: middle;
+    }
+    .col-1,.col-2{
+        width:15%;
+    }
+    .col-3{
+        width:75%;
+    }
+    .table>:not(:last-child)>:last-child>*{
+        border-bottom-color: $grey-6;
+    }
+}
+
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+    //-------Reviews section
+    .reviews-section .table{
+        .table-title,
+        .table-num{
+            font-size: $t16;
+        }
+        .table-value{
+            font-size: $t13;
+        }
+    }
+
+    //-------Cuadro tarifario 
+    .accordion-children .table{
+
+        
+        .habitaciones{
+            min-width:135px;
+        }
+        .table-title{
+            font-size: $t14;
+            font-weight: 500;
+            color: $grey-text-default;
+        }
+        
+        th .precio, td .precio{
+            min-width:80px;
+        }
+        td{
+            color: $grey-5; 
+        }
+    
+        
+        td .table-item{
+            min-width:100px;
+            height:35px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            &.first-item{
+                justify-content:flex-start;
+            }
+
+            .table-item-wrapper{
+                display:flex;
+                flex-direction:row;
+                align-items:center;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .item-value{
+                display:flex;
+                margin-left:auto;
+            }
+        }
+        td .item-title, 
+        td .form-check-label, 
+        td .price{
+            font-size: $t14;
+            font-weight: 400;
+            padding-right: 5px;
+        }
+        td .currecy{
+            font-size: $t12;
+        }
+
+        &>:not(:last-child)>:last-child>*{
+            border-bottom: 1px solid lighten($grey-6, 4%);
+        }
+        td:not(:last-child){
+            border-right: 1px solid lighten($grey-6, 4%) !important;
+        }
+    
+    }
+   
+}
+
+
+@include media(mb){
+
+    //-------Reviews section
+    .reviews-section .table{
+        .table-title,
+        .table-num{
+            font-size: $t14;
+        }
+        .table-value{
+            font-size: $t12;
+        }
+    }
+
+    //-------Cuadro tarifario 
+    .accordion-children .table{
+
+        tr{
+            display: block;
+            border-bottom: 1px solid $grey-5;
+          
+        }
+
+        td{
+            border-color: darken($grey-7, 3%);
+        }
+
+        th .precio, 
+        td .precio{
+            min-width:80px;
+        }
+
+        td{
+            display:flex;
+            flex-direction: column;
+            color: $grey-5; 
+        }
+    
+       
+        td .table-item{
+            min-width:100px;
+            height:35px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+
+            .table-title{
+                font-size: 13px;
+                font-weight: 700;
+                color: $grey-text-default;
+                padding-right:7px;
+            }
+        }
+
+        td .item-title, 
+        td .form-check-label, 
+        td .price{
+            font-size: 12px;
+            font-weight: 400;
+            padding-right: 5px;
+        }
+        td .currecy{
+            font-size: 13px;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__rendered{
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

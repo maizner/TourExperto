@@ -1,0 +1,101 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the layout/footer of the site/application.
+// -----------------------------------------------------------------------------
+/*FOOTER*/
+#footer {
+    color: $grey-5;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 80px 0;
+    background-color: $grey-7;
+}
+
+#footer-logo {
+    width: 195px;
+    margin-bottom: 18px;
+}
+
+#footer span,
+#footer li {
+    margin-bottom: 12px;
+    display: block;
+}
+
+#footer h5 {
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+
+
+#footer-social {
+    margin-bottom: 35px;
+}
+
+#footer a:hover {
+    color: darken($brand-color, 10%);
+}
+
+
+#footer-legal a {
+    margin-right: 10px;
+}
+
+.footer-copy a{
+    color: $brand-color;
+
+    &:hover{
+        color:darken( $brand-color, 10%);
+        text-decoration: underline;
+    }
+}
+
+/*MQ
+--------------------------------------*/
+
+@include media(mb){
+   
+    #footer {
+        font-size: 15px;
+
+        .col-lg-12, ul, #footer-social h5, h5, span{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            margin-bottom:10px;
+        }
+        #footer-social .social, #footer-legal{
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            justify-content:center;
+            margin-bottom:20px;
+            a{
+                margin-right:10px;
+            }
+        }
+    }
+
+    #footer span,
+    #footer li {
+        margin-bottom: 15px;
+    }
+
+    #footer h5 {
+        margin: 15px 0;
+    }
+
+    #footer-logo {
+        width: 150px;
+    }
+
+    #footer-social {
+        margin: 25px 0;
+    }
+
+    
+
+}

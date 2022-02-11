@@ -1,0 +1,27 @@
+
+#home-logos {
+    background-color: #f1f1f1;
+    padding: 60px 0;
+}
+
+#home-logos-container {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+#home-logos img {
+    max-width: 55px;
+    margin: 0 10px;
+}
+/*MQ
+--------------------------------------*/
+
+
+
+@include media(mb){
+    
+    #home-logos img {
+        margin: 15px;
+    }
+
+}

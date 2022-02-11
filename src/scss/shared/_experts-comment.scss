@@ -1,0 +1,148 @@
+//CTA SECTION 
+.expert-section{
+    background-color: $Pink-brand-1;
+    border-radius: 30px;
+    margin-bottom:0px;
+    position:relative;
+
+    .col-md-12{
+        display:flex;
+
+    }
+    img{
+        // position: absolute;
+        left: -10px;
+        top: -30px;
+        width:150px;
+    }
+    .text-container{
+        
+        font-family: $text-font-stack;
+        font-weight: 700;
+        color:white;
+        margin-bottom:0px;
+    }
+    h4{
+        font-family: $text-font-stack;
+        font-weight: 700;
+        color:white;
+        font-size:24px;
+    }
+    .button-container{
+
+        padding: 0px 30px 30px 30px;
+    }
+    .btn{
+        padding:10px;
+        display:flex;
+        flex-direction: column;
+        background: transparent;
+        color: white;
+        font-size: 10px;
+
+        svg,i,.svg-inline--fa{
+            font-size: 25px;
+            width:25px;
+            fill:white;
+            color:white;
+        }
+       
+        p{
+            margin-top:10px;
+            
+        }
+
+        &:hover{
+        
+
+            svg{
+                fill:lighten($brand-color, 25%);
+            }
+            p{
+                color: lighten($brand-color, 25%);
+            }
+        }
+        
+    
+    }
+}
+.expert-section.expert-1 h4{
+    color:white;
+    margin-bottom: 0px;
+}
+.expert-section.expert-2 p{
+    font-family: $text-font-stack;
+    font-weight: 500;
+    color:white;
+    font-size:16px;
+}
+.expert-section.expert-2 .cta-content{
+    padding: 20px 30px;
+}
+
+.expert-section.expert-2 .btn{
+    font-size:16px;
+    min-width:150px;
+
+    // &:hover{
+    //     background-color: white;
+    //     color: $Pink-brand-1;
+    //     border:2px solid white;
+    // }
+}
+//FIN CTA SECTION 
+
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+   
+    .expert-section .col-md-12{
+        min-height: 93px;
+        height: 100%;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    .expert-section.expert-1 h4{
+        padding-left:150px;
+        display: flex;
+        align-items: center;
+    }
+    .expert-section.expert-2 .text-container{
+        margin-left:20px;
+       
+    }
+
+}
+
+
+@include media(mb){
+   
+    .expert-section .col-md-12{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 10px;
+        
+    }
+    .expert-section .btn{
+        border-radius: 10px;
+        
+    }
+    .expert-section .btn:first-child{
+        margin-right: 5px;
+    }
+    .expert-section .btn:last-child{
+        margin-left: 5px;
+    }
+  
+    .expert-1{
+        margin-left:1px;
+        margin-right:1px;
+        .expert-1{
+            text-align: center;
+            padding-top: 20px;
+        }
+    }
+
+}

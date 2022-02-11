@@ -1,0 +1,157 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $Pink-brand-1;
+  text-decoration: none;
+  
+  @include on-event {
+    color: $Pink-brand-1;
+    text-decoration: underline;
+  }
+}
+/*GENERAL
+--------------------------------------*/
+body {
+  font-family: 'Raleway', sans-serif;
+  font: normal normal 24px 'Raleway', sans-serif;
+  color: white;
+}
+
+body.pace-running:before {
+  opacity: 1
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: currentColor;
+}
+
+a {
+  transition: background .3s, color .3s;
+}
+
+p {
+  margin: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main-container {
+
+  transition: opacity 1.5s;
+}
+
+.parallax-mirror {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.pace-done #main-container {
+  opacity: 1 !important
+}
+
+.pace-done .parallax-mirror {
+  opacity: 1
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+.inner-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+
+  display: flex;
+  padding: 0 15px;
+}
+
+.inner-wrapper.col-wrapper {
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: currentColor;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: currentColor;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: currentColor;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: currentColor;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: .3
+}
+
+:focus::-moz-placeholder {
+  opacity: .3
+}
+
+:focus:-ms-input-placeholder {
+  opacity: .3
+}
+
+:focus:-moz-placeholder {
+  opacity: .3
+}

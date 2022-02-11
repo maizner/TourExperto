@@ -1,0 +1,22 @@
+{% macro messageWithLinks(id,positionClass,message1, link1Name, link1URL, link2Name, link2URL,message2) %}
+<div class="position-fixed {{ positionClass}} end-0 p-3" style="z-index: 11">
+  <div id="{{ id }}" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    {#<div class="toast-header">
+      <img src="content/img/iso-xs.png" class="rounded me-2" alt="Debes ingresar antes de continuar">
+       <strong class="me-auto">Título</strong> 
+      <small>0 mins ago</small>
+    </div>#}
+    <div class="toast-body d-flex flex-row">
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+
+        <div>
+            <img src="content/img/iso-xs.png" class="rounded me-2" alt="Debes ingresar antes de continuar">
+        </div>
+        <div>
+            {{ message1 }} <br>
+            <a class="link" href="{{ link1URL }}" title="{{ link1Name }}">{{ link1Name }}</a> o <a class="link" href="{{ link2URL }}" title="{{ link2Name }}">{{ link2Name }}</a> {{ message2}} 
+        </div>
+    </div>
+  </div>
+</div>
+{% endmacro %}

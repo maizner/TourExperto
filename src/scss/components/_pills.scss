@@ -1,0 +1,160 @@
+/* -----------------------------------------------------------------------------*/
+/* Pills  styles  in components/pills.*/
+/* -----------------------------------------------------------------------------*/
+
+.nav_pills{
+	.first_pill{
+		.value{
+			color:$tab-a-color;
+		}
+	}
+	.second_pill{
+		.value{
+			color:$tab-b-color;
+		}
+	}
+	
+}
+.patients .third_pill{
+	.value{
+		color:$tab-c-color;
+	}
+}
+.doctors .third_pill{
+	.value{
+		color:$tab-d-color;
+	}
+}
+
+.nav_pills{
+	background-color: $light-grey-color;
+	width:100%;
+
+	.nav_item{
+		display:flex;
+		flex-direction:column;
+		width:33.33%;
+		
+
+		@include media(mb){
+
+			padding:5px;
+
+		}
+		
+		@include media(dk){
+
+			margin-bottom:15px;
+			
+			&:nth-child(2){
+				padding-left:15px;
+				padding-right:15px;
+			}
+
+		}
+	}
+	.nav_link {
+		height:90px;
+		background:white;
+		border:1px solid darken($light-grey-color, 2%);
+		border-radius:2px;
+
+	}
+	.nav_link.active,
+	.nav_link:hover,
+    .show > .nav_link {
+		text-decoration:none;
+	  	box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.1);
+	  	@include transition(all,.2s,ease-in-out);
+
+    }
+}
+
+// Separar como pills button content
+.nav_link_content{
+	display:flex;
+	height:100%;
+	
+
+	@include media(mb){
+		flex-direction:column;
+		padding:8px;
+
+	}
+
+	@include media(dk){
+		flex-direction:row;
+		padding:10px 30px;
+	}
+}
+
+.nav_link_info,
+.nav_link_chart{
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+}
+.nav_link_info{
+		
+	.value{
+		display:block;
+		font-family: $text-font-stack;
+		font-weight: $normal-font-weight;
+		font-size: $t28;
+		line-height: 43px;
+	}
+	.text{
+		display:block;
+		font-family: $text-font-stack;
+		font-weight: $normal-font-weight;
+		letter-spacing:$letter-spacing-half;
+		color:$light-grey-color-2;
+	}
+		
+}
+
+@include media(mb){
+	.nav_link_chart{
+		order:0;
+		height:90%;
+	}
+
+	.nav_link_info .value {
+		display:none;
+
+	}
+	.nav_link_info{
+		order:1;
+		justify-content:flex-end;
+	}
+	.text{
+		font-size: $t11;
+		text-align:center;
+	}
+}
+
+@include media(dk){
+	.nav_link_chart{
+		margin-left:auto;
+	}
+	.text{
+		font-size: $t14;
+	}
+	
+	
+}	
+
+
+//  tabs
+//
+// Hide panes to start, show them when `.active`
+  
+.tab_content {
+
+	> .tab_pane {
+		display: none;
+	}
+	> .active {
+		display: block;
+	}
+}

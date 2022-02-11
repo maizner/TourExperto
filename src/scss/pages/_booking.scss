@@ -1,0 +1,137 @@
+.pgbooking {
+
+    .btn.fill.brand-primary.btn-alpha.step-btn{
+        min-width: 180px;
+        font-weight: bold;
+    }
+
+    .bullets{
+        .bullet-icon{
+            width:18px;
+            fill: $active-green;
+        }
+        .bullet-item{
+            margin:0px 10px;
+            font-weight: bold;
+        }
+    }
+   
+    .form-group .select2-container--default .select2-selection--single{
+        border-color: $grey-5;
+        color: $grey-5;
+       
+    }
+    .form-group.error .select2-container--default .select2-selection--single{
+        border-color: $error-color;
+        
+    }
+    .birthday-group .form-group{
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+
+    //PASAJEROS 
+    .pax-container{
+
+        .pax-title{
+            font-size: $t16;
+            color: $brand-color;
+            font-weight: bold;
+        }
+    }
+
+   
+
+    .expert-section.expert-2 .cta-content{
+        padding: 10px 30px;
+    }
+}
+
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+    .program-data .step-block{
+        
+
+        &:first-child{
+            width:50%;
+            align-items:flex-start;
+            border-right:1px solid lighten($grey-6, 10%);
+        }
+
+        &:last-child{
+            width:38%;
+            margin: 0 auto;
+
+            .step-text{
+                font-size: 16px;
+            }
+        }
+    }
+    
+
+    .birthday .default.form-group, 
+    .default .select2-container--default{
+        min-width:50px !important
+    }
+    .birthday-group .form-group .select2-container--default .select2-selection--single{
+        min-width:90px;
+        width:100%;
+    }
+    .form-group.default .select2{
+         min-width:325px;
+         width:100%;
+    }
+    .birthday-group{
+        max-width: 325px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+ 
+    .bullets{
+
+        .bullet-item{
+            font-size: $t16;
+        }
+    }
+   
+}
+
+
+@include media(mb){
+    .program-data .step-block{
+        &:first-child{
+            align-items:center;
+        }
+    }
+    .birthday-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .birthday-group .form-group.default .select2{
+        min-width:60px;
+        max-width:70px;
+        width:100%;
+    }
+    .form-group.default .select2{
+        min-width:100%;
+        width:100%;
+    }
+    .bullets{
+
+        .bullet-item{
+            font-size: $t14;
+        }
+    }
+   
+
+}

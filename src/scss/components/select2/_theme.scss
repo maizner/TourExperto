@@ -1,0 +1,85 @@
+/* -----------------------------------------------------------------------------*/
+/*components/select2/theme.scss .TELEMED 2 SELECT 2 THEME
+/* -----------------------------------------------------------------------------*/
+
+//TAGS
+.tags, 
+.tags .select2-container--default {
+
+	//Se incluye declaración IMPORTANT para pisar estilos en línea que se agregan con el plugin 
+	//TODO: Buscar una resolución.
+	@include media(mb) {
+		width: 100% !important;
+		.tags .select2-search.select2-search--inline, 
+			.tags .select2-search__field {
+			width: 100% !important;
+		}
+	}
+	@include media(dk) {
+		width: 300px;
+	}
+
+}
+.tags .select2-container--default {
+	.select2-selection__choice {
+		display:flex;
+		align-items:center;
+		border-radius:50px;
+		color:$grey-5;
+		font-size: 9px;
+	}
+	.select2-selection__rendered{
+		min-height:50px;
+
+	}
+}
+
+//solo el dropdown
+.select2-dropdown {
+	
+	.select2-results__option {
+		
+		display: flex;
+		align-items: center;
+		border-top:1px solid lighten($brand-color, 30%);
+		background-color:white;
+		font-size: 13px;
+		font-weight: $medium-font-weight;
+		padding: 15px 20px;
+		height:40px;
+		color: darken($brand-color, 30%); 
+
+		&.select2-results__option--highlighted[aria-selected] {
+			background-color:rgba($brand-color,0.1);
+			// color: white; 
+		}
+		
+	 
+		[aria-selected=true] {
+			background-color: $grey-3;
+			color: $grey-5;
+		}
+	}
+	
+}
+.no-search.select2-dropdown .select2-results__option:first-of-type{
+	border-top:1px solid transparent;
+}
+//Formato combo select 
+.default .select2-container--default {
+	@include media(dk) {
+		max-width: 325px;
+    	min-width: 170px;
+    
+	}
+	
+    width: 100%;
+}
+.small .select2-container--default {
+	@include media(dk) {
+		max-width: 300px;
+    	min-width: 170px;
+    
+	}
+	width: 100%;
+}

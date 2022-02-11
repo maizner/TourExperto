@@ -1,0 +1,26 @@
+/* -----------------------------------------------------------------------------*/
+/* This file contains all styles related to the slick slide component.*/
+/* -----------------------------------------------------------------------------*/
+
+.slick-slide{
+
+	&:before{
+		background: #160404; /* Old browsers */
+		background: -moz-linear-gradient(top,  #160404 0%, #2785d1 50%, #110c0c 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #160404 0%,#2785d1 50%,#110c0c 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #160404 0%,#2785d1 50%,#110c0c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#160404', endColorstr='#110c0c',GradientType=0 ); /* IE6-9 */
+    	pointer-events: none;
+		z-index:-1;
+
+		
+	}
+	&:hover{
+		&:before{
+			background:transparent;
+		}
+		
+	}
+	
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {# social meta block #}
+    {% block meta %}
+        {% include "shared/_meta.njk" %}
+    {% endblock %} 
+    <title>Tour Experto</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="content/css/libs/libs.css">
+
+   <!--Estilos de página-->
+    {% block pagestyle %}{% endblock %} 
+
+</head>
+<body class="{%block bodyClass %}{% endblock %}">
+
+
+        {# main content block #}    
+
+        <div id="main-container" style="opacity: 0;">
+        {% block header %}
+            {% include "layout/partials/header/_header.njk" %}
+        {% endblock %} 
+        
+        {% block content %}{% endblock %}
+
+        {% block footer %}
+        {% include "layout/partials/footer/_footer.njk" %}
+        {% endblock %} 
+        </div>
+    
+    <script type="text/javascript" src="content/js/libs/libs.js"></script>
+    <!--BUNDLES de layout-->
+
+    <!--page sctipts-->
+    {% block pagescript %}{% endblock %}
+    
+
+</body>
+</html>

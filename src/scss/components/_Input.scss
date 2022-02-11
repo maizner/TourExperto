@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the input component.
+// -----------------------------------------------------------------------------
+
+
+//generyc form
+input:-internal-autofill-selected,
+textarea:-internal-autofill-selected{
+	background-color: transparent !important;
+    
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+input[type=number] { -moz-appearance:textfield; }
+
+form .form-control::-webkit-input-placeholder { 
+    color: #cccccc;
+    font-size: $t15;
+}
+form .form-control::-moz-placeholder {
+    color: #cccccc;
+    font-size: $t15;
+}
+form .form-control:-ms-input-placeholder {
+    color: #cccccc;
+    font-size: $t15;
+}
+form .form-control:placeholder {
+    color: #cccccc;
+    font-size: $t15;
+}
+  
+//Default input styles
+input,form .form-control {
+    font-family: $text-font-stack;
+    color: $grey-5;
+    font-size: $t14;
+    font-weight: $light-font-weight;
+    max-width:325px;
+	min-width: 60px;
+	width:100%;
+    height: 40px;
+    line-height: 40px;
+    // border-radius: 10px;
+    border:1px solid $grey-5;
+    background-color: white;
+    padding: 0 15px;    
+    letter-spacing: -0.2px;
+}
+
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem rgba($brand-color , .25);
+}
+
+.label-help{
+    display:block;
+    font-size: 12px;
+    color: $grey-6;
+    margin-top:-5px;
+}
+
+@include media(dk) {
+
+   
+
+}
+@include media(mb) {
+
+    
+}

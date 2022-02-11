@@ -1,0 +1,189 @@
+{# extending #}
+{% extends "layout/_default.njk" %}
+{% set pgProduct = true %}
+{% block bodyClass %} pgproduct {% endblock %}
+{% import "macros/macro-experts.njk" as expert %} 
+
+{% block pagestyle %}
+    <link rel="stylesheet" type="text/css" href="content/css/product.css">
+{% endblock %} 
+
+{% block content %}
+<div class="content product container-lg" id="product">
+    <!--Hero section-->
+    <section class="row hero-section">
+
+        <div class="col-lg-8 col-md-12 left-col">
+            <div class="d-flex flex-column">
+
+                <!--SLIDER-->
+                {% block slider %}
+                    {% include "partials/product/hero/_slider.njk" %}
+                {% endblock %} 
+                <!--SLIDER-->
+
+                <!--CTA-->
+                {% block cta %}
+                    {% include "partials/product/hero/_cta.njk" %}
+                {% endblock %} 
+                <!--CTA-->
+
+                <!--MAP-->
+                {% block map %}
+                    {% include "partials/product/hero/_map.njk" %}
+                {% endblock %} 
+                <!--MAP-->
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 right-col">
+            <h1>Europa Soñada</h1>
+             <div class="d-flex flex-row position-relative">
+                <div class="d-flex flex-column align-items-center">
+                    <!--PRODUCT DESCRIPTION-->
+                    {% block prodDesc %}
+                        {% include "partials/product/hero/_prod-description.njk" %}
+                    {% endblock %} 
+                    <!--PRODUCT DESCRIPTION-->
+
+                    <!--TAG CLOUDS-->
+                    {% block tagCloud %}
+                        {% include "partials/product/hero/_tag-clouds.njk" %}
+                    {% endblock %} 
+                    <!--TAG CLOUDS-->
+                    
+                    <!--PRICE CARD-->
+                    {% block cardPrice %}
+                        {% include "partials/product/hero/_card-price.njk" %}
+                    {% endblock %} 
+                    <!--END PRICE CARD-->
+                </div>
+                <img class="position-absolute" src="content/img/product/prod-destaque.png" title="Con aereo incluido" style="right:0;top:0;">
+            </div>
+        </div>
+    </section>
+
+     <hr class="spacer w-100 mx-auto">
+    <!--Hero section-->
+
+    <!--secondary section-->
+    <section class="row secondary-section">
+
+        <div class="col-lg-8 col-md-12">
+
+            <!--Itinerario section-->
+            {% block itinerary %}
+                {% include "partials/product/secondary/_itinerary.njk" %}
+            {% endblock %} 
+            <!--Itinerario section-->
+            
+            <!--cta 1 section-->
+            {% block expertBlock1 %}
+                {% include "shared/_expert-block1.njk" %}
+            {% endblock %} 
+            <!--cta 1 section-->
+
+            <hr class="spacer w-100 mx-auto">
+
+            <!--Include Items-->
+            {% block includeItems %}
+                {% include "partials/product/secondary/_include-items.njk" %}
+            {% endblock %} 
+            <!--Include Items-->
+
+
+            <!--Reviews section-->
+           {% block reviews %}
+                {% include "partials/product/secondary/_reviews.njk" %}
+            {% endblock %} 
+            <!--Reviews section-->
+
+            <hr class="spacer w-100 mx-auto">
+
+            <!--suggestions section-->
+            {% block suggestions %}
+                {% include "partials/product/secondary/_suggestions.njk" %}
+            {% endblock %} 
+            <!--suggestions section-->
+
+            <hr class="spacer w-100 mx-auto">
+
+             <!--available-dates section-->
+            {% block availableDates %}
+                {% include "partials/product/secondary/_available-dates.njk" %}
+            {% endblock %}
+            <!--available-dates section-->
+           
+            {# <hr class="spacer w-100 mx-auto"> #}
+
+            <!--Expert2 2 section-->
+            {% block expert2Message %}
+
+                {# {% macro expert2(title, message, cta classes, cta text ) %} #}
+                {{ expert.expert2(
+                "Personaliza tu viaje!", 
+                "Estas buscando una fecha de salida especial o una estadia antes o despues de iniciar el tour? Quieres agregar un servicio adicional? ... o ya tenes tu ticket aereo? Nuestros expertos estan para ayudarte y adaptar nuestro tour a tu medida.",
+                "btn md_btn fill radius-5 brand-primary align-self-end",
+                "Personalizar" ) }}
+
+            {% endblock %}
+            <!--Expert 2 section-->
+
+            <!--Planned or Similar Hotels-->
+            {% block similarHotels %}
+                {% include "partials/product/secondary/_similar-hotels.njk" %}
+            {% endblock %}
+            <!--Planned or Similar Hotels-->
+
+            <!--observations section-->
+            {% block observations %}
+                {% include "partials/product/secondary/_observations.njk" %}
+            {% endblock %}
+            <!--observations section-->
+
+            <hr class="spacer w-100 mx-auto">
+
+            
+            <!--FAQ section-->
+            {% block FAQ %}
+                {% include "partials/product/secondary/_faq.njk" %}
+            {% endblock %}
+            <!--FAQ section-->
+
+            <hr class="spacer w-100 mx-auto">
+
+            <!--Important info section-->
+            {% block importantInfo %}
+                {% include "partials/product/secondary/_important-info.njk" %}
+            {% endblock %}
+            <!--Important info section-->
+
+        </div>
+
+        {% block tags %}
+            {% include "partials/product/_tags.njk" %}
+        {% endblock %}
+    </section>
+    <!--secondary section-->
+
+    <!--related-products slider section-->
+    {% block relatedProdSlider %}
+        {% include "partials/product/secondary/_related-slider.njk" %}
+    {% endblock %}
+    <!--related-products-->
+
+    <!--Contact support-->
+    {% block contactSupport %}
+    {% include "shared/_contact-support.njk" %}
+    {% endblock %} 
+   
+
+</div>
+{% endblock %}
+
+{% block pagescript %}
+    <script type="text/javascript" src="content/js/product.js"></script>
+{% endblock %}
+
+
+

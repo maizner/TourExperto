@@ -1,0 +1,68 @@
+// -----------------------------------------------------------------------------
+// NUESTRAS VENTAJAS 
+// -----------------------------------------------------------------------------
+#home-cards {
+   
+    padding: 20px 0;
+}
+
+#home-cards-items {
+    max-width: 1180px;
+}
+
+#home-cards .item {
+    
+    background-color: white;
+    padding: 13px;
+    width: 100%;
+}
+
+#home-cards span {
+    color: $grey-text-default;
+    font-weight: $medium-font-weight;
+}
+
+#home-cards span:first-child {
+    min-width: 85px;
+    height: 85px;
+    border-radius: 10px;
+    background-color: #f8f8f9;
+    text-align: center;
+    line-height: 85px;
+    display: block;
+    margin-right: 20px;
+}
+
+#home-cards img,
+#home-cards svg {
+    max-width: 55px;
+}
+
+
+
+
+/*MQ
+--------------------------------------*/
+
+@include media(dk){
+    #home-cards .item {
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.17);
+      
+    }
+    #home-cards span {
+        font-size: $t14;
+    }
+}
+@include media(mb){
+    
+    #home-cards .item {
+   
+        border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+      
+    }
+    #home-cards span {
+        font-size: $t17;
+    }
+
+}

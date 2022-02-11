@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the layout.
+// -----------------------------------------------------------------------------
+.layout{
+	background-color: $grey-7;
+	width:100%;
+	height:100%;
+	
+	@include media(dk){
+		display:flex;
+		flex-direction: row;
+		align-items:flex-start;
+	}
+}
+
+.social .social-item {
+    width: 28px;
+    height: 28px;
+    background-color: $brand-color;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 2px;
+    color: white;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    padding: 5px;
+
+    &:hover {
+        background: darken($brand-color, 10%);
+        color: white;
+    }
+    svg{
+        font-size:1.4em;
+        color: white;
+    }
+}
+
+@import 'header',
+		 'footer';
+  

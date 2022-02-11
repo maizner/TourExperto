@@ -1,0 +1,63 @@
+.home-agents {
+    margin-bottom: 65px;
+}
+
+.home-agents .slide {
+    margin: 0 23px;
+}
+
+.home-agents a {
+    color: #000;
+    font-size: 10px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    width:180px;
+}
+
+.home-agents img {
+    max-height: 50px;
+    height:100%;
+}
+
+
+.home-agents-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.agent-logo-items .slick-arrow {
+    border: unset;
+    background: unset;
+    color: $brand-color;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.agent-logo-items .slick-prev {
+    left: -35px;
+}
+
+.agent-logo-items .slick-next {
+    right: -35px;
+}
+
+/*MQ
+--------------------------------------*/
+
+@include media(mb){
+    .agent-logo-items {
+        padding: 0 50px;
+    }
+
+    .agent-logo-items .slick-next {
+        right: 0;
+    }
+
+    .agent-logo-items .slick-prev {
+        left: 0;
+    }
+}

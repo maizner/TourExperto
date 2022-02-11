@@ -1,0 +1,517 @@
+/*SEARCH
+--------------------------------------*/
+
+
+// @import 
+//     'components/breadcrumb';
+// }
+
+//HERO SECTION
+.hero-section{
+    h1 {
+        font-family: $text-font-stack;
+        color: $grey-text-default;
+        font-size: $t44;
+        line-height: 1.1;
+        font-weight: 700;
+    }
+    .prod-desc,.prod-tit{
+        font-family: $text-font-stack;
+    }
+ 
+    .prod-tit{
+        margin-top:10px;
+    }
+    .id .prod-desc{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: $t13;
+        font-weight: 400;
+    }
+
+    .max-250{
+        max-width:250px;
+    }
+    
+
+}
+
+.section-title{
+    font-family: $text-font-stack;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    
+
+    h2 {
+        font-family: $text-font-stack;
+        color: $brand-color;
+        font-size: 36px;
+        line-height: 1.1;
+        font-weight: 700;
+        // margin-top: 35px;
+        margin-bottom:30px;
+    }
+
+    h3 {
+        font-family: $text-font-stack;
+        color: $purple-brand-light;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    h4 {
+        font-family: $text-font-stack;
+        color: $purple-brand-light;
+        font-size: 26px;
+        font-weight: 700;
+        margin-left: 35px;
+        margin-bottom: 0px;
+    }
+
+}
+//SLIDER
+.slider{
+    position:relative;
+}
+.slider .slick-arrow {
+    border: unset;
+    background: unset;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    opacity:.2;
+  
+   
+    &.slick-prev{
+        left: 50px;
+    }
+    &.slick-next{
+        right: 50px;
+    }
+}
+.slider:hover .slick-arrow{
+    opacity:1;
+}
+.slick-next:before, .slick-prev:before{
+    display: none;
+}
+
+.slide:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(
+0deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.5) 1%,transparent 59%,transparent);
+border-radius:10px;
+z-index: 1;
+}
+.slide{
+    position:relative;
+    background-position: center;
+    background-size: cover;
+    z-index:2;
+
+    .slide-caption{
+        z-index: 4;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: .5px;
+        margin-top:auto;
+        margin-bottom:10px;
+    }
+}
+
+//SLIDER
+
+.hero-section .hero-cta{
+
+    p{
+        font-family: $text-font-stack;
+        font-size: $t16;
+        font-weight: 600;
+    }
+    .fas, svg{
+        margin-right:7px;
+    }
+  
+}
+
+.hero-section .carousel-container, #relProds .slide{
+    box-shadow: 0 0 9px rgba(0,0,0,.19);
+    overflow:hidden;
+}
+
+.hero-section .hero-map .map-container{
+    display:block;
+    position:relative;
+    overflow:hidden;
+
+    .btn{
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        max-width: 250px;
+        margin: 0 auto;
+
+        &:hover{
+            background-color: white;
+        }
+    }
+
+    svg{
+        margin-right:5px;
+    }
+
+}
+.hero-section .hero-map .map-container img{
+    border-radius:5px;
+    overflow:hidden;
+   
+}
+.hero-section .slide{
+    height: 335px;
+}
+
+//PRICE CARD 
+.price-card{
+    max-width: 300px;
+    margin-top:55px;
+    // border-radius:10px;
+
+    .card-body{
+        height: 200px;
+    }
+    .price-off-title{
+        margin-top:15px;
+        color: $Pink-brand-1;
+    }
+    .card-price-img{width:40px;}
+    .card-price-price{
+        font-family: Arial, sans-serif;
+        position:relative;
+        width: 200px;
+        margin-left: 10px;
+        font-size: 13px;
+        font-weight: bold;
+
+        .diff{
+            font-size:11px;
+            font-weight: bold;
+            background:$Pink-brand-1;
+            color:white;
+            padding:3px 7px;
+            border-radius:50px;
+
+
+        }
+        .price-off{
+            font-weight: 400;
+            text-decoration: line-through;
+            margin-right:10px;
+        }
+        .currecy{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom:15px;
+            color: $purple-brand-strong;
+        }
+        .price{
+            font-size: 36px;
+            font-weight: bold;
+            color: $purple-brand-strong;
+        }
+    
+    }
+    
+}
+//FIN HERO SECTION
+
+//RELATED PRODUCTS CAROUSEL SECTION
+.related-products .slide{
+    height: 150px;
+    border-radius:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.related-products .section-title{
+    color:$grey-text-default;
+
+}
+.related-products .section-subtitle{
+    margin-bottom:20px;
+    color:$grey-5;
+    font-size: $t14;
+}
+
+//FAQ SECTION 
+.faq-search{
+
+    input.form-control{
+        max-width: 90%;
+        border-radius:50px;
+        border:1px solid $purple-brand-light;
+        transition: all 0.5s ease;
+
+        &:focus + button{
+            border-top-left-radius: 0px;
+            border-bottom-left-radius:0px ;
+            background-color: $Pink-brand-1;
+            color:white;
+        }
+
+        &:hover,
+        &:focus{
+            border:1px solid $Pink-brand-1;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius:0px ;
+        }
+        
+    }
+
+    &:hover input.form-control,
+    &:focus input.form-control{
+        border:1px solid $Pink-brand-1;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius:0px ;
+    }
+
+
+    button{
+        border-radius:50px;
+        color: $Pink-brand-1;
+        font-weight: 700;
+        font-size: $t20;
+        line-height: $t20;
+    }
+
+    &:hover button{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius:0px ;
+        background-color: $Pink-brand-1;
+        color:white;
+       
+    }
+
+}
+
+.faq-section .section-title {
+    position:relative;
+    margin-bottom: 10px;
+    .iso-sm{
+        top:-10px;
+        left:0;
+    }
+}
+//FIN FAQ SECTION 
+
+//ItINERARIO
+.itinerary .accordion-itinerary{
+    border-left: 1px dashed $grey-6;
+    padding-left: 30px;
+}
+
+.itinerary .accordion-item {
+    position:relative;
+    .accordion-button .svg-logo{
+        fill: darken( $brand-color, 10%);
+        position:absolute;
+        top: 10px;
+        z-index: 2;
+        transition: all 0.3s ease;
+    }
+
+    &.last .accordion-button .svg-logo{
+        fill: $Pink-brand-1;
+    }
+}
+
+.itinerary .accordion-item.last .accordion-button:not(.collapsed){
+    color:$Pink-brand-1;
+}
+
+.itinerary .accordion-button:not(.collapsed){
+    svg,.svg-logo{
+        width:40px;
+        left: -50px;
+    }
+   
+}
+
+.itinerary .accordion-button.collapsed{
+    svg,.svg-logo{
+        width:30px;
+        left: -46px;
+    }
+}
+//FIN ItINERARIO
+
+//reviews-section
+
+.reviews-section .card .card-body{
+    padding-top: 0;
+}
+.reviews-section .user-content{
+    margin-left:15px;
+    color:darken($brand-color,40%);
+    font-size: $t16;
+    font-weight: 700;
+    .date{
+        font-size: $t14;
+        font-weight: 400;
+    }
+    
+}
+.reviews-section .user-text{
+    font-size: $t14;
+    font-weight: 400;
+    margin-top:20px;
+}
+
+//reviews-section CAROUSEL SECTION
+.reviews-section .slide{
+    height: 100px;
+    border-radius:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+//available-dates
+
+.available-dates{
+    .btn{
+        
+        margin: 5px;
+
+        &.reservar-btn, &.cotizar-btn{
+            text-transform: uppercase;
+            font-size: 12px;
+            background: white;
+        }
+    }
+}
+
+.btn-alpha{
+    margin-top:5px;
+    margin-bottom:5px;
+    width:170px;
+    
+}
+.btn.fill.blueish.btn-alpha:hover{
+    background-color: rgba($blue-color, 0.16);
+    cursor:initial;
+}
+
+.info-btn{
+    font-size: $t13;
+    margin-top:5px;
+}
+
+  .pgProduct{
+
+    @import 
+    'product/reviews-section';
+  }
+
+ 
+/*MQ
+--------------------------------------*/
+@include media(dk){
+    .spacer, section{
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+    .hero-section .carousel-container{
+        border-radius:10px;
+
+    }
+    .itinerary{
+        margin-left: 30px;
+        margin-bottom:70px;
+        width: 94%;
+    }
+   
+    .id{
+        max-width:250px;
+        width: 100%;
+    }
+    .alpha-tags{
+        align-items:flex-end
+    }
+
+    .pgProduct .contact-support{
+        margin-top: 100px;
+    }
+    .hero-section .hero-map .map-container img{
+        min-height:200px;
+    }
+    .reviews-comments{
+        margin-top:40px;
+        
+        .slider{
+            margin-top:20px;
+        }
+    }
+    //dk tendrá 4 btns x row. Mb 2
+    .available-dates{
+        .btn{
+            flex: 1 0 21%; 
+
+            &.reservar-btn, &.cotizar-btn{
+                min-width:120px;
+            }
+        }
+        
+    }
+    
+
+}
+
+
+@include media(mb){
+    .spacer, section{
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+  
+    .hero-section .carousel-container{
+        border-radius:10px;
+  
+    }
+    .hero-cta div{
+        margin-bottom:20px;
+    }
+    .accordion-itinerary{
+        margin-left: 30px;
+        width: 90%;
+    }
+    .alpha-tags{
+        align-items:center
+    }
+    .faq-section,.important-info-section{
+        padding-left:15px;
+        padding-right:15px;
+    }
+    
+    //dk tendrá 4 btns x row. mb 2
+    .available-dates{
+        .btn{
+            flex: 1 0 40%; 
+
+            &.reservar-btn, &.cotizar-btn{
+                width:96%;
+            }
+        }
+        
+    }
+
+}

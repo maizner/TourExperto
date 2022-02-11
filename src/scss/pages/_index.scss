@@ -1,0 +1,232 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+
+
+
+.section-title{
+    font-family: $text-font-stack;
+    min-height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    h2 {
+        font-family: $text-font-stack;
+        color: #fefeff;
+        font-size: 48px;
+        line-height: 1.1;
+        font-weight: 400;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        text-shadow: 1px 2px 3px #666;
+    }
+
+    h3 {
+        font-family: $text-font-stack;
+        color: white;
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    .btn.linear.radius-50.white {     
+        font-family: $text-font-stack;
+        padding: 0 25px;
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: $medium-font-weight;
+        min-width:200px;
+        max-width:300px;
+        height:50px;
+        text-transform:uppercase;
+        text-shadow: 1px 2px 3px #666;
+        box-shadow:0px 0px 4px 0px rgba(0, 0, 0 , .2);
+    }
+
+    &.simple {
+        min-height: unset;
+    }
+    &.simple h2 {
+        color: $brand-color;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-shadow: none;
+    }
+
+    &.simple h3 {
+        color: #a9a9a9;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    &.simple a {
+        color: $brand-color;
+        font-size: 28px;
+        font-weight: 400;
+    }
+}
+
+.generic-banner {
+    margin: 0 auto 100px;
+    text-align: center;
+    max-width: 745px;
+
+    img {
+        max-width: 100%;
+    }
+}
+section .container-lg .section-title h2{
+    position:relative;
+    font-weight:bold;
+    letter-spacing: -.5px;
+    padding:0;
+    margin:0;
+    
+}
+
+.home-offers .title-container,
+#home-tags-slider .title-container{
+    padding:20px;
+}
+.title-container{
+    
+    
+    img{
+        margin-right:5px;
+    }
+    .caption-container, h3{
+        text-shadow: 0 0 16px #2e009f;
+    }
+}
+.home-list-cards .title-container{
+    padding:20px 0px;
+}
+
+/*HOME
+--------------------------------------*/
+#home-main {
+    position: relative;
+}
+
+// #home-main:before {
+//     display: block;
+//     content: '';
+//     width: 214px;
+//     height: 312px;
+//     position: absolute;
+//     right: 0;
+//     bottom: 0;
+//     opacity: 0.5;
+//     background: url(../img/logo-1.png) no-repeat center / 100%;
+// }
+
+.hero-container{
+    display:flex;
+    flex-direction:column;
+}
+
+#home-contact-support .btn.md_btn{
+    min-width:200px;
+}
+.iso-sm{
+    position:absolute;
+    top:15px;
+    left:15px;
+    width:40px;
+    height:40px;
+}
+
+#home-list-cards .title-container{
+padding-top:30px;
+}
+
+#home-list-cards .title-container h3{
+    margin-left:20px;
+}
+
+
+@import 
+    'index/hero', 
+    'index/search',
+    'index/home-tags',
+    'index/home-reviews', 
+    'index/home-cards',
+    'index/home-list-cards',
+    'index/home-newsletter',
+    'index/home-info',
+    'index/home-agents',
+    'index/home-logos';
+
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+
+    // section.home-list-cards .section-title .title-container,
+    // section.home-offers .section-title .title-container{
+    //     margin-bottom:50px;
+    // }
+   
+    section .container-lg .section-title h2{
+        font-size: $t48;
+        
+    }
+    .pgHome .contact-support{
+        margin-bottom: 100px;
+    }
+}
+@include media(mb){
+
+    .section-title {
+        min-height: 50vh;
+    }
+
+    section .container-lg .section-title h2{
+        font-size: 2.5em;
+        text-align: center;
+        
+    }
+
+    .section-title h3 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .section-title a {
+        font-size: 20px;
+        padding: 0 15px;
+        height: 48px;
+        line-height: 48px;
+        color:white;
+    }
+
+    .section-title.simple h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .section-title.simple h3 {
+        padding: 0 15px;
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    #home-main:before {
+        display: none;
+    }
+    
+    .calendar-icon{
+        margin-right:20px;
+    }
+}
+

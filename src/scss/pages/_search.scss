@@ -1,0 +1,415 @@
+/*SEARCH
+--------------------------------------*/
+
+
+#search .accordion-button:not(.collapsed){
+    box-shadow: initial;
+}
+#search .rating,
+#search .rating svg{
+    font-size: $t14;
+    span{
+        font-size: 13px;
+        color: $grey-4
+    }
+}
+#search{
+    .prod-tit{
+        color: $grey-2;
+        width: 100px;
+        min-width: 100px;
+        line-height: 16px;
+    }
+    .prod-desc{
+        line-height: 16px;
+    }
+}
+
+#search .price-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    min-height:105px;
+}
+#search .button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    min-height:105px;
+}
+#search .rating{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    .badge{
+        background-color: white;
+        border: 1px solid #cd880f;
+        color:#cd880f;
+        margin-right:5px;
+    }
+}
+#search-main {
+    margin-bottom: 35px;
+}
+
+#search-main h1 {
+    color: $brand-color;
+    font-size: 40px;
+    font-weight: $bold-font-weight;
+}
+
+#search-main p {
+    color: $grey-text-default;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+#search-result {
+    color: $grey-text-default;
+    margin-bottom: 25px;
+}
+
+#search-result h2 {
+    color: $Pink-brand-1;
+    font-family: "Arial", $text-font-stack;
+    font-size: $t24;
+    font-weight: $bold-font-weight;
+    margin-bottom: 0;
+}
+
+#search-result p {
+    font-family: $text-font-stack;
+    font-size: $t16;
+    font-weight: 400;
+    color: black;
+}
+
+#search-result p strong {
+    
+    font-weight: $bold-font-weight;
+}
+
+
+
+
+
+#search-list .search-item {
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.25);
+    border: 1px solid #d5d5d5;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+#search-list .search-item .off-msg {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    padding: 7px;
+    background-color: $Pink-brand-1;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-align: center;
+    line-height: 18px;
+    z-index: 5;
+}
+
+#search-list .search-item-img,
+#search-list .search-item-map {
+    position: relative;
+    padding:0px;
+    overflow: hidden;
+}
+#search-list .search-item-img{
+    height: 60%;
+
+}
+#search-list .search-item-map {
+    height: 40%;
+}
+#search-list .search-item-map {
+    height: 100px;
+    .map-link{
+        display:block;
+        position: relative;
+        z-index: 6;
+    }
+}
+
+#search-list .search-item-img{
+    border-radius: 20px 20px 0 0px;
+}
+
+#search-list .search-item-img .image-product{
+    height: 150px;
+    width: auto;
+    display: block;
+}
+#search-list .search-item-map .map-product{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#search-list .search-item-img:before,
+#search-list .search-item-map:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 1%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0) 100%);
+}
+.view-map{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 7;
+    font-size: $t11;
+    font-weight: 700;
+    line-height: 5px;
+    padding: 3px;
+    border: 1px solid $grey-4;
+    color: $grey-4;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background-color: white;
+    text-transform: capitalize;
+    svg{
+        margin-right:5px;
+    }
+    &:hover{
+        border-color:transparent;
+  
+    }
+
+}
+
+
+#search-list .search-item-main {
+    position: relative;
+}
+
+
+
+#search-list .search-item h3 {
+    font-family:  $text-font-stack;
+    color: $brand-color;
+    font-size:  $t22;
+    font-weight: $bold-font-weight;
+    text-transform: initial;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+#search-list .search-item-tag {
+    font-family: "Arial", $text-font-stack;
+    color: $Pink-brand-1;
+    font-size:  $t14;
+    font-weight: $bold-font-weight;
+    text-transform: uppercase;
+}
+
+#search-list .search-item-dates {
+    color: #000;
+    font-size: $t16;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+#search-list .search-item .prod-description {
+    color: #000;
+    font-size:  $t13;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+#search-list .search-item-specs li {
+    color: #121212;
+    font-size:  $t13;
+    font-weight: $bold-font-weight;
+    margin-bottom: 5px;
+}
+
+
+#search-list .search-item-price {
+    color: $grey-4;
+    font-size:  $t18;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+}
+
+#search-list .search-item-price strong {
+    font-family: "Arial", $text-font-stack;
+    color: $purple-brand-strong;
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: $bold-font-weight;
+    display: block;
+
+    .curr-data{
+        font-family: $text-font-stack;
+        font-size: 16px;
+        letter-spacing: 0px;
+        // margin-right: -10px;
+    }
+}
+
+.search-item-price-off {
+    font-family: "Arial", $text-font-stack;
+    text-align: center;
+    color: $Pink-brand-1;
+    font-size: 13px;
+    font-weight: 500;
+    display: block;
+    line-height: 1.1;
+    text-decoration: line-through;
+    .curr-data{
+        margin-right:5px;
+        
+    }
+}
+
+#search-list .search-item-ref {
+    font-size:  $t12;
+    font-weight: $bold-font-weight;
+    background-color: $grey-7;
+    padding: 5px;
+    border-radius: 3px;
+    display: block;
+    color: #191919;
+    text-align: center;
+}
+
+#search-list .search-item-ref strong {
+    font-family: "Arial", $text-font-stack;
+    color: $brand-color;
+}
+
+#search-list .search-item-more {
+    color: $brand-color;
+    font-size:  $t16;
+    font-weight: 600;
+
+    border: 1px solid $brand-color;
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+#search-list .search-item-book {
+    color: white;
+    font-size:  $t16;
+    font-weight: 600;
+    width: 131px;
+    height: 38px;
+    background-color: $brand-color;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    line-height: 38px;
+}
+.checkboxes{
+    margin-bottom: 30px;
+}
+
+.btn.load-more{
+    font-size: $t11;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top:30px;
+    letter-spacing: 1px;
+}
+@import
+
+'search/filters';
+
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+    #search-list .search-item{
+        height: 250px;
+    }
+    #search-list .search-item-price,
+    .search-item-price-off {
+        display: flex;
+        justify-content: flex-start;
+        align-self: stretch;
+    }
+    #search-list .search-item-img{
+        max-width: 260px;
+    }
+    #search-list .search-item-map {
+        height: 40%;
+    }
+    #search-list .search-item-info {
+        padding: 20px;
+        height: 250px;
+    }
+
+    .pgSearch .contact-support{
+        margin-top: 50px;
+    }
+    .dropdown-filters{
+        flex-direction:row;
+    }
+
+}
+
+
+@include media(mb){
+    #search-list .search-item-img{
+        height: auto;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #search-list .search-item-img .image-product{
+        width: 100%;
+        height: auto;
+    }
+
+    #search-list .search-item-main{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .search-item-price-off {
+        font-size: 16px;
+    }
+    .product-list,.prod-description{
+        text-align: left;
+    }
+    #search-list .search-item-info {
+        padding:20px;
+    }
+    .dropdown-filters{
+        flex-direction:column;
+        align-items: center;
+        .dropdown-filter{
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+
+    }
+}

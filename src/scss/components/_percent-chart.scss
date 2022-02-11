@@ -1,0 +1,108 @@
+#firstChart,#secondChart,#thirdChart{
+	@include media(dk){
+		display:flex;
+		height:70px;
+		width:70px;
+	}
+	@include media(mb){
+		display: block;
+		margin: 0 auto;
+		height:50px;
+		width:50px;
+	}
+}
+
+#firstChart .pc-fill{
+	stroke:$tab-a-color;
+}
+#secondChart .pc-fill{
+	stroke:$tab-b-color;
+}
+.patients #thirdChart .pc-fill{
+	stroke:$tab-c-color;
+}
+.doctors #thirdChart .pc-fill{
+	stroke:$tab-d-color;
+}
+
+
+.pchart.pc-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .pchart.pc-container svg.pc-chart {
+    display: block;
+    height: 100%;
+  }
+  
+  .pchart.pc-container svg.pc-chart path.pc-bg {
+    fill: none;
+    stroke: $light-grey-color;
+    stroke-width: 2;
+    stroke-dasharray: 100,100;
+  }
+  
+  .pchart.pc-container svg.pc-chart path.pc-fill {
+    fill: none;
+    stroke-width: 2;
+    stroke: black;
+    stroke-dasharray: 0,100;
+    transition: stroke-dasharray 1s linear;
+  }
+  
+  .pchart.pc-container div.pc-text {
+	@include media(mb){
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		top: 0;
+		left: 0;
+		width: 98%;
+		height: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@include media(dk){
+		display:none
+	}
+  }
+  
+  .pchart.pc-container div.pc-text:hover .pc-num #pc-percent {
+    // opacity: 0%;
+	// transition-delay: 0s;
+	display:none
+  }
+  
+  .pchart.pc-container div.pc-text:hover .pc-num #pc-actual {
+    opacity: 100%;
+    transition-delay: 0s;
+  }
+  
+  .pchart.pc-container div.pc-text .pc-num {
+    min-height: 1px;
+    margin-top: 8%;
+    height: 25%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+  
+#pc-percent,#pc-unit {
+
+	display:none;
+}
+  
+  .pchart.pc-container div.pc-text .pc-num #pc-actual {
+    font-size: 1.3rem;
+    left: 50%;
+    opacity: 1;
+
+  }
+  
+  /*# sourceMappingURL=percent-chart.css.map */

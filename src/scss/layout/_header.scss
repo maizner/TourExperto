@@ -1,0 +1,224 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the header.
+// -----------------------------------------------------------------------------
+
+#nav{
+    display:flex;
+    align-items: center;
+}
+header{
+	padding:0px;
+	margin:0px;
+}
+.pghome .header-bottom,
+.pgsearch .header-bottom,
+.pgproduct .header-bottom{
+    align-items: flex-end;
+ 
+}
+.pgbooking .header-bottom{
+    align-items: center;
+}
+
+#segment-warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    // background: #0033a0;
+    z-index: 5;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+#segment-warning .ico {
+    transform: scaleX(-1);
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+
+    margin-right: 5px;
+}
+
+#segment-warning a {
+    text-decoration: underline;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(-10.0deg) scaleX(-1)
+    }
+
+    10% {
+        transform: rotate(-25.0deg) scaleX(-1)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-10.0deg) scaleX(-1)
+    }
+
+    30% {
+        transform: rotate(-25.0deg) scaleX(-1)
+    }
+
+    40% {
+        transform: rotate(-10.0deg) scaleX(-1)
+    }
+
+    50% {
+        transform: rotate(-15.0deg) scaleX(-1)
+    }
+
+    60% {
+        transform: rotate(-10.0deg) scaleX(-1)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(-10.0deg) scaleX(-1)
+    }
+}
+
+
+#header {
+    color: $brand-color;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0;
+    #header-search svg{
+        color: $Pink-brand-1;
+    }
+}
+
+#header-search {
+    margin-left: 1vw;
+    max-width: 423px;
+    min-width: 280px;
+    height: 36px;
+    border: 1px solid $brand-color;
+    background-color: #fcfdff;
+    line-height: 36px;
+    padding: 0 5px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#header-search input {
+    color: $brand-color;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    border: unset;
+    background: unset;
+}
+
+#header-sign {
+    font-family: $text-font-stack;
+    font-weight: $normal-font-weight;
+    color:$Pink-brand-1;
+    text-decoration: underline;
+    margin-right: 20px;
+    cursor:pointer;
+
+    &:hover {
+        color: $Pink-brand-2;
+    }
+}
+
+
+
+
+#header-login {
+    width: 72px;
+    height: 35px;
+    color: white;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: $Pink-brand-1;
+    margin-right: 20px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $Pink-brand-2;
+    }
+}
+
+
+#logo {
+    width: 210px;
+}
+
+#logo img {
+    width: 100%;
+}
+
+#nav li {
+    display: inline-block;
+    margin-left: .5vw;
+}
+
+ #nav .nav-item a {
+     font-family: $text-font-stack;
+     font-weight: $medium-font-weight;
+     font-size: $t14;
+    color: $brand-color;
+
+    &:hover{
+        color: darken($brand-color, 10%);
+    }
+}
+
+
+/*MQ
+--------------------------------------*/
+
+@include media(dk){
+    .header-bottom{
+         min-height: 78px;
+     }
+    
+    
+ } 
+
+@include media(mb){
+    #logo {
+        display: none;
+    }
+
+    #header-social {
+        width: 100%;
+        margin: 15px 0;
+        text-align: right;
+    }
+
+    #header-search{
+        margin: 15px;
+        width: 300px;
+        order:3;
+    }
+
+    #nav {
+        display: none;
+    }
+   
+
+}
+
+@import 
+    'components/breadcrumb';

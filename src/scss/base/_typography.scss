@@ -1,0 +1,47 @@
+/* -----------------------------------------------------------------------------*/
+/* shared/_typography styles .*/
+/* -----------------------------------------------------------------------------*/
+body {
+  color: $grey-text-default;
+  font: normal 125% / 1.4 $text-font-stack;
+  font-weight: $normal-font-weight;
+  
+  @include media(mb){	
+		font-size:$t14;
+	}
+	@include media(dk){	
+		font-size:$base-font-size;
+	}
+}
+
+
+//Estilos grupales base del sitio
+//ver si es necesario pasar este estilo
+.title{
+	font-family: $text-font-stack;
+	font-weight: $light-font-weight;
+	color:white;
+	margin-bottom:0;
+	@include media(mb){	
+		font-size: $t25;
+		line-height: 1.5em;
+	}
+	@include media(dk){	
+		font-size: $t44;
+		line-height: 1.1em;
+		letter-spacing: $letter-spacing-half;
+	}
+}
+.subtitle{
+	font-family: $text-font-stack;
+	font-weight: $light-font-weight;
+	font-size: $t17;
+	color:white;
+	margin-top:.5em;
+	margin-bottom:0;
+
+	@include media(mb){	
+		letter-spacing: $letter-spacing-one;
+	}
+}
+

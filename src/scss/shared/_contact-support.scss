@@ -1,0 +1,44 @@
+
+.contact-support{
+
+    .btn{
+        min-width:200px;
+    }
+    h3{
+        font-family: $text-font-stack;
+        font-size: $t30;
+        color: $Pink-brand-1;
+        font-weight: 700;
+        letter-spacing: -.5px;
+    }
+    p{
+        font-family: $text-font-stack;
+        font-size: $t16;
+        color: darken($brand-color, 40%);
+        font-weight: 400;
+    }
+}
+/*MQ
+--------------------------------------*/
+@include media(dk){
+   
+.cta-2 .cta-content{
+    flex-direction:row;
+}
+    
+}
+@include media(mb){
+    .contact-support{
+        margin-top:20px;
+        margin-bottom:50px;
+    }
+    .contact-support .btn{
+        margin-top:50px;
+        margin-bottom:50px;
+        width:100%
+    }
+    .cta-2 .cta-content{
+        flex-direction:column;
+    }
+    
+}

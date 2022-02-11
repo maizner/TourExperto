@@ -1,0 +1,130 @@
+
+// -----------------------------------------------------------------------------
+// HOME TAG SECTION.
+// -----------------------------------------------------------------------------
+
+
+#tag-items{
+    width: 100%;
+}
+#home-tags-slider h2{
+    color: $brand-color;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+#home-tags-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#tag-items .slide{
+    width: 220px;
+    height: 335px;
+    margin: 30px 10px;
+    transition: box-shadow .3s, transform .3s;
+    overflow: hidden;
+    position: relative;
+}
+#tag-items .image-container{
+    width: 100%;
+    height:100%;
+    padding: 35px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#tag-items .slide{
+    border-radius: 20px;
+} 
+#tag-items .image-container{
+    transition: all .8s;
+}
+
+
+#home-tags-slider .caption-wrapper span{
+    transition: transform .8s;
+}
+#home-tags-slider .caption-container{
+    position:relative;
+    line-height: 70px;
+    display: inline-block;
+    background: transparent;
+    font-family: $text-font-stack;
+     font-weight: $bold-font-weight;
+    color: white;
+    font-size: $t20;
+    z-index: 1;
+    
+}
+
+
+
+#home-tags-slider .caption-container img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#home-tags-slider a span:last-child{
+    display: block;
+    transition-delay: .05s;
+    // padding: 10px;
+    
+}
+// #home-tags-slider .caption-container:before{
+   
+//     left:-18px;
+//     bottom:15px;
+//     // opacity:.6;
+// }
+#home-tags-slider .image-container article{
+	left:0;
+	bottom:0;
+	text-align: left;
+}
+
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+
+    #home-tags-slider a span:last-child{
+        line-height: 21px;
+    }
+    #home-tags, #home-reviews-slider {
+        padding-bottom: 75px;
+    }
+}
+
+
+@include media(mb){
+
+    #home-tags-slider {
+        padding-bottom: 15px;
+    }
+
+    #home-tags-slider h2 {
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+    #tag-items .slide a{
+        display:block;
+        margin: 0 auto;
+    }
+    #home-tags-slider .caption-container{
+        font-size:2em;
+    }
+    #home-tags-slider .image-container:before{
+        bottom: 70px;
+    }
+    #home-tags-slider a span:last-child{
+        line-height: 31px;
+    }
+}

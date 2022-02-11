@@ -1,0 +1,80 @@
+.steps{
+
+    //flex absolute para mantener centrados elementos de 2 digitos tb
+    .step-number-container{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin-top: -10px;
+    }
+    .step .step-number{
+        font-family: $text-font-stack;
+        color:white;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: bold;
+        position:absolute;
+        left:0px;  
+        top:0px;
+        width:40px;
+        height:40px;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        z-index:2;
+    }
+    .svg-logo{
+        left:0px;  
+        top:0px;
+        width:40px;
+        height:40px;
+        z-index:1;
+    }
+   
+    
+    .step-title{
+        font-family: $text-font-stack;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    .step-block{
+        padding:1rem;
+
+    }
+    
+    .step-text{
+        font-family: $text-font-stack;
+        color:$grey-text-default;
+        font-size: $t14;
+        line-height: $t16;
+        margin-bottom:10px;
+        font-weight: 400;
+    }
+    
+}
+
+.contact-data .step .step-text{
+    font-size:14px;
+    color: $brand-color;
+}
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+    .steps .step-title{
+        font-size: $t24;
+    }
+    
+
+}
+
+
+@include media(mb){
+    .steps .step-title{
+        font-size: $t20;
+    }
+    .step-text{
+       text-align: center;
+    }
+
+}

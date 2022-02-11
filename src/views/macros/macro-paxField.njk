@@ -1,0 +1,175 @@
+
+
+{% macro paxForm(paxNumber) %}
+<div class="d-flex flex-column pax">
+    <p class="pax-title mt-3">Pasajero {{paxNumber}}</p>
+    <div class="d-flex flex-column pax-items">
+        <!--Nombre-->
+        <div class="form-group default">
+            <div class="position-relative">
+                <label for="paxname{{paxNumber}}">Nombre</label>
+            </div>
+            <input type="text" class="form-control" 
+            name="paxname{{paxNumber}}" id="paxname{{paxNumber}}" 
+            placeholder="Ingresa nombre del pasajero {{paxNumber}}" 
+            value=""
+            autocomplete="off"
+            data-parsley-trigger="change"
+            data-parsley-required-message= "Debes completar este campo"
+            data-parsley-required >
+        </div>
+
+        <!--Apellido-->
+        <div class="form-group default">
+            <div class="position-relative">
+                <label for="paxlastname{{paxNumber}}">Apellido</label>
+            </div>
+            <input type="text" class="form-control" 
+            name="paxlastname{{paxNumber}}" id="paxlastname{{paxNumber}}" 
+            placeholder="Ingresa apellido del pasajero {{paxNumber}}" 
+            value=""
+            autocomplete="off"
+            data-parsley-trigger="change"
+            data-parsley-required-message= "Debes completar este campo"
+            data-parsley-required >
+        </div>
+
+        <!--genero-->
+        <div class="d-flex flex-column">
+            <div class="form-group default">
+                <div class="position-relative">
+                    <label for="paxgender{{paxNumber}}">Género</label>
+                </div>
+                <select  class="form-control select2 nosearch" id="paxgender{{paxNumber}}" name="paxgender{{paxNumber}}"
+                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Género"
+                data-parsley-trigger="change"
+                data-parsley-required-message= "Seleccionar"
+                data-parsley-required >
+                    <option></option>
+                    <option value="0">Femenino</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Prefiero no contestar</option>
+                    
+                </select>
+            </div>
+        </div>
+
+        <!--F nac-->
+        <div class="d-flex flex-row">
+            <!--Combos Fecha Nacimiento-->
+            <div class="form-group default">
+                <div class="position-relative">
+                    <label for="paxday{{paxNumber}}">Fecha de Nacimiento</label>
+                    <span class="label-healp"></span>
+                </div>
+                <div class="birthday-group">
+                    <div class="form-group three_elem">
+                        <select  class="form-control select2 nosearch" id="paxday{{paxNumber}}" name="paxday{{paxNumber}}"
+                        tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Día"
+                        data-parsley-trigger="change"
+                        data-parsley-required-message= "Seleccionar"
+                        data-parsley-required >
+                            <option></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="...">...</option>
+                        </select>
+                    </div>
+                    <div class="form-group three_elem">
+                        <select  class="form-control select2 nosearch" id="paxmonth{{paxNumber}}" name="paxmonth{{paxNumber}}"
+                        tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Mes"
+                        data-parsley-trigger="change"
+                        data-parsley-required-message= "Seleccionar"
+                        data-parsley-required >
+                            <option></option>
+                            <option value="0">Enero</option>
+                            <option value="1">Febrero</option>
+                            <option value="2">Marzo</option>
+                            <option value="3">Abril</option>
+                            <option value="4">Mayo</option>
+                            <option value="5">Junio</option>
+                            <option value="6">Julio</option>
+                            <option value="7">Agosto</option>
+                            <option value="8">Septiembre</option>
+                            <option value="9">Octubre</option>
+                            <option value="10">Noviembre</option>
+                        </select>
+                    </div>
+                    <div class="form-group three_elem">
+                        <select  class="form-control select2 withsearch" id="paxyear{{paxNumber}}" name="paxyear{{paxNumber}}"
+                        tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Año"
+                        data-parsley-trigger="change"
+                        data-parsley-required-message= "Seleccionar"
+                        data-parsley-required >
+                            <option></option>
+                            <option value="0" >1920</option>
+                            <option value="1">1930</option>
+                            <option value="2">1940</option>
+                            <option value="3">1950</option>
+                            <option value="4">1960</option>
+                            <option value="5">1970</option>
+                            <option value="6"> 1980</option>
+                            <option value="7">1990</option>
+                            <option value="8">2000</option>
+                            <option value="9">2010</option>
+                            <option value="10">2020</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!--Pasaporte-->
+        <div class="form-group default">
+            <div class="position-relative">
+                <label for="passportnumber{{paxNumber}}">N° de pasaporte</label>
+            </div>
+            <input type="text" class="form-control" 
+            name="passportnumber{{paxNumber}}" id="passportnumber{{paxNumber}}" 
+            placeholder="OA296623" 
+            value=""
+            autocomplete="off"
+            data-parsley-trigger="change"
+            data-parsley-required-message= "Debes completar este campo"
+            data-parsley-required >
+        </div>
+
+        <!--Nacionalidad-->
+        <div class="d-flex flex-column">
+            <div class="form-group default">
+                <div class="position-relative">
+                    <label for="paxnac{{paxNumber}}">Nacionalidad</label>
+                    <span class="label-healp"></span>
+                </div>
+                <select  class="form-control select2 withsearch" id="paxnac{{paxNumber}}" name="paxnac{{paxNumber}}"
+                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Nacionalidad"
+                data-parsley-trigger="change"
+                data-parsley-required-message= "Seleccionar"
+                data-parsley-required >
+                    <option></option>
+                    <option value="0">Antigua y Barbuda</option>
+                    <option value="1">Argentina</option>
+                    <option value="2">Bahamas</option>
+                    <option value="3">Barbados</option>
+                    <option value="4">Belice</option>
+                    <option value="5">Bolivia</option>
+                    <option value="6">Brasil</option>
+                    <option value="7">Canadá</option>
+                    
+                </select>
+            </div>
+        </div>
+        
+
+       
+    </div>
+</div>
+{% endmacro %}

@@ -1,0 +1,66 @@
+/* -----------------------------------------------------------------------------*/
+/* tabs panel content styles .*/
+/* -----------------------------------------------------------------------------*/
+.nav_tabs {
+	display:flex;
+	margin:0;
+	border-bottom: 1px solid lighten($light-grey-color-2, 7%) ;
+}
+
+.nav_link_content {
+	height:100%;
+
+
+	@include media(mb) {
+		flex-direction:column;
+		padding:8px;
+
+	}
+
+	@include media(dk) {
+		flex-direction:row;
+		padding:10px 20px;
+	}
+}
+.nav_link {
+
+	.nav_link_content {
+		
+		font-family: $text-font-stack;
+		font-weight: $light-font-weight;
+		font-size: $t14;
+		color: $semilight-grey-color;
+		font-weight: $normal-font-weight;
+		line-height: $t20;
+
+	}
+
+	&.active .nav_link_content,
+	&.active .nav_link_content .icon {
+
+		color: $semiblack-color;
+		font-weight: $medium-font-weight;
+
+		
+	}
+	
+}
+
+//  tabs
+//
+// Hide panes to start, show them when `.active`
+  
+.tab_content {
+
+	> .tab_pane {
+		display: none;
+	}
+	> .active {
+		display: block;
+	}
+}
+	  
+
+@import 'cool-links';
+@import 'tabs/main-nav-tabs';
+@import 'tabs/secondary-nav-tabs';

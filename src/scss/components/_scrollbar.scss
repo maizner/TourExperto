@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------
+// This file contains nanoScroller styles        https://github.com/jamesflorentino/nanoScrollerJS
+// -----------------------------------------------------------------------------
+        .nano{
+          overflow: hidden !important;
+          .nano-content{ 
+            /*
+            Propiedades que tiene que tener el nano-content por default para que el scroll funcione agregado 14-01-2020
+            */
+              overflow-y: auto;
+              overflow-x: hidden;
+              padding-left: 0;
+            }
+         
+        }
+        .nano > .nano-content:focus {
+          outline: thin dotted;
+        }
+        .nano > .nano-content::-webkit-scrollbar {
+          display: none;
+        }
+        .has-scrollbar > .nano-content::-webkit-scrollbar {
+          display: block;
+        }
+        .nano > .nano-pane {
+          background : transparent;
+          position   : absolute;
+          width      : 8px;
+          right      : 5px;
+          top        : 0;
+          bottom     : 0;
+          opacity    : .9;
+          transition            : .2s;
+          -moz-border-radius    : 5px;
+          -webkit-border-radius : 5px;
+          border-radius         : 5px;
+        }
+        .nano > .nano-pane > .nano-slider {
+          background: #444;
+          background: rgba(188,188,188,.4);
+          position              : relative;
+          margin                : 0 1px;
+          border-radius         : 3px;
+        }
+       
+        /*nano things */
+
+        .scroll-pane.nano{
+          position: relative;
+        }
+        .scroll-tab.nano-content{
+           height:350px;
+        }

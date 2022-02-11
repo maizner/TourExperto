@@ -1,0 +1,175 @@
+{
+    
+    "regionOptions": [
+        {"item_name": "América del Norte"},
+        {"item_name": "América Central"},
+        {"item_name": "América del Sur"},
+        {"item_name": "Antillas"}
+    ],
+
+    "countryOptions": [
+        {"item_name": "Antigua y Barbuda"},
+        {"item_name": "Argentina"},
+        {"item_name": "Bahamas"},
+        {"item_name": "Barbados"},
+        {"item_name": "Belice"},
+        {"item_name": "Bolivia"},
+        {"item_name": "Brasil"},
+        {"item_name": "Canadá"}
+    ],
+
+    "cityOptions": [
+        {"item_name": "Adrogué"},
+        {"item_name": "Alberti"},
+        {"item_name": "Alejandro Korn"},
+        {"item_name": "Balcarce"},
+        {"item_name": "Banfield​"},
+        {"item_name": "Baradero"},
+        {"item_name": "Batán"},
+        {"item_name": "Béccar"}
+    ],
+
+    "monthOptions": [
+        {"item_name": "Enero 2022"},
+        {"item_name": "Febrero 2022"},
+        {"item_name": "Marzo 2022"},
+        {"item_name": "Abril 2022"},
+        {"item_name": "Mayo 2022"},
+        {"item_name": "Junio 2022"},
+        {"item_name": "Julio 2022"},
+        {"item_name": "Agosto 2022"},
+        {"item_name": "Septiembre 2022"},
+        {"item_name": "Octubre 2022"},
+        {"item_name": "Noviembre 2022"},
+        {"item_name": "Diciembre 2022"}
+    ],
+
+    "yearOptions": [
+        {"item_name": "2015"},
+        {"item_name": "2016"},
+        {"item_name": "2017"},
+        {"item_name": "2018"},
+        {"item_name": "2019"},
+        {"item_name": "2020"},
+        {"item_name": "2021"},
+        {"item_name": "2022"}
+    ],
+
+ 
+
+    "supplierOptions": [
+        {"item_name": "Abreu"},
+        {"item_name": "Europamundo"},
+        {"item_name": "Special Tours"},
+        {"item_name": "Sato Tours"},
+        {"item_name": "Miller"},
+        {"item_name": "Compas"},
+        {"item_name": "Surland"}
+    ],
+
+    "prodTypeOptions": [
+        {"item_name": "Tipo A"},
+        {"item_name": "Tipo B"},
+        {"item_name": "Tipo C"},
+        {"item_name": "Tipo D"},
+        {"item_name": "Tipo E"}
+    ],
+
+    "appliedOptions": [
+        {"item_name": " América del Sur"},
+        {"item_name": "Argentina"},
+        {"item_name": "Enero"},
+        {"item_name": "Europamundo"}
+    ],
+
+    "roomOptions": [
+        {"item_name": "0 Habitaciones"},
+        {"item_name": "1 Habitaciones"},
+        {"item_name": "2 Habitaciones"}
+    ],
+
+"paxes":[
+    {
+
+        "paxes_birthday":[{
+
+            "day": [
+                {"item_name": "1"},
+                {"item_name": "2"},
+                {"item_name": "3"},
+                {"item_name": "4"},
+                {"item_name": "5"},
+                {"item_name": "6"},
+                {"item_name": "7"},
+                {"item_name": "8"},
+                {"item_name": "9"},
+                {"item_name": "10"},
+                {"item_name": "11"},
+                {"item_name": "12"},
+                {"item_name": "13"},
+                {"item_name": "14"},
+                {"item_name": "15"},
+                {"item_name": "16"},
+                {"item_name": "17"},
+                {"item_name": "18"},
+                {"item_name": "19"},
+                {"item_name": "20"},
+                {"item_name": "21"},
+                {"item_name": "22"},
+                {"item_name": "23"},
+                {"item_name": "24"},
+                {"item_name": "25"},
+                {"item_name": "26"},
+                {"item_name": "27"},
+                {"item_name": "28"},
+                {"item_name": "29"},
+                {"item_name": "30"},
+                {"item_name": "31"}
+            ],
+            "month": [
+                {"item_name": "Enero"},
+                {"item_name": "Febrero"},
+                {"item_name": "Marzo"},
+                {"item_name": "Abril"},
+                {"item_name": "Mayo"},
+                {"item_name": "Junio"},
+                {"item_name": "Julio"},
+                {"item_name": "Agosto"},
+                {"item_name": "Septiembre"},
+                {"item_name": "Octubre"},
+                {"item_name": "Noviembre"},
+                {"item_name": "Diciembre"}
+            ],
+            "year": [
+                {"item_name": "1920"},
+                {"item_name": "1930"},
+                {"item_name": "1940"},
+                {"item_name": "1950"},
+                {"item_name": "1960"},
+                {"item_name": "1970"},
+                {"item_name": "1980"},
+                {"item_name": "1990"},
+                {"item_name": "2000"},
+                {"item_name": "2010"},
+                {"item_name": "2020"},
+                {"item_name": "2021"}
+            ]
+        }]
+
+    },
+    {
+
+        "paxes_gender":[
+            {"item_name": "Femenino"},
+            {"item_name": "Masculino"},
+            {"item_name": "Prefiero no decir"}
+        ]
+
+    }
+]
+
+    
+    
+   
+   
+}

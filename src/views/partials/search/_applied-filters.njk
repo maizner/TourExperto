@@ -1,0 +1,15 @@
+<div class="applied filters">
+    <h6>4 Filtros Aplicados</h6>
+    
+        <div class="form-group">
+        <select  class="form-control select2" id="applied" name="applied[]" multiple="multiple" style="width:100%" >
+            <option></option>
+            {% for item in appliedOptions %}
+                <option value="{{item.item_name}}" selected>{{ item.item_name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button id="clearAllFilters">
+        Limpiar filtros
+    </button>
+</div>

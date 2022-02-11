@@ -1,0 +1,209 @@
+
+.slider-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 0px 15px;
+
+    label{
+        margin-bottom:30px;
+    }
+}
+.config {
+    border: 1px solid #f2f2f2;
+    margin-bottom: 30px;
+    line-height: 1.7em;
+}
+.config table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.config table td {
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.config table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+.mb {
+    margin-bottom: 15px;
+}
+.label {
+    font-weight: bold;
+    white-space: nowrap;
+}
+.download {
+    margin-bottom: 20px;
+}
+.download a {
+    text-decoration: none;
+    color: $brand-color;
+    font-size: 16px;
+}
+
+//ACA EL RANGESLIDER
+.rs-container * {
+    box-sizing: border-box;
+    user-select: none;
+}
+.rs-container {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 45px;
+    position: relative;
+}
+.rs-container .rs-bg,
+.rs-container .rs-selected {
+    background-color: #eee;
+    border: 1px solid #ededed;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    border-radius: 3px;
+}
+.rs-container .rs-selected {
+    background-color: $brand-color;
+    border: 1px solid darken($brand-color, 10%);
+    transition: all 0.2s linear;
+    width: 0;
+}
+.rs-container.disabled .rs-selected {
+    background-color: #ccc;
+    border-color: #bbb;
+}
+.rs-container .rs-pointer {
+    background-color: white;
+    border: 1px solid $purple-brand-light;
+    border-radius:50px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    left: -10px;
+    position: absolute;
+    top: 2px;
+    transition: all 0.2s linear;
+    box-shadow: -1px 2px 10px -2px rgba(0,0,0,0.15);
+
+    &:hover{
+        background-color: $purple-brand-light;
+    }
+}
+.rs-container.disabled .rs-pointer {
+    border-color: #ccc;
+    cursor: default;
+}
+// .rs-container .rs-pointer::after,
+// .rs-container .rs-pointer::before {
+//     content: "";
+//     position: absolute;
+//     width: 1px;
+//     height: 9px;
+//     background-color: #ddd;
+//     left: 12px;
+//     top: 5px;
+// }
+.rs-container .rs-pointer::after {
+    left: auto;
+    right: 12px;
+}
+.rs-container.sliding .rs-pointer,
+.rs-container.sliding .rs-selected {
+    transition: none;
+}
+.rs-container .rs-scale {
+    display:flex;
+    flex-direction:row;
+    left: 0;
+    position: absolute;
+    top: 5px;
+    white-space: nowrap;
+}
+.rs-container .rs-scale span {
+    float: left;
+    position: relative;
+}
+.rs-container .rs-scale span::before {
+    background-color: #ededed;
+    content: "";
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 1px;
+}
+.rs-container.rs-noscale span::before {
+    display: none;
+}
+.rs-container.rs-noscale span:first-child::before,
+.rs-container.rs-noscale span:last-child::before {
+    display: block;
+}
+.rs-container .rs-scale span:last-child {
+    margin-left: -1px;
+    width: 0;
+}
+.rs-container .rs-scale span ins {
+    color: $grey-6;
+    display: inline-block;
+    font-size: 9px;
+    letter-spacing: -1px;
+    margin-top: 20px;
+    text-decoration: none;
+    // max-width: 30px;
+    // width: 100%;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+}
+.rs-container.disabled .rs-scale span ins {
+    color: $grey-7;
+}
+.rs-tooltip {
+    color: $Pink-brand-2;
+    width: auto;
+    min-width:50px;
+    height: 22px;
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    position: absolute;
+    transform: translate(-50%, -35px);
+    text-align: center;
+    font-size: 10px;
+    line-height:11px;
+    padding: 5px;
+    left:6px;
+    top:6px;
+    transition: all 0.7s ease;
+}
+.rs-container:hover .rs-tooltip{
+    border: 1px solid $Pink-brand-2;
+    box-shadow: -1px 2px 10px -2px rgba(0,0,0,0.25);
+
+    &:before{
+        content:"";
+        position:absolute;
+        bottom:-5px;
+        left:42%;
+        width:0px;
+        height:0px;
+        border-left:5px solid transparent; /* izquierda flecha */
+        border-right:5px solid transparent; /* derecha flecha */
+        border-top:5px solid $Pink-brand-2; /* base flecha y color*/
+        font-size:0px;
+        line-height:0px;
+    }
+} 
+
+// .rs-pointer[data-dir="left"] .rs-tooltip{
+//     left: 5px;
+    
+// }
+// .rs-pointer[data-dir="right"] .rs-tooltip{
+//     right:-25px;
+// }
+
+.rs-container.disabled .rs-tooltip {
+    border-color: $grey-7;
+    color: $grey-7;
+}

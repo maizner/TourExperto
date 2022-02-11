@@ -1,0 +1,25 @@
+/* -----------------------------------------------------------------------------*/
+/* This file contains all styles related to the loader component.*/
+/* -----------------------------------------------------------------------------*/
+.lds-message{
+	width: 100px;
+}
+#container-loader{
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center; 
+	height: 100vh;
+	background: #e9e9e9;
+	opacity: .7;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 3000;
+	top: 0px;
+
+	&.d-none{
+		display:none;
+	}
+}
+

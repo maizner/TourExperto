@@ -1,0 +1,352 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+   1: ($spacer * .25),    //4px
+     2: ($spacer * .5),     //8px
+     3: $spacer,            //16px
+     4: ($spacer * 1.5),    //24px
+     5: ($spacer * 3),      //48px
+     6: ($spacer * 4),      //64px
+     7: ($spacer * 5),      //80px
+     8: ($spacer * 6.25),   //100px
+     9: ($spacer * 7.5),    //120px
+     10: ($spacer * 9.375)  //150px
+  ),
+  $spacers
+);
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Raleway', sans-serif !default;
+
+/// Main brand color
+/// @type Color
+
+
+$grey-text-default:        rgb(30,36,49)!default;
+$grey-2:                   rgb(58, 59, 63);
+$grey-3:                   rgb(88, 99, 119);
+$grey-4:                   rgb(104,104,104);
+$grey-5:                   rgb(142, 142, 147);
+$grey-6:                   rgb(198, 204, 215);
+$grey-7:                   rgb(239, 239, 244);
+
+
+$brand-color:              rgb(103,89,249);
+$purple-brand-strong:      rgb(21, 6, 171);
+$purple-brand-light:       rgb(148,106,249);
+$Pink-brand-1:             rgb(219,50,110);
+$Pink-brand-2:             rgb(182,0,107);
+
+
+$yellow-color:             rgb(243, 182, 34);
+$duck-yellow:              rgb(255, 253, 234);
+$active-green:             rgb(68,215,182);
+$sky-color:                rgb(29,143,247);
+$blue-color:               rgb(2, 92, 177);
+$purple-color:             rgb(182,32,224);
+
+$warning-color:            $yellow-color;
+$error-color:              rgb(230, 57, 70);
+$info-color:               rgb(0, 173, 230);
+$success-color:             $active-green;
+
+///font-size
+$base-font-size:16px;
+$t9: 0.5625em;
+$t10: 0.625em;
+$t11: 0.6875em;
+$t12: 0.75em;
+$t13: 0.8125em;
+$t14: 0.875em;
+$t15: 0.9375em;
+$t16: 1em;
+$t17: 1.0625em;
+$t18:1.125em;
+$t19: 1.1875em;
+$t20: 1.25em;
+$t21:1.3125em;
+$t22: 1.375em;
+$t23:1.4375em;
+$t24: 1.5em;
+$t25: 1.5625em;
+$t26:1.625em;
+$t27: 1.6875em;
+$t28: 1.75em;
+$t30: 1.875em;
+$t44: 2.75em;
+$t48: 3em;
+$t50: 3.125em;
+
+$letter-spacing-half:     0.03125em;
+$letter-spacing-one:      0.0625em;
+$letter-spacing-one-half: 0.09375em;
+$letter-spacing-two:      0.125em;
+$letter-spacing-two-half: 0.15625em;
+
+///font-weight
+$superlight-font-weight:  100;
+$light-font-weight:       300;
+$normal-font-weight:      400;
+$medium-font-weight:      500;
+$bold-font-weight:        700;
+$strong-font-weight:      900;
+
+/// Container's maximum width
+/// @type Length
+$narrow-max-width: 1080px;
+$max-width:        1180px !default;
+$max-width-2:      1280px;
+
+/// 7px 
+$space-y1: 0.4375em 0em  0.4375em 0em;
+$space-x1: 0em 0.4375em 0em 0.4375em;
+
+/*button styles*/
+$sm-padding-btn: 0.9em 2.5em 0.9em 2.5em;
+$md-padding-btn: 1em 2em 1em 2em;
+$lg-padding-btn: 1.3em 4em 1.3em 4em;
+
+$btn-success-bg-color: 			$active-green !default;
+$btn-info-bg-color: 			  $grey-5 !default;
+$btn-warning-bg-color: 		  $warning-color !default;
+
+$sm-font-size-btn: $t10;
+$md-font-size-btn: $t16;
+$margin-btn:       0em 1em 0em 1em;
+
+
+
+
+/*Navigation*/
+$navbar-height:            66px;
+$rightbar-width:           84%;
+$sidebar-width:            16%;
+
+/* Pills / tabs monitor */
+$tab-a-color:     $sky-color;
+$tab-b-color:     $active-green;
+$tab-c-color:     $yellow-color;
+$tab-d-color:     $purple-color;
+
+//table variables
+// Tables
+//
+$table-color:		          $grey-text-default !default;
+$table-cell-padding:          .75rem !default;
+$table-cell-padding-sm:       .3rem !default;
+$border-width: 2px;
+$border-color: 				         $grey-7 !default;
+
+$table-bg:                    white!default;
+$table-accent-bg:             rgba(black, .05) !default;
+$table-hover-color:           lighten(black, 7.5%) !default;
+$table-hover-bg:              rgba(black, .075) !default;
+$table-active-bg:             lighten(black, 7.5%) !default;
+
+$table-border-width:          $border-width !default;
+$table-border-color:          $border-color !default;
+
+$table-head-bg:               $grey-7 !default;
+$table-head-color:            $grey-3 !default;
+
+$table-striped-order:         odd !default;
+
+$table-bg-level:              -9 !default;
+$table-border-level:          -6 !default;
+$table-min-width:              680px;
+
+
+// Tooltips
+
+$tooltip-font-size:                 $t13 !default;
+$tooltip-max-width:                 200px !default;
+$tooltip-color:                     white !default;
+$tooltip-color-2:                   $grey-text-default ;
+$tooltip-bg:                        black !default;
+$tooltip-bg-2:                      $grey-7;
+$tooltip-border-radius:             2px !default;
+$tooltip-opacity:                   .9 !default;
+$tooltip-padding-y:                 .25rem !default;
+$tooltip-padding-x:                 .5rem !default;
+$tooltip-margin:                    0 !default;
+
+$tooltip-arrow-width:               .8rem !default;
+$tooltip-arrow-height:              .4rem !default;
+$tooltip-arrow-color:               $tooltip-bg !default;
+$tooltip-arrow-color-2:             $tooltip-bg-2;
+
+// DataTable Component variables
+//
+
+
+
+
+
+// Pagination
+
+$pagination-padding-y:              .5rem !default;
+$pagination-padding-x:              1rem !default;
+$pagination-padding-y-sm:           .25rem !default;
+$pagination-padding-x-sm:           .5rem !default;
+$pagination-padding-y-lg:           .75rem !default;
+$pagination-padding-x-lg:           1.5rem !default;
+$pagination-line-height:            1.25rem !default;
+
+
+$pagination-color:                  darken($grey-7,15%)!default;
+$pagination-bg:                     lighten($grey-7, 5%) !default;
+/* $pagination-border-color:           darken($pagination-color,2%) !default; */
+$pagination-border-color:           darken($grey-7,15%) !default;
+$pagination-focus-outline:          0 !default;
+   
+
+$pagination-hover-color:            $grey-text-default !default;
+$pagination-hover-bg:               $pagination-bg !default;
+$pagination-hover-border-color:     $grey-text-default !default;
+
+$pagination-active-color:           white !default;
+$pagination-active-bg:              $brand-color !default;
+$pagination-active-border-color:    $pagination-active-bg !default;
+
+$pagination-disabled-color:         lighten($pagination-color, 10%) !default;
+$pagination-disabled-bg:            lighten($pagination-bg, 2%)!default;
+$pagination-disabled-border-color:  lighten($pagination-border-color, 4%) !default;
+
+//table filters
+
+$filter-padding: $spacer;
+// CHeckbox, radio button and switch elements Variables
+//
+
+$checkbox-padding:      1.5625em;
+$checkbox-margin:       0;
+$checkbox-width:        1.3em;
+$checkbox-height:       1.3em;
+$checkbox-bg-color:     white;
+$checkbox-border-color: lighten($grey-5, 15%);
+$checkbox-success-color: $active-green;
+$checkbox-warning-color: $warning-color;
+$checkbox-disabled-color: $grey-6;
+$checkbox-radius: 50%;
+
+$radio-padding:      1.5625em;
+$radio-margin:       0.75em;
+$radio-width:        1.3em;
+$radio-height:       1.3em;
+$radio-bg-color:     white;
+$radio-border-color: lighten($grey-5, 15%);
+$radio-active-color: $active-green;
+
+$switch-padding:      1.5625em;
+$switch-margin:       0.75em;
+$switch-width:        1.3em;
+$switch-height:       1.3em;
+
+$switch-active-circle-color:     	 $active-green;
+$switch-active-line-color:     		 darken($active-green, 5%);
+$switch-inactive-circle-color:   white;
+$switch-inactive-line-color:     	 darken($grey-7,15%);
+$enabled-text:     				       white;
+
+$switch-active-text:                black;
+$switch-rest-text:					darken($grey-7,15%);
+
+
+
+
+//  Card variables
+//
+$card-margin:            1em;
+$card-padding:           1.5em;
+$card-bg-color:          white;
+$card-fixed-height:      21em; 
+$card-title-font-size:   $t22;
+$card-text-font-size:	 $t13;
+$card-title-2-font-size: $t14;
+$card-divider:           6.875em;
+$card-divider-color:     $grey-5;
+
+
+
+//standard AC button group variables
+$button-group-radius: 			0.25em !default; /* 4px */
+$button-group-color:  			white !default;
+$button-group-bg-color:  		$grey-text-default !default;
+$button-group-font-size:  		$t13 !default;
+
+//Modal styles
+//
+$modal-backdrop-bg: 				black;
+
+$modal-sm-margin: 					2em auto;
+$modal-lg-margin: 					0em auto;
+$modal-backdrop-opacity: 			0.5;
+$modal-fade-transform:              translate(0, -50px) !default;
+$modal-show-transform:              none !default;
+$modal-transition:                  transform .3s ease-out !default;
+$modal-border-radius:               0;
+$modal-xs-width:                    30%;
+$modal-sm-width:                    50%;
+$modal-md-width:                    80%;
+$modal-lg-width:                    95%;
+
+
+// Toast styles
+//
+//Pendiente de cambio de color segun diseño
+$toast-message-font-size: 			$t12;
+$toast-title-font-weight: 			$bold-font-weight;
+$toast-msj-font-weight: 			  $medium-font-weight;
+$toast-text-color: 			        white;
+$toast-bg-color: 			         #030303 !default;
+$toast-success-bg-color: 			  $active-green !default;
+$toast-error-bg-color: 			    $warning-color!default;
+$toast-info-bg-color: 			    $duck-yellow !default;
+$toast-warning-bg-color: 			  $warning-color !default;
+
+
+//Transitions
+$transition-base:             all .2s ease-in-out !default;
+$transition-fade:             opacity .15s linear !default;
+$transition-collapse:         height .35s ease !default;
+
+
+//collapsible panels AC
+$collapsible-margin:                 2.5em 1.875em 1.875em 1.875em;
+$collapsible-title-padding:          1.4em 2em 1.4em 2em;
+$collapsible-body-padding:           1.875em 1.5625em 1.5625em 1.5625em;
+$collapsible-body-padding-small:     0em 2em 1em 2em;
+
+
+
+
+// Grid breakpoints
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1023px;
+$breakpoint-lg: 1360px;
+//Solo para manejo de 2 breackpoints ( dk y mb) Ver mixin comentado
+$breakpoint-to-up:768px;
+$breakpoint-to-down:767.98px;
+
+
+$block-gb-color: lighten($grey-7, 2.18%);
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
