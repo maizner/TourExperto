@@ -47,10 +47,11 @@
 #home-newsletter input[type="submit"] {
     color: $Pink-brand-1;
     font-size: 18px;
-    line-height: 0.5;
+    line-height: 10px;
     font-weight: 500;
-    padding: 17px 32px;
+    // padding: 17px 32px;
     max-width:200px;
+    height: 48px;
     text-align: center;
     border-radius: 500px;
     border: 2px solid currentColor;
@@ -58,7 +59,7 @@
     transition: color .3s, background .3s;
 
     &:hover{
-        background-color: $Pink-brand-2;
+        background-color: $Pink-brand-1;
         color: white;
     }
 }

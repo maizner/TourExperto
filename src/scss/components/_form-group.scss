@@ -36,6 +36,7 @@
 		flex-grow:3;
 		margin:0;
 		padding:0;
+		
 
 		@include media(dk) {
 
@@ -55,6 +56,7 @@
 	}
 	.two_elem {
 		flex-basis:50%;
+		min-width: 152.5px;
 		flex-grow:2;
 		margin:0;
 		padding:0;
