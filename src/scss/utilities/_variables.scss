@@ -63,6 +63,11 @@ $error-color:              rgb(230, 57, 70);
 $info-color:               rgb(0, 173, 230);
 $success-color:             $active-green;
 
+
+
+/// System variants color 
+$product-price-color:             $purple-brand-strong;
+
 ///font-size
 $base-font-size:16px;
 $t9: 0.5625em;
@@ -192,9 +197,6 @@ $tooltip-arrow-color-2:             $tooltip-bg-2;
 //
 
 
-
-
-
 // Pagination
 
 $pagination-padding-y:              .5rem !default;
@@ -266,21 +268,6 @@ $switch-rest-text:					darken($grey-7,15%);
 
 
 
-
-//  Card variables
-//
-$card-margin:            1em;
-$card-padding:           1.5em;
-$card-bg-color:          white;
-$card-fixed-height:      21em; 
-$card-title-font-size:   $t22;
-$card-text-font-size:	 $t13;
-$card-title-2-font-size: $t14;
-$card-divider:           6.875em;
-$card-divider-color:     $grey-5;
-
-
-
 //standard AC button group variables
 $button-group-radius: 			0.25em !default; /* 4px */
 $button-group-color:  			white !default;
@@ -345,8 +332,4 @@ $breakpoint-to-down:767.98px;
 
 $block-gb-color: lighten($grey-7, 2.18%);
 
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+

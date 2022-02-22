@@ -63,7 +63,7 @@ var producto = {
         });
 
         //init select NO search box
-        $('.rooms .select2').select2({
+        $('.select2.nosearch').select2({
             minimumResultsForSearch: Infinity,
             dropdownCssClass : "no-search"
         });

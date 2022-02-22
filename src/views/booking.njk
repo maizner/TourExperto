@@ -60,8 +60,10 @@
 
                         {% block expert2Message %}
 
-                            {# {% macro expert2(title, message, cta classes, cta text ) %} #}
+                             {# {% macro expert2(boxstyle,image, tit, message, ctaclasses, ctatext ) %} #}
                             {{ expert.expert2(
+                            "expert-2",
+                            "contact-support-woman.png",
                             "Personaliza tu viaje!", 
                             "Selecciona los adicionales que permiten hacer de tu viaje una experiencia pensada segun tus necesidades.",
                             "",
@@ -70,26 +72,16 @@
                         {% endblock %}
                         
                         <!--Paso 4: Adicionales-->
-                       {% block aditionals %}
+                        {% block aditionals %}
                             {% include "partials/booking/_adit-data.njk" %}
                         {% endblock %} 
                         <!--Adicionales-->
                        
                         
                         <!--TYC check-->
-                        <div class="d-flex flex-row checkbox form-group justify-content-center tyc">
-                            <label class="container-check">
-                                
-                                    <input type="checkbox"  name="tyc" id="tyc"
-                                    data-parsley-checkmin="1" 
-                                    data-parsley-required-message= "Debes aceptar los términos y condiciones"
-                                    required>
-                               
-                                <span class="checkmark" ></span>
-                            </label>
-                            <p>Acepto los <a class="link" href="#" title="Términos y condiciones">Términos y condiciones </a> y la Política de privacidad de TourExperto.</p>
-
-                        </div>
+                        {% block tyc %}
+                            {% include "shared/_tyc-checkbox.njk" %}
+                        {% endblock %} 
                         <!--TYC check-->
 
                         <div class="mt-auto button-container d-flex flex-column align-items-center">

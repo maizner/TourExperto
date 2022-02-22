@@ -1,4 +1,4 @@
-var booking = {
+var payment = {
     
     init: function () {
         
@@ -40,6 +40,13 @@ var booking = {
          $('.select2').on('click', function(){
             $(".nano").nanoScroller();
         });
+
+         //Init de tooltip
+         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+         return new bootstrap.Tooltip(tooltipTriggerEl)
+         });
+        
         
     }
        
@@ -58,5 +65,5 @@ var booking = {
 // ----------------------------------------------------------------------------- 
 
 $(function () {
-    booking.init();
+    payment.init();
 });

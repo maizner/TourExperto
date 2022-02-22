@@ -119,8 +119,10 @@
             <!--Expert2 2 section-->
             {% block expert2Message %}
 
-                {# {% macro expert2(title, message, cta classes, cta text ) %} #}
+                {# {% macro expert2(boxstyle,image, tit, message, ctaclasses, ctatext ) %} #}
                 {{ expert.expert2(
+                "expert-2",
+                "contact-support-woman.png",
                 "Personaliza tu viaje!", 
                 "Estas buscando una fecha de salida especial o una estadia antes o despues de iniciar el tour? Quieres agregar un servicio adicional? ... o ya tenes tu ticket aereo? Nuestros expertos estan para ayudarte y adaptar nuestro tour a tu medida.",
                 "btn md_btn fill radius-5 brand-primary align-self-end",

@@ -156,7 +156,7 @@
     
         
         td .table-item{
-            min-width:100px;
+            // min-width:100px;
             height:35px;
             display:flex;
             align-items:center;
@@ -182,7 +182,7 @@
         td .item-title, 
         td .form-check-label, 
         td .price{
-            font-size: $t14;
+            font-size: 13px;
             font-weight: 400;
             padding-right: 5px;
         }

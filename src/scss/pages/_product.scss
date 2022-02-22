@@ -224,12 +224,12 @@ z-index: 1;
             font-size: 18px;
             font-weight: bold;
             margin-bottom:15px;
-            color: $purple-brand-strong;
+            color: $product-price-color;
         }
         .price{
             font-size: 36px;
             font-weight: bold;
-            color: $purple-brand-strong;
+            color: $product-price-color;
         }
     
     }
@@ -467,12 +467,23 @@ z-index: 1;
             flex: 1 0 21%; 
 
             &.reservar-btn, &.cotizar-btn{
-                min-width:120px;
+                width: 120px;
+                max-width: 120px;
+                height: 34px;
+                margin-left:10px;
             }
         }
         
     }
-    
+    .accordion-children .table th .pasajeros,
+    .accordion-children .table td .table-item.pasajeros,
+    .accordion-children .table td .table-item.habitaciones{
+        width: 120px;
+    }
+    .accordion-children .form-group.combo{
+        margin:0;
+        padding:0;
+    }
 
 }
 
@@ -509,6 +520,7 @@ z-index: 1;
 
             &.reservar-btn, &.cotizar-btn{
                 width:96%;
+                height: 34px
             }
         }
         

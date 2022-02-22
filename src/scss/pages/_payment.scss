@@ -1,0 +1,123 @@
+.pgpayment{
+
+    .radio .form-group{
+        margin:0px;
+        padding:0px;
+    }
+    .radio .default_validation_msj{
+        top:-20px;
+    }
+    .checkmark{
+        transition: all ease-in-out .5s;
+    }
+    .card.radio:hover{
+        .checkmark{
+            border-color: $brand-color;
+            background-color: $grey-6;
+        }
+    }
+    .form-group.error .card, 
+    .form-group.error .card .checkmark{
+        border-color: $error-color;
+    }
+    .card.card-radius-40 .card-body{
+        padding: 1rem 2rem;
+        min-height:90px;
+    }
+    .title,.subtitle{
+        font-family: $text-font-stack;
+        color: $grey-text-default;
+        font-weight: bold;
+    }
+    .title{
+        font-size: $t24;
+        margin-top:10px;
+    }
+    .subtitle{
+        font-size: $t20;
+        margin-top:0px;
+    }
+    p{
+        font-size: $t14;
+    }
+    .expert-section p{
+        font-size: $t17;
+        font-weight: normal;
+    }
+
+    .payment-icon{
+        display:block;
+        width:40px;
+        height:27px;
+        box-shadow: 0 0 11px -3px rgba(0, 0, 0 , .23);
+        border: 1px solid #e3e3e3;
+        padding:0px;
+        margin:3px;
+        border-radius:5px;
+    }
+    .double-input-cont{
+        display:flex;
+        flex-direction:row;
+    }
+
+    .label-group{
+        padding-left: 7px;
+    }
+    /*reseteo los máximos y mínimos puestos por default*/
+    // #cp, .select2{
+    //     max-width:120px;
+    //     min-width:120px;
+    // }
+
+    .tooltip-white{
+        position: absolute;
+        z-index: 2;
+        right: 15px;
+    }
+
+    .tooltip-inner {
+        background-color: white !important; /* Set box  */
+        color: $grey-text-default !important; /* Set text color */
+        border: 1px solid $grey-6;
+    }
+
+    .tooltip{
+        &.bs-tooltip-top .tooltip-arrow::before {
+            border-top-color: $grey-6; /* Set arrow  */
+        }
+        
+        &.bs-tooltip-bottom .tooltip-arrow::before {
+            border-bottom-color: $grey-6; /* Set arrow  */
+        }
+        
+        &.bs-tooltip-start .tooltip-arrow::before {
+            border-left-color: $grey-6; /* Set arrow  */
+        }
+        
+        &.bs-tooltip-end .tooltip-arrow::before {
+            border-right-color: $grey-6; /* Set arrow  */
+        }
+    }
+}
+
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+    .double-input-cont{
+        width:340px;
+    }
+    .tooltip-white{
+        top: 8px;
+        
+    }
+   
+}
+
+
+@include media(mb){
+  
+    .tooltip-white{
+        top: 42px;
+    }
+}

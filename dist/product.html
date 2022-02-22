@@ -298,7 +298,7 @@
             
                  <section class="row expert-section align-items-center expert-1">
     <div class="col-lg-9 col-md-12 text-container">
-        <img class="absolute desktop_show" src="content/img/product/contact-support-man.png" title=""  >
+        <img class="absolute desktop_show" src="content/img/shared/contact-support-man.png" title="Contact Support"  >
         <h4  class="expert-1">Comparte el tour o descárguelo en tu dispositivo</h4>
     </div>
 
@@ -643,6 +643,12 @@
                                                             <div class="table-title">Habitaciones</div>
                                                         </div>
                                                     </th>
+
+                                                    <th>
+                                                        <div class="d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="table-title">Pasajeros</div>
+                                                        </div>
+                                                    </th>
                                                     
                                                 
                                                 </tr>
@@ -677,8 +683,8 @@
                                                     <td>
                                                         <!--habitaciones-->
                                                         <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo rooms w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -687,11 +693,40 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
                                                                             <option value="2 Habitaciones" >2 Habitaciones</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
+                                                    </td>
+
+                                                    <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
                                                                         
                                                                     
                                                                 </select>
@@ -731,8 +766,8 @@
                                                     <td>
                                                         <!--habitaciones-->
                                                         <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo rooms w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -741,7 +776,7 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
@@ -752,19 +787,47 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                     <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
+                                                    </td>
                                                 
                                                 </tr>
                                                 <!--Doble row-->
 
-                                                <!--Doble a compartir row-->
+                                                <!--Viajo solo, compartiendo habitación row-->
                                                 <tr>
                                                     <td>
                                                         <div class="table-item first-item">
                                                             <div class="table-title mobile_show">Capacidad</div>
                                                             <div class="table-item-wrapper">
-                                                                <div class="item-title">Doble a compartir</div>
+                                                                <div class="item-title">Viajo solo, compartiendo habitación</div>
                                                                 <div class="item-value">
-                                                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 113.4 73.9" style="enable-background:new 0 0 113.4 73.9;" xml:space="preserve"><g><path class="st0" d="M18.5,18.8c5.4,0,9.8-4.1,9.8-9.2s-4.4-9.2-9.8-9.2S8.8,4.6,8.8,9.7S13.1,18.8,18.5,18.8z M18.5,2.5c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S14.2,2.5,18.5,2.5z"/><path class="st0" d="M27.3,18.9c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3C4.4,18.9,0,23,0,28v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V48.3c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V28C37,23,32.6,18.9,27.3,18.9z M35,44.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32.1c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V48.4c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32.1c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V28c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.8,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V44.4z"/><path class="st0" d="M57.9,24c-7.8,0-14.1,5.9-14.1,13.2c0,7.3,6.3,13.2,14.1,13.2c7.8,0,14.1-5.9,14.1-13.2C72,29.9,65.7,24,57.9,24z M57.9,48.5c-6.7,0-12.1-5-12.1-11.2C45.8,31,51.2,26,57.9,26S70,31,70,37.2C70,43.4,64.6,48.5,57.9,48.5z"/><path class="st0" d="M63.7,36.2h-4.8v-4.4c0-0.6-0.4-1-1-1c-0.6,0-1,0.4-1,1v4.4H52c-0.6,0-1,0.4-1,1s0.4,1,1,1h4.8v4.4c0,0.6,0.4,1,1,1c0.6,0,1-0.4,1-1v-4.4h4.8c0.6,0,1-0.4,1-1S64.3,36.2,63.7,36.2z"/><path class="st0" d="M94.9,18.3c5.4,0,9.8-4.1,9.8-9.2S100.2,0,94.9,0c-5.4,0-9.8,4.1-9.8,9.2S89.5,18.3,94.9,18.3z M94.9,2c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S90.6,2,94.9,2z"/><path class="st0" d="M103.6,18.4c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V47.8c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.5C113.4,22.5,109,18.4,103.6,18.4z M111.4,43.9c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V47.9c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1s-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.5c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.8,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V43.9z"/></g></svg>
+                                                                    <svg class="table-item-icon"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 113.4 73.9" style="enable-background:new 0 0 113.4 73.9;" xml:space="preserve"><g><path class="st0" d="M18.5,18.8c5.4,0,9.8-4.1,9.8-9.2s-4.4-9.2-9.8-9.2S8.8,4.6,8.8,9.7S13.1,18.8,18.5,18.8z M18.5,2.5c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S14.2,2.5,18.5,2.5z"/><path class="st0" d="M27.3,18.9c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3C4.4,18.9,0,23,0,28v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V48.3c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V28C37,23,32.6,18.9,27.3,18.9z M35,44.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32.1c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V48.4c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32.1c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V28c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.8,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V44.4z"/><path class="st0" d="M57.9,24c-7.8,0-14.1,5.9-14.1,13.2c0,7.3,6.3,13.2,14.1,13.2c7.8,0,14.1-5.9,14.1-13.2C72,29.9,65.7,24,57.9,24z M57.9,48.5c-6.7,0-12.1-5-12.1-11.2C45.8,31,51.2,26,57.9,26S70,31,70,37.2C70,43.4,64.6,48.5,57.9,48.5z"/><path class="st0" d="M63.7,36.2h-4.8v-4.4c0-0.6-0.4-1-1-1c-0.6,0-1,0.4-1,1v4.4H52c-0.6,0-1,0.4-1,1s0.4,1,1,1h4.8v4.4c0,0.6,0.4,1,1,1c0.6,0,1-0.4,1-1v-4.4h4.8c0.6,0,1-0.4,1-1S64.3,36.2,63.7,36.2z"/><path class="st0" d="M94.9,18.3c5.4,0,9.8-4.1,9.8-9.2S100.2,0,94.9,0c-5.4,0-9.8,4.1-9.8,9.2S89.5,18.3,94.9,18.3z M94.9,2c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S90.6,2,94.9,2z"/><path class="st0" d="M103.6,18.4c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V47.8c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.5C113.4,22.5,109,18.4,103.6,18.4z M111.4,43.9c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V47.9c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1s-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.5c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.8,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V43.9z"/></g></svg>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -783,8 +846,8 @@
                                                     <td>
                                                         <!--habitaciones-->
                                                         <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo rooms w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -793,7 +856,7 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
@@ -804,10 +867,38 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                     <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
+                                                    </td>
                                                 
                                                 
                                                 </tr>
-                                                <!--Doble a compartir row-->
+                                                <!--Viajo solo, compartiendo habitación row-->
 
                                                 <!--Triple row-->
                                                 <tr>
@@ -838,8 +929,8 @@
                                                     <td>
                                                         <!--habitaciones-->
                                                     <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo rooms w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -848,7 +939,7 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
@@ -859,6 +950,34 @@
                                                             </div>
                                                         </div>
                                                     
+                                                    </td>
+                                                     <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
                                                     </td>
                                                 
                                                 
@@ -874,7 +993,7 @@
                                                             <div class="table-item-wrapper">
                                                                 <div class="item-title">Cuadruple</div>
                                                                     <div class="item-value">
-                                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 115.7 74.8" style="enable-background:new 0 0 115.7 74.8;" xml:space="preserve"><g><path class="st0" d="M18.5,18.5c5.4,0,9.8-4.1,9.8-9.2c0-5.1-4.4-9.2-9.8-9.2S8.8,4.3,8.8,9.4C8.8,14.4,13.1,18.5,18.5,18.5z M18.5,2.2c4.3,0,7.8,3.2,7.8,7.2c0,4-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2C10.8,5.4,14.2,2.2,18.5,2.2z"/><path class="st0" d="M27.3,18.6c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3C21.5,21.7,20,22,18.5,22c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V48c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.8C37,22.7,32.6,18.6,27.3,18.6z M35,44.1c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.8c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V48.2c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.8c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.8c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.7,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V44.1z"/><path class="st0" d="M58.5,18.3c5.4,0,9.8-4.1,9.8-9.2c0-5.1-4.4-9.2-9.8-9.2s-9.8,4.1-9.8,9.2C48.7,14.2,53.1,18.3,58.5,18.3z M58.5,2c4.3,0,7.8,3.2,7.8,7.2c0,3.9-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2C50.7,5.2,54.2,2,58.5,2z"/><path class="st0" d="M67.2,18.4c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V47.8c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.5C77,22.5,72.6,18.4,67.2,18.4z M75,43.9c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V47.9c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.5c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.8,0,3.5-0.3,5.1-0.9c1.5-0.6,2.9-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V43.9z"/><path class="st0" d="M97.2,19.7c5.4,0,9.8-4.1,9.8-9.2s-4.4-9.2-9.8-9.2s-9.8,4.1-9.8,9.2S91.8,19.7,97.2,19.7z M97.2,3.3c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S93,3.3,97.2,3.3z"/><path class="st0" d="M106,19.7c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V49.1c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V28.9C115.7,23.8,111.4,19.7,106,19.7z M113.7,45.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32.9c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V49.3c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32.9c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V28.9c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.7,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V45.2z"/></g></svg>
+                                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 155.4 73.8" style="enable-background:new 0 0 155.4 73.8;" xml:space="preserve"><g><path class="st0" d="M18.5,18.8c5.4,0,9.8-4.1,9.8-9.2s-4.4-9.2-9.8-9.2c-5.4,0-9.8,4.1-9.8,9.2S13.1,18.8,18.5,18.8z M18.5,2.4c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2c-4.3,0-7.8-3.2-7.8-7.2S14.2,2.4,18.5,2.4z"/><path class="st0" d="M27.3,18.8c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3C4.4,18.8,0,22.9,0,28v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V48.2c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V28C37,22.9,32.6,18.8,27.3,18.8z M35,44.3c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V48.4c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1C3.5,47.4,2,46,2,44.3V28c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.7,0,3.5-0.3,5.1-0.9c1.5-0.6,2.9-1.4,4-2.4C31.7,21,35,24.1,35,28V44.3z"/><path class="st0" d="M58.5,18.5c5.4,0,9.8-4.1,9.8-9.2s-4.4-9.2-9.8-9.2s-9.8,4.1-9.8,9.2S53.1,18.5,58.5,18.5z M58.5,2.2c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S54.2,2.2,58.5,2.2z"/><path class="st0" d="M67.2,18.6c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V48c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.7C77,22.7,72.6,18.6,67.2,18.6z M75,44.1c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.8c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V48.1c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.8c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.7c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.8,0,3.5-0.3,5.1-0.9c1.5-0.6,2.9-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V44.1z"/><path class="st0" d="M96.9,18.5c5.4,0,9.8-4.1,9.8-9.2s-4.4-9.2-9.8-9.2s-9.8,4.1-9.8,9.2S91.5,18.5,96.9,18.5z M96.9,2.2c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S92.6,2.2,96.9,2.2z"/><path class="st0" d="M105.6,18.6c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V48c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.8C115.4,22.7,111,18.6,105.6,18.6z M113.4,44.1c0,1.7-1.5,3.1-3.4,3.1s-3.4-1.4-3.4-3.1V31.8c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V48.2c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.8c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.8c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.7,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V44.1z"/><path class="st0" d="M136.9,18.3c5.4,0,9.8-4.1,9.8-9.2c0-5.1-4.4-9.2-9.8-9.2s-9.8,4.1-9.8,9.2C127.1,14.2,131.5,18.3,136.9,18.3z M136.9,2c4.3,0,7.8,3.2,7.8,7.2c0,3.9-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2C129.1,5.2,132.6,2,136.9,2z"/><path class="st0" d="M145.6,18.4c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V47.8c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.5C155.4,22.5,151,18.4,145.6,18.4z M153.4,43.9c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V47.9c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1c-0.6,0-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.5c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.7,0,3.5-0.3,5.1-0.9c1.5-0.6,2.9-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V43.9z"/></g></svg>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -893,8 +1012,8 @@
                                                     
                                                     <td>
                                                         <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -903,7 +1022,7 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
@@ -913,6 +1032,34 @@
                                                                 </select>
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                     <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
                                                     </td>
                                                 
                                                 
@@ -947,8 +1094,8 @@
                                                     
                                                     <td>
                                                         <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -957,7 +1104,7 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
@@ -967,6 +1114,35 @@
                                                                 </select>
                                                             </div>
                                                         </div>
+                                                    </td>
+
+                                                     <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
                                                     </td>
                                                 
                                                 
@@ -1001,8 +1177,8 @@
                                                     <td>
                                                         <!--habitaciones-->
                                                         <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo rooms w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -1011,7 +1187,7 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
@@ -1023,6 +1199,35 @@
                                                         </div>
 
                                                     </td>
+
+                                                    <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
+                                                    </td>
                                                     
                                                 
                                                 </tr>
@@ -1030,7 +1235,8 @@
                                                 
                                             </tbody>
                                         </table>
-                                        <div class="d-flex flex-column align-items-end btn-section">
+                                        <div class="d-lg-flex flex-row align-items-center justify-content-end btn-section">
+                                            <p class="info-btn">En esta fecha no podemos confirmarte una reserva inmediata</p>
                                             <button type="button" class="btn md_btn linear radius-5 brand-primary reservar-btn" id="cotizar">Cotizar</button>
                                             
                                         </div>
@@ -1109,7 +1315,11 @@
                                                         </div>
                                                     </th>
                                                     
-                                                    
+                                                     <th>
+                                                        <div class="d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="table-title">Pasajeros</div>
+                                                        </div>
+                                                    </th>
                                                 </tr>
                                             </thead>
                                             <!--TH HEADER DE TABLA-->
@@ -1130,7 +1340,7 @@
                                                         </div>
                                                     </td>
 
-                                                <td>
+                                                    <td>
                                                         <div class="table-item">
                                                             <div class="table-title mobile_show">Categoría</div>
                                                             <div class="table-item-wrapper">
@@ -1151,8 +1361,8 @@
                                                     <td>
                                                         <!--habitaciones-->
                                                         <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo rooms w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -1161,11 +1371,40 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
                                                                             <option value="2 Habitaciones" >2 Habitaciones</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
+                                                    </td>
+
+                                                    <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
                                                                         
                                                                     
                                                                 </select>
@@ -1193,7 +1432,7 @@
                                                     </td>
                                                     
 
-                                                <td>
+                                                    <td>
                                                         <div class="table-item">
                                                             <div class="table-title mobile_show">Categoría</div>
                                                             <div class="table-item-wrapper">
@@ -1214,8 +1453,8 @@
                                                     <td>
                                                         <!--habitaciones-->
                                                         <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo rooms w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -1224,7 +1463,7 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
@@ -1235,22 +1474,52 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                     <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
+                                                    </td>
+                                                    
                                                 
                                                 </tr>
                                                 <!--Doble row-->
 
-                                                <!--Doble a compartir row-->
+                                                <!--Viajo solo, compartiendo habitación row-->
                                                 <tr>
                                                     <td>
                                                         <div class="table-item first-item">
                                                             <div class="table-title mobile_show">Capacidad</div>
                                                             <div class="table-item-wrapper">
-                                                                <div class="item-title">Doble a compartir</div>
+                                                                <div class="item-title">Viajo solo, compartiendo habitación</div>
                                                                 <div class="item-value">
-                                                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 113.4 73.9" style="enable-background:new 0 0 113.4 73.9;" xml:space="preserve"><g><path class="st0" d="M18.5,18.8c5.4,0,9.8-4.1,9.8-9.2s-4.4-9.2-9.8-9.2S8.8,4.6,8.8,9.7S13.1,18.8,18.5,18.8z M18.5,2.5c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S14.2,2.5,18.5,2.5z"/><path class="st0" d="M27.3,18.9c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3C4.4,18.9,0,23,0,28v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V48.3c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V28C37,23,32.6,18.9,27.3,18.9z M35,44.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32.1c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V48.4c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32.1c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V28c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.8,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V44.4z"/><path class="st0" d="M57.9,24c-7.8,0-14.1,5.9-14.1,13.2c0,7.3,6.3,13.2,14.1,13.2c7.8,0,14.1-5.9,14.1-13.2C72,29.9,65.7,24,57.9,24z M57.9,48.5c-6.7,0-12.1-5-12.1-11.2C45.8,31,51.2,26,57.9,26S70,31,70,37.2C70,43.4,64.6,48.5,57.9,48.5z"/><path class="st0" d="M63.7,36.2h-4.8v-4.4c0-0.6-0.4-1-1-1c-0.6,0-1,0.4-1,1v4.4H52c-0.6,0-1,0.4-1,1s0.4,1,1,1h4.8v4.4c0,0.6,0.4,1,1,1c0.6,0,1-0.4,1-1v-4.4h4.8c0.6,0,1-0.4,1-1S64.3,36.2,63.7,36.2z"/><path class="st0" d="M94.9,18.3c5.4,0,9.8-4.1,9.8-9.2S100.2,0,94.9,0c-5.4,0-9.8,4.1-9.8,9.2S89.5,18.3,94.9,18.3z M94.9,2c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S90.6,2,94.9,2z"/><path class="st0" d="M103.6,18.4c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V47.8c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.5C113.4,22.5,109,18.4,103.6,18.4z M111.4,43.9c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V47.9c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1s-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.5c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.8,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V43.9z"/></g></svg>
+                                                                    <svg class="table-item-icon"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 113.4 73.9" style="enable-background:new 0 0 113.4 73.9;" xml:space="preserve"><g><path class="st0" d="M18.5,18.8c5.4,0,9.8-4.1,9.8-9.2s-4.4-9.2-9.8-9.2S8.8,4.6,8.8,9.7S13.1,18.8,18.5,18.8z M18.5,2.5c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S14.2,2.5,18.5,2.5z"/><path class="st0" d="M27.3,18.9c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3C4.4,18.9,0,23,0,28v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V48.3c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V28C37,23,32.6,18.9,27.3,18.9z M35,44.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32.1c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V48.4c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32.1c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V28c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.8,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V44.4z"/><path class="st0" d="M57.9,24c-7.8,0-14.1,5.9-14.1,13.2c0,7.3,6.3,13.2,14.1,13.2c7.8,0,14.1-5.9,14.1-13.2C72,29.9,65.7,24,57.9,24z M57.9,48.5c-6.7,0-12.1-5-12.1-11.2C45.8,31,51.2,26,57.9,26S70,31,70,37.2C70,43.4,64.6,48.5,57.9,48.5z"/><path class="st0" d="M63.7,36.2h-4.8v-4.4c0-0.6-0.4-1-1-1c-0.6,0-1,0.4-1,1v4.4H52c-0.6,0-1,0.4-1,1s0.4,1,1,1h4.8v4.4c0,0.6,0.4,1,1,1c0.6,0,1-0.4,1-1v-4.4h4.8c0.6,0,1-0.4,1-1S64.3,36.2,63.7,36.2z"/><path class="st0" d="M94.9,18.3c5.4,0,9.8-4.1,9.8-9.2S100.2,0,94.9,0c-5.4,0-9.8,4.1-9.8,9.2S89.5,18.3,94.9,18.3z M94.9,2c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S90.6,2,94.9,2z"/><path class="st0" d="M103.6,18.4c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V47.8c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.5C113.4,22.5,109,18.4,103.6,18.4z M111.4,43.9c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V47.9c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1s-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.5c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.8,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V43.9z"/></g></svg>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                       
                                                     </td>
 
                                                 <td>
@@ -1275,8 +1544,8 @@
                                                     <td>
                                                         <!--habitaciones-->
                                                         <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo rooms w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -1285,7 +1554,7 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
@@ -1296,10 +1565,38 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                     <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
+                                                    </td>
                                                 
                                                 
                                                 </tr>
-                                                <!--Doble a compartir row-->
+                                                <!--Viajo solo, compartiendo habitación row-->
 
                                                 <!--Triple row-->
                                                 <tr>
@@ -1339,8 +1636,8 @@
                                                     <td>
                                                         <!--habitaciones-->
                                                     <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo rooms w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -1349,7 +1646,7 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
@@ -1360,6 +1657,34 @@
                                                             </div>
                                                         </div>
                                                     
+                                                    </td>
+                                                     <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
                                                     </td>
                                                 
                                                 
@@ -1375,7 +1700,7 @@
                                                             <div class="table-item-wrapper">
                                                                 <div class="item-title">Cuadruple</div>
                                                                     <div class="item-value">
-                                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 115.7 74.8" style="enable-background:new 0 0 115.7 74.8;" xml:space="preserve"><g><path class="st0" d="M18.5,18.5c5.4,0,9.8-4.1,9.8-9.2c0-5.1-4.4-9.2-9.8-9.2S8.8,4.3,8.8,9.4C8.8,14.4,13.1,18.5,18.5,18.5z M18.5,2.2c4.3,0,7.8,3.2,7.8,7.2c0,4-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2C10.8,5.4,14.2,2.2,18.5,2.2z"/><path class="st0" d="M27.3,18.6c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3C21.5,21.7,20,22,18.5,22c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V48c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.8C37,22.7,32.6,18.6,27.3,18.6z M35,44.1c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.8c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V48.2c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.8c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.8c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.7,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V44.1z"/><path class="st0" d="M58.5,18.3c5.4,0,9.8-4.1,9.8-9.2c0-5.1-4.4-9.2-9.8-9.2s-9.8,4.1-9.8,9.2C48.7,14.2,53.1,18.3,58.5,18.3z M58.5,2c4.3,0,7.8,3.2,7.8,7.2c0,3.9-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2C50.7,5.2,54.2,2,58.5,2z"/><path class="st0" d="M67.2,18.4c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V47.8c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.5C77,22.5,72.6,18.4,67.2,18.4z M75,43.9c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V47.9c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.5c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.8,0,3.5-0.3,5.1-0.9c1.5-0.6,2.9-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V43.9z"/><path class="st0" d="M97.2,19.7c5.4,0,9.8-4.1,9.8-9.2s-4.4-9.2-9.8-9.2s-9.8,4.1-9.8,9.2S91.8,19.7,97.2,19.7z M97.2,3.3c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S93,3.3,97.2,3.3z"/><path class="st0" d="M106,19.7c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V49.1c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V28.9C115.7,23.8,111.4,19.7,106,19.7z M113.7,45.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32.9c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V49.3c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32.9c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V28.9c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.7,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V45.2z"/></g></svg>
+                                                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 155.4 73.8" style="enable-background:new 0 0 155.4 73.8;" xml:space="preserve"><g><path class="st0" d="M18.5,18.8c5.4,0,9.8-4.1,9.8-9.2s-4.4-9.2-9.8-9.2c-5.4,0-9.8,4.1-9.8,9.2S13.1,18.8,18.5,18.8z M18.5,2.4c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2c-4.3,0-7.8-3.2-7.8-7.2S14.2,2.4,18.5,2.4z"/><path class="st0" d="M27.3,18.8c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3C4.4,18.8,0,22.9,0,28v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V48.2c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V28C37,22.9,32.6,18.8,27.3,18.8z M35,44.3c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V48.4c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V32c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1C3.5,47.4,2,46,2,44.3V28c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.7,0,3.5-0.3,5.1-0.9c1.5-0.6,2.9-1.4,4-2.4C31.7,21,35,24.1,35,28V44.3z"/><path class="st0" d="M58.5,18.5c5.4,0,9.8-4.1,9.8-9.2s-4.4-9.2-9.8-9.2s-9.8,4.1-9.8,9.2S53.1,18.5,58.5,18.5z M58.5,2.2c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S54.2,2.2,58.5,2.2z"/><path class="st0" d="M67.2,18.6c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V48c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.7C77,22.7,72.6,18.6,67.2,18.6z M75,44.1c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.8c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V48.1c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.8c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.7c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.8,0,3.5-0.3,5.1-0.9c1.5-0.6,2.9-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V44.1z"/><path class="st0" d="M96.9,18.5c5.4,0,9.8-4.1,9.8-9.2s-4.4-9.2-9.8-9.2s-9.8,4.1-9.8,9.2S91.5,18.5,96.9,18.5z M96.9,2.2c4.3,0,7.8,3.2,7.8,7.2s-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2S92.6,2.2,96.9,2.2z"/><path class="st0" d="M105.6,18.6c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V48c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.8C115.4,22.7,111,18.6,105.6,18.6z M113.4,44.1c0,1.7-1.5,3.1-3.4,3.1s-3.4-1.4-3.4-3.1V31.8c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V48.2c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.8c0-0.6-0.4-1-1-1s-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.8c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.7,0,3.5-0.3,5.1-0.9c1.5-0.6,2.8-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V44.1z"/><path class="st0" d="M136.9,18.3c5.4,0,9.8-4.1,9.8-9.2c0-5.1-4.4-9.2-9.8-9.2s-9.8,4.1-9.8,9.2C127.1,14.2,131.5,18.3,136.9,18.3z M136.9,2c4.3,0,7.8,3.2,7.8,7.2c0,3.9-3.5,7.2-7.8,7.2s-7.8-3.2-7.8-7.2C129.1,5.2,132.6,2,136.9,2z"/><path class="st0" d="M145.6,18.4c-0.3,0-0.5,0.1-0.7,0.3c-1.1,1-2.3,1.8-3.7,2.3c-1.4,0.5-2.9,0.8-4.4,0.8c-1.5,0-3-0.3-4.4-0.8c-1.4-0.5-2.6-1.3-3.7-2.3c-0.2-0.2-0.4-0.3-0.7-0.3c-5.4,0-9.8,4.1-9.8,9.2v16.3c0,2.8,2.4,5.1,5.4,5.1c1.3,0,2.5-0.4,3.4-1.1v20.5c0,2.8,2.4,5.1,5.4,5.1c1.8,0,3.4-0.8,4.4-2.1c1,1.3,2.6,2.1,4.4,2.1c3,0,5.4-2.3,5.4-5.1V47.8c0.9,0.7,2.1,1.1,3.4,1.1c3,0,5.4-2.3,5.4-5.1V27.5C155.4,22.5,151,18.4,145.6,18.4z M153.4,43.9c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v36.7c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V47.9c0-0.6-0.4-1-1-1s-1,0.4-1,1v20.4c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V31.6c0-0.6-0.4-1-1-1c-0.6,0-1,0.4-1,1v12.2c0,1.7-1.5,3.1-3.4,3.1c-1.9,0-3.4-1.4-3.4-3.1V27.5c0-3.8,3.3-7,7.4-7.2c1.2,1,2.5,1.9,4,2.4c1.6,0.6,3.3,0.9,5.1,0.9c1.7,0,3.5-0.3,5.1-0.9c1.5-0.6,2.9-1.4,4-2.4c4.1,0.2,7.4,3.3,7.4,7.2V43.9z"/></g></svg>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1403,8 +1728,8 @@
                                                     
                                                     <td>
                                                         <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -1413,7 +1738,7 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
@@ -1423,6 +1748,35 @@
                                                                 </select>
                                                             </div>
                                                         </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
                                                     </td>
                                                 
                                                 
@@ -1466,8 +1820,8 @@
                                                     
                                                     <td>
                                                         <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -1476,7 +1830,7 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
@@ -1486,6 +1840,35 @@
                                                                 </select>
                                                             </div>
                                                         </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
                                                     </td>
                                                 
                                                 
@@ -1529,8 +1912,8 @@
                                                     <td>
                                                         <!--habitaciones-->
                                                         <div class="table-item d-flex flex-row align-items-center justify-content-center habitaciones">
-                                                            <div class="form-group rooms w-100">
-                                                                <select  class="form-control select2" 
+                                                            <div class="form-group combo rooms w-100">
+                                                                <select  class="form-control select2 nosearch" 
                                                                 tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Habitaciones" >
                                                                     <option></option>
                                                                     
@@ -1539,7 +1922,7 @@
                                                                         
                                                                     
                                                                         
-                                                                            <option value="1 Habitaciones" >1 Habitaciones</option>
+                                                                            <option value="1 Habitación" >1 Habitación</option>
                                                                         
                                                                     
                                                                         
@@ -1550,6 +1933,34 @@
                                                             </div>
                                                         </div>
 
+                                                    </td>
+                                                     <td>
+                                                        <!--Pasajeros-->
+                                                        <div class="table-item d-flex flex-row align-items-center justify-content-center pasajeros">
+                                                            <div class="form-group combo w-100">
+                                                                <select  class="form-control select2 nosearch" 
+                                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Pasajeros" >
+                                                                    <option></option>
+                                                                    
+                                                                        
+                                                                            <option value="1 Pasajero" selected>1 Pasajero</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="2 Pasajeros" >2 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="3 Pasajeros" >3 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                        
+                                                                            <option value="4 Pasajeros" >4 Pasajeros</option>
+                                                                        
+                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>  
                                                     </td>
                                                     
                                                 
@@ -1594,7 +2005,7 @@
  <section class="expert-section align-items-center expert-2">
     <div class="row">
         <div class="d-lg-flex align-items-center cta-content">
-            <img  src="content/img/product/contact-support-woman.png" title="Personaliza tu viaje!" class="desktop_show">
+            <img  src="content/img/shared/contact-support-woman.png" title="Personaliza tu viaje!" class="desktop_show">
             <div class="d-flex flex-column text-container">
                 <h4 class="cta-title">Personaliza tu viaje!</h4>
                 <p>Estas buscando una fecha de salida especial o una estadia antes o despues de iniciar el tour? Quieres agregar un servicio adicional? ... o ya tenes tu ticket aereo? Nuestros expertos estan para ayudarte y adaptar nuestro tour a tu medida.</p>
@@ -1828,7 +2239,7 @@ condiciones aéreas.">Rotativo</a>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12 align-items-stretch md-order-0">
                         <div class="image-container">
-                            <img  src="content/img/support-agents.jpg" width="100%"> 
+                            <img  src="content/img/shared/support-agents.jpg" width="100%"> 
                         </div>
                     </div>
                 </div>

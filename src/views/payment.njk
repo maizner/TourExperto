@@ -1,6 +1,6 @@
 {% extends "layout/_default.njk" %}
-{% set pgBooking = true %}
-{% block bodyClass %} pgbooking {% endblock %}
+{% set pgPayment = true %}
+{% block bodyClass %} pgpayment {% endblock %}
 {% import "macros/macro-experts.njk" as expert %} 
 {% import "macros/macro-formField.njk" as formfield %} 
 {% import "macros/macro-paxField.njk" as paxfield %}
@@ -10,7 +10,7 @@
 {% endblock %} 
 
 {% block content %}
-<div class="content payment container-lg" id="payment">
+<div class="content container-lg" id="payment">
    
     <section class="row">
 
@@ -19,68 +19,113 @@
 
             <div class="d-flex flex-column">
 
-                <!--Check date-->
-                {# {% block checkDate %}
-                    {% include "partials/booking/_program-data.njk" %}
-                {% endblock %}  #}
-                <!--Check date-->
+                <!--Expert2 2 section-->
+                {% block expert2Message %}
 
-                <!--Bullets ( hasta 3)-->
-                {# <div class="bullets">            
-                    <div class="d-flex flex-row align-items-center justify-content-center">
-                        <div class="bullet-item">
-                            <svg class="bullet-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 305.002 305.002" style="enable-background:new 0 0 305.002 305.002;" xml:space="preserve"><g><g><path d="M152.502,0.001C68.412,0.001,0,68.412,0,152.501s68.412,152.5,152.502,152.5c84.089,0,152.5-68.411,152.5-152.5S236.591,0.001,152.502,0.001z M152.502,280.001C82.197,280.001,25,222.806,25,152.501c0-70.304,57.197-127.5,127.502-127.5c70.304,0,127.5,57.196,127.5,127.5C280.002,222.806,222.806,280.001,152.502,280.001z"/><path d="M218.473,93.97l-90.546,90.547l-41.398-41.398c-4.882-4.881-12.796-4.881-17.678,0c-4.881,4.882-4.881,12.796,0,17.678l50.237,50.237c2.441,2.44,5.64,3.661,8.839,3.661c3.199,0,6.398-1.221,8.839-3.661l99.385-99.385c4.881-4.882,4.881-12.796,0-17.678C231.269,89.089,223.354,89.089,218.473,93.97z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-                            Mejor precio garantizado
-                        </div>
-                        <div class="bullet-item">
-                            <svg class="bullet-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 305.002 305.002" style="enable-background:new 0 0 305.002 305.002;" xml:space="preserve"><g><g><path d="M152.502,0.001C68.412,0.001,0,68.412,0,152.501s68.412,152.5,152.502,152.5c84.089,0,152.5-68.411,152.5-152.5S236.591,0.001,152.502,0.001z M152.502,280.001C82.197,280.001,25,222.806,25,152.501c0-70.304,57.197-127.5,127.502-127.5c70.304,0,127.5,57.196,127.5,127.5C280.002,222.806,222.806,280.001,152.502,280.001z"/><path d="M218.473,93.97l-90.546,90.547l-41.398-41.398c-4.882-4.881-12.796-4.881-17.678,0c-4.881,4.882-4.881,12.796,0,17.678l50.237,50.237c2.441,2.44,5.64,3.661,8.839,3.661c3.199,0,6.398-1.221,8.839-3.661l99.385-99.385c4.881-4.882,4.881-12.796,0-17.678C231.269,89.089,223.354,89.089,218.473,93.97z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-                            Pago Seguro
-                        </div>
-                    </div>
-                </div> #}
-                <!--Bullets-->
+                    {# {% macro expert2(boxstyle,title, message, cta classes, cta text ) %} #}
+                    {{ expert.expert2(
+                    "expert-3",
+                    "contact-support-young-woman.png",
+                    "Felicitaciones  xxxxxxxx!", 
+                    "Mi nombre es xxxxx y voy a ser quien va a seguir tu reserva.",
+                    "btn sm_btn fill radius-5 btn-grey align-self-end",
+                    "Consultame" ) }}
+
+                {% endblock %}
+                <!--Expert 2 section-->
+
+                <hr class="spacer w-100 mx-auto">
 
                 <!--Form-->
-                <form action="#" class="form_content parsley js_form_validation editar">
-                    <section class="booking-form steps">
+                <form action="#" class="form_content parsley js_form_validation">
+                    <section >
+                        <h2 class="title">Selecciona tu forma de pago:</h2>
+                        <div class="form-group"> 
+                            
+                            <div class="card card-radius-40 radio">            
+                                <div class="card-body d-flex flex-column">
+                                    <div class="d-flex flex-row  align-items-center justify-content-start paymentway">
+                                        <label class="container-check">
+                                            <input type="radio"  name="paymentmethod" id="op1"
+                                            data-parsley-required="true" 
+                                            data-parsley-required-message= "Debes seleccionar al menos una opción"
+                                            >
+                                            <span class="checkmark" ></span>
+                                        </label>
+                                        <div class="d-flex flex-column">
+                                            <h3 class="subtitle">Pago a traves de un experto</h3>
+                                            <p>Si quieres  pagar en tu moneda local o conocer otras modalidades de pago, un experto se contactara para gestionar el pago de tu reserva en las próximas 24 hs.</p>
+                                        </div>
 
-                        <!--Paso 2: Contacto-->
-                        {# {% block contact %}
-                            {% include "partials/booking/_contact-data.njk" %}
-                        {% endblock %}  #}
-                        <!--Contacto-->
+                                    </div>
+                                </div>
+                            </div>
 
-                        <!--Paso 3: Pasajeros-->
-                         {# {% block pax %}
-                            {% include "partials/booking/_pax-data.njk" %}
-                        {% endblock %}  #}
-                        <!--Pasajeros-->
+                            <div class="card card-radius-40 radio">            
+                                <div class="card-body d-flex flex-column">
+                                    <div class="d-flex flex-row align-items-center justify-content-start paymentway">
+                                        <label class="container-check">
+                                            <input type="radio"  name="paymentmethod" id="op2"
+                                            data-parsley-required="true" 
+                                            data-parsley-required-message= "Debes seleccionar una opción"
+                                            >
+                                            <span class="checkmark" ></span>
+                                        </label>
+                                        <div class="d-flex flex-column w-100">
+                                            <div class="d-lg-flex flex-row align-items-center justify-content-between">
+                                                <h3 class="subtitle">Pago total con tarjeta de Credito</h3>
+                                                <div class="d-flex flex-row align-items-center justify-content-between">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/visa.svg" title="visa">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/master.svg" title="Mastercard">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/maestro.svg" title="Maestro">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/amex.svg" title="American Express">
+                                                </div>
+                                                
+                                            </div>
+                                            <p>Congela tu tarifa y accede a descuentos especiales con la compra de tu viaje.</p>
+                                        </div>
 
-                      
+                                    </div>
+                                </div>
+                            </div>
 
-                       
-                        
-                        <!--Paso 4: Adicionales-->
-                       {# {% block aditionals %}
-                            {% include "partials/booking/_adit-data.njk" %}
-                        {% endblock %}  #}
-                        <!--Adicionales-->
-                       
-                        
-                        <!--TYC check-->
-                        <div class="d-flex flex-row checkbox form-group justify-content-center tyc">
-                            <label class="container-check">
-                                
-                                    <input type="checkbox"  name="tyc" id="tyc"
-                                    data-parsley-checkmin="1" 
-                                    data-parsley-required-message= "Debes aceptar los términos y condiciones"
-                                    required>
-                               
-                                <span class="checkmark" ></span>
-                            </label>
-                            <p>Acepto los <a class="link" href="#" title="Términos y condiciones">Términos y condiciones </a> y la Política de privacidad de TourExperto.</p>
+                            <div class="card card-radius-40 radio">            
+                                <div class="card-body d-flex flex-column">
+                                    <div class="d-flex flex-row align-items-center justify-content-start paymentway">
+                                        <label class="container-check">
+                                            <input type="radio"  name="paymentmethod" id="op3"
+                                            data-parsley-required="true" 
+                                            data-parsley-required-message= "Debes seleccionar una opción">
+                                            <span class="checkmark" ></span>
+                                        </label>
+                                        <div class="d-flex flex-column w-100">
+                                            <div class="d-lg-flex flex-row align-items-center justify-content-between">
+                                                <h3 class="subtitle">Reserva con tarjeta de Credito</h3>
+                                                <div class="d-flex flex-row align-items-center justify-content-between">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/visa.svg" title="visa">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/master.svg" title="Mastercard">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/maestro.svg" title="Maestro">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/amex.svg" title="American Express">
+                                                </div>
+                                                
+                                            </div>
+                                            <p>Sin compromiso, garantiza tu reserva y congela tus lugares con una seña del 10% reembolsable.</p>
+                                        </div>
 
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            {% block paymentform %}
+                                {% include "partials/payment/_payment-form.njk" %}
+                            {% endblock %} 
                         </div>
+                       
+                        <!--TYC check-->
+                        {% block tyc %}
+                            {% include "shared/_tyc-checkbox.njk" %}
+                        {% endblock %} 
                         <!--TYC check-->
 
                         <div class="mt-auto button-container d-flex flex-column align-items-center">

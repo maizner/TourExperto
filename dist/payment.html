@@ -23,7 +23,7 @@
  
 
 </head>
-<body class=" pgbooking ">
+<body class=" pgpayment ">
 
 
             
@@ -56,27 +56,27 @@
                         </div>
                         <div class="phones-phonelist">
                             <a class="phones-phonelist-item" href="tel:+54 888.888.8080" >
-                                <img src="content/img/booking/flags/ar.png" title="Argentina" >
+                                <img src="content/img/shared/flags/ar.png" title="Argentina" >
                                 <div class="phones-phonelist-item-text">ARG +54 888.888.8080</div>
                             </a>
                             <a class="phones-phonelist-item" href="tel:+54 888.888.8080" >
-                                <img src="content/img/booking/flags/cl.png" title="Chile" >
+                                <img src="content/img/shared/flags/cl.png" title="Chile" >
                                 <div class="phones-phonelist-item-text">CHI +56 888.888.8080</div>
                             </a>
                             <a class="phones-phonelist-item" href="tel:+54 888.888.8080" >
-                                <img src="content/img/booking/flags/cr.png" title="Costa Rica" >
+                                <img src="content/img/shared/flags/cr.png" title="Costa Rica" >
                                 <div class="phones-phonelist-item-text">C.RI +506 888.888.8080</div>
                             </a>
                             <a class="phones-phonelist-item" href="tel:+54 888.888.8080" >
-                                <img src="content/img/booking/flags/us.png" title="Estados Unidos" >
+                                <img src="content/img/shared/flags/us.png" title="Estados Unidos" >
                                 <div class="phones-phonelist-item-text">USA +506 888.888.8080</div>
                             </a>
                             <a class="phones-phonelist-item" href="tel:+54 888.888.8080" >
-                                <img src="content/img/booking/flags/mx.png" title="México" >
+                                <img src="content/img/shared/flags/mx.png" title="México" >
                                 <div class="phones-phonelist-item-text">MEX +506 888.888.8080</div>
                             </a>
                             <a class="phones-phonelist-item" href="tel:+54 888.888.8080" >
-                                <img src="content/img/booking/flags/uy.png" title="Uruguay" >
+                                <img src="content/img/shared/flags/uy.png" title="Uruguay" >
                                 <div class="phones-phonelist-item-text">URU +506 888.888.8080</div>
                             </a>
                         </div>
@@ -108,7 +108,7 @@
          
         
         
-<div class="content payment container-lg" id="payment">
+<div class="content container-lg" id="payment">
    
     <section class="row">
 
@@ -117,49 +117,313 @@
 
             <div class="d-flex flex-column">
 
-                <!--Check date-->
+                <!--Expert2 2 section-->
                 
-                <!--Check date-->
 
-                <!--Bullets ( hasta 3)-->
+                    
+                    
+ <section class="expert-section align-items-center expert-3">
+    <div class="row">
+        <div class="d-lg-flex align-items-center cta-content">
+            <img  src="content/img/shared/contact-support-young-woman.png" title="Felicitaciones  xxxxxxxx!" class="desktop_show">
+            <div class="d-flex flex-column text-container">
+                <h4 class="cta-title">Felicitaciones  xxxxxxxx!</h4>
+                <p>Mi nombre es xxxxx y voy a ser quien va a seguir tu reserva.</p>
+            </div>
+            <a href="#" class="btn sm_btn fill radius-5 btn-grey align-self-end">Consultame </a>
+        </div>
+    </div>
+</section>
+
+
                 
-                <!--Bullets-->
+                <!--Expert 2 section-->
+
+                <hr class="spacer w-100 mx-auto">
 
                 <!--Form-->
-                <form action="#" class="form_content parsley js_form_validation editar">
-                    <section class="booking-form steps">
+                <form action="#" class="form_content parsley js_form_validation">
+                    <section >
+                        <h2 class="title">Selecciona tu forma de pago:</h2>
+                        <div class="form-group"> 
+                            
+                            <div class="card card-radius-40 radio">            
+                                <div class="card-body d-flex flex-column">
+                                    <div class="d-flex flex-row  align-items-center justify-content-start paymentway">
+                                        <label class="container-check">
+                                            <input type="radio"  name="paymentmethod" id="op1"
+                                            data-parsley-required="true" 
+                                            data-parsley-required-message= "Debes seleccionar al menos una opción"
+                                            >
+                                            <span class="checkmark" ></span>
+                                        </label>
+                                        <div class="d-flex flex-column">
+                                            <h3 class="subtitle">Pago a traves de un experto</h3>
+                                            <p>Si quieres  pagar en tu moneda local o conocer otras modalidades de pago, un experto se contactara para gestionar el pago de tu reserva en las próximas 24 hs.</p>
+                                        </div>
 
-                        <!--Paso 2: Contacto-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-radius-40 radio">            
+                                <div class="card-body d-flex flex-column">
+                                    <div class="d-flex flex-row align-items-center justify-content-start paymentway">
+                                        <label class="container-check">
+                                            <input type="radio"  name="paymentmethod" id="op2"
+                                            data-parsley-required="true" 
+                                            data-parsley-required-message= "Debes seleccionar una opción"
+                                            >
+                                            <span class="checkmark" ></span>
+                                        </label>
+                                        <div class="d-flex flex-column w-100">
+                                            <div class="d-lg-flex flex-row align-items-center justify-content-between">
+                                                <h3 class="subtitle">Pago total con tarjeta de Credito</h3>
+                                                <div class="d-flex flex-row align-items-center justify-content-between">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/visa.svg" title="visa">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/master.svg" title="Mastercard">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/maestro.svg" title="Maestro">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/amex.svg" title="American Express">
+                                                </div>
+                                                
+                                            </div>
+                                            <p>Congela tu tarifa y accede a descuentos especiales con la compra de tu viaje.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-radius-40 radio">            
+                                <div class="card-body d-flex flex-column">
+                                    <div class="d-flex flex-row align-items-center justify-content-start paymentway">
+                                        <label class="container-check">
+                                            <input type="radio"  name="paymentmethod" id="op3"
+                                            data-parsley-required="true" 
+                                            data-parsley-required-message= "Debes seleccionar una opción">
+                                            <span class="checkmark" ></span>
+                                        </label>
+                                        <div class="d-flex flex-column w-100">
+                                            <div class="d-lg-flex flex-row align-items-center justify-content-between">
+                                                <h3 class="subtitle">Reserva con tarjeta de Credito</h3>
+                                                <div class="d-flex flex-row align-items-center justify-content-between">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/visa.svg" title="visa">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/master.svg" title="Mastercard">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/maestro.svg" title="Maestro">
+                                                    <img class="payment-icon" src="content/img/shared/credit-cards/amex.svg" title="American Express">
+                                                </div>
+                                                
+                                            </div>
+                                            <p>Sin compromiso, garantiza tu reserva y congela tus lugares con una seña del 10% reembolsable.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+                                <div class="card card-radius-40 payment-data">            
+    <div class="card-body d-flex flex-column">
+        
+
+        <div class="d-flex flex-column">
+            
+                
+                
+  <div class="form-group default">
+        <div class="position-relative">
+            <label for="cardname">Titular de la tarjeta</label>
+            <span class="label-help"></span>
+        </div>
+        <input type="text" class="form-control" 
+        name="cardname" id="cardname" 
+        placeholder="Ingresa nombre/s completo del titular" 
+        value=""
+        autocomplete="off"
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Debes completar este campo"
+        data-parsley-required >
+    </div>
+
+            
+            
+            
+                
+                
+  <div class="form-group default">
+        <div class="position-relative">
+            <label for="cardnumber">Número de la tarjeta</label>
+            <span class="label-help"></span>
+        </div>
+        <input type="number" class="form-control" 
+        name="cardnumber" id="cardnumber" 
+        placeholder="Ingresa número de tarjeta" 
+        value=""
+        autocomplete="off"
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Debes completar este campo"
+        data-parsley-required >
+    </div>
+
+             
+
+           
+            <div class="d-flex flex-row justify-content-between align-items-center">
+                <div class="position-relative label-group">
+                    <label for="month ">Fecha de vencimiento</label>
+                    <span class="label-help">(MM/AA)</span>
+                </div>
+                <div class="double-input-cont">
+                    <div class="form-group default">
+                        <input type="text" class="form-control " 
+                        name="month" id="month" 
+                        placeholder="MM /" 
+                        autocomplete="off"
+                        maxlength="2"
+                        pattern="[0-9]*"
+                        inputmode="numerical"
+                        data-parsley-trigger="change"
+                        data-parsley-required-message= "Completar mes (MM)"
+                        data-parsley-required >
+                    </div>
+
+                    <div class="form-group default">
+
+                        <input type="text" class="form-control " 
+                        name="year" id="year" 
+                        placeholder="AA" 
+                        autocomplete="off"
+                        maxlength="2"
+                        pattern="[0-9]*"
+                        inputmode="numerical"
+                        data-parsley-trigger="change"
+                        data-parsley-required-message= "Completar año (AA)"
+                        data-parsley-required >
+                    </div>
+
+                </div>
+            </div>
+           
+            
+                
+                
+  <div class="form-group default">
+    <div class="position-relative">
+        <label for="cvv ">CVV</label>
+        <span class="label-help">Código de seguridad</span>
+    </div>
+    <input type="password" class="form-control" 
+    name="cvv " id="cvv " 
+    placeholder="CVV" 
+    value=""
+    autocomplete="off"
+    data-parsley-trigger="change"
+    data-parsley-required-message= "Debes completar este campo"
+    data-parsley-required >
+    <a href="#" class="d-inline-block tooltip-white" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="" data-bs-original-title="<img src='content/img/shared/cvv.jpg' title='cvv'>">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><g><g><path fill="#d3d3d3" d="M10.4 9.092c-.742.431-.994.747-.994 1.292v.337h-1.48l-.012-.366c-.072-.879.235-1.425 1.006-1.877.72-.43 1.024-.703 1.024-1.232s-.512-.917-1.147-.917c-.644 0-1.109.418-1.143 1.05H6.14C6.17 6.004 7.185 5.032 8.9 5.032c1.599 0 2.7.887 2.7 2.162 0 .849-.41 1.433-1.2 1.897zm-1.714 4.132c-.503 0-.913-.383-.913-.878 0-.49.41-.878.913-.878.507 0 .917.383.917.878s-.406.878-.917.878zM8.869.262C3.97.262 0 4.232 0 9.13 0 14.03 3.97 18 8.87 18c4.898 0 8.868-3.97 8.868-8.87 0-4.898-3.97-8.868-8.869-8.868z"/></g></g></svg>
+    </a>
+</div>
+
+             
+            
+            
+
+            
+                
+                
+  <div class="form-group default">
+        <div class="position-relative">
+            <label for="carddocument">Número de documento</label>
+            <span class="label-help"></span>
+        </div>
+        <input type="number" class="form-control" 
+        name="carddocument" id="carddocument" 
+        placeholder="Ingresa número de documento" 
+        value=""
+        autocomplete="off"
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Debes completar este campo"
+        data-parsley-required >
+    </div>
+
+             
+
+            
+                <div class="form-group default">
+                    <div class="position-relative">
+                        <label for="pais">País</label>
+                    </div>
+                    <select  class="form-control select2 withsearch" id="pais" name="pais"  
+                    tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="País"  data-parsley-trigger="change"
+                    data-parsley-required-message= "Seleccionar"
+                    data-parsley-required>
+                        <option></option>
                         
-                        <!--Contacto-->
-
-                        <!--Paso 3: Pasajeros-->
-                         
-                        <!--Pasajeros-->
-
-                      
-
-                       
+                            <option value="Antigua y Barbuda" >Antigua y Barbuda</option>
                         
-                        <!--Paso 4: Adicionales-->
-                       
-                        <!--Adicionales-->
-                       
+                            <option value="Argentina" >Argentina</option>
                         
-                        <!--TYC check-->
-                        <div class="d-flex flex-row checkbox form-group justify-content-center tyc">
-                            <label class="container-check">
-                                
-                                    <input type="checkbox"  name="tyc" id="tyc"
-                                    data-parsley-checkmin="1" 
-                                    data-parsley-required-message= "Debes aceptar los términos y condiciones"
-                                    required>
-                               
-                                <span class="checkmark" ></span>
-                            </label>
-                            <p>Acepto los <a class="link" href="#" title="Términos y condiciones">Términos y condiciones </a> y la Política de privacidad de TourExperto.</p>
+                            <option value="Bahamas" >Bahamas</option>
+                        
+                            <option value="Barbados" >Barbados</option>
+                        
+                            <option value="Belice" >Belice</option>
+                        
+                            <option value="Bolivia" >Bolivia</option>
+                        
+                            <option value="Brasil" >Brasil</option>
+                        
+                            <option value="Canadá" >Canadá</option>
+                        
+                    </select>
+                </div>
+                
+                    
+                    
+  <div class="form-group default">
+        <div class="position-relative">
+            <label for="cp">Código postal</label>
+            <span class="label-help"></span>
+        </div>
+        <input type="number" class="form-control" 
+        name="cp" id="cp" 
+        placeholder="Ingresa código postal" 
+        value=""
+        autocomplete="off"
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Debes completar este campo"
+        data-parsley-required >
+    </div>
 
+                 
+            
+        </div>
+
+    </div>
+</div>
+                             
                         </div>
+                       
+                        <!--TYC check-->
+                        
+                             <!--TYC check-->
+<div class="d-flex flex-row checkbox form-group justify-content-center tyc">
+    <label class="container-check">
+        
+        <input type="checkbox"  name="tyc" id="tyc"
+        data-parsley-checkmin="1" 
+        data-parsley-required-message= "Debes aceptar los términos y condiciones"
+        required>
+        
+        <span class="checkmark" ></span>
+    </label>
+    <p>Acepto los <a class="link" href="#" title="Términos y condiciones">Términos y condiciones </a> y la Política de privacidad de TourExperto.</p>
+
+</div>
+<!--TYC check-->
+                         
                         <!--TYC check-->
 
                         <div class="mt-auto button-container d-flex flex-column align-items-center">
@@ -302,7 +566,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12 align-items-stretch md-order-0">
                         <div class="image-container">
-                            <img  src="content/img/support-agents.jpg" width="100%"> 
+                            <img  src="content/img/shared/support-agents.jpg" width="100%"> 
                         </div>
                     </div>
                 </div>

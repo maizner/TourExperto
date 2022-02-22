@@ -1,10 +1,10 @@
 
 
-{% macro expert2(tit, message, ctaclasses, ctatext ) %}
- <section class="expert-section align-items-center expert-2">
+{% macro expert2(boxstyle,image, tit, message, ctaclasses, ctatext ) %}
+ <section class="expert-section align-items-center {{ boxstyle }}">
     <div class="row">
         <div class="d-lg-flex align-items-center cta-content">
-            <img  src="content/img/product/contact-support-woman.png" title="{{ tit }}" class="desktop_show">
+            <img  src="content/img/shared/{{ image }}" title="{{ tit }}" class="desktop_show">
             <div class="d-flex flex-column text-container">
                 <h4 class="cta-title">{{ tit }}</h4>
                 <p>{{ message }}</p>
@@ -16,14 +16,17 @@
 {% endmacro %}
 
 
+
 {# 
 {% block blockname %}
 
   {{ expert.expert2(
-  "Personaliza tu viaje!", 
-  "Estas buscando una fecha de salida especial o una estadia antes o despues de iniciar el tour? Quieres agregar un servicio adicional? ... o ya tenes tu ticket aereo? Nuestros expertos estan para ayudarte y adaptar nuestro tour a tu medida.",
-  "btn md_btn fill radius-5 brand-primary align-self-end",
-  "Personalizar" ) 
+                "expert-2",
+                "contact-support-woman.png",
+                "Personaliza tu viaje!", 
+                "Estas buscando una fecha de salida especial o una estadia antes o despues de iniciar el tour? Quieres agregar un servicio adicional? ... o ya tenes tu ticket aereo? Nuestros expertos estan para ayudarte y adaptar nuestro tour a tu medida.",
+                "btn md_btn fill radius-5 brand-primary align-self-end",
+                "Personalizar" ) 
   }}
 
 {% endblock %}  

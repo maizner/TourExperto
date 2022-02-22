@@ -1,13 +1,28 @@
 //CTA SECTION 
 .expert-section{
-    background-color: $Pink-brand-1;
     border-radius: 30px;
     margin-bottom:0px;
     position:relative;
 
+    &.expert-1, &.expert-2{
+        background-color: $Pink-brand-1;
+
+        .text-container,h4{
+            color:white;
+        }
+    }
+    &.expert-3{
+        background-color: white;
+        max-width: 650px;
+        margin: 0 auto;
+
+        .text-container,h4{
+            color:$grey-text-default;
+        }
+    }
+
     .col-md-12{
         display:flex;
-
     }
     img{
         // position: absolute;
@@ -19,13 +34,11 @@
         
         font-family: $text-font-stack;
         font-weight: 700;
-        color:white;
         margin-bottom:0px;
     }
     h4{
         font-family: $text-font-stack;
         font-weight: 700;
-        color:white;
         font-size:24px;
     }
     .button-container{
@@ -36,7 +49,7 @@
         padding:10px;
         display:flex;
         flex-direction: column;
-        background: transparent;
+        // background: transparent;
         color: white;
         font-size: 10px;
 
@@ -76,19 +89,15 @@
     color:white;
     font-size:16px;
 }
-.expert-section.expert-2 .cta-content{
+.expert-section.expert-2 .cta-content,
+.expert-section.expert-3 .cta-content{
     padding: 20px 30px;
 }
 
-.expert-section.expert-2 .btn{
+.expert-section.expert-2 .btn,
+.expert-section.expert-3 .btn{
     font-size:16px;
     min-width:150px;
-
-    // &:hover{
-    //     background-color: white;
-    //     color: $Pink-brand-1;
-    //     border:2px solid white;
-    // }
 }
 //FIN CTA SECTION 
 
@@ -108,7 +117,8 @@
         display: flex;
         align-items: center;
     }
-    .expert-section.expert-2 .text-container{
+    .expert-section.expert-2 .text-container,
+    .expert-section.expert-3 .text-container{
         margin-left:20px;
        
     }

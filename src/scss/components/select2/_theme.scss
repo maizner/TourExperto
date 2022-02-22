@@ -1,5 +1,5 @@
 /* -----------------------------------------------------------------------------*/
-/*components/select2/theme.scss .TELEMED 2 SELECT 2 THEME
+/*components/select2/theme.scss 
 /* -----------------------------------------------------------------------------*/
 
 //TAGS
@@ -7,7 +7,7 @@
 .tags .select2-container--default {
 
 	//Se incluye declaración IMPORTANT para pisar estilos en línea que se agregan con el plugin 
-	//TODO: Buscar una resolución.
+
 	@include media(mb) {
 		width: 100% !important;
 		.tags .select2-search.select2-search--inline, 
@@ -82,4 +82,23 @@
     
 	}
 	width: 100%;
+}
+
+
+//borde gris para los select que se encuentren dentro de una card ( utilizada para forms)
+.card{
+	.select2-container--default .select2-selection--single,
+	.select2-container--default .select2-selection--multiple{
+		border-color: #8e8e93;
+		color: #8e8e93;
+	}
+
+	.error{
+		.select2-container--default .select2-selection--single,
+		.select2-container--default .select2-selection--multiple{
+			border-color: $error-color;
+
+		}
+
+	}
 }
