@@ -49,15 +49,25 @@ button[type=submit],input[type=submit]{
     letter-spacing: .5px;
 }
 
-.text-help{
+.resume-strong{
     display: flex;
     font-size: $t12;
     color: $Pink-brand-1;
     font-style:italic  ;
     margin-top:20px
-
 }
-
+.border-text{
+    margin-top: 7px;
+    padding: 3px 7px;
+    font-size: $t12;
+    font-weight: bold;
+    text-align: right;
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    color: $grey-3;
+}
 @include media(dk){
     button[type=submit],input[type=submit]{
         width: 150px;

@@ -40,6 +40,14 @@
     }
     p{
         font-size: $t14;
+
+        &.resume-strong{
+            display: flex;
+            font-size: $t12;
+            color: $Pink-brand-1;
+            font-style:italic  ;
+            margin-top:20px
+        }
     }
     .expert-section p{
         font-size: $t17;
