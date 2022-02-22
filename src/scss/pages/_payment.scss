@@ -6,6 +6,7 @@
     }
     .radio .default_validation_msj{
         top:-20px;
+        left: 15px;
     }
     .checkmark{
         transition: all ease-in-out .5s;
@@ -16,8 +17,8 @@
             
         }
     }
-    .form-group.error .card, 
-    .form-group.error .card .checkmark{
+
+    .form-group.error .card.radio .checkmark{
         border-color: $error-color;
     }
     .card.card-radius-40 .card-body{

@@ -50,6 +50,9 @@
 
                 {% if pgBooking or pgPayment%}
                 <div class="phones d-flex flex-column">
+                {% endif %}
+                
+                    {% if pgBooking or pgPayment%}    
                     <div class="phones-wrapper">
                         <div class="phones-title headphones">
                             {# <img src="content/img/booking/headset.png" title="Comunicate" > #}
@@ -84,7 +87,9 @@
                             </a>
                         </div>
                     </div>
+                    {% endif %}
 
+                    {% if pgBooking%}
                     <div class="phones-buttons">
                         <a class="btn sm_btn btn-grey radius-10" href="#" >
                             Ayuda
@@ -94,6 +99,9 @@
                         </a>
                       
                     </div>
+                    {% endif %}
+
+                {% if pgBooking or pgPayment%}
                 </div>
                 {% endif %}
 
