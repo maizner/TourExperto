@@ -622,7 +622,9 @@
                     <!--Listado de productos-->
 
                     <div class="d-flex flex-column align-items-center mb-5 mt-5">
-                        <a href="#" class="btn sm_btn linear radius-50 brand-secondary load-more">Cargar más</a>
+                        <a href="#" class="btn sm_btn linear radius-50 brand-secondary load-more">
+                            <span class="spinner-border spinner-border-sm m-1" role="status" aria-hidden="true"></span>
+                            Cargar más</a>
                     </div>
 
                 </div>
@@ -632,7 +634,11 @@
 
             <div class=" mb-5 ">
                 
-                    <section class="contact-support" >
+                    
+
+ 
+
+<section class="contact-support" >
     <div class="container-lg">
         <div class="row">
             <div class="w-75 mx-auto">
@@ -644,12 +650,12 @@
                             ¡Contáctanos ahora para que ellos respondan a todas las preguntas relacionadas con el tour que deseas!</p>
                         </div>
                         <div class="d-flex mt-3">
-                            <a class=" btn md_btn fill brand-primary radius-5" href="#" title="Contacta a un agente" >Contactate</a>
+                            <button type="button" class="btn md_btn fill brand-primary radius-5" title="Contacta a un agente" data-bs-toggle="modal" data-bs-target="#agentModal">Contactate</button>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12 align-items-stretch md-order-0">
                         <div class="image-container">
-                            <img  src="content/img/shared/support-agents.jpg" width="100%"> 
+                            <img  src="content/img/shared/support-agents.jpg" width="100%">
                         </div>
                     </div>
                 </div>
@@ -657,7 +663,139 @@
         </div>
     </div>
 </section>
+<!--Contact support modal-->
+<div class="modal fade" id="agentModal" tabindex="-1" aria-labelledby="agentModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
 
+    <div class="modal-dialog sm-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-lg-flex flex-row align-items-center">
+                    <div class="d-lg-flex flex-column">
+                        <h5 class="modal-title" id="agentModalLabel">Dejanos tu consulta</h5>
+                        <p>Ponte en contacto con nosotros sobre cualquiera de nuestras tours.Nuestros expertos se comunicarán a la brevedad</p>
+                    </div>
+                    <img src="content/img/shared/contact-support-3-agents.png" width="270">
+                </div>
+                
+            </div>
+            <form action="#" class="form_content parsley js_form_validation">
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="col-md-6 offset-md-right-6">
+                            
+  <div class="form-group ">
+        <div class="position-relative">
+            <label for="name">Nombre</label>
+            <span class="label-help"></span>
+        </div>
+        <input type="text" class="form-control" 
+        name="name" id="name" 
+        placeholder="Ingresa tu nombre" 
+        value=""
+        autocomplete="off"
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Debes completar este campo"
+        data-parsley-required >
+    </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            
+  <div class="form-group ">
+        <div class="position-relative">
+            <label for="email">Mail</label>
+            <span class="label-help"></span>
+        </div>
+        <input type="email" class="form-control" 
+        name="email" id="email" 
+        placeholder="Ingresa tu mail" 
+        value=""
+        autocomplete="off"
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Debes completar este campo"
+        data-parsley-type-message= "Debes ingresar un mail válido."
+        data-parsley-required >
+    </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            
+  <div class="form-group ">
+        <div class="position-relative">
+            <label for="mobile">Número de celular (opcional)</label>
+            <span class="label-help"></span>
+        </div>
+        <input type="number" class="form-control" 
+        name="mobile" id="mobile" 
+        placeholder="+54 1234 567890" 
+        value=""
+        autocomplete="off">
+    </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <div class="position-relative text-center">
+                                    <label for="inputSpinnerAdults">Mayores</label>
+                                </div>
+                
+                                <input type="number" 
+                                name="inputSpinnerAdults" id="inputSpinnerAdults"
+                                class="input-spinnumber" 
+                                value="1"
+                                min="1" step="1"
+                                minlength="1"
+                                data-parsley-trigger="change"
+                                data-parsley-required-message= "Ingresa al menos 1 pasajero"
+                                data-parsley-minlength-message= "Ingresa al menos 1 pasajero"
+                                data-parsley-required/>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-right-6">
+                            <div class="form-group ">
+                                <div class="position-relative text-center">
+                                    <label for="inputSpinnerMinors">Menores</label>
+                                </div>
+                                <input type="number" 
+                                name="inputSpinnerMinors" id="inputSpinnerMinors"
+                                class="input-spinnumber" 
+                                placeholder="0"
+                                min="0" step="1"/>
+
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            
+  <div class="form-group textarea">
+        <div class="position-relative">
+            <label for="mensaje">Tu pregunta</label>
+            <span class="label-help"></span>
+        </div>
+        <textarea class="form-control " 
+        name="mensaje" id="mensaje" 
+        placeholder="Escribe aquí ..." 
+        value=""
+        autocomplete="off"
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Debes completar este campo"
+        data-parsley-required ></textarea>
+    </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn md_btn btn-grey radius-5" data-bs-dismiss="modal">Cerrar</button>
+                    <input type="submit" value="Enviar" id="send" class="btn md_btn fill radius-5 brand-primary">
+                </div>
+             </form>
+        </div>
+    </div>
+</div>
+<!--Contact support modal-->
                  
             </div>
         </div>
@@ -720,6 +858,7 @@
             </div>
         </div>
     </div>
+    
 </footer>
          
         </div>

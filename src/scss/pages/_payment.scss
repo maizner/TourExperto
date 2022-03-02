@@ -73,10 +73,9 @@
         padding-left: 7px;
     }
     /*reseteo los máximos y mínimos puestos por default*/
-    // #cp, .select2{
-    //     max-width:120px;
-    //     min-width:120px;
-    // }
+    .default .select2-container--default{
+        min-width:auto;
+    }
 
     .tooltip-white{
         position: absolute;
@@ -128,5 +127,8 @@
   
     .tooltip-white{
         top: 42px;
+    }
+    .pgpayment p{
+        margin-bottom:20px;
     }
 }

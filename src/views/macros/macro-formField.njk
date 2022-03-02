@@ -93,7 +93,10 @@
 
 {% macro inputMailValid(type="email", name, class,label,  placeholder, value) %}
   <div class="form-group {{ class }}">
-        <label for="{{ name }}">{{ label }}</label>
+        <div class="position-relative">
+            <label for="{{ name }}">{{ label }}</label>
+            <span class="label-help">{{ labelhelp }}</span>
+        </div>
         <input type="{{ type }}" class="form-control" 
         name="{{ name }}" id="{{ name }}" 
         placeholder="{{ placeholder }}" 
@@ -103,6 +106,23 @@
         data-parsley-required-message= "Debes completar este campo"
         data-parsley-type-message= "Debes ingresar un mail válido."
         data-parsley-required >
+    </div>
+{% endmacro %}
+
+{% macro TextareaValid( name, class,label,  placeholder, value) %}
+  <div class="form-group {{ class }}">
+        <div class="position-relative">
+            <label for="{{ name }}">{{ label }}</label>
+            <span class="label-help">{{ labelhelp }}</span>
+        </div>
+        <textarea class="form-control " 
+        name="{{ name }}" id="{{ name }}" 
+        placeholder="{{ placeholder }}" 
+        value="{{ value }}"
+        autocomplete="off"
+        data-parsley-trigger="change"
+        data-parsley-required-message= "Debes completar este campo"
+        data-parsley-required ></textarea>
     </div>
 {% endmacro %}
 

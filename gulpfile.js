@@ -101,8 +101,6 @@ var config = {
         'src/libs/js/rSlider.js',
         'src/libs/js/slick-nav.js',
         'src/libs/js/slick-slider.js',
-        // 'src/libs/js/slick-lightbox.js',
-        'src/libs/js/headroom.js',
         'src/libs/js/magnific-popup.js',
         'src/libs/js/font-awesome.js',
         'src/libs/js/svg-injector.js',
@@ -111,7 +109,7 @@ var config = {
         'src/libs/js/daterangepicker.js',
         'src/libs/js/select2.full.js',
         'src/libs/js/nanoScroller.js',
-        'src/libs/js/animateit.js'
+        'src/libs/js/bootstrap-input-spinner.js'
         ],
 
     output: 'dist/content/js/libs',

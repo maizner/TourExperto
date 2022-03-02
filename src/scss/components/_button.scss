@@ -218,11 +218,11 @@
 	}
 }
 .btn.btn-grey {
-	background-color: lighten($grey-5,20%);
+	background-color: lighten($grey-6, 8%);
 	color: $grey-2;
 	margin:3px;
 	&:hover, &.active, &:active{
-		background-color: lighten($grey-5,10%);
+		background-color: rgba($brand-color, 0.32);
 	}
 }
 

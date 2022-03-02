@@ -33,6 +33,11 @@ form .form-control:placeholder {
     color: #cccccc;
     font-size: $t15;
 }
+form textarea.form-control{
+    max-width: 100%;
+    min-height:100px;
+    resize: none;
+}
   
 //Default input styles
 input,form .form-control {

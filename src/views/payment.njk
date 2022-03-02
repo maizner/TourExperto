@@ -3,7 +3,6 @@
 {% block bodyClass %} pgpayment {% endblock %}
 {% import "macros/macro-experts.njk" as expert %} 
 {% import "macros/macro-formField.njk" as formfield %} 
-{% import "macros/macro-paxField.njk" as paxfield %}
 
 {% block pagestyle %}
     <link rel="stylesheet" type="text/css" href="content/css/payment.css">
@@ -54,7 +53,7 @@
                                         </label>
                                         <div class="d-flex flex-column">
                                             <h3 class="subtitle">Pago a traves de un experto</h3>
-                                            <p>Si quieres  pagar en tu moneda local o conocer otras modalidades de pago, un experto se contactara para gestionar el pago de tu reserva en las próximas 24 hs.</p>
+                                            <p>Si quieres  pagar en tu moneda local o conocer otras modalidades de pago, un experto se contactara para gestionar el pago de tu reserva en las próximas 24 hs. ¿Te ha quedado alguna duda?.</p>
                                         </div>
 
                                     </div>
@@ -116,7 +115,7 @@
                                 </div>
                             </div>
 
-
+                            
                             {% block paymentform %}
                                 {% include "partials/payment/_payment-form.njk" %}
                             {% endblock %} 

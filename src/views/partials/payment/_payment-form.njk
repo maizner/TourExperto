@@ -1,3 +1,4 @@
+<!--Formulario payment-data-->
 <div class="card card-radius-40 payment-data">            
     <div class="card-body d-flex flex-column">
         
@@ -13,7 +14,7 @@
                 {{ formfield.inputTextValid("number", "cardnumber", "default","Número de la tarjeta","","Ingresa número de tarjeta", "") }}
             {% endblock %} 
 
-           
+            <!--Fecha de vencimiento-->
             <div class="d-flex flex-row justify-content-between align-items-center">
                 <div class="position-relative label-group">
                     <label for="month ">Fecha de vencimiento</label>
@@ -29,7 +30,7 @@
                         pattern="[0-9]*"
                         inputmode="numerical"
                         data-parsley-trigger="change"
-                        data-parsley-required-message= "Debes completar mes"
+                        data-parsley-required-message= "Completar Mes"
                         data-parsley-required >
                     </div>
 
@@ -43,7 +44,7 @@
                         pattern="[0-9]*"
                         inputmode="numerical"
                         data-parsley-trigger="change"
-                        data-parsley-required-message= "Debes completar año"
+                        data-parsley-required-message= "Completar Año"
                         data-parsley-required >
                     </div>
 
@@ -61,27 +62,54 @@
                 {# {% macro inputTextValid(type, name and id, class,label,labelhealp, text,placeholder, value) %} #}
                 {{ formfield.inputTextValid("number", "carddocument", "default","Número de documento","","Ingresa número de documento", "") }}
             {% endblock %} 
-
-            {# <div class="d-lg-flex flex-row"> #}
-                <div class="form-group default">
-                    <div class="position-relative">
-                        <label for="pais">País</label>
-                    </div>
-                    <select  class="form-control select2 withsearch" id="pais" name="pais"  
-                    tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="País"  data-parsley-trigger="change"
-                    data-parsley-required-message= "Seleccionar"
-                    data-parsley-required>
-                        <option></option>
-                        {% for item in countryOptions %}
-                            <option value="{{item.item_name}}" >{{ item.item_name }}</option>
-                        {% endfor %}
-                    </select>
+            
+            <!--País y CP-->
+            <div class="d-lg-flex flex-row justify-content-between align-items-center">
+                <div class="position-relative label-group desktop_show">
+                    <label for="pais">País y Código Postal</label>
                 </div>
-                {% block cp %}
-                    {# {% macro inputTextValid(type, name and id, class,label,labelhealp, text,placeholder, value) %} #}
-                    {{ formfield.inputTextValid("number", "cp", "default","Código postal","","Ingresa código postal", "") }}
-                {% endblock %} 
-            {# </div> #}
+                <div class="double-input-cont">
+                    
+                    <div class="form-group default">
+                        <div class="position-relative label-group mobile_show">
+                            <label for="pais">País</label>
+                        </div>
+                        
+                        <select  
+                        class="form-control select2 withsearch" 
+                        id="pais" 
+                        name="pais"  
+                        tabindex="-1" 
+                        aria-hidden="true"  
+                        style="width:100%" 
+                        data-placeholder="País"  
+                        data-parsley-trigger="change"
+                        data-parsley-required-message= "Seleccionar"
+                        data-parsley-required>
+                            <option></option>
+                            {% for item in countryOptions %}
+                                <option value="{{item.item_name}}" >{{ item.item_name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                     <div class="form-group default">
+                        <div class="position-relative label-group mobile_show">
+                            <label for="pais">Código Postal</label>
+                        </div>
+
+                        <input 
+                        type="text" 
+                        class="form-control" 
+                        name="cp" id="cp" 
+                        placeholder="Código Postal" 
+                        autocomplete="off"
+                        data-parsley-trigger="change"
+                        data-parsley-required-message= "Completar CP"
+                        data-parsley-required >
+                    </div>
+                   
+                </div> 
+            </div>
         </div>
 
     </div>

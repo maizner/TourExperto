@@ -20,7 +20,7 @@
             bottom:-18px;
             right:15px;
         }
-        input{
+        input,textarea{
             &.parsley-error{
                 border: 1px solid $error-color;
             }

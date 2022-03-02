@@ -46,6 +46,9 @@ var payment = {
          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
          return new bootstrap.Tooltip(tooltipTriggerEl)
          });
+
+         //Init de number spinners within the modal 
+         $(".input-spinnumber").inputSpinner();
         
         
     }

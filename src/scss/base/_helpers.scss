@@ -349,3 +349,9 @@
 	display:block;
 	width: 100px;
 }
+
+@include media(dk){
+	.offset-md-right-6 {
+		margin-right: 50%;
+	}
+}
