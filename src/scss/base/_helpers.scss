@@ -355,3 +355,82 @@
 		margin-right: 50%;
 	}
 }
+
+//Check animado ....momentaneamente en esta sección para que sea tomado por todo el layout. 
+
+.animated-check {
+	width: 50px;
+	display: block;
+	margin: 10px auto 0;
+}
+
+.path {
+stroke-dasharray: 1000;
+stroke-dashoffset: 0;
+}
+.path.circle {
+	-webkit-animation: dash 1s ease-in-out;
+	animation: dash 1s ease-in-out;
+}
+.path.line {
+	stroke-dashoffset: 1000;
+	-webkit-animation: dash 1s .35s ease-in-out forwards;
+	animation: dash 1s .35s ease-in-out forwards;
+}
+.path.check {
+	stroke-dashoffset: -100;
+	-webkit-animation: dash-check 1s .35s ease-in-out forwards;
+	animation: dash-check 1s .35s ease-in-out forwards;
+}
+
+
+@-webkit-keyframes dash {
+	0% {
+		stroke-dashoffset: 1000;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes dash {
+	0% {
+		stroke-dashoffset: 1000;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@-webkit-keyframes dash-check {
+	0% {
+		stroke-dashoffset: -100;
+	}
+	100% {
+		stroke-dashoffset: 900;
+	}
+}
+
+@keyframes dash-check {
+	0% {
+		stroke-dashoffset: -100;
+	}
+	100% {
+		stroke-dashoffset: 900;
+	}
+}
+
+
+.spinner-border {
+    -webkit-animation: .75s linear infinite spinner-border;
+    animation: .75s linear infinite spinner-border;
+}
+//
+// Rotating border
+//
+
+// scss-docs-start spinner-border-keyframes
+@keyframes spinner-border {
+	to { transform: rotate(360deg) #{"/* rtl:ignore */"}; }
+  }
+  // scss-docs-end spinner-border-keyframes

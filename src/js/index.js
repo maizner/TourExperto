@@ -1,26 +1,44 @@
 var index = {
     
     init: function () {
+
+        // -----------------------------------------------------------------------------
+        // COMIENZO DE VALIDACIONES Y MANIPULACION DE CLASES PARSLEY JS
+        // ----------------------------------------------------------------------------- 
+        $('.js_form_validation').parsley({
+            //clases en input para estilos css 
+            successClass: 'parsley-success',
+            errorClass:   'parsley-error',
+            errorsWrapper:'<span class="default_validation_msj"></span>',
+            errorTemplate:'<span class="validation-message"></span>',
+            
+        });
+
+        //Clases para estilos de error
+        window.Parsley.on('field:error', ()=> {
+            $('.parsley-error').parents('.form-group')
+            .addClass('error')
+            .removeClass('success')
+        });
+
+        //Clases para estilos de éxito
+        window.Parsley.on('field:success', ()=> {
+            $('.parsley-success').parents('.form-group')
+            .addClass('success')
+            .removeClass('error')
+        });
+        
         //SVG
         // Elements to inject
         var mySVGsToInject = document.querySelectorAll('img.svg');
         // Do the injection
         SVGInjector(mySVGsToInject);
 
-        // //Header
-        // $('#header').headroom({
-        //     offset: 50,
-        //     tolerance: {
-        //         down: 0,
-        //         up: -300
-        //     },
-        // });
-
         //Home Sliders
         $('#hero-items, #paymode-items').slick({
             arrows: false,
             autoplay: true,
-        })
+        });
 
 
         $('#tag-items, #review-items').slick({
@@ -40,7 +58,7 @@ var index = {
                     slidesToScroll: 1,
                 }
             }]
-        })
+        });
 
         $('#travel-items, #offer-items').slick({
             arrows: false,
@@ -60,7 +78,7 @@ var index = {
                     slidesToScroll: 1,
                 }
             }]
-        })
+        });
 
         $('#info-items').slick({
             arrows: false,
@@ -78,7 +96,7 @@ var index = {
                     centerMode: false               
                 }
             }]
-        })
+        });
 
         $('#agent-logo-items').slick({
             slidesToShow: 4,
@@ -103,7 +121,7 @@ var index = {
                     centerMode: false               
                 }
             }]
-        })
+        });
 
 
         
@@ -136,6 +154,9 @@ var index = {
             $('input[name="DateFrom"]').val(a);
             $('input[name="DateTo"]').val(b);
         });
+
+        //Init de number spinners within the modal 
+        $(".input-spinnumber").inputSpinner();
       
     
     },  

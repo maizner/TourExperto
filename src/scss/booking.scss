@@ -25,16 +25,17 @@
 	'components/scrollbar',
 	'components/header-phones',
  	'components/form-group',
-	'components/form-group-validations',
  	'components/input',
  	'components/cards', 
 	'components/steps';
 
 
 @import 
+	'shared/modal',
 	'shared/contact-support',
 	'shared/tyc',
 	'shared/resume-card',
+	'shared/form-group-validations',
 	'shared/experts-comment';
 
 @import

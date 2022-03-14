@@ -1,6 +1,33 @@
 var search = {
     
     init: function () {
+
+        // -----------------------------------------------------------------------------
+        // COMIENZO DE VALIDACIONES Y MANIPULACION DE CLASES PARSLEY JS
+        // ----------------------------------------------------------------------------- 
+        $('.js_form_validation').parsley({
+            //clases en input para estilos css 
+            successClass: 'parsley-success',
+            errorClass:   'parsley-error',
+            errorsWrapper:'<span class="default_validation_msj"></span>',
+            errorTemplate:'<span class="validation-message"></span>',
+            
+        });
+
+        //Clases para estilos de error
+        window.Parsley.on('field:error', ()=> {
+            $('.parsley-error').parents('.form-group')
+            .addClass('error')
+            .removeClass('success')
+        });
+
+        //Clases para estilos de éxito
+        window.Parsley.on('field:success', ()=> {
+            $('.parsley-success').parents('.form-group')
+            .addClass('success')
+            .removeClass('error')
+        });
+        
         //SVG
         // Elements to inject
         var mySVGsToInject = document.querySelectorAll('img.svg');
@@ -32,9 +59,9 @@ var search = {
         //Init range slider on shown collapsible panel, and destroy on hidden
         $('#content-morefilters').one('shown.bs.collapse', function () {
             activeSliderPrecio()
-        })
+        });
 
-        $('.dropdown-toggle').dropdown()
+        $('.dropdown-toggle').dropdown();
 
         $("input[type='checkbox']").on("change", function () {
 	        if (this.checked) {
@@ -51,8 +78,12 @@ var search = {
 					.next('.panel')
 					.removeClass("ui-selected")
 	        }
-	    })
-    },  
+	    });
+
+        //Init de number spinners within the modal 
+        $(".input-spinnumber").inputSpinner()
+    }
+      
 
     
     

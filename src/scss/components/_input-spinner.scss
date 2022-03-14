@@ -1,0 +1,61 @@
+.input-spinner{
+
+    &.form-group{
+        margin:0px;
+    }
+    .input-group  {
+        display: flex;
+        align-items: center;
+    }
+
+    .input-group-text{
+        font-family: $text-font-stack;
+        font-size: $t14;
+        background-color: transparent;
+        border: none;
+        padding:7px;
+        padding-left:4px;
+    }
+    .input-spinnumber{
+        font-family: "arial", sans-serif;
+        width: 15px;
+        min-width: 15px;
+        max-width: 15px;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        border:none;
+        font-size: $t14;
+        font-weight: bold;
+        color:black
+    }
+    .btn-decrement,.btn-increment{
+        display:flex;
+        align-items:center;
+        padding:0px;
+        width:20px;
+        height:20px;
+        border:2px solid $brand-color;
+        color: $brand-color;
+        background-color: transparent;
+        border-radius: 50% !important;
+        transition: all .2s ease-in-out;
+
+        &:hover, &:active, &.active{
+            color:white;
+            background: $brand-color;
+            border-color: $brand-color;
+            box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.26);
+        }
+    }
+    .btn-decrement{
+        margin-right:5px;
+    }
+    .btn-increment{
+        margin-left: 5px;
+
+        strong{
+            padding-top: 3px;
+        }
+    }
+}

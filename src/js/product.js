@@ -1,6 +1,32 @@
 var producto = {
     
     init: function () {
+         // -----------------------------------------------------------------------------
+        // COMIENZO DE VALIDACIONES Y MANIPULACION DE CLASES PARSLEY JS
+        // ----------------------------------------------------------------------------- 
+        $('.js_form_validation').parsley({
+            //clases en input para estilos css 
+            successClass: 'parsley-success',
+            errorClass:   'parsley-error',
+            errorsWrapper:'<span class="default_validation_msj"></span>',
+            errorTemplate:'<span class="validation-message"></span>',
+            
+        });
+
+        //Clases para estilos de error
+        window.Parsley.on('field:error', ()=> {
+            $('.parsley-error').parents('.form-group')
+            .addClass('error')
+            .removeClass('success')
+        });
+
+        //Clases para estilos de éxito
+        window.Parsley.on('field:success', ()=> {
+            $('.parsley-success').parents('.form-group')
+            .addClass('success')
+            .removeClass('error')
+        });
+        
         
         //Galería slider de producto
         $('#main-product-slider').slick({
@@ -10,7 +36,7 @@ var producto = {
             cssEase: 'linear',
             prevArrow: '<button class="slick-prev slick-arrow" aria-label="" type="button" style=""><i class="fas fa-chevron-left"></i></button>',
             nextArrow: '<button class="slick-next slick-arrow" aria-label="" type="button" style=""><i class="fas fa-chevron-right"></i></button>'
-        })
+        });
 
         //Galería de productos relacionados ( Porque te gusta...)
         $('#relProds').slick({
@@ -76,20 +102,12 @@ var producto = {
                 $(this).parents('.table').siblings('.btn-section').find('.btn').addClass("active");
             }
             console.log($(this).val())
-        })
+        });
        
 
 
-        //Init de Toast 
-        // var toastTrigger = document.getElementById('reservar')
-        // var toastLiveExample = document.getElementById('reservarToast')
-        // if (toastTrigger) {
-        // toastTrigger.addEventListener('click', function () {
-        //     var toast = new bootstrap.Toast(toastLiveExample)
-
-        //     toast.show()
-        // })
-        // }
+        //Init de number spinners within the modal 
+        $(".input-spinnumber").inputSpinner();
     }
        
     

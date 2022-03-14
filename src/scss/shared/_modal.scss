@@ -9,15 +9,28 @@
   .modal {
     overflow-x: hidden;
     overflow-y: auto;
+	
+
+	
   }
 }
 
 // Container that the modal scrolls within
 .modal {
+	z-index: $zindex-modal;
 
   // Prevent Chrome on Windows from adding a focus outline. For details, see
   // https://github.com/twbs/bootstrap/pull/10951.
   outline: 0;
+	input, textarea{
+		border-radius: 0.25rem;
+
+		&[type=submit] {
+			max-width: 150px;
+		}
+	}
+
+	
 
 	.modal-header{
 		border-bottom:0px;
@@ -51,6 +64,11 @@
         background-repeat: no-repeat;
     	background-position: left;
     	padding-left: 15px !important;
+	}
+	hr.gradient{
+		height:2px;
+		background: rgb(61,50,226);
+		background: linear-gradient(90deg, rgba(61,50,226,1) 0%, rgba(219,50,110,1) 100%);
 	}
 
 }
@@ -157,6 +175,8 @@
 		}
 
 		.modal-footer{
+			display: flex;
+			flex-direction:row;
 			min-height: $modal-footer-height;
 			border-top: 0px;
 		}
@@ -171,5 +191,47 @@
 	  }
 }
 
+// Estilos de modal agente
+.agent-modal{
+	.modal-dialog .modal-content .modal-header{
+        padding-bottom:0px;
+    }
+    
+    .modal-dialog .modal-content .modal-footer{
+        padding-top:0px;
+    }
+    .modal-dialog .modal-content .modal-body{
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+    .modal-dialog .modal-content .modal-title{
+        color: $Pink-brand-1 ;
+		font-size: $t24;
+		line-height: $t18;
+		margin-bottom:10px;
 
+    }
+
+	&.success{
+		.modal-dialog .modal-content .success-title{
+			color: $success-color;
+			font-size: $t32;
+			line-height:$t16 ;
+			margin-bottom:0px;
+		}
+
+		p{
+			color: $grey-text-default;
+
+			&.tky-text{
+				font-size: $t15;
+				color: black;
+				font-weight:500;
+				text-align: center;
+				// margin-top:20px;
+				// margin-bottom:10px;
+			}
+		}
+	}
+}
 

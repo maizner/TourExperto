@@ -28,11 +28,12 @@ var payment = {
             .removeClass('error')
         });
 
-         //init select NO search box
+        //init select NO search box
          $('.select2.nosearch').select2({
             minimumResultsForSearch: Infinity,
             dropdownCssClass : "no-search"
         });
+
         $('.select2.withsearch').select2({
         });
       
@@ -47,7 +48,7 @@ var payment = {
          return new bootstrap.Tooltip(tooltipTriggerEl)
          });
 
-         //Init de number spinners within the modal 
+        //Init de number spinners within the modal 
          $(".input-spinnumber").inputSpinner();
         
         

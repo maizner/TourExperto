@@ -6,9 +6,7 @@ var booking = {
         // COMIENZO DE VALIDACIONES Y MANIPULACION DE CLASES PARSLEY JS
         // ----------------------------------------------------------------------------- 
        
-        // $('#booking').on('click', (e)=>{
-        //     e.preventDefault()
-        // })
+      
         $('.js_form_validation').parsley({
             //clases en input para estilos css 
             successClass: 'parsley-success',
@@ -45,6 +43,8 @@ var booking = {
             $(".nano").nanoScroller();
         });
         
+        //Init de number spinners within the modal 
+        $(".input-spinnumber").inputSpinner();
     }
        
     

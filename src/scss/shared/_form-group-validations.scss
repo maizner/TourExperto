@@ -1,0 +1,59 @@
+/* -----------------------------------------------------------------------------*/
+/* components/_form-group-parsley styles .*/
+/* -----------------------------------------------------------------------------*/
+
+.form-group{
+    //aqui pondremos validaciones de errores para label
+    position: relative;
+    &.error{
+        
+        //se puede agregar label para marcar el error
+        .form-control,.default_validation_msj{
+            color:$error-color;
+        }
+        .default_validation_msj{
+            font-family: $text-font-stack;
+            font-size: $t11;
+            font-weight: bold;
+            letter-spacing: $letter-spacing-half;
+            position: absolute;
+            bottom:-18px;
+            right:15px;
+        }
+        input,textarea{
+            &.parsley-error{
+                border: 1px solid $error-color;
+            }
+            &.parsley-success{
+                border: 1px solid $active-green;
+            }
+        }
+
+    }
+    &.error.checkbox{
+
+        .default_validation_msj{
+
+            left:15px;
+        }
+
+        .checkmark{
+            border: 1px solid $error-color;
+        }
+      
+    }
+    &.success{
+
+        // .form-control{
+        //     border-color:$success-color;
+        // }
+
+        .default_validation_msj{
+            display:none;
+        }
+
+    }
+
+
+
+}

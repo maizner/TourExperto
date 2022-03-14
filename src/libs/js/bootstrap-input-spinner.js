@@ -3,6 +3,8 @@
  * Repository: https://github.com/shaack/bootstrap-input-spinner
  * https://shaack.com/projekte/bootstrap-input-spinner/
  * License: MIT, see file 'LICENSE'
+ * 
+ *PLEASE DO NOT UPDATE. THIS TEMPLATE IS EDITED ( CLTR+F 'EDITED')
  */
 
 ;(function ($) {
@@ -74,12 +76,20 @@
             keyboardStepping: true, // set this to `false` to disallow the use of the up and down arrow keys to step
             locale: navigator.language, // the locale, per default detected automatically from the browser
             editor: I18nEditor, // the editor (parsing and rendering of the input)
-            template: // the template of the input
+
+            template: // EDITED -** READ **: the template of the input edited
                 '<div class="input-group ${groupClass}">' +
-                '<button style="min-width: ${buttonsWidth}" class="btn btn-decrement ${buttonsClass} btn-minus" type="button">${decrementButton}</button>' +
-                '<input type="text" inputmode="decimal" style="text-align: ${textAlign}" class="form-control form-control-text-input"/>' +
-                '<button style="min-width: ${buttonsWidth}" class="btn btn-increment ${buttonsClass} btn-plus" type="button">${incrementButton}</button>' +
+                '<button class="btn btn-decrement ${buttonsClass} btn-minus" type="button">${decrementButton}</button>' +
+                '<input type="text" inputmode="decimal"/>' +
+                '<button  class="btn btn-increment ${buttonsClass} btn-plus" type="button">${incrementButton}</button>' +
                 '</div>'
+
+             // template: // the ORIGINAL template of the input
+            //     '<div class="input-group ${groupClass}">' +
+            //     '<button style="min-width: ${buttonsWidth}" class="btn btn-decrement ${buttonsClass} btn-minus" type="button">${decrementButton}</button>' +
+            //     '<input type="text" inputmode="decimal" style="text-align: ${textAlign}" class="form-control form-control-text-input"/>' +
+            //     '<button style="min-width: ${buttonsWidth}" class="btn btn-increment ${buttonsClass} btn-plus" type="button">${incrementButton}</button>' +
+            //     '</div>
         }
 
         for (var option in methodOrProps) {

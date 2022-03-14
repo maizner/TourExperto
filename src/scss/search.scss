@@ -32,7 +32,9 @@
 
 
 @import 
-'shared/contact-support';
+	'shared/modal',
+	'shared/form-group-validations',
+	 'shared/contact-support';
 
 @import
 	'pages/search';
