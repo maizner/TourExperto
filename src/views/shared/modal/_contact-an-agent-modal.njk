@@ -1,0 +1,73 @@
+<div class="modal fade agent-modal" id="agentModal" tabindex="-1" aria-labelledby="agentModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+    <div class="modal-dialog sm-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-lg-flex flex-row align-items-center">
+                    <div class="d-lg-flex flex-column">
+                        <h4 class="modal-title" id="agentModalLabel">Dejanos tu consulta</h4>
+                        <p>Ponte en contacto con nosotros sobre cualquiera de los tours. Nuestros expertos  se comunicarán a la brevedad.</p>
+                    </div>
+                    <img src="content/img/shared/contact-support-3-agents.png" width="270">
+                </div>
+                
+            </div>
+            
+            <form action="#" class="form_content parsley js_form_validation">
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="col-md-6 offset-md-right-6">
+                            {{ formfield.inputTextValid("text", "name", "","Nombre","","Ingresa tu nombre", "") }}
+                        </div>
+                        <div class="col-md-6">
+                            {{ formfield.inputMailValid( "email", "","Mail","Ingresa tu mail", "") }}
+                        </div>
+                        <div class="col-md-6">
+                            {{ formfield.input("number", "mobile", "","Número de celular (opcional)","","+54 1234 567890", "") }}
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">  <label> Cantidad de pasajeros (Opcional) </label> </div>
+                        </div>
+                        <div class="col-md-4">
+                        
+                            <div class="form-group input-spinner">
+                            
+                                <input type="number" 
+                                name="inputSpinnerAdults" 
+                                id="inputSpinnerAdults"
+                                class="input-spinnumber" 
+                                value="0"
+                                data-suffix="Mayores"
+                                min="0" step="1"/>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="form-group input-spinner">
+                            
+                                <input type="number" 
+                                name="inputSpinnerMinors" id="inputSpinnerMinors"
+                                class="input-spinnumber" 
+                                value="0"
+                                data-suffix="Menores"
+                                min="0" step="1"/>
+
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            {{formfield.TextareaValid("mensaje", "textarea","Tu pregunta",  "Escribe aquí ...", "")}}
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn md_btn btn-grey radius-5" data-bs-toggle="modal" data-bs-target="#agentModalSuccess">Disparar modal consulta enviada</button>
+
+                    <button type="button" class="btn md_btn btn-grey radius-5" data-bs-dismiss="modal">Cerrar</button>
+                    <input type="submit" value="Enviar" id="send" class="btn md_btn fill radius-5 brand-primary" >
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
