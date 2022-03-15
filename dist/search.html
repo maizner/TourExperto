@@ -40,7 +40,7 @@
 
         <div class="d-flex justify-content-between header-bottom">
             <a href="#" id="logo"><img src="content/img/logo.png" alt=""></a>
-            
+
             <nav id="nav">
                 
                     <div id="header-search" class="flex-grow-1 me-3">
@@ -51,46 +51,211 @@
                 
 
                 
-                <ul>
-                    <li class="nav-item"><a href="#">Destinos</a></li>
-                    <li class="nav-item"><a href="#">Productos</a></li>
-                    <li class="nav-item"><a href="#">Recomendados</a></li>
-                    <li class="nav-item"><a href="#">Covid</a></li>
-                    <li class="nav-item"><a href="#">Ofertas</a></li>
-                    <li class="nav-item"><a href="#">Blog</a></li>
-                    <li class="nav-item"><a href="#">Nosotros</a></li>
-                    <li class="nav-item"><a href="#">Contacto</a></li>
                     
-                </ul>
+
+                    <ul>
+                        <li class="nav-item">
+                            <a href="#" type="button" alt="Destinos" data-bs-toggle="modal" data-bs-target="#destinationsModal" >Destinos</a>
+                        </a></li>
+                        <li class="nav-item">
+                            <a href="#" type="button" alt="Destinos" data-bs-toggle="modal" data-bs-target="#productsModal">Productos</a>
+                        </a></li>
+                        <li class="nav-item">
+                            <a href="#">Recomendados</a>
+                        </a></li>
+                        <li class="nav-item">
+                            <a href="#">Covid</a>
+                        </a></li>
+                        <li class="nav-item">
+                            <a href="#">Ofertas</a>
+                        </a></li>
+                        <li class="nav-item">
+                            <a href="#">Blog</a>
+                        </a></li>
+                        <li class="nav-item">
+                            <a href="#">Nosotros</a>
+                        </a></li>
+                        <li class="nav-item">
+                            <a href="#">Contacto</a>
+                        </a></li>
+
+                    </ul>
+
+                    <!--Destinations modal-->
+                    <div class="modal fade destinations-modal" id="destinationsModal" tabindex="-1" aria-labelledby="destinationsModalLabel" >
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <div class="modal-dialog lg-modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="d-lg-flex flex-row align-items-center">
+                                        <div class="d-lg-flex flex-column">
+                                            <h4 class="modal-title" id="agentModalLabel">Destinos</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-body footerless">
+                                    <div class="d-lg-flex justify-content-between">
+                                        <ul class="list-group">
+                                            <li class="list-group-item item-title">America</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Argentina</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Brasil</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Canáda</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Chile</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Colombia</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Costa Rica</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Cuba</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Ecuador</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Estados Unidos</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Mexico</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Panama</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Peru</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Puerto Rico</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Republica Dominicana</a></li>
+                                            <li class="list-group-item"><a class="link" href="#" >Ver más </a></li>
+
+                                        </ul>
+                                        <ul class="list-group">
+                                            <li class="list-group-item item-title">Europa</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Albania</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Alemania</a></li>                                            
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Armenia</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Austria</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Belgica</a></li>                                          
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Bulgari</a></li>                                            
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Chipr</a></li>                                          
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Croacia</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Dinamarca</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Escocia</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Eslovenia</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >España</a></li>                                          
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Francia</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Gales</a></li>
+                                            <li class="list-group-item"><a class="link" href="#" >Ver más </a></li>
+                                      
+                                        </ul>
+                                        <ul class="list-group">
+                                            <li class="list-group-item item-title">Lejano Oriente</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >China</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Corea del Sur</a></li>                                            
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >India</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Indonesia</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Japon</a></li>                                          
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Libano</a></li>                                            
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Libia</a></li>                                          
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Maldiva</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Nepal</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Nueva Zelanda</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Siria</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Tailandia</a></li>                                          
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Taiwan</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Vietnam</a></li>
+                                            <li class="list-group-item"><a class="link" href="#" >Ver más </a></li>
+                                        </ul>
+                                         <ul class="list-group">
+                                            <li class="list-group-item item-title">Medio Oriente</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Egipto</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Emiratos Arabes</a></li>                                            
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Grecia</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Israel</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Jordania</a></li>                                          
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Marruecos</a></li>                                            
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Oman</a></li>                                          
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Palestina</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Tunez</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Turquia</a></li>                                           
+                                        </ul>
+                                         <ul class="list-group">
+                                            <li class="list-group-item item-title">Rusia y Paises Balticos</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Estonia</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Letonia</a></li>                                            
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Lituania</a></li>                                           
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Rusia</a></li>                                           
+                                        
+                                        </ul>
+                                    </div>
+
+                                </div>
+                              
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--Destinations modal-->
+
+                    <!--Products modal-->
+                    <div class="modal fade products-modal" id="productsModal" tabindex="-1" aria-labelledby="productsModalLabel" >
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <div class="modal-dialog xs-modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="d-lg-flex flex-row align-items-center justify-content-center">
+                                        <div class="d-lg-flex flex-column">
+                                            <h4 class="modal-title" id="agentModalLabel">Productos</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-body footerless">
+                                    <div class="d-lg-flex justify-content-center">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Con aereos incluido</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >En Familia</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Exclusivos</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Exóticos</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >LGBTQ+</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Religiosos</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Romanticos</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Solos y Solas</a></li>
+                                            <li class="list-group-item"><a class="list-group-item-action" href="#" >Viajes de mujeres</a></li>
+                                        </ul>
+                                     
+                                    </div>
+
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--Destinations modal-->
+
                 
 
                 
-                
-                    
 
                     
 
-                
+                    
+
+                    
 
             </nav>
-            
+
         </div>
 
         
-        
-        <!--Breadcrumb Search-->
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Paquetes Terrestres</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Tours</li>
-            </ol>
-        </nav>
-        
-        
+            <!--Breadcrumb Search-->
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Home</a>
+                    </a></li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Paquetes Terrestres</a>
+                    </a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Tours</a></li>
+                </ol>
+            </nav>
         
 
-         
+        
+
+        
 
     </div>
 </header>

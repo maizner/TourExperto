@@ -1,0 +1,44 @@
+.modal .list-group{
+
+    .list-group-item{
+
+        border:none;
+
+        a{
+            font-size: $t14;
+
+            &:hover, &:active,&.active{
+                color: $brand-color;
+                background-color: transparent;
+            }
+        }
+
+        &.item-title{
+            font-weight:bold;
+            color: $brand-color;
+        }
+    }
+  
+
+    
+}
+
+
+/*MQ
+--------------------------------------*/
+
+
+@include media(dk){
+
+    
+    .modal .list-group-item{
+        padding: 0.2rem 1rem;
+    }
+   
+   
+}
+@include media(mb){
+  
+   
+   
+}

@@ -6,6 +6,10 @@
     display: flex;
     align-items: center;
 
+    a{
+        color: $brand-color;
+    }
+
     a:hover{
         text-decoration: underline;
     }
