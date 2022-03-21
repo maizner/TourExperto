@@ -5,6 +5,7 @@
 {% import "macros/macro-formField.njk" as formfield %} 
 {% import "macros/macro-paxField.njk" as paxfield %}
 
+
 {% block pagestyle %}
     <link rel="stylesheet" type="text/css" href="content/css/booking.css">
 {% endblock %} 
@@ -15,7 +16,7 @@
     <section class="row">
 
         <!--Left side-->
-        <div class="col-lg-8 col-md-12 left-col">
+        <div class="col-lg-8 col-md-12 left-col step-format">
 
             <div class="d-flex flex-column">
 
@@ -46,7 +47,7 @@
 
                         <!--Paso 2: Contacto-->
                         {% block contact %}
-                            {% include "partials/booking/_contact-data.njk" %}
+                            {% include "shared/_contact-data.njk" %}
                         {% endblock %} 
                         <!--Contacto-->
 

@@ -1,3 +1,18 @@
+.step-format{
+    .title,.subtitle{
+        font-family: $text-font-stack;
+        color: $grey-text-default;
+        font-weight: bold;
+    }
+    .title{
+        font-size: $t24;
+        margin-top:10px;
+    }
+    .subtitle{
+        font-size: $t20;
+        margin-top:0px;
+    }
+}
 .steps{
 
     //flex absolute para mantener centrados elementos de 2 digitos tb

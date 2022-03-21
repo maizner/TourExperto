@@ -1,0 +1,170 @@
+{% extends "layout/_default.njk" %}
+{% set pgQuotation = true %}
+{% block bodyClass %} pgquotation {% endblock %}
+{% import "macros/macro-experts.njk" as expert %} 
+{% import "macros/macro-formField.njk" as formfield %} 
+
+
+{% block pagestyle %}
+    <link rel="stylesheet" type="text/css" href="content/css/quotation.css">
+{% endblock %} 
+
+{% block content %}
+<div class="content quotation container-lg" id="quotation">
+   
+    <section class="row">
+
+        <!--Left side-->
+        <div class="col-lg-8 col-md-12 left-col step-format">
+
+            <div class="d-flex flex-column">
+                <div class="mt-5 mb-4"><h1 class="title">Nombre del programa</h1></div>
+
+                {% block expertMessage %}
+                    {# {% macro expert2(boxstyle,image, tit, message, ctaclasses, ctatext ) %} #}
+                    {{ expert.expert2(
+                    "expert-2",
+                    "contact-support-man.png",
+                    "Vamos a personalizar tu viaje!", 
+                    "A continuacion te presentaremos distintas opciones para que puedas crear el tour a tu medida.",
+                    "",
+                    "" ) }}
+
+                {% endblock %}
+
+                <div class="mt-5 mb-4"><h2 class="subtitle">Selecciona la opción que prefieras</h2></div>
+
+
+                <!--Form-->
+                <form action="#" class="form_content parsley js_form_validation">
+                    <section class="quotation-form steps">
+                        <!--Option 1-->
+                        <div class="card card-radius-40 radio">            
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <div class="d-flex flex-row justify-content-start">
+                                    <label class="container-check">
+                                        <input type="radio"  name="paymentmethod" id="op1">
+                                        <span class="checkmark" ></span>
+                                    </label>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="subtitle">Contanos como te gustaria personalizar este viaje. </h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--Option 1 -->
+                        <!--Option 1 response-->
+                        <div aria-labbeledby="#op1" id="op1Response">  
+                            <div class="card card-radius-40" >            
+                                <div class="card-body d-flex flex-column step">
+                                    <div class="d-flex flex-column">
+                                        <div class="step-block d-flex flex-row">
+                                            <div class="d-flex flex-row align-items-center step-number-container ">
+                                                <span class="step-number">1</span>
+                                                <svg class="svg-logo purple-logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M77.9,82.7L77.9,82.7C90.4,72.1,96,55.1,90.6,38.9c-0.8-2.4-1.8-4.8-3.1-7c0,0,0,0,0,0c-4.4-8-11.3-14-19.5-17.8c0,0,0,0,0,0c-38.4-14.6-56.5,16-56.5,16s0,0,0,0C5.4,40,3.5,52.2,7.4,64.1c0.3,1,0.7,2,1.1,3l0,0c0-0.1,0-0.1-0.1-0.1c0,0,0,0,0,0c7.6,18.3,27.7,28.9,47.8,25.6c-0.4-0.2-1.5-0.6,0,0c1.1-0.2,1.1-0.2,0,0c19,7.9,36.6,6.9,36.6,6.9C86.5,94,81.7,88.4,77.9,82.7z M77.9,82.7L77.9,82.7C77.3,83.1,77.3,83.1,77.9,82.7C77.3,81.7,77.3,81.7,77.9,82.7z"></path></svg>
+                                            </div>
+                                            <div >
+                                                <h5 class="step-title">Dejanos tus comentarios para hacerte llegar nuestras mejores propuestas:</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{formfield.Textarea("mensaje", "textarea response1","",  "Escribe aquí ...", "")}}
+
+                                </div>
+                            </div>
+
+                            <!--Paso 2: Contacto-->
+                            {# {% block contactResponse1 %}
+                                {% include "shared/_contact-data.njk" %}
+                            {% endblock %} 
+                            <div class="mt-auto button-container d-flex flex-column align-items-center">
+                                <input type="submit" class="btn md_btn fill radius-5 brand-primary" value="Personalizar" id="customize">
+                            </div>    #}
+                            <!--Contacto-->
+                        </div>  
+                        <!--Option 1 response-->
+
+                        <!--Option 2-->
+                        <div class="card card-radius-40 radio">            
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <div class="d-flex flex-row justify-content-start">
+                                    <label class="container-check">
+                                        <input type="radio"  name="paymentmethod" id="op2">
+                                        <span class="checkmark" ></span>
+                                    </label>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="subtitle">Te ayudamos a personalizar tu viaje</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--Option 2 -->
+
+                        <!--Option 2 response-->
+                        <div aria-labbeledby="#op2" id="op2Response"> 
+                            {% block aditionals %}
+                                {% include "partials/quotation/_customize-trip.njk" %}
+                            {% endblock %}
+                            {% block aditionals2 %}
+                                {% include "partials/quotation/_customize-flight.njk" %}
+                            {% endblock %} 
+                        </div>
+                      
+                        <!--Option 2 response-->
+
+                        {% block expertMessage2 %}
+                            {# {% macro expert2(boxstyle,image, tit, message, ctaclasses, ctatext ) %} #}
+                            {{ expert.expert2(
+                            "expert-4",
+                            "contact-support-2-agents.png",
+                            "", 
+                            "Nuestro equipo de expertos, estara procesando tus preferencias para enviarte la mejor opcion para tu viaje. ",
+                            "",
+                            "" ) }}
+
+                        {% endblock %}
+
+                        <!--Paso 3: Contacto-->
+                        {% block contactResponse2 %}
+                            {% include "shared/_contact-data.njk" %}
+                        {% endblock %} 
+                        <div class="mt-auto button-container d-flex flex-column align-items-center">
+                            <input type="submit" class="btn md_btn fill radius-5 brand-primary" value="Personalizar" id="customize">
+                        </div>   
+                        <!--Contacto-->
+
+
+
+                        
+                    
+                    </section>
+                </form>
+                <!--Form-->
+
+            </div>
+
+        </div>
+        <!--Left side-->
+
+        <!--Right side-->
+        <div class="col-lg-4 col-md-12 right-col">
+          
+
+        </div>
+        <!--Right side-->
+    </section>
+
+    
+   
+
+</div>
+{% endblock %}
+
+{% block pagescript %}
+    <script type="text/javascript" src="content/js/quotation.js"></script>
+{% endblock %}
+
+
+

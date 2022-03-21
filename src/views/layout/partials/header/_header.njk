@@ -37,7 +37,7 @@
             <a href="#" id="logo"><img src="content/img/logo.png" alt=""></a>
 
             <nav id="nav">
-                {% if pgSearch or pgProduct or pgTyC %}
+                {% if pgSearch or pgProduct or pgTyC or pgQuotation %}
                     <div id="header-search" class="flex-grow-1 me-3">
                         <i class="fas fa-search me-2"></i>
                         <input type="text" 
@@ -45,7 +45,7 @@
                     </div>
                 {% endif %}
 
-                {% if pgHome or pgSearch or pgProduct or pgTyC %}
+                {% if pgHome or pgSearch or pgProduct or pgTyC or pgQuotation %}
                     {# <button type="button" class="btn md_btn fill brand-primary radius-5 contact-agent" title="Contacta a un agente" data-bs-toggle="modal" data-bs-target="#agentModal">Contactate</button> #}
 
                     <ul>

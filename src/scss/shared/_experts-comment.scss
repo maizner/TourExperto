@@ -20,6 +20,13 @@
             color:$grey-text-default;
         }
     }
+    &.expert-4{
+        background-color: $brand-color;
+
+        .text-container,h4{
+            color:white;
+        }
+    }
 
     .col-md-12{
         display:flex;
@@ -118,8 +125,9 @@
         align-items: center;
     }
     .expert-section.expert-2 .text-container,
-    .expert-section.expert-3 .text-container{
-        margin-left:20px;
+    .expert-section.expert-3 .text-container,
+    .expert-section.expert-4 .text-container{
+        margin-left:30px;
        
     }
 

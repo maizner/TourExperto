@@ -126,6 +126,20 @@
     </div>
 {% endmacro %}
 
+{% macro Textarea( name, class,label,  placeholder, value) %}
+    <div class="form-group {{ class }}">
+        <div class="position-relative">
+            <label for="{{ name }}">{{ label }}</label>
+            <span class="label-help">{{ labelhelp }}</span>
+        </div>
+        <textarea class="form-control " 
+        name="{{ name }}" id="{{ name }}" 
+        placeholder="{{ placeholder }}" 
+        value="{{ value }}"
+        autocomplete="off"></textarea>
+    </div>
+{% endmacro %}
+
 {% macro comboSingleValid(name, class,label, placeholder, style, o0, o1, o2, o3, selected) %}
   <div class="form-group {{ class }}">
         <label for="{{ name }}">{{ label }}</label>
