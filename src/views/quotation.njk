@@ -32,7 +32,7 @@
 
                 {% endblock %}
 
-                <div class="mt-5 mb-4"><h2 class="subtitle">Selecciona la opción que prefieras</h2></div>
+                <div class="mt-5 mb-4"><h2 class="title2">Selecciona la opción que prefieras</h2></div>
 
 
                 <!--Form-->
@@ -43,7 +43,7 @@
                             <div class="card-body d-flex flex-column justify-content-center">
                                 <div class="d-flex flex-row justify-content-start">
                                     <label class="container-check">
-                                        <input type="radio"  name="paymentmethod" id="op1">
+                                        <input type="radio"  name="customization" id="op1">
                                         <span class="checkmark" ></span>
                                     </label>
                                     <div class="d-flex flex-column">
@@ -54,8 +54,9 @@
                             </div>
                         </div>
                         <!--Option 1 -->
+
                         <!--Option 1 response-->
-                        <div aria-labbeledby="#op1" id="op1Response">  
+                        <div >  
                             <div class="card card-radius-40" >            
                                 <div class="card-body d-flex flex-column step">
                                     <div class="d-flex flex-column">
@@ -74,13 +75,7 @@
                                 </div>
                             </div>
 
-                            <!--Paso 2: Contacto-->
-                            {# {% block contactResponse1 %}
-                                {% include "shared/_contact-data.njk" %}
-                            {% endblock %} 
-                            <div class="mt-auto button-container d-flex flex-column align-items-center">
-                                <input type="submit" class="btn md_btn fill radius-5 brand-primary" value="Personalizar" id="customize">
-                            </div>    #}
+                          
                             <!--Contacto-->
                         </div>  
                         <!--Option 1 response-->
@@ -103,7 +98,7 @@
                         <!--Option 2 -->
 
                         <!--Option 2 response-->
-                        <div aria-labbeledby="#op2" id="op2Response"> 
+                        <div > 
                             {% block aditionals %}
                                 {% include "partials/quotation/_customize-trip.njk" %}
                             {% endblock %}
@@ -130,15 +125,11 @@
                         {% block contactResponse2 %}
                             {% include "shared/_contact-data.njk" %}
                         {% endblock %} 
-                        <div class="mt-auto button-container d-flex flex-column align-items-center">
+                        <div class="mt-auto button-container d-flex flex-column align-items-center mb-5">
                             <input type="submit" class="btn md_btn fill radius-5 brand-primary" value="Personalizar" id="customize">
                         </div>   
                         <!--Contacto-->
 
-
-
-                        
-                    
                     </section>
                 </form>
                 <!--Form-->

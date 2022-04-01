@@ -1,16 +1,21 @@
 .step-format{
-    .title,.subtitle{
+    .title,.title2,.subtitle{
         font-family: $text-font-stack;
         color: $grey-text-default;
         font-weight: bold;
     }
     .title{
-        font-size: $t24;
+        font-size: $t26;
         margin-top:10px;
     }
     .subtitle{
         font-size: $t20;
         margin-top:0px;
+    }
+    .title2{
+        font-size: $t23;
+        margin-top:0px;
+        color: $grey-2;
     }
 }
 .steps{
