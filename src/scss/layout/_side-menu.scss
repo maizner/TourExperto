@@ -1,4 +1,7 @@
 @include media(dk) {
+	.myaccount_wrapper{
+		max-height:40px;
+	}
 	.myaccount-droplink{
 		display: block;
 		width: 45px;
@@ -188,7 +191,7 @@
 	@include transition(all,.5s,ease-in-out);
 
 	&:hover {
-		background-color: rgba(var(--rgb-color), 0.1);
+		background-color: rgba($brand-color, 0.1);
 	}
 
 	// Estilamos la fecha
@@ -265,27 +268,23 @@
 	padding: 1em 1em 1.7em 1em;
 	border-top: 1px solid $grey-6;
 	//referente solamente al link del footer
+
 	.notification_link{
 		font-size: $t9;
 	}
-	
-	
 }
+#nav .nav-item .notification_footer a.user_item{
+color: $brand-color;
+fill: $brand-color;
 
-//referente a cualquier link del drop.
-.notification_link{
-	
-	font-family: $text-font-stack;
-	font-weight: $normal-font-weight;
-	color: $grey-text-default;
-	
-
-	&:hover, &:active, &.active{
-		color:var(--default-color);
-		text-decoration: none;
+	&:hover{
+		color: darken( $brand-color, 10%);
+		fill: darken( $brand-color, 10%);
 	}
 
 }
+
+
 
 // Componente nanoscroller para la 
 
