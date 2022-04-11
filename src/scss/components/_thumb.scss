@@ -5,31 +5,46 @@
 	
 	position: relative;
 
-	&.rounded-circle{
+	&.thumb-rounded{
 		border-radius:50%;
 	}
 
-	&.bordered{
+	&.thumb-bordered{
 		border:3px solid $grey-7;	
+	}
+
+
+	&.sm-thumb{
+		width: 80px;
+		height: 80px;
+
+		.avatar {
+			font-size: $t30;
+		}
+	}
+
+
+	&.xs-thumb{
+		width: 40px;
+		height: 40px;
+
+		.avatar {
+			font-size: $t22;
+		}
 	}
 }
 .img-wrap {
-    display: inline-block;
 	position: relative;
     overflow: hidden;
-    width: 80px;
-    height: 80px;
-
-
+    
 	img{
 		position: absolute;
 		width:100%;
 		height:auto;
 	}
 	.avatar {
-	
     position: absolute;
-    color: $grey-4;
+    color: $purple-brand-strong;
     font-weight: 700;
     text-align: center;
     background: #efeff4;
@@ -38,9 +53,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-	font-size: $t18;
 	}
 }
-.avatar.avatar-small {
-    font-size: 1.6875em;
-}
+

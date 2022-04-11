@@ -1,0 +1,329 @@
+@include media(dk) {
+	.myaccount-droplink{
+		display: block;
+		width: 45px;
+		height: 60px;
+
+	}
+}
+.myacount_menu {
+	@include media(dk) {
+		height:66px;
+    }
+	@include media(mb) {
+		 height:60px;
+		 display:none;
+    }
+	
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	padding:7px;
+
+	.user_config{
+		margin-left:0px;
+		.user_name{
+			font-weight:700;
+		}
+	}
+	
+	
+}
+  
+.right_sidebar {
+	position:relative;
+	ul{
+		list-style: none;
+		padding-left:0px;
+	}
+
+	.icon-close {
+		display:flex;
+		margin-left:auto;
+		position: initial;
+		cursor:pointer;
+
+		&:hover {
+			opacity:.8;
+		}
+	}
+
+
+}
+
+
+//Comenzamos con los estilos para las notificaciones fuera del dropright 
+//Drops del inicio
+.menu_wrapper {
+	position:absolute;
+	top:0px;
+	right: 0px;
+	padding: 0px;
+	min-height: 200px;
+	height: 100%;
+	width:100%;
+	z-index: $zindex-dropdown;
+	// display: none; // none by default, but block on "open" of the menu
+	background-color: white;
+	border:1px solid $grey-6;
+	border-radius: 10px;
+	box-shadow: 0px 0px 11px 0px rgba($grey-2,0.55);
+	
+}
+//Drops invisible by default
+
+.right_nav{
+	
+	opacity:0;
+	visibility:hidden;
+	overflow: hidden;
+	
+	@include transition(opacity,.5s,ease-in-out);
+	@include transition(visibility,.5s,ease-in-out);
+	
+	
+	
+	@include media(mb) {
+		top:60px;
+		width:0;
+		min-height: $dropdown-fixed-height;
+		height:100vh;
+		@include transition(width,.4s,ease-in-out);
+	}
+
+	@include media(dk) {
+		top:120px;
+		//ancho 250 px 
+		width:$dropdown-fixed-width;
+		//alto fijo de 525px
+		// height: $dropdown-fixed-height;
+		height:0;
+		@include transition(height,.4s,ease-in-out);
+	}
+}
+
+
+//Drops visible on click
+@include media(mb) {
+	.right_nav.show {
+		display: block;
+		opacity:1;
+		visibility:visible;
+		width:100%;
+	}
+}
+@include media(dk) {
+	.myaccount_wrapper:hover .right_nav,
+	.right_nav:hover {
+		display: block;
+		opacity:1;
+		visibility:visible;
+		height:auto;
+	}
+}
+
+.notifications-wrapper{
+	/*alto del componente con scroll */
+	
+	@include media(mb) {
+		height:90vh;
+	}
+	@include media(dk) {
+		max-height:424px;
+	}
+	position: relative;
+	overflow: hidden;
+	border-top: 1px solid $grey-6;
+	
+}
+
+.notifications-height{
+	/* 
+	UTILIZA BARRA DE SCROLL NANOSCROLLER:
+	Ancho y alto es lo que tiene que tener el contenido, lo que representa el nano-content es eso.
+	En este caso es un ancho especifico y alto  + alto máximo/minimo para que se forme la barra de scroll 
+	cuando llegue al mismo. 
+	*/
+	// min-height: 370px;
+	@include media(mb) {
+		height:80vh;
+	}
+	@include media(dk) {
+		height:370px;
+	}
+	
+	position: relative;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.notification_header {
+	display: flex;
+	align-items: center;
+	font-family: $text-font-stack;
+	font-weight: $medium-font-weight;
+	color:$grey-text-default;
+	font-size: $t14;
+	padding: 1.2rem ;
+	margin: 0; // for use with heading elements
+	white-space: nowrap; // as with > li > a
+	height: 56px;
+	border-top: 1px solid $grey-6;
+	border-bottom: 3px solid var(--default-color);
+
+	a{
+		padding: 0;
+	}
+
+
+}
+
+//Un item con contenido de texto dentro 
+.notification_item {
+	font-size:$base-font-size;
+	white-space: normal;
+	padding: 1rem;// Pendiente utilizar desde variable
+	border-bottom: 1px solid $grey-7;
+	width:98%;
+	@include transition(all,.5s,ease-in-out);
+
+	&:hover {
+		background-color: rgba(var(--rgb-color), 0.1);
+	}
+
+	// Estilamos la fecha
+	.notification_item-date {
+		font-family: $text-font-stack;
+		font-weight: $normal-font-weight;
+		color:$grey-3;
+		font-size: $t10;
+		line-height: 18px;
+		
+	}
+	// Estilamos un título
+	.notification_item-title {
+		display:flex;
+		flex-direction:row;
+		font-family: $text-font-stack;
+		font-weight: $medium-font-weight;
+		color:var(--default-color);
+		font-size: $t14;
+		line-height: 20px;
+		
+
+	}
+	// Estilamos un texto
+	.notification_item-text, 
+	.notification_item-text p{
+		font-family: $text-font-stack;
+		font-weight: $normal-font-weight;
+		color: $grey-text-default;
+		font-size: 12px;
+		line-height: 18px;
+		
+	}
+	.notification_item-text {
+		padding: .25rem 0rem;
+	}
+	.icon {
+		font-size: $t19;
+		color:$grey-5;
+		float: right;
+		@include transition(all,.2s,ease-in-out);
+	}		
+
+	
+	
+	&.read {
+		.notification_item-text {
+			color: $grey-text-default;
+		}
+	}
+	&.unread {
+		.notification_item-text {
+			color:darken($grey-6, 5%);
+		}
+	}
+	
+}
+
+@include media(mb) {
+	//Será agregada por medio de js la clase sidebar-item_expanded en layout.js
+	.notification_item.sidebar-item_expanded .notification_item-text{
+		-webkit-line-clamp: 10;
+	}
+	.notification_item.sidebar-item_expanded .icon {
+		transform:rotate(180deg);
+	}
+	
+}
+.notification_footer {
+
+	display: flex;
+	background: white;
+	border-bottom: none;
+	padding: 1em 1em 1.7em 1em;
+	border-top: 1px solid $grey-6;
+	//referente solamente al link del footer
+	.notification_link{
+		font-size: $t9;
+	}
+	
+	
+}
+
+//referente a cualquier link del drop.
+.notification_link{
+	
+	font-family: $text-font-stack;
+	font-weight: $normal-font-weight;
+	color: $grey-text-default;
+	
+
+	&:hover, &:active, &.active{
+		color:var(--default-color);
+		text-decoration: none;
+	}
+
+}
+
+// Componente nanoscroller para la 
+
+/*para modificar el alfa en el componente nano. Momentaneamente solo para el drop*/
+.nano > .nano-pane > .nano-slider {
+    background: $grey-6;}
+/*nano things */
+  
+
+.myaccount-icon{
+	width:20px;
+	margin-right:10px;
+	font-size: 18px;
+
+
+	&.logout{
+		margin-left:5px;
+	}
+}
+
+#nav .nav-item a.user_item {
+
+   	color: $grey-4;
+   	fill:$grey-4;
+
+	&:hover{
+		color: darken($grey-4, 20%);
+		fill: darken($grey-4, 20%);
+	}
+}
+
+
+@import 'shared/transitions',
+		'components/scrollbar';
+
+ 
+
+
+
+
+

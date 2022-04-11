@@ -1,0 +1,169 @@
+.pgquotation {
+
+    .card.card-radius-40.radio .card-body{
+        padding: 1rem 2rem;
+        min-height:90px;
+        position:relative;
+
+        // &:after{
+        //     content: "";
+        //     background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 16 16' style='enable-background:new 0 0 16 16;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill-rule:evenodd;clip-rule:evenodd;fill:%23DB326E;%7d %3c/style%3e%3cpath class='st0' d='M1.6,4.6c0.2-0.2,0.5-0.2,0.7,0c0,0,0,0,0,0L8,10.3l5.6-5.6c0.2-0.2,0.5-0.2,0.7,0s0.2,0.5,0,0.7l-6,6 c-0.2,0.2-0.5,0.2-0.7,0c0,0,0,0,0,0l-6-6C1.5,5.2,1.5,4.8,1.6,4.6C1.6,4.6,1.6,4.6,1.6,4.6z'/%3e%3c/svg%3e ");    
+        //     position:absolute;
+        //     right:40px;
+        //     width: 1.25rem;
+        //     height: 1.25rem;
+        // }
+    }
+   .response1 label{
+        display: none;
+    }
+    p{
+        font-size: $t14;
+
+        &.resume-strong{
+            display: flex;
+            font-size: $t12;
+            color: $Pink-brand-1;
+            font-style:italic  ;
+            margin-top:20px
+        }
+    }
+    .expert-section p{
+        font-size: $t17;
+        font-weight: normal;
+    }
+
+    .container-check{
+        margin-top:5px;
+    }
+    .customize-flight .two_elem label{
+        width:80px;
+    }
+    .customize-flight .two_elem .default{
+        margin:0px;
+    }
+   
+    .form-group .select2-container--default .select2-selection--single{
+        border-color: $grey-5;
+        color: $grey-5;
+       
+    }
+    .form-group.error .select2-container--default .select2-selection--single{
+        border-color: $error-color;
+        
+    }
+    .birthday-group .form-group{
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+
+    //PASAJEROS 
+    .pax-container{
+
+        .pax-title{
+            font-size: $t16;
+            color: $brand-color;
+            font-weight: bold;
+        }
+    }
+
+   
+
+    .expert-section .cta-content{
+        padding: 10px 30px;
+    }
+
+    .card.card-radius-40 .card-body {
+        padding: 1rem 2rem;
+        min-height: 90px;
+    }
+}
+
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+    .program-data .step-block{
+        
+
+        &:first-child{
+            width:50%;
+            align-items:flex-start;
+            border-right:1px solid lighten($grey-6, 10%);
+        }
+
+        &:last-child{
+            width:38%;
+            margin: 0 auto;
+
+            .step-text{
+                font-size: 16px;
+            }
+        }
+    }
+    
+
+    .birthday .default.form-group, 
+    .default .select2-container--default{
+        min-width:50px !important
+    }
+    .birthday-group .form-group .select2-container--default .select2-selection--single{
+        min-width:90px;
+        width:100%;
+    }
+    .form-group.default .select2{
+         min-width:325px;
+         width:100%;
+    }
+    .birthday-group{
+        max-width: 325px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+ 
+    .bullets{
+
+        .bullet-item{
+            font-size: $t16;
+        }
+    }
+   
+}
+
+
+@include media(mb){
+    .program-data .step-block{
+        &:first-child{
+            align-items:center;
+        }
+    }
+    .birthday-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .birthday-group .form-group.default .select2{
+        min-width:60px;
+        max-width:70px;
+        width:100%;
+    }
+    .form-group.default .select2{
+        min-width:100%;
+        width:100%;
+    }
+    .bullets{
+
+        .bullet-item{
+            font-size: $t14;
+        }
+    }
+   
+
+}

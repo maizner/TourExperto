@@ -1,0 +1,48 @@
+{% extends "layout/_default.njk" %}
+{% set pgMyaccount = true %}
+{% block bodyClass %} pgmysavedtours {% endblock %}
+
+{% import "macros/macro-formField.njk" as formfield %} 
+
+
+{% block pagestyle %}
+    <link rel="stylesheet" type="text/css" href="content/css/my-saved-tours.css">
+{% endblock %} 
+
+{% block content %}
+<div class="content mysavedtours container-lg" id="mysavedtours">
+   
+    <section class="row">
+
+        <!--Left side-->
+        <div class="col-lg-8 col-md-12 left-col step-format">
+
+            <div class="d-flex flex-column">
+                <div class="mt-5 mb-4"><h1 class="title"></h1></div>
+                Tours guardados
+
+            </div>
+
+        </div>
+        <!--Left side-->
+
+        <!--Right side-->
+        <div class="col-lg-4 col-md-12 right-col">
+          
+
+        </div>
+        <!--Right side-->
+    </section>
+
+    
+   
+
+</div>
+{% endblock %}
+
+{% block pagescript %}
+    <script type="text/javascript" src="content/js/my-saved-tours.js"></script>
+{% endblock %}
+
+
+

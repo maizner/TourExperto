@@ -179,9 +179,11 @@ header{
      font-weight: $medium-font-weight;
      font-size: $t14;
     color: $brand-color;
+    fill:$brand-color;
 
     &:hover{
         color: darken($brand-color, 10%);
+        fill: darken($brand-color, 10%);
     }
 }
 

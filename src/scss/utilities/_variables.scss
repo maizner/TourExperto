@@ -208,37 +208,15 @@ $tooltip-arrow-color-2:             $tooltip-bg-2;
 
 // DataTable Component variables
 //
+// Dropdown fixed size 
+//
+$dropdown-fixed-width: 270px;
+$dropdown-fixed-height: 545px;
+$dropdown-min-height: 45px;
+$dropdown-item-padding: 0.5rem 1rem 1rem 1.5rem; 
 
 
-// Pagination
 
-$pagination-padding-y:              .5rem !default;
-$pagination-padding-x:              1rem !default;
-$pagination-padding-y-sm:           .25rem !default;
-$pagination-padding-x-sm:           .5rem !default;
-$pagination-padding-y-lg:           .75rem !default;
-$pagination-padding-x-lg:           1.5rem !default;
-$pagination-line-height:            1.25rem !default;
-
-
-$pagination-color:                  darken($grey-7,15%)!default;
-$pagination-bg:                     lighten($grey-7, 5%) !default;
-/* $pagination-border-color:           darken($pagination-color,2%) !default; */
-$pagination-border-color:           darken($grey-7,15%) !default;
-$pagination-focus-outline:          0 !default;
-   
-
-$pagination-hover-color:            $grey-text-default !default;
-$pagination-hover-bg:               $pagination-bg !default;
-$pagination-hover-border-color:     $grey-text-default !default;
-
-$pagination-active-color:           white !default;
-$pagination-active-bg:              $brand-color !default;
-$pagination-active-border-color:    $pagination-active-bg !default;
-
-$pagination-disabled-color:         lighten($pagination-color, 10%) !default;
-$pagination-disabled-bg:            lighten($pagination-bg, 2%)!default;
-$pagination-disabled-border-color:  lighten($pagination-border-color, 4%) !default;
 
 //table filters
 

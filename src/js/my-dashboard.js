@@ -1,0 +1,69 @@
+var myaccount = {
+    
+    init: function () {
+        
+        // -----------------------------------------------------------------------------
+        // COMIENZO DE VALIDACIONES Y MANIPULACION DE CLASES PARSLEY JS
+        // ----------------------------------------------------------------------------- 
+       
+      
+        $('.js_form_validation').parsley({
+            //clases en input para estilos css 
+            successClass: 'parsley-success',
+            errorClass:   'parsley-error',
+            errorsWrapper:'<span class="default_validation_msj"></span>',
+            errorTemplate:'<span class="validation-message"></span>',
+            
+        });
+
+        //Clases para estilos de error
+        window.Parsley.on('field:error', ()=> {
+            $('.parsley-error').parents('.form-group')
+            .addClass('error')
+            .removeClass('success')
+        });
+
+        //Clases para estilos de éxito
+        window.Parsley.on('field:success', ()=> {
+            $('.parsley-success').parents('.form-group')
+            .addClass('success')
+            .removeClass('error')
+        });
+
+         //init select NO search box
+         $('.select2.nosearch').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownCssClass : "no-search"
+        });
+        $('.select2.withsearch').select2({
+        });
+      
+         //Init de scroller plugin
+         $('.select2').on('click', function(){
+            $(".nano").nanoScroller();
+        });
+        
+        // SVG Elements to inject
+        var mySVGsToInject = document.querySelectorAll('img.inject-me');
+        // Do the injection
+        SVGInjector(mySVGsToInject);
+        console.log(mySVGsToInject)
+    }
+       
+    
+};
+
+
+// -----------------------------------------------------------------------------
+//FUNCIONES
+// ----------------------------------------------------------------------------- 
+
+
+
+// -----------------------------------------------------------------------------
+//FIN FUNCIONES
+// ----------------------------------------------------------------------------- 
+
+$(function () {
+    myaccount.init();
+});
