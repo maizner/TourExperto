@@ -29,8 +29,7 @@
 			font-weight:700;
 		}
 	}
-	
-	
+
 }
   
 .right_sidebar {
@@ -233,8 +232,9 @@
 		color:$grey-5;
 		float: right;
 		@include transition(all,.2s,ease-in-out);
-	}		
+	}	
 
+	
 	
 	
 	&.read {
@@ -247,6 +247,7 @@
 			color:darken($grey-6, 5%);
 		}
 	}
+
 	
 }
 
@@ -298,17 +299,22 @@ fill: $brand-color;
 	width:20px;
 	margin-right:10px;
 	font-size: 18px;
+	position:relative;
 
 
 	&.logout{
 		margin-left:5px;
 	}
+
+	
 }
 
 #nav .nav-item a.user_item {
 
    	color: $grey-4;
    	fill:$grey-4;
+	display: flex;
+	align-items: center;
 
 	&:hover{
 		color: darken($grey-4, 20%);
@@ -317,8 +323,8 @@ fill: $brand-color;
 }
 
 
-@import 'shared/transitions',
-		'components/scrollbar';
+ @import 'shared/transitions';
+// 		'components/scrollbar';
 
  
 
