@@ -2,7 +2,7 @@
 {% set pgMyaccount = true %}
 {% block bodyClass %} pgmysavedtours {% endblock %}
 
-{% import "macros/macro-formField.njk" as formfield %} 
+
 
 
 {% block pagestyle %}
@@ -12,27 +12,44 @@
 {% block content %}
 <div class="content mysavedtours container-lg" id="mysavedtours">
    
-    <section class="row">
+    <section class="row carousel">
 
-        <!--Left side-->
-        <div class="col-lg-8 col-md-12 left-col step-format">
+       
+        <div class="col-12">
 
             <div class="d-flex flex-column">
-                <div class="mt-5 mb-4"><h1 class="title"></h1></div>
-                Tours guardados
+                <div class="mt-5">
 
+                    <h1 class="">Tours guardados</h1>
+                      
+                    {% block saved %}
+                        {% include "partials/my-saved-tours/_saved-tours.njk" %}
+                    {% endblock %} 
+                    
+                </div>
+          
+                <div class="mt-5 mb-5">
+
+                    <h1 class="">Vistos recientemente</h1>
+                       
+                    {% block recentView %}
+                        {% include "partials/my-saved-tours/_recent-view.njk" %}
+                    {% endblock %} 
+
+                </div>
             </div>
 
         </div>
-        <!--Left side-->
+     
 
-        <!--Right side-->
-        <div class="col-lg-4 col-md-12 right-col">
-          
-
-        </div>
-        <!--Right side-->
     </section>
+
+    <div class="mt-5 mb-5">
+        <!--Contact support-->
+        {% block contactSupport %}
+            {% include "shared/_contact-support.njk" %}
+        {% endblock %} 
+    </div>
 
     
    

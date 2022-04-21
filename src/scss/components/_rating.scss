@@ -1,12 +1,35 @@
+
 .rating{
-    margin-top:10px;
-    margin-bottom:10px;
+    margin-top:5px;
+    margin-bottom:5px;
+    svg{
+        font-size: $t14;
+    }
+
+    .badge{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        background-color:white ;
+        border:1px solid $yellow-color;
+        color:$yellow-color;
+        margin-right:5px;
+        font-size: $t12;
+        line-height:$t15;
+        width:25px;
+        height:25px;
+
+    }
 }
 .rating i, .rating svg{
-    color:#cd880f;
+    color:$yellow-color;
 }
-.badge{
-    background-color: #cd880f;
-    color:white;
-    margin-right:5px;
+
+.rating-desc{
+    display:inline;
+}
+
+.badge-text{
+    font-size: 13px;
+    color: $grey-4;
 }

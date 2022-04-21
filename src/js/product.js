@@ -81,6 +81,11 @@ var producto = {
         $('.available-dates .btn').on('click', function(){
             $(this).addClass('active').siblings().removeClass('active');
         });
+        //clase activa del bookmark (Agregar a favoritos)
+        $('.bookmark').on('click', function(){
+            $(this).toggleClass("active");
+        })
+        
 
         //Init de tooltips
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -104,7 +109,7 @@ var producto = {
             console.log($(this).val())
         });
        
-
+        
 
         //Init de number spinners within the modal 
         $(".input-spinnumber").inputSpinner();

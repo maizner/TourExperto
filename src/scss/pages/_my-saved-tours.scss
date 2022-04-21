@@ -1,0 +1,75 @@
+.pgmysavedtours {
+
+
+    .slider .slick-arrow{
+        top: 60px;
+    }
+
+    .slide{
+        min-height: 250px;
+        border-radius:10px;
+        margin-left:10px;
+        margin-right:10px;
+        box-shadow: none;
+        overflow: hidden;
+
+        &:after{
+            content: none;
+        }
+        .caption-wrapper{
+            width:100%;
+        }
+        
+
+        .caption-container{
+            height:150px;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        .bookmark{
+            margin: 10px 10px 0 0;
+        }
+        .slide-text{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .slide-title{
+                font-size: $t20;
+                font-weight:700;
+            }
+            .slide-desc{
+                font-size: $t14;
+                color: $brand-color
+            }
+        }
+    }
+
+   
+   
+   
+}
+
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+ 
+   
+}
+
+
+@include media(mb){
+
+    .caption-wrapper{
+        width: 100%;
+    }
+
+}

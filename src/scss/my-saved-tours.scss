@@ -21,23 +21,20 @@
 @import
 
 	'components/button',
-	'components/checkbox',
-	'components/select2',
-	'components/scrollbar',
 	'components/header-promo',
- 	'components/form-group',
- 	'components/input',
- 	'components/cards', 
-	'components/steps',
+	'components/form-group',
+	'components/input',
+	'components/bookmark',
+	'components/rating',
+	'components/slider',
 	'components/thumb';
 
 
 @import 
 	'shared/modal',
 	'shared/contact-support',
-	'shared/tyc',
-	'shared/resume-card',
-	'shared/form-group-validations';
+	'shared/form-group-validations',
+	'shared/experts-comment';
 
 @import
-	'pages/myaccount';
+	'pages/my-saved-tours';

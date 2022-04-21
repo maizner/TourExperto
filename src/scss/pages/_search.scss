@@ -5,14 +5,7 @@
 #search .accordion-button:not(.collapsed){
     box-shadow: initial;
 }
-#search .rating,
-#search .rating svg{
-    font-size: $t14;
-    span{
-        font-size: 13px;
-        color: $grey-4
-    }
-}
+
 #search{
     .prod-tit{
         color: $grey-2;
@@ -39,17 +32,7 @@
     height: 50%;
     min-height:105px;
 }
-#search .rating{
-    margin-top: 5px;
-    margin-bottom: 5px;
 
-    .badge{
-        background-color: white;
-        border: 1px solid #cd880f;
-        color:#cd880f;
-        margin-right:5px;
-    }
-}
 #search-main {
     margin-bottom: 35px;
 }
