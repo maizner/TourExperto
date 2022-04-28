@@ -95,7 +95,7 @@ var config = {
  },
  libscripts: {
     input: [
-        'src/libs/js/jquery-3.4.1.js',
+        'src/libs/js/jquery.min.js',
         'src/libs/js/pace1.0.0.js',
         'src/libs/js/bootstrap.min.js',
         'src/libs/js/rSlider.js',

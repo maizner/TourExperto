@@ -8,10 +8,12 @@
     &.error{
         
         //se puede agregar label para marcar el error
-        .form-control,.default_validation_msj{
+        .form-control,.default_validation_msj,
+        .parsley-errors-list,.parsley-errors-list li{
             color:$error-color;
         }
-        .default_validation_msj{
+        .default_validation_msj,
+        .parsley-errors-list li{
             font-family: $text-font-stack;
             font-size: $t11;
             font-weight: bold;

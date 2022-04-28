@@ -77,6 +77,17 @@
 	}
 
 }
+.label-group label{
+	display: inline-block;
+	font-family: $text-font-stack;
+	color: $grey-text-default;
+	font-weight: $bold-font-weight;
+	font-size: $t14;
+	letter-spacing: $letter-spacing-one-half;
+	vertical-align: middle;
+	background-color: transparent;
+	padding-bottom: 5px;
+}
 .form-help{
     display:block;
     font-size: $t14;

@@ -1,0 +1,44 @@
+ .breadcrumb {
+    color: $text-font-stack;
+    font-size: $t14;
+    font-weight: 400;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+    a{
+        color: $brand-color;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+.breadcrumb-item+.breadcrumb-item:before{
+    font-weight: $strong-font-weight;
+    color:$Pink-brand-1;
+}
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+    .breadcrumb {
+        margin-top:50px;
+
+        .breadcrumb-item{
+            font-size: $t14;
+        }
+    }
+    
+}
+
+
+@include media(mb){
+    .breadcrumb {
+        margin-top:20px;
+
+        .breadcrumb-item{
+            font-size: $t12;
+        }
+    }
+}

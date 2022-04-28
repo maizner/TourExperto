@@ -125,9 +125,12 @@
                         {% block contactResponse2 %}
                             {% include "shared/_contact-data.njk" %}
                         {% endblock %} 
-                        <div class="mt-auto button-container d-flex flex-column align-items-center mb-5">
-                            <input type="submit" class="btn md_btn fill radius-5 brand-primary" value="Personalizar" id="customize">
+                        <div class="mt-auto button-container d-flex flex-column align-items-center justify-content-center mb-5">
+                            <!--SOLO DEMO. Eliminar data-attributes y utilizar $('#afterQuotationModal').show() on submit-->
+                            <input type="submit" class="btn md_btn fill radius-5 brand-primary" value="Personalizar" id="customize" data-bs-toggle="modal" data-bs-target="#afterQuotationModal" >
+                            
                         </div>   
+
                         <!--Contacto-->
 
                     </section>
@@ -146,6 +149,12 @@
         </div>
         <!--Right side-->
     </section>
+
+    <!-- modal-->
+        {% block afterQuotationModal %}
+        {% include "shared/modal/_after-quotation-modal.njk" %}
+        {% endblock %}
+    <!--modal-->
 
     
    

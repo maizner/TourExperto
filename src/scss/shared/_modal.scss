@@ -261,6 +261,15 @@
 			}
 		}
 	}
+
+	&.direct-contact-modal{
+		img.mr-1{
+			margin-right:1em;
+		}
+		.brand-text-color{
+			font-size: 1em;
+		}
+	}
 }
 
 @import 

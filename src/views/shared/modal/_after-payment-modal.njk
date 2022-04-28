@@ -1,0 +1,38 @@
+ <div class="modal fade agent-modal direct-contact-modal" id="afterPaymentModal" tabindex="-1" aria-labelledby="afterPaymentModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+    <div class="modal-dialog sm-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="d-lg-flex flex-row align-items-center justify-content-between w-100 ">
+                    <img class="mr-1" src="content/img/shared/contact-support-young-woman.png" >
+                    <div class="d-lg-flex flex-column">
+                        <h4 class="modal-title" id="afterPaymentModalLabel">Felicitaciónes, Nombre usuario!</h4>
+                     
+                        <p class="brand-text-color mb-2">Mi nombre es <strong>Nombre Agente</strong>, y voy a ser quien va a seguir tu reserva.</p>
+                        <p class=" brand-text-color">En breve estaré poniendome en contacto contigo.</p>
+                    </div>
+                    
+                </div> 
+            </div>
+            <hr class="gradient">
+            <form action="#" class="form_content parsley js_form_validation">
+                <div class="modal-body">
+                    <div class="row">
+                        
+                        {# <h4 class="modal-title" >Nuestro equipo de expertos se pondrá en contacto en breve.</h4> #}
+                        <p>¿Tienes alguna consulta adicional?</p>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Escribe aquí ..."  autocomplete="off" data-parsley-required="true" data-parsley-required-message="Completa este campo" ></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex flex-row">
+                    <button type="button" class="btn md_btn btn-grey radius-5" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn md_btn fill radius-5 brand-primary" >Consultar</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>

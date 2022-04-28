@@ -114,12 +114,12 @@
                                     </div>
                                 </div>
                             </div>
-
+                        </div>
                             
                             {% block paymentform %}
                                 {% include "partials/payment/_payment-form.njk" %}
                             {% endblock %} 
-                        </div>
+                        
                        
                         <!--TYC check-->
                         {% block tyc %}
@@ -128,8 +128,9 @@
                         <!--TYC check-->
 
                         <div class="mt-auto button-container d-flex flex-column align-items-center">
-                            <input type="submit" value= "Confirmar" id="confirm" class="btn md_btn fill radius-5 brand-primary">
-                            {# <p class="form-help">Sin compromiso garantiza tu reserva. <br> Congelamos tu lugar hasta que decidas efectuar el pago.  </p> #}
+                            <!--SOLO DEMO. Eliminar data-attributes y utilizar $('#afterPaymentModal').show() on submit-->
+                            <input type="submit" value= "Confirmar" id="confirm" class="btn md_btn fill radius-5 brand-primary" data-bs-toggle="modal" data-bs-target="#afterPaymentModal">
+                           
                         </div>   
                     
                     </section>
@@ -157,9 +158,16 @@
 
         </div>
         <!--Right side-->
+
+        <!-- modal-->
+        {% block afterPaymentModal %}
+        {% include "shared/modal/_after-payment-modal.njk" %}
+        {% endblock %}
+        <!--modal-->
+        
     </section>
 
-     <hr class="spacer w-100 mx-auto">
+    <hr class="spacer w-100 mx-auto">
     <!--Hero section-->
     <div class="mt-5 mb-5">
         {% block contactSupport %}
