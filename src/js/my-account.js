@@ -35,30 +35,56 @@ var myaccount = {
             minimumResultsForSearch: Infinity,
             dropdownCssClass : "no-search"
         });
-        $('.select2.withsearch').select2({
-        });
+        $('.select2.withsearch').select2();
       
          //Init de scroller plugin
          $('.select2').on('click', function(){
             $(".nano").nanoScroller();
         });
         
-        // SVG Elements to inject
-        var mySVGsToInject = document.querySelectorAll('img.inject-me');
-        // Do the injection
-        SVGInjector(mySVGsToInject);
-        console.log(mySVGsToInject)
+
+        //Creando validación personalizada para peso máximo
+        window.Parsley.addValidator('maxfilesize', {
+            validateString: function(_value, maxSize, parsleyInstance) {
+              if (!window.FormData) {
+                return true;
+              }
+              var files = parsleyInstance.$element[0].files;
+              return files.length != 1  || files[0].size <= maxSize * 1024;
+            },
+            requirementType: 'integer'
+            
+          });
+
+
+
     }
        
     
 };
 
+//Toggleo el icono/ input para mostrar contraseña
+showHidePassword(".password .icon");
 
 // -----------------------------------------------------------------------------
 //FUNCIONES
 // ----------------------------------------------------------------------------- 
 
+//mostrar contraseña
+function showHidePassword(psw){
+    $(psw).on('click', function(){
+        if($(this).hasClass('inactive')){
 
+            $(this).siblings("input[type=password]").attr('type','text')
+            $(this).removeClass("inactive").addClass("active")
+
+        }else if($(this).hasClass('active')){
+
+            $(this).siblings("input[type=text]").attr('type','password')
+            $(this).removeClass("active").addClass("inactive")
+        }
+    });
+};
 
 // -----------------------------------------------------------------------------
 //FIN FUNCIONES

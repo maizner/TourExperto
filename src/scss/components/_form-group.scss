@@ -117,4 +117,30 @@
 	.two_elem_cont{
 		max-width:325px;
 	}
+
+	.birthday-group{
+        max-width: 325px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@include media(mb) {
+
+	.birthday-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+	
+    .birthday-group .form-group.default .select2{
+        min-width:60px;
+        max-width:70px;
+        width:100%;
+    }
 }

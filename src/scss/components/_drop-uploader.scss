@@ -1,0 +1,228 @@
+.drop_uploader.drop_zone {
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    border: 3px dashed #999999;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.drop_uploader.drop_zone.hover {
+    border: 3px dashed $brand-color;
+}
+
+.drop_uploader.drop_zone .text_wrapper {
+    margin-top: 30px;
+}
+
+.drop_uploader.drop_zone .text_wrapper i {
+    font-size: 50px;
+    color: #9B9B9B;
+    position: relative;
+    top: 14px;
+    margin-right: 25px;
+}
+
+.drop_uploader.drop_zone .text {
+   
+    font-size: 14px;
+    color: $grey-text-default;
+    
+    .file_browse{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size: 24px;
+        color: $grey-6;
+        margin-bottom: 20px;
+    }
+}
+
+.drop_uploader.drop_zone ul.files {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    list-style: none;
+    margin: 10px auto 35px;
+}
+
+
+.drop_uploader.drop_zone ul.files li {
+    font-family: "Raleway";
+    font-size: 18px;
+    color: #000000;
+    background-color: #f5f5f5;
+    border-top: 2px solid #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
+    margin: 0;
+    padding: 5px;
+}
+
+.drop_uploader.drop_zone ul.files li i.action-delete {
+    color: #ff0000;
+    float: right;
+    cursor: pointer;
+}
+
+.drop_uploader.drop_zone ul.files.thumb {
+    width: 90%;
+    text-align: left;
+    list-style: none;
+    margin-bottom: 35px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy4wIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4RDk3QjhENDUxNjIxMUVDOUIzRUJGMkUzNDlDNDg4RCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4RDk3QjhENTUxNjIxMUVDOUIzRUJGMkUzNDlDNDg4RCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhEOTdCOEQyNTE2MjExRUM5QjNFQkYyRTM0OUM0ODhEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhEOTdCOEQzNTE2MjExRUM5QjNFQkYyRTM0OUM0ODhEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+HYdsmAAABS9JREFUeNrsnOlzm0YUwAGBkDgFJkc7qVs3k+n//4f4Uydp2oxdH7IOkBA34lReq35IZ4wjW+xKWvbNesaWRxy/fefyFvby8pKhsptwFAGFRWFRWBQWhUVhUQQUFoVFYVFYFBaFRRFQWBTWoYU/4LnjMMyydVkUQeiXWVFV5Wazgc8NyxoMhv1+fziUeoLAsmzXYdmzqT2dPPqv1WKx/QUwAawBMJNkCX5U7bDgDgPLdZwmUt8KKFqZ5xEM34c/Qdd0wwS96/fFrvisLE1BrV7wxTzPnfns6vMfS8cmXLOqogB9ClarPM/2Ok5VTcf3cRydn//CcByBsLIsu/nyV1HkbR0QoF+X5cX7Dzi9GKaZsWcPLZLaShKG47sb0nxWFIW+u0JxZN91V8sFUbCQ+uPZwxgSNHJgbVNNVHGjqpz5nBxYgiAgztpsQEYCLFCrKAyRnqKuawiOJMDK1+siy1CfxfNdEmCVNQ4DSaMYCqOTh4UnkQNLXOcZAfeCKcPGYOzIYdXMBhOsoiDADDFp1qauTx4W3+/3ej0MsFju9P2v8O9SJwZYPPopwRGsQLlw1Anol09xwFJkFcNZ+uinBAssFTksSZZF9MaOAxbb66GedkEUGQKiYRyGV58/oU6CoJD+9PH3NI5PG5bnuUAK6ZLWdm2jLsskiU/eDPEIy7KKpp02rL7QxwNL0TVRHJw2LFlRMcFCn6AghyUpiqQqGGANyEgdTNPCUSfwAgmwZBm5ZoG3EkUiyh3IGIdDCe18aCrDEbLqy+imifT4o5GB4S4wwTLNMw7ZzEPtKWGJuZi6aDie//XDb44zh7qkxWx+qMimYWEo1HFn8ANJ+unnC2HQphuG0GFYliCKpMH6D9mgzSRb03ScF48blqq2dnuQWA0kmWRYumG29fxCHekc3jZJ3LDg9s5ev2krwuK+eAa7WNar/ZuQIAsdygr5sCCNkPYO9pb1+gBXzhxC9k+1sKULh4fVgtSbrsDav3ed43vd0ax9aSVR1AlYSRIne3eZjm9vpuN7zFeOe1fYdDJettSJvXTssiqh3iQT1u3fV6HntXhA33WhHvjx3TlRsCBXuLu5bpfUVlzHYTn27Q/vMOx4wgEr9D17Ok3TBNHxl3M7DALTtFRdR/roECGssiwCz1sunCxNUc9Hnq5nD2MYsqYZI1MdjVC0GyKBFceRv3LBoeDZJfK/UwcBDH7CAy9dN9p9oM+3qkpl5Pveaol6/8kuV7JaLGAMFcUwzLbWhdqBFfp+EHjBaoVflZ6WNIpgzGdTfWSMRoakKIeBBQEuDsMwAkoehob9faQqCtexYciaahhn2sh42arhS2DFYQDWFvlBnh81o8c8WghDmDwAL8M8G0gSKljgCDx3CY4gy9bMKUtRFJD9w1B0zTAs3TBahrWw54v5DHgxBAkYB4zZVDTPrFdv3rYAa50k93c3GHKlgylals0nD1EUXly8f7phgvuue7r+8ifBpL5N0O6+9+KDp2BBgXJ7fVWjb5k+EoHUB5zyC2FNbm+7Q2orUDA98XygERbUK+hK36OVfyL+cvlsWJ7nMp2UxcJuUi6uCXASRt2EBdGsqSB5HFa+Xh9blYdToEJ5BizU+zqOPY2IwmfAStNOw8oaXhHBNa0odBlW1bCH7XFYVVUzVHaNhujfkXDcwj7HDJlOm2HTizsaktJqQ82NOvgdNes5sGqGatbOn7Pd1qymTgD6ivMWNI4KhbWbbKgZovJZXV6feSK+Pf4oTBCEsuwuL76hyf6rAAMAGkBmys6a1mAAAAAASUVORK5CYII=');
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:relative;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #e1e1e1;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li {
+    min-width: 100px;
+    display: inline-block;
+    font-size: 14px;
+    color: $grey-6;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 5px 15px;
+    text-align: center;
+
+   
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail .du_hover_layer {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.1s ease-in;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='rgb(122, 122, 122)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32px' height='32px' %3e%3cpath d='M 15 4 C 14.476563 4 13.941406 4.183594 13.5625 4.5625 C 13.183594 4.941406 13 5.476563 13 6 L 13 7 L 7 7 L 7 9 L 8 9 L 8 25 C 8 26.644531 9.355469 28 11 28 L 23 28 C 24.644531 28 26 26.644531 26 25 L 26 9 L 27 9 L 27 7 L 21 7 L 21 6 C 21 5.476563 20.816406 4.941406 20.4375 4.5625 C 20.058594 4.183594 19.523438 4 19 4 Z M 15 6 L 19 6 L 19 7 L 15 7 Z M 10 9 L 24 9 L 24 25 C 24 25.554688 23.554688 26 23 26 L 11 26 C 10.445313 26 10 25.554688 10 25 Z M 12 12 L 12 23 L 14 23 L 14 12 Z M 16 12 L 16 23 L 18 23 L 18 12 Z M 20 12 L 20 23 L 22 23 L 22 12 Z'/%3e%3c/svg%3e");    background-repeat:no-repeat;
+    background-position: center;
+    cursor:pointer;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail:hover .du_hover_layer {
+    opacity: .8;
+    position: absolute;
+    transition: opacity 0.1s ease-in;
+}
+
+.drop_uploader.drop_zone ul.files li .du_progress {
+    display: inline-block;
+    float: right;
+    margin: 0px;
+    position: relative;
+    right: 8px;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li .du_progress {
+    float: right;
+    width: 0px;
+    height: 0px;
+    margin-top: -100px;
+    position: relative;
+    right: 75px;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li .du_progress canvas {
+    margin-top: 25px;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail.rotate_90 {
+
+    transform: rotate(-90deg);
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail.rotate_180 {
+
+    transform: rotate(-180deg);
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail.rotate_270 {
+
+    transform: rotate(90deg);
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail i {
+    font-size: 32px;
+    position: relative;
+    top: calc(50% - 16px);
+    color: #4A90E2;
+    display: block;
+}
+
+.drop_uploader.drop_zone ul.files.thumb.ajax li div.thumbnail:hover i {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail i.action-delete {
+    color: #FF0000;
+    visibility: hidden;
+    opacity: 0;
+    float: none;
+    transition: opacity 0.1s ease-in;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li div.thumbnail:hover i.action-delete {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.1s ease-in;
+}
+
+.drop_uploader.drop_zone ul.files.thumb li span.title {
+    font-size: 10px;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    visibility: hidden;
+}
+
+.drop_uploader.drop_zone ul.files li:nth-child(even) {
+    background-color: transparent;
+}
+
+.drop_uploader.drop_zone ul.files li i {
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    margin: 0px 10px;
+}
+
+.drop_uploader.drop_zone .errors p {
+    color: #FF0000;
+}
+
+.drop_uploader.drop_zone input[type=file] {
+    display: none;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
