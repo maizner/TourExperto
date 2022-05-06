@@ -63,13 +63,11 @@
             overflow: visible;
         }
     }
-    .img-description{
-        color: $grey-5;
-        font-size: $t11;
+    .label-help{
+
         
-        span{
-            font-weight: bold;
-            color: $grey-4;
+        strong{
+            color: darken($grey-6, 7%);
         }
     }
 
@@ -81,6 +79,7 @@
 @include media(dk){
     .subtitle{
         margin-bottom:20px;
+        margin-left: 5px;
     }
     .image-group{
         min-height: 400px;
