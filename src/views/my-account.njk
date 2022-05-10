@@ -11,375 +11,44 @@
 
 {% block content %}
 <div class="content myaccount container-lg" id="myaccount">
-    <section class="mt-5 personal-data">
-        <h1 class="title">Configuración de la cuenta</h1>
-        <div class="d-flex flex-column">
-            <!--Form-->
-            <form action="#" class="form_content parsley js_form_validation">
-                <div class="card card-radius-40 card-borderless">            
-                    <div class="card-body d-flex flex-column step">
-                        <div class="row ">
-                            <div class="d-flex flex-column">
-                                <h3 class="subtitle">Datos personales </h3>
-                            </div>
-                            
-
-                            <!--Left side-->
-                            <div class="col-lg-4 col-md-12 left-col order-lg-0 order-md-1 order-sm-1 order-xs-1">
-                                
-                                <section class="myaccount-form">
-                                    <div class="d-flex flex-column ">
-                                        {% block username %}
-                                            {# {% macro inputTextValid(type, name and id, class,label,labelhealp, text,placeholder, value) %} #}
-                                            {{ formfield.inputTextValid("text", "name", "","Nombre","","Ingresa nombre", "") }}
-                                        {% endblock %}
-                                        
-                                        {% block userlastname %}
-                                            {# {% macro inputTextValid(type, name and id, class,label,labelhealp, text,placeholder, value) %} #}
-                                            {{ formfield.inputTextValid("text", "lastname", "","Apellido","","Ingresa apellido", "") }}
-                                        {% endblock %} 
-
-                                        {% block usermail %}
-                                            {# {% macro inputTextValid(type, name and id, class,label text,placeholder, value) %} #}
-                                            {{ formfield.inputMailValid( "email", "","Email","Ingresa un email válido", "") }}
-                                        {% endblock %} 
-
-                                    
-                                        {% block userwhatsapp %}
-                                            {# {% macro inputTextValid(type, name and id, class,label,labelhealp, text,placeholder, value) %} #}
-                                            {{ formfield.inputTextValid("number", "whatsapp ", "","Numero de WhatsApp","","+54.11.4567.8888", "") }}
-                                        {% endblock %} 
-                                        
-
-                                        <!--País-->
-                                        <div class="d-flex flex-column">
-                                            <div class="form-group">
-                                                <div class="position-relative">
-                                                    <label for="paxnac">País</label>
-                                                    <span class="label-healp"></span>
-                                                </div>
-                                                <select  class="form-control select2 withsearch" id="paxnac" name="paxnac"
-                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="País"
-                                                data-parsley-trigger="change"
-                                                data-parsley-required-message= "Seleccionar"
-                                                data-parsley-required >
-                                                    <option></option>
-                                                    <option value="0">Antigua y Barbuda</option>
-                                                    <option value="1">Argentina</option>
-                                                    <option value="2">Bahamas</option>
-                                                    <option value="3">Barbados</option>
-                                                    <option value="4">Belice</option>
-                                                    <option value="5">Bolivia</option>
-                                                    <option value="6">Brasil</option>
-                                                    <option value="7">Canadá</option>
-                                                    
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <!--F nac-->
-                                        <div class="d-flex flex-row">
-                                            <!--Combos Fecha Nacimiento-->
-                                            <div class="form-group">
-                                                <div class="position-relative">
-                                                    <label for="paxday">Fecha de Nacimiento</label>
-                                                    <span class="label-healp"></span>
-                                                </div>
-                                                <div class="birthday-group">
-                                                    <div class="form-group three_elem ">
-                                                        <select  class="form-control select2 nosearch" id="paxday" name="paxday"
-                                                        tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Día"
-                                                        data-parsley-trigger="change"
-                                                        data-parsley-required-message= "Seleccionar"
-                                                        data-parsley-required >
-                                                            <option></option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                            <option value="6">6</option>
-                                                            <option value="7">7</option>
-                                                            <option value="8">8</option>
-                                                            <option value="9">9</option>
-                                                            <option value="...">...</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="form-group three_elem">
-                                                        <select  class="form-control select2 nosearch" id="paxmonth" name="paxmonth"
-                                                        tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Mes"
-                                                        data-parsley-trigger="change"
-                                                        data-parsley-required-message= "Seleccionar"
-                                                        data-parsley-required >
-                                                            <option></option>
-                                                            <option value="0">Enero</option>
-                                                            <option value="1">Febrero</option>
-                                                            <option value="2">Marzo</option>
-                                                            <option value="3">Abril</option>
-                                                            <option value="4">Mayo</option>
-                                                            <option value="5">Junio</option>
-                                                            <option value="6">Julio</option>
-                                                            <option value="7">Agosto</option>
-                                                            <option value="8">Septiembre</option>
-                                                            <option value="9">Octubre</option>
-                                                            <option value="10">Noviembre</option>
-                                                            <option value="11">Diciembre</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="form-group three_elem">
-                                                        <select  class="form-control select2 withsearch" id="paxyear" name="paxyear"
-                                                        tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Año"
-                                                        data-parsley-trigger="change"
-                                                        data-parsley-required-message= "Seleccionar"
-                                                        data-parsley-required >
-                                                            <option></option>
-                                                            <option value="0" >1920</option>
-                                                            <option value="1">1930</option>
-                                                            <option value="2">1940</option>
-                                                            <option value="3">1950</option>
-                                                            <option value="4">1960</option>
-                                                            <option value="5">1970</option>
-                                                            <option value="6"> 1980</option>
-                                                            <option value="7">1990</option>
-                                                            <option value="8">2000</option>
-                                                            <option value="9">2010</option>
-                                                            <option value="10">2020</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-
-                                        <div class="d-flex flex-column">
-                                            <div class="form-group">
-                                                <div class="position-relative">
-                                                    <label for="paxgender">Género</label>
-                                                </div>
-                                                <select  class="form-control select2 nosearch" id="paxgender" name="paxgender"
-                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="Género"
-                                                data-parsley-trigger="change"
-                                                data-parsley-required-message= "Seleccionar"
-                                                data-parsley-required >
-                                                    <option></option>
-                                                    <option value="0">Femenino</option>
-                                                    <option value="1">Masculino</option>
-                                                    <option value="2">Prefiero no contestar</option>
-                                                    
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class=" button-container d-flex flex-column  mt-5 order-lg-2 order-md-2 order-sm-2 order-xs-2">
-                                            <input type="submit" class="btn md_btn fill radius-5 brand-primary" value="Guardar cambios" id="save">
-                                        </div>  
-
-                                    </div>
-                                
-                                    
-                                
-
-                                </section>
-                            </div>
-                            <!--Left side-->
-
-                            <!--Right side-->
-                            <div class="col-lg-4 col-md-12 right-col order-lg-1 order-md-0 order-sm-0 order-xs-0">
-                                <div class="image-group">
-                                    <div class="thumbs_container form-group">
-                                        <div class="thumbs_lg thumbs_circle thumbs_bordered "> 
-                                            <div class="js_thumbs_file">
-                                                <div class="input_file ">
-                                                    <label  for="userthumb" >
-                                                        <div class="file_uploaded ellipsis v-hidden" title="userthumb" > <svg width="50px" height="50px" fill="#ffffff" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path d="M39 38H11c-1.7 0-3-1.3-3-3V17c0-1.7 1.3-3 3-3h6c.2 0 .5-.2.6-.3l1.1-2.2c.4-.8 1.4-1.4 2.3-1.4h8c.9 0 1.9.6 2.3 1.4l1.1 2.2c.1.2.4.3.6.3h6c1.7 0 3 1.3 3 3v18c0 1.7-1.3 3-3 3zM11 16c-.6 0-1 .4-1 1v18c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V17c0-.6-.4-1-1-1h-6c-.9 0-1.9-.6-2.3-1.4l-1.1-2.2c-.1-.2-.4-.4-.6-.4h-8c-.2 0-.5.2-.6.3l-1.1 2.2c-.4.9-1.4 1.5-2.3 1.5h-6z"/><path d="M25 34c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm0-16c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z"/><circle cx="35" cy="18" r="1"/><path d="M12 12h4v1h-4z"/><path d="M25 21v-1c-2.8 0-5 2.2-5 5h1c0-2.2 1.8-4 4-4z"/></svg></div>
-                                                        {# <img src="content/img/home-reviews-slider/user-bg.jpg" alt="" width="100%"  height="auto" class="img"> #}
-                                                        <div class="img-container"></div>
-                                                    </label>
-                                                    <input type="file" 
-                                                    name="userthumb[]" 
-                                                    id="userthumb"  
-                                                    class="d-none"  
-                                                    accept="image/*"
-                                                    data-parsley-maxfilesize="500" 
-                                                    data-parsley-maxfilesize-message="Debe pesar menos que %s Kb" 
-                                                    data-parsley-trigger="submit"
-                                                    data-parsley-errors-container="#default_validation_image_msj"/>
-                                                    <div class="acronym"> NA </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                            
-                                        {# <p class="img-description">Debes subir una imágen con un peso menor a<span> 500kb.</span> (Te sugerimos subir una foto cuadrada de<span> 100px por 100px</span>)</p> #}
-                                        <div class="position-relative">
-                                            <span class="label-help">Suba una imágen con un peso menor a<strong> 500 KB.</strong> Sugerimos subir una foto cuadrada de<strong> 100 PX</strong> por<strong> 100 PX</strong>.</span>
-                                        </div>
-                                        <p id="default_validation_image_msj"></p>
-                                    </div>
-                                    
-                                    </div>
-
-
-                            </div>
-                            <!--Right side-->
-                            
-
-                        </div>
-                    </div>
-                </div>
-            </form> 
-            <!--Form-->
-
-        </div>
-    </section>
-
-    <section class="email-preferences">
-        
-        <div class="d-flex flex-column">
-            <!--Form-->
-            <form action="#" class="form_content parsley js_form_validation">
-                <div class="card card-radius-40 card-borderless">            
-                    <div class="card-body d-flex flex-column step">
-                        <div class="row ">
-                            <div class="col-lg-12 col-md-12 left-col order-lg-0 order-md-1 order-sm-1 order-xs-1">
-                                <h3 class="subtitle">Preferencia de correos electrónicos</h3>
-                                <section class="myaccount-form">
-                                    <div class="d-flex flex-column ">
-
-                                        <!--Tours Recomendados-->
-                                        <div class="d-flex flex-column">
-                                            <div class="form-group">
-                                                <div class="position-relative">
-                                                    <label for="treco">Tours Recomendados</label>
-                                                    <span class="label-help">Descubra los recorridos recomendados para usted en función de sus preferencias únicas. <br>
-                                                    No se pierda nunca nuevas fechas de salida y nuevos itinerarios.</span>
-                                                </div>
-                                                <select  class="form-control select2 nosearch" id="treco" name="treco" >
-                                                    <option></option>
-                                                    <option value="0" selected>Si</option>
-                                                    <option value="1">Pausar por 1 mes</option>
-                                                    <option value="2">Pausar por 3 meses</option>
-                                                    <option value="3">No</option>
-                                                 
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                      
-
-                                        <div class="d-flex flex-column">
-                                            <div class="form-group">
-                                                <div class="position-relative">
-                                                    <label for="offers">Ofertas y promociones</label>
-                                                    <span class="label-help">Reciba las ofertas y promociones exclusivas</span>
-
-                                                </div>
-                                                <select  class="form-control select2 nosearch" id="offers" name="offers"
-                                                tabindex="-1" aria-hidden="true"  style="width:100%" data-placeholder="" >
-                                                    <option></option>
-                                                    <option value="0" selected>Si</option>
-                                                    <option value="1">Pausar por 1 mes</option>
-                                                    <option value="2">Pausar por 3 meses</option>
-                                                    <option value="3">No</option>
-                                                    
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class=" button-container d-flex flex-column  mt-5 order-lg-2 order-md-2 order-sm-2 order-xs-2">
-                                            <input type="submit" class="btn md_btn fill radius-5 brand-primary" value="Guardar cambios" id="save">
-                                        </div>  
-                                    </div>
-                                </section>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </form> 
-            <!--Form-->
-
-        </div>
-    </section>
-
-    <section class="change-password">
-       
-        <div class="d-flex flex-column">
-            <!--Form-->
-            <form action="#" class="form_content parsley js_form_validation">
-                <div class="card card-radius-40 card-borderless">            
-                    <div class="card-body d-flex flex-column step">
-                        <div class="row ">
-                            <div class="d-flex flex-column">
-                                <h3 class="subtitle">Inicio de sesión y seguridad </h3>
-                            </div>
-                            <div class="col-lg-4 col-md-12 left-col order-lg-0 order-md-1 order-sm-1 order-xs-1">
-                                
-                                <section class="myaccount-form">
-                                    <div class="d-flex flex-column ">
-
-                                         <div class="form-group password ">
-                                            <label for="password0">CLave Actual</label>
-                                            <input type="password" autocomplete="off" name="password0" id="password0" class="form-control password" placeholder="Escribe la clave actual" value="1234"
-                                            data-parsley-trigger="submit"
-                                            data-parsley-required />
-                                            <span class="icon eye inactive"></span>
-                                            <span class="default_validation_msj"></span>
-                                        </div>
-
-                                        <div class="form-group password ">
-                                            <label for="password1">Nueva clave</label>
-                                            <input type="password" autocomplete="off" name="password1" id="password1" class="form-control password" placeholder="Escribe nueva Contraseña" />
-                                            <span class="icon eye inactive"></span>
-                                            <span class="default_validation_msj"></span>
-                                        </div>
-
-                                        <div class="form-group password ">
-                                            <label for="password">Confirma nueva clave</label>
-                                            <input type="password" autocomplete="off" name="password2" id="password2" class="form-control password" placeholder="Repite Contraseña"
-                                            data-parsley-trigger="submit"
-                                            data-parsley-equalto="#password1"
-                                            data-parsley-equalto-message= "La contraseña no coincide con la anterior."/>
-                                            <span class="icon eye inactive"></span>
-                                            <span class="default_validation_msj"></span>
-                                        </div>
-                                        
-
-                                        <div class=" button-container d-flex flex-column  mt-5 order-lg-2 order-md-2 order-sm-2 order-xs-2">
-                                            <input type="submit" class="btn md_btn fill radius-5 brand-primary" value="Guardar cambios" id="save">
-                                        </div>  
-
-                                    </div>
-
-                                </section>
-                            </div>
-                        
-
-                           
-
-                        </div>
-                    </div>
-                </div>
-            </form> 
-            <!--Form-->
-
-        </div>
-    </section>
+   
+    <section class="row">
 
        
+        <div class="col-12">
 
-        
-    
+            <!--Personal data-->
+            {% block personalData %}
+                {% include "partials/my-account/_personal-data.njk" %}
+            {% endblock %} 
+            <!--Personal data-->
+            <!--Email preferences-->
+            {% block emailPreferences %}
+                {% include "partials/my-account/_email-preferences.njk" %}
+            {% endblock %} 
+            <!--Email preferences-->
+
+             <!--Email preferences-->
+            {% block passwordChanges %}
+                {% include "partials/my-account/_password-changes.njk" %}
+            {% endblock %} 
+            <!--Email preferences-->
+
+        </div>
+     
+
+    </section>
+
     <div class="mt-5 mb-5">
+        <!--Contact support-->
         {% block contactSupport %}
-        {% include "shared/_contact-support.njk" %}
+            {% include "shared/_contact-support.njk" %}
         {% endblock %} 
     </div>
 
     
    
 
-    
 </div>
 {% endblock %}
 

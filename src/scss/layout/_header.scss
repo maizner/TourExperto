@@ -99,13 +99,14 @@ header{
     padding: 10px 0;
     #header-search svg{
         color: $Pink-brand-1;
+        margin-left: 7px;
     }
 }
 
 #header-search {
     margin-left: 1vw;
-    max-width: 423px;
-    min-width: 280px;
+    max-width: 280px;
+    min-width: 200px;
     height: 36px;
     border: 1px solid $brand-color;
     background-color: #fcfdff;
@@ -113,7 +114,7 @@ header{
     padding: 0 5px;
     font-size: 14px;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 50px;
     position: relative;
     display: flex;
     align-items: center;
@@ -171,7 +172,7 @@ header{
 
 #nav li {
     display: inline-block;
-    padding-left: .5vw;
+    padding-left: .7vw;
 }
 
  #nav .nav-item a {

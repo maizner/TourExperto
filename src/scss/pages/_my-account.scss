@@ -1,15 +1,11 @@
 .pgmyaccount {
 
-    .title,.subtitle{
-        color: $grey-text-default;
-        font-weight: 700;
+ 
 
-    }
-    .title{
-        font-size: $t32;
-    }
     .subtitle{
+        color: $grey-text-default;
         font-size: $t26;
+        font-weight: 700;
     }
    
     .birthday .default.form-group, 
@@ -23,18 +19,15 @@
         color: $grey-5;
        
     }
-    .form-group .form-control,
-    .form-group .select2-container--default {
-        max-width: 285px;
+    .email-preferences .form-group .form-control,
+    .form-group .select2-container--default,
+    .button-container .btn {
+        max-width: 300px;
     }
-   
-    .button-container .btn{
-        min-width: 300px;
-    }
+
     .form-group.error .select2-container--default .select2-selection--single{
         border-color: $error-color;
         color: $error-color;
-       
     }
    
 
@@ -97,8 +90,11 @@
         }
     }
     .personal-data .form-group,
-    .change-password .form-group{
+    .password-changes .form-group{
         max-width:300px;
+    }
+    .card.card-radius-40.card-borderless .card-body{
+        padding-left:0px;
     }
    
     

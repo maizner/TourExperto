@@ -54,7 +54,10 @@ var myaccount = {
             },
             requirementType: 'integer'
             
-          });
+        });
+
+         //Init de number spinners within the modal 
+         $(".input-spinnumber").inputSpinner()
 
 
 

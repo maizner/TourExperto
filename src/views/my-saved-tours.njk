@@ -18,9 +18,11 @@
         <div class="col-12">
 
             <div class="d-flex flex-column">
+                <!--Título h1 visible o invisible.NO BORRAR. Necesario para SEO-->
+                <h1 class="title d-none">Mis Tours</h1>
                 <div class="mt-5">
 
-                    <h1 class="">Tours guardados</h1>
+                    <h2 class="title2">Tours guardados</h2>
                       
                     {% block saved %}
                         {% include "partials/my-saved-tours/_saved-tours.njk" %}
@@ -30,7 +32,7 @@
           
                 <div class="mt-5 mb-5">
 
-                    <h1 class="">Vistos recientemente</h1>
+                    <h2 class="title2">Vistos recientemente</h2>
                        
                     {% block recentView %}
                         {% include "partials/my-saved-tours/_recent-view.njk" %}

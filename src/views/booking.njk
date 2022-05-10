@@ -17,15 +17,17 @@
 
         <!--Left side-->
         <div class="col-lg-8 col-md-12 left-col step-format">
-
+            <!--Título h1 visible o invisible.NO BORRAR. Necesario para SEO-->
+            <h1 class="title d-none">Realiza tu reserva</h1>
+                
             <div class="d-flex flex-column">
 
                 <!--Check date-->
                 {% block checkDate %}
                     {% include "partials/booking/_program-data.njk" %}
                 {% endblock %} 
-                <!--Check date-->
-
+                
+               
                 <!--Bullets ( hasta 3)-->
                 <div class="bullets">            
                     <div class="d-flex flex-row align-items-center justify-content-center">
@@ -50,6 +52,7 @@
                             {% include "shared/_contact-data.njk" %}
                         {% endblock %} 
                         <!--Contacto-->
+                        
 
                         <!--Paso 3: Pasajeros-->
                          {% block pax %}
@@ -130,12 +133,13 @@
     
    
 
+   
+
 </div>
 {% endblock %}
 
 {% block pagescript %}
     <script type="text/javascript" src="content/js/booking.js"></script>
 {% endblock %}
-
 
 

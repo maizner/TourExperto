@@ -1,4 +1,3 @@
-
 @charset 'UTF-8';
 @import
 	'utilities/variables',
@@ -27,15 +26,22 @@
  	'components/form-group',
  	'components/input',
 	'components/account-thumb',
- 	'components/cards';
+ 	'components/cards',
+	 'components/datepicker',
+ 	'components/button',
+ 	'components/form-group',
+ 	'components/input',
+	'components/rangeslider',
+	'components/dropdown',
+ 	'components/accordion';
 
 
 @import 
 	'shared/modal',
-	'shared/contact-support',
-	'shared/tyc',
-	'shared/resume-card',
-	'shared/form-group-validations';
+	'shared/form-group-validations',
+	'shared/contact-support';
+	
 
 @import
 	'pages/my-account';
+	

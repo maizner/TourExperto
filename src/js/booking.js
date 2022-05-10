@@ -35,13 +35,14 @@ var booking = {
             minimumResultsForSearch: Infinity,
             dropdownCssClass : "no-search"
         });
-        $('.select2.withsearch').select2({
-        });
+        $('.select2.withsearch').select2();
       
          //Init de scroller plugin
-         $('.select2').on('click', function(){
-            $(".nano").nanoScroller();
-        });
+        //  $('.select2').on('click', function(){
+        //     $(".nano").nanoScroller();
+        //     console.log("paso")
+        // });
+    
         
         //Init de number spinners within the modal 
         $(".input-spinnumber").inputSpinner();

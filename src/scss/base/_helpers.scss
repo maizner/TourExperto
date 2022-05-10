@@ -223,7 +223,16 @@
 	}
 }
 
+h1.title {
+	font-size: $t40;
+	color: $brand-color;
+	font-weight: 900;
 
+}
+.title2{
+	font-size: $t23;
+	color: $grey-2;
+}
 
 /*Reset spacing styles*/
 .pr-0{

@@ -1,0 +1,195 @@
+.pgmyoperations {
+    //el dashboard
+    .operation-data{
+        
+        .table{
+            
+            margin-bottom:0px;
+        }
+        thead{
+            height: 45px;
+            background-color: lighten($brand-color, 28%);
+            th{
+                text-align: center;
+            }
+
+            .table-title{
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: .5px;
+            }
+
+        }
+        .myaccount-icon{
+            margin-right: 0px;
+        }
+        .table>:not(:last-child)>:last-child>*{
+            border-bottom-color: $grey-6;
+            vertical-align: middle;
+            background-color: lighten($brand-color, 28%);
+        }
+        .table thead tr{
+            border-bottom-color: 1px solid $grey-6;
+        }
+        .table tr{
+            background-color: lighten($brand-color, 30%);
+            
+            &:hover{
+                background-color: lighten($brand-color, 28%);
+            }
+
+            &:last-child{   
+                padding-bottom:20px;
+                border-bottom: transparent;
+            }
+        }
+       
+        
+       
+
+        .table-info{
+            background-color: #610c8e;
+            padding: 10px 20px;
+            
+
+            .table-title{
+                font-size: $t12;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: white;
+                
+                .num{
+                    font-family: Arial, Helvetica, sans-serif;
+                    letter-spacing: 1px;
+                }
+
+                a{
+                    color:$Pink-brand-1;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .table-wrapper{
+            border-radius:5px;
+            overflow:hidden;
+            border: 1px solid #ebebeb;
+            box-shadow: 0 4px 5px rgba(0, 0, 0 , .15);
+        }
+        table tr:last-child{
+            padding-bottom:20px;
+        }
+        
+    }
+    .item-title{
+        color: $grey-4;
+        font-size: 14px;
+        font-weight: 400;
+
+        &:hover{
+            color: darken($grey-4, 10%);
+        }
+
+        .myaccount-icon{
+            margin-right:0px;
+            fill: $grey-4;
+            &:hover{
+                fill: darken($grey-4, 10%);
+            }
+            
+        }
+    }
+    td.table-item{
+        vertical-align:middle;
+        height:50px;
+    }
+    .table-item .item-title,.table-item .item-title a{
+        display:flex;
+        justify-content:center;
+ 
+    }
+    .table-item.status a{
+        display: block;
+        margin: 0 auto;
+
+    }
+    .table-item .type-number{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .status{
+        .item-title , 
+        .item-title a{
+            color: #101923;
+            padding:5px;
+            margin:5px;
+            font-size: 9px;
+            letter-spacing: .5px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-radius: 50px;
+            width: 140px;
+            text-align: center;
+            
+        }
+        .item-title{
+            
+            box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.3);
+        }
+        .pre-r{
+            background-color: #9ea7ad;
+        }
+        .r-partial{
+            background-color: lighten(#fff064, 10%);
+        }
+        .r-total{
+            background-color:  lighten(#ffb302, 10%);
+        }
+        .r-confirm{
+            background-color: lighten(#4f9f24, 10%);
+        }
+        .r-sent{
+            background-color:  lighten(#4c9eb9, 10%);
+        }
+        .r-canceled{
+            background-color:  lighten(#ff3838, 5%);
+        }
+
+
+    }
+}
+
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+    .title{
+        margin-top:100px;
+        margin-bottom:30px;
+    }
+    .pgmyoperations .operation-data{
+       
+        .table-wrapper{
+            margin-bottom:100px;
+        }
+
+    }
+ 
+   
+}
+
+
+@include media(mb){
+    .title{
+        margin-top:100px;
+        margin-bottom:30px;
+    }
+    .pgmyoperations .operation-data{
+      
+        .table-wrapper {
+            margin-bottom:100px;
+        }
+
+    }
+
+}
