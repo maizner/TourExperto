@@ -103,6 +103,7 @@
     td.table-item{
         vertical-align:middle;
         height:50px;
+        text-align: center;
     }
     .table-item .item-title,.table-item .item-title a{
         display:flex;
@@ -137,22 +138,22 @@
             box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.3);
         }
         .pre-r{
-            background-color: #9ea7ad;
+            background-color: #c5c5c5;
         }
         .r-partial{
-            background-color: lighten(#fff064, 10%);
+            background-color: #fff597;
         }
         .r-total{
-            background-color:  lighten(#ffb302, 10%);
+            background-color:  #ffc235;
         }
         .r-confirm{
-            background-color: lighten(#4f9f24, 10%);
+            background-color: #a4ff72;
         }
         .r-sent{
-            background-color:  lighten(#4c9eb9, 10%);
+            background-color:  #89e2ff;
         }
         .r-canceled{
-            background-color:  lighten(#ff3838, 5%);
+            background-color:  #ff5d5d;
         }
 
 
