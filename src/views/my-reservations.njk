@@ -1,0 +1,39 @@
+{% extends "layout/_default.njk" %}
+{% set pgMyaccount = true %}
+{% block bodyClass %} pgmyreservations {% endblock %}
+
+{% import "macros/macro-formField.njk" as formfield %} 
+
+
+{% block pagestyle %}
+    <link rel="stylesheet" type="text/css" href="content/css/my-reservations.css">
+{% endblock %} 
+
+{% block content %}
+<div class="content myreservations container-lg" id="reservations">
+   
+      <section class="row">
+
+       
+        <div class="col-12">
+
+            {% block reservations %}
+                {% include "partials/my-reservations/_dashboard-table.njk" %}
+            {% endblock %} 
+     
+        </div>
+     
+
+    </section>
+
+   
+
+</div>
+{% endblock %}
+
+{% block pagescript %}
+    {# <script type="text/javascript" src="content/js/my-reservations.js"></script> #}
+{% endblock %}
+
+
+

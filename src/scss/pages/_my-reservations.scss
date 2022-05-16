@@ -1,6 +1,6 @@
-.pgmyoperations {
+.pgmyreservations {
     //el dashboard
-    .operation-data{
+    .reservations-data{
         
         .table{
             
@@ -64,7 +64,7 @@
                 }
 
                 a{
-                    color:$Pink-brand-1;
+                    color:white;
                     &:hover{
                         text-decoration: underline;
                     }
@@ -168,7 +168,7 @@
         margin-top:100px;
         margin-bottom:30px;
     }
-    .pgmyoperations .operation-data{
+    .pgmyreservations .reservations-data{
        
         .table-wrapper{
             margin-bottom:100px;
@@ -185,7 +185,7 @@
         margin-top:100px;
         margin-bottom:30px;
     }
-    .pgmyoperations .operation-data{
+    .pgmyreservations .reservations-data{
       
         .table-wrapper {
             margin-bottom:100px;
