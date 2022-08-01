@@ -1,0 +1,43 @@
+.hero {
+
+    .heroimg-wrapper{
+        width: 100%;
+        max-width:1116px;
+        border-radius:30px;
+        overflow:hidden;
+        position:relative;
+        box-shadow: -10px 0px 13px -7px #525252, 10px 0px 13px -7px #525252, 5px 5px 15px 2px rgba(222,222,222,0.05);
+    }
+    .heroimg {
+        position:absolute;
+        top: -5%;
+        left: -5%;
+
+    }
+   
+}
+
+
+/*MQ
+--------------------------------------*/
+
+@include media(dk){
+    .heroimg-wrapper{
+        height:400px;
+    }
+    .hero .heroimg{
+        width: 120%;
+        height: auto;
+    }
+}
+
+@include media(mb){
+    .heroimg-wrapper{
+        height:150px;
+    }
+    .hero .heroimg{
+        width: auto;
+        height: 120%;
+    }
+
+}

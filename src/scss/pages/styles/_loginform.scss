@@ -1,0 +1,32 @@
+.loginform{
+max-width:500px;
+margin:0 auto;
+
+    .form-group {
+        max-width:350px;
+    }
+    .card-body{
+        min-height:400px;
+    }
+
+    .link{
+        margin-top:30px;
+        margin-bottom:30px;
+        font-size: $t12;
+    }
+
+    
+}
+
+
+/*MQ
+--------------------------------------*/
+
+@include media(dk){
+  
+}
+
+@include media(mb){
+  
+
+}

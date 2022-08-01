@@ -1,0 +1,223 @@
+/*
+--------------------------------------*/
+
+
+@import 
+    'styles/hero',
+    'styles/loginform';
+
+   
+
+.bottom-data{
+    font-size: $t13;
+    padding-top:50px;
+    padding-bottom:100px;
+    max-width: 540px;
+    display:block;
+    margin: 0 auto;
+}
+.group{
+    font-size: $t13;
+    
+    .group-number{
+        color:darken($brand-color, 15%);
+        font-weight: 700;
+    }
+    
+}
+.table.flight-info{
+    .table-item{
+        font-size: $t13;
+        padding-top:10px;
+        padding-bottom:10px;
+        
+        &.w-50{
+            border-bottom: 1px solid $grey-6;
+        }
+        &:first-child{
+            max-width:160px;
+
+        }
+
+        &:not(:first-child){
+            color: darken($brand-color, 15%);
+        }
+    }
+
+}
+.highlight1{
+    color: $grey-text-default;
+    letter-spacing:1px;
+    font-weight:700;
+}
+.highlight2{
+    color: darken($brand-color, 15%);
+    font-size: $t12;
+    font-style: italic;
+    letter-spacing:.5px;
+    font-weight:600;
+}
+
+.bank-data{
+    p{
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+}
+.return-form{
+    max-width:600px;
+    margin:0 auto;
+    .form-group label{
+        font-size: $t13;
+        // padding-bottom:0px;
+    }
+    .button-container{
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+    // .label-help{
+    //     font-size: $t10;
+    // }
+
+}
+
+
+//formulario de registro
+.registrationform{
+
+    .card.card-radius-40.contact-data .card-body{
+        padding-bottom: 5em;
+    
+    }
+
+}
+
+.date-of-issue{
+
+    input{
+        padding-left: 40px;
+    }
+    .tooltip-white{
+        position: absolute;
+        left: 10px;
+        top: 5px;
+    }
+}
+.date-group-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 7px;
+    margin: 10px 0;
+
+    label {
+
+		display: inline-block;
+		font-family: $text-font-stack;
+		color: $grey-text-default;
+		font-weight: 700;
+		font-size: $t14;
+		text-transform: uppercase;
+		vertical-align: middle;
+		background-color: transparent;
+		padding-bottom: 5px;
+
+	}
+}
+
+.date-group{
+    display:flex;
+    flex-direction:row;
+    max-width: 264px;
+    width: 100%;
+    justify-content: space-between;
+    .form-group.error .parsley-errors-list li{
+        
+        white-space: nowrap;
+    }
+    #day, #month{
+        //min-width: reseteo input x default
+        width:65px;min-width:65px;
+    }
+    #year{
+         //min-width: reseteo input x default
+        width:80px;min-width:80px;
+    }
+    
+}
+.radio.error .parsley-errors-list li{
+    white-space: nowrap;
+}
+.checkbox.error .parsley-errors-list li{
+    left:0px !important;
+}
+
+
+/*MQ
+--------------------------------------*/
+@include media(dk){
+
+    .pglogin input{
+        width:320px;
+    }
+    .group{
+        margin-top:40px;
+        margin-bottom:40px;
+        
+    }
+    .xs-row{
+        max-width:30%;
+    }
+    .sm-row{
+        max-width:50%;
+    }
+    .md-row{
+        max-width:75%;
+    }
+    .lg-row{
+        max-width:100%;
+    }
+    .button-container{
+        margin-top:50px
+    }
+
+    .registrationform .default.form-group{
+        align-items: flex-start;
+    }
+    .registrationform .label-help{
+        max-width:230px;
+    }
+    .tyc{
+        max-width: 750px;
+        margin: 0 auto;
+
+        .checkmark{
+            margin-top:10px;
+        }
+        p{    
+            margin-left: 5px;
+        }
+
+    }
+    .registrationform .form-group.error{
+        max-height:40px;
+        overflow: visible;
+
+        &.grecaptcha-wrapper{
+            max-height:100px;
+        }
+        
+    }
+   
+}
+@include media(mb){
+    .group{
+        margin-top:20px;
+        margin-bottom:20px;
+        
+    }
+
+
+   
+}
+
