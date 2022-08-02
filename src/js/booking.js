@@ -46,6 +46,11 @@ var booking = {
         
         //Init de number spinners within the modal 
         $(".input-spinnumber").inputSpinner();
+
+        $('#booking').on("click", function(){
+            window.location.href='payment.html';
+            })
+        
     }
        
     

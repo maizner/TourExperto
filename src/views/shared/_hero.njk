@@ -1,0 +1,15 @@
+<div class="hero" >
+    {% if pgLogin %}
+        <h1 class="title1 text-center">¡¡Felicitaciones!!</h1>
+        <p class="subtitle text-center"> Nos alegra saber que estas seleccionado para el próximo viaje TAGLIT a Israel</p>
+        <p class="subtitle text-center mb-4">¡Estas a punto de vivir una gran experiencia! </p>
+    {% endif %}
+    <div class="heroimg-wrapper {% if pgUserLoggedIn %}mt-2{% endif %}" >
+        {% if pgLogin %}
+            <img class="heroimg" src="content/img/hero.jpg" alt="">
+        {% endif %}
+            {% if pgUserLoggedIn %}
+            <img class="heroimg" src="content/img/hero2.jpg" alt="">
+        {% endif %}
+    </div>
+</div>

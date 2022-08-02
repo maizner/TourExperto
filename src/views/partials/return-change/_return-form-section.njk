@@ -1,0 +1,36 @@
+ <section class="return-form-section">
+
+    <h3 class="title2 text-center mt-5">CAMBIO MI FECHA DE REGRESO</h3>
+
+    <form action="#" class="form_content parsley js_form_validation return-form">
+
+        <div class="card card-radius-40 contact-data">
+
+            <div class="card-body d-flex flex-column">
+                
+                <p class="subtitle text-center mb-5">
+                    <span class="highlight1">¡IMPORTANTE!</span><br>
+                    Se debe adjuntar comprobante de deposito para procesar solicitud
+                </p>
+
+                {% block date %}
+                    {# {% macro inputTextValid(type, name and id, class,label,labelhealp, text,placeholder, value) %} #}
+                    {{ formfield.inputTextValid("date", "name", "default","Fecha Solicitada","","", "") }}
+                {% endblock %}
+
+                {% block file %}
+                    {# {% macro inputTextValid(type, name and id, class,label,labelhealp, text,placeholder, value) %} #}
+                    {{ formfield.inputFileValid("file","name", "default","Adjuntar Depósito","Clt + click para seleccionar + de 1 archivo","", "", "multiple") }}
+                {% endblock %}
+
+                <div class=" button-container d-flex align-items-center justify-content-end mb-5">
+                    <button type="submit" class="btn md_btn fill radius-5 brand-primary" href="#" > Enviar Formulario</button>
+                </div> 
+
+            </div> 
+
+        </div> 
+
+    </form>
+
+</section>

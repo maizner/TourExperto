@@ -41,6 +41,10 @@ var quotation = {
          $('.select2').on('click', function(){
             $(".nano").nanoScroller();
         });
+        $('#cerrar, #consultar').on("click", function(){
+            window.location.href='thankyou.html';
+            })
+        
     }
        
     

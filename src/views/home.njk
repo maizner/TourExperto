@@ -1,0 +1,191 @@
+{# extending #}
+{% extends "layout/_default.njk" %}
+{% set pgHomeLog = true %}
+
+{% block bodyClass %} pghome {% endblock %}
+
+{% block pagestyle %}
+    <link rel="stylesheet" type="text/css" href="content/css/index.css">
+{% endblock %} 
+
+{% block content %}
+<div class="content home" id="home">
+    <!--SECCION HEROE-->
+    <div id="home-main">
+        <div class="container-lg hero-container">
+
+            {% block homehero %}
+            {% include "partials/home/_hero.njk" %}
+            {% endblock %} 
+            
+            {% block homesearch %}
+            {% include "partials/home/_search.njk" %}
+            {% endblock %} 
+        {% if pgHome %}
+        <div id="home-msg">¿Ya eres Cliente? Gestiona tus reservas Online facil. <a href="#" class="hero-login">Ingresa</a></div>
+       
+        {% endif %}
+            
+
+        </div>
+    </div>
+    <!--END SECCION HEROE-->
+
+    <!--SECCION PROPUESTA DE VALOR ( ventajas)-->
+    <section id="home-cards" class=" mx-auto">
+        {% block advantages %}
+            {% include "partials/home/_card-advantages.njk" %}
+        {% endblock %} 
+
+    </section>
+    <!--SECCION PROPUESTA DE VALOR-->
+
+    <!--SECCION TAGS-->
+    <section id="home-tags-slider">
+        <div id="home-tags-container">
+            
+            {% block tags %}
+                {% include "partials/home/_tags-slider.njk" %}
+            {% endblock %} 
+
+        </div>
+    </section>
+    <!--SECCION TAGS-->
+
+    <!--OFERTAS-->
+    <section class="home-offers">
+        {% block offers %}
+            {% include "partials/home/_offers-list.njk" %}
+        {% endblock %} 
+    </section>
+    <!--OFERTAS-->
+
+    <!-- INSTALLMENTS BANNER -->
+    <div class="container-lg paymode-container">
+        {% block paymode %}
+        {% include "shared/_paymode.njk" %}
+        {% endblock %} 
+    </div>
+    <!--INSTALLMENTS BANNER-->
+
+    <!--SECCION REVIEWS-->
+    <section id="home-reviews-slider">
+        <div id="home-reviews-container">
+        <div class="section-title simple">
+            <h2>Nuestros viajeros nos cuentan...</h2>
+            {# <h3>Desde 1984 al servicio de nuestros clientes</h3> #}
+        </div>
+
+             {% block reviews %}
+                {% include "partials/home/_reviews-slider.njk" %}
+            {% endblock %} 
+            
+        </div>
+    </section>
+    <!--SECCION REVIEWS-->
+    
+    <!--LISTA RECOMENDADOS-->
+    <section id="home-list-cards" class="home-list-cards">
+        <div class="container-lg">
+
+            <div class="section-title" style="background-image: url(content/img/home-recomendados.jpg);">
+              
+                <div href="#" title="Recomendados de la semana" class="d-flex flex-column flex-xl-row flex-lg-row align-items-lg-end align-items-center title-container">
+                    <img src="content/img/iso-md.png" title="Recomendados de la semana" >
+                    <h2>Recomendados de la semana</h2>
+                </div>
+                <a href="#" title="" class="btn md_btn linear radius-50 white">Ver todos</a>
+            </div>
+
+            {% block recommended %}
+                {% include "partials/home/_recommended-list.njk" %}
+            {% endblock %} 
+        </div>
+    </section>
+    <!--END LISTA RECOMENDADOS-->
+    
+
+    <!--LISTA SECCION DESTINOS-->
+    <section id="home-destinations" class="home-list-cards home-classics" >
+        <div class="container-lg">
+           
+        {% block destinations %}
+            {% include "partials/home/_destination-list.njk" %}
+        {% endblock %} 
+           
+        </div>
+    </section>
+    <!--END LISTA SECCION DESTINOS-->
+
+    <!--CONTACT SUPPORT-->
+    {% block contactSupport %}
+    {% include "shared/_contact-support.njk" %}
+    {% endblock %} 
+    <!--END CONTACT SUPPORT-->
+
+    <!--BANNER FINANCIACION-->
+    <div class="container-lg paymode-container mb4">
+    {% block paymode2 %}
+    {% include "shared/_paymode.njk" %}
+    {% endblock %} 
+    </div>
+    <!--BANNER FINANCIACION-->
+
+    <!--SECCION TRAVEL Tu forma de ver el mundo-->
+    <section id="home-travel" class="home-travel">
+        <div class="container-lg">
+            <div class="section-title" style="background-image: url(content/img/home-travel.jpg);">
+                <div href="#" title="Tu forma de ver el mundo" class="d-flex flex-column flex-xl-row flex-lg-row align-items-lg-end align-items-center title-container">
+                    <img src="content/img/iso-md.png" title="Tu forma de ver el mundo" >
+                   
+                    <h2>Tu forma de ver el mundo</h2>
+                    
+                </div>
+                <p class="subtitle">Nuestro Blog de viajes</p>
+                <a href="#" title="" class="btn md_btn linear radius-50 white">Ver todos</a>
+            </div>
+        </div>
+        {% block travel %}
+            {% include "partials/home/_travel-slider.njk" %}
+        {% endblock %}
+    </section>
+    <!--SECCION Tu forma de ver el mundo-->
+
+   <!--SECCION INFO COVID-->
+    <section id="home-info" class="home-info">
+        <div  class="home-info-container">
+           
+            {% block info %}
+                {% include "partials/home/_info-slider.njk" %}
+            {% endblock %}
+        </div>
+    </section>
+    <!--SECCION INFO COVID-->
+   
+    <!--SECCION NEWSLETTER ( optin) -->
+    <div id="home-newsletter">
+        <div class="container-lg">
+            {% block newsletter %}
+                {% include "partials/home/_optin.njk" %}
+            {% endblock %}
+           
+        </div>
+    </div>
+    <!--SECCION NEWSLETTER-->
+
+    <!--SLIDER LOGOS AGENTES-->
+    <div id="home-agents" class="home-agents">
+        {% block agentlogos %}
+            {% include "partials/home/_agentlogos-slider.njk" %}
+        {% endblock %}
+    </div>
+    <!--SLIDER LOGOS AGENTES-->
+
+
+
+</div>
+{% endblock %}
+
+{% block pagescript %}
+    <script type="text/javascript" src="content/js/index.js"></script>
+{% endblock %}

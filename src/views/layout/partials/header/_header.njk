@@ -1,7 +1,7 @@
 <!--Espacio de promoción para pantalla de productos-->
 {% if pgProduct or pgMyaccount%}
     <div class="d-flex align-items-center header-promo container-lg">
-        <p>Espacio para poner una promoción  (puede estar o no habilitado)</p>
+        <p>Espacio promocional  (puede estar o no habilitado)</p>
         <a href="#" title="">LInk o espacio para banner</a>
     </div>
 {% endif %}
@@ -11,11 +11,9 @@
 
         {% if pgHome %}
             <div id="header-top" class="d-flex justify-content-end align-items-center flex-wrap ">
-                {% block rightMenutest %}
-                    {% include "layout/partials/header/_right-menu.njk" %}
-                {% endblock %}
-                <a id="header-sign">Registrate</a>
-                <a id="header-login">Ingresa</a>
+               
+                <a id="header-sign" href="signup.html">Registrate</a>
+                <a id="header-login" href="login.html">Ingresa</a>
                 <div id="header-social" class="social">
                     <a class="social-item" href="#" >
                         <i class="fab fa-instagram"></i>
@@ -35,16 +33,58 @@
                     
                 </div>
             </div>
-        {% else %}
-            <div id="header-top" class="d-flex justify-content-end align-items-center flex-wrap ">
-                {% block rightMenutest2 %}
+        {% elif pgHomeLog %}
+        <div id="header-top" class="d-flex justify-content-end align-items-center flex-wrap ">
+               
                     {% include "layout/partials/header/_right-menu.njk" %}
-                {% endblock %}
+                
+               
+                <div id="header-social" class="social">
+                    <a class="social-item" href="#" >
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="social-item" href="#" >
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="social-item" href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="social-item" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social-item" href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    
+                </div>
             </div>
+            {% elif  pgRegistrationForm or pgLoginForm or pgRecoverForm%}
+             <div id="header-top" class="d-flex justify-content-end align-items-center flex-wrap ">
+               
+                  
+            </div>
+              {% else  %}
+            <div id="header-top" class="d-flex justify-content-end align-items-center flex-wrap ">
+                 
+                 {% include "layout/partials/header/_right-menu.njk" %}
+                  
+            </div>
+        
+      
+            {% endif %}
+
+        {% if pgRegistrationForm or pgLoginForm or pgRecoverForm %}
+        <div class="d-flex justify-content-center align-items-center header-bottom">
+        {% else %}
+        <div class="d-flex justify-content-between header-bottom">
         {% endif %}
 
-        <div class="d-flex justify-content-between header-bottom">
-            <a href="#" id="logo"><img src="content/img/logo.png" alt=""></a>
+        {% if pgHome or pgRegistrationForm or pgLoginForm or pgRecoverForm %}
+        <a href="index.html" id="logo"><img src="content/img/logo.png" alt="Tour Experto Logo"></a>
+        {% else %}
+        <a href="home.html" id="logo"><img src="content/img/logo.png" alt="Tour Experto Logo"></a>
+        {% endif %}
+            
 
             <nav id="nav">
                 {% if pgSearch or pgProduct or pgTyC or pgQuotation or pgMyaccount %}
@@ -55,34 +95,34 @@
                     </div>
                 {% endif %}
 
-                {% if pgHome or pgSearch or pgProduct or pgTyC or pgQuotation or pgMyaccount %}
+                {% if pgHome or pgHomeLog or pgSearch or pgProduct or pgTyC or pgQuotation or pgMyaccount %}
                     {# <button type="button" class="btn md_btn fill brand-primary radius-5 contact-agent" title="Contacta a un agente" data-bs-toggle="modal" data-bs-target="#agentModal">Contactate</button> #}
 
                     <ul class="d-flex align-items-center">
                         <li class="nav-item">
                             <a href="#" type="button" alt="Destinos" data-bs-toggle="modal" data-bs-target="#destinationsModal" >Destinos</a>
                         </li>
-                        <li class="nav-item">
+                        {# <li class="nav-item">
                             <a href="#" type="button" alt="Destinos" data-bs-toggle="modal" data-bs-target="#productsModal">Productos</a>
+                        </li> #}
+                        <li class="nav-item">
+                            <a href="search.html">Búsquedas</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">Recomendados</a>
+                            <a href="product.html">Producto</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">Covid</a>
+                            <a href="quotation.html">Cotizar</a>
+                        </li>
+                         <li class="nav-item">
+                            <a href="booking.html">Reservar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">Ofertas</a>
+                            <a href="payment.html">Pago</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">Contacto</a>
-                        </li>
+                      
+                       
+                      
                         
                         {# {% if pgMyaccount %}
                         <li class="nav-item">
@@ -180,12 +220,60 @@
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Home</a>
+                        <a href="home.html">Home</a>
                     </a></li>
                     <li class="breadcrumb-item">
-                        <a href="#">Paquetes Terrestres</a>
+                        <a href="search.html">Paquetes Terrestres</a>
                     </a></li>
                     <li class="breadcrumb-item active" aria-current="page">Tours</a></li>
+                </ol>
+            </nav>
+        {% endif %}
+         {% if pgQuotation %}
+            <!--Breadcrumb Search-->
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="home.html">Home</a>
+                    </a></li>
+                    <li class="breadcrumb-item">
+                        <a href="search.html">Paquetes Terrestres</a>
+                    </a></li>
+                     <li class="breadcrumb-item">
+                        <a href="product.html">Producto</a>
+                    </a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cotización</a></li>
+                </ol>
+            </nav>
+        {% endif %}
+        {% if pgBooking %}
+            <!--Breadcrumb Search-->
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="home.html">Home</a>
+                    </a></li>
+                    <li class="breadcrumb-item">
+                        <a href="search.html">Paquetes Terrestres</a>
+                    </a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Reservas</a></li>
+                </ol>
+            </nav>
+        {% endif %}
+         {% if pgPayment %}
+            <!--Breadcrumb Search-->
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="home.html">Home</a>
+                    </a></li>
+                    <li class="breadcrumb-item">
+                        <a href="search.html">Paquetes Terrestres</a>
+                    </a></li>
+                     <li class="breadcrumb-item">
+                        <a href="booking.html">Reserva</a>
+                    </a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Pago</a></li>
                 </ol>
             </nav>
         {% endif %}
@@ -195,10 +283,10 @@
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Home</a>
+                        <a href="home.html">Home</a>
                     </a></li>
                     <li class="breadcrumb-item">
-                        <a href="#">Paquetes Terrestres</a>
+                        <a href="search.html">Paquetes Terrestres</a>
                     </a></li>
                     <li class="breadcrumb-item active" aria-current="page">Europa Soñada</a></li>
                 </ol>
@@ -210,7 +298,7 @@
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Home</a>
+                        <a href="home.html">Home</a>
                     </a></li>
                     <li class="breadcrumb-item active" aria-current="page">Condiciones generales</a></li>
                 </ol>

@@ -50,6 +50,10 @@ var payment = {
 
         //Init de number spinners within the modal 
          $(".input-spinnumber").inputSpinner();
+
+         $('#cerrar, #consultar').on("click", function(){
+            window.location.href='thankyou.html';
+            })
         
         
     }

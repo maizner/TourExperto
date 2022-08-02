@@ -1,4 +1,5 @@
-.pgmyaccount {
+.pgmyaccount,
+.registrationform {
 
  
 
@@ -66,6 +67,38 @@
 
 }
 
+/*REGISTRATION PAGE
+--------------------------------------*/
+
+.registrationform{
+    h1 {
+        color: $brand-color;
+        font-size: 40px;
+        font-weight: $bold-font-weight;
+        text-align: center;
+    }
+    #login-msg{
+        font-size: 13px;
+        color:$brand-color;
+        font-weight: $medium-font-weight;
+        margin-bottom: 10px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+
+        margin-bottom: 30px;
+    
+        a, .hero-login {
+            font-weight: $bold-font-weight;
+            color: $Pink-brand-1;
+            border-bottom: 1px solid;
+            padding-bottom:5px;
+        }
+    }
+  
+   
+}
+
 
 /*MQ
 --------------------------------------*/
@@ -93,10 +126,13 @@
     .password-changes .form-group{
         max-width:300px;
     }
-    .card.card-radius-40.card-borderless .card-body{
+    .pgmyaccount .card.card-radius-40.card-borderless .card-body{
         padding-left:0px;
     }
-   
+   .registrationform .card.card-radius-40.card-borderless .card-body,
+   .loginform .card.card-radius-40.card-borderless .card-body{
+    padding:30px;   
+    }
     
   
 }

@@ -62,7 +62,8 @@
 #home-search .calendar-icon{
     font-size: 45px;
 }
-#home-search form button {
+#home-search form button,
+#home-search form a {
     font-weight: 700;
     color: white;
     border: unset;
@@ -81,7 +82,8 @@
         background:white;
     }
 }
-#home-search button span {
+#home-search button span,
+#home-search a span {
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -101,7 +103,8 @@
 
 }
 
-.turismo-nacional #home-search button span {
+.turismo-nacional #home-search button span,
+.turismo-nacional #home-search a span  {
     background: white;
     color: $brand-color;
 }
@@ -116,7 +119,8 @@
     #searchForm{
         min-height: 44px;
     }
-    #home-search form button {
+    #home-search form button,
+    #home-search form a {
         font-size: 21px;
       
     }

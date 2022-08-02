@@ -1,0 +1,80 @@
+ <section class="personal-data">
+    
+    <div class="d-flex flex-column">
+        <!--Form-->
+        <form action="#" class="form_content parsley js_form_validation">
+            <div class="card card-radius-40 card-borderless">            
+                <div class="card-body d-flex flex-column step">
+                    <div class="row ">
+                       <h1 class="d-flex align-items-center mb-2 text-center justify-content-center">Ingresa</h1>
+                        <div id="login-msg">¿Aún no eres cliente? Gestiona tus reservas Online facil. 
+                            <a href="signup.html" class="hero-login">Registrate</a></div>
+                            
+                           
+                       
+                        <!--Left side-->
+                        <div class="col-lg-4 col-md-12 left-col order-lg-0 order-md-1 order-sm-1 order-xs-1 ">
+                            <section class="myaccount-form">
+                                <div class="d-flex flex-column ">
+
+                                </div>
+
+                            </section>
+                            
+                           
+                        </div>
+                        <!--Left side-->
+                        <!--Center side-->
+                        <div class="col-lg-4 col-md-12 left-col order-lg-0 order-md-1 order-sm-1 order-xs-1">
+                            <section class="myaccount-form card card-radius-40 radio">
+                                <div class="d-flex flex-column card-body">
+                                   
+
+                                    {% block usermail %}
+                                        {# {% macro inputTextValid(type, name and id, class,label text,placeholder, value) %} #}
+                                        {{ formfield.inputMailValid( "email", "","Email","Ingresa un email válido", "mail@mail.com") }}
+                                    {% endblock %} 
+
+                                    <div class="form-group password ">
+                                        <label for="password1">Contraseña</label>
+                                        <input type="password" autocomplete="off" name="password1" id="password1" class="form-control password" placeholder="Escribe una Contraseña" value="1234" />
+                                        <span class="icon eye inactive"></span>
+                                        <span class="default_validation_msj"></span>
+                                    </div>
+                                    <div id="login-msg">¿No recuerdas tu contraseña? <br>
+                                    <a href="recover.html" class="hero-login">Recupera tu contraseña</a></div>
+
+                                   
+
+                                    <div class=" button-container d-flex flex-column justify-sm-content-center align-sm-items-center mt-3 mb-3 order-lg-2 order-md-2 order-sm-2 order-xs-2">
+                                        {# <input type="submit" class="btn md_btn fill radius-5 brand-primary" value="Registrarse" id="save"> #}
+                                        <a href="home.html" class="btn md_btn fill radius-5 brand-primary"  id="save">Ingresa</a>
+                                    </div> 
+
+                                </div>
+                            
+                                
+                            
+
+                            </section>
+                           
+                        </div>
+                        <!--Center side-->
+
+                        <!--Right side-->
+                        <div class="col-lg-4 col-md-12 right-col order-lg-1 order-md-3 order-sm-3 order-xs-3">
+                           
+                           
+
+                        </div>
+                        <!--Right side-->
+                        
+
+                    </div>
+                </div>
+            </div>
+        </form> 
+        <!--Form-->
+
+    </div>
+</section>

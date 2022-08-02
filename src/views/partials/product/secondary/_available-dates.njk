@@ -1,4 +1,4 @@
-<section class="available-dates">
+<section class="available-dates" id="availability">
     <h4>Seleccione un mes de salida</h4>
 
     <div class="d-flex flex-wrap justify-content-between">
@@ -557,7 +557,7 @@
                                         </table>
                                         <div class="d-lg-flex flex-row align-items-center justify-content-end btn-section">
                                             <p class="info-btn">En esta fecha no podemos confirmarte una reserva inmediata</p>
-                                            <button type="button" class="btn md_btn linear radius-5 brand-primary reservar-btn" id="cotizar">Cotizar</button>
+                                            <a role="button" href="quotation.html" class="btn md_btn linear radius-5 brand-primary reservar-btn" id="cotizar">Cotizar</a>
                                             
                                         </div>
                                     </div>
@@ -1178,7 +1178,8 @@
                                             </tbody>
                                         </table>
                                         <div class="d-flex flex-column align-items-end btn-section">
-                                            <button type="button" class="btn md_btn linear radius-5 brand-primary reservar-btn" id="reservar">Reservar</button>
+                                            <a role="button" href="booking.html" class="btn md_btn linear radius-5 brand-primary reservar-btn" id="reservar">Reservar</a>
+
                                             {% block textCTA %}
                                                 {% include "partials/product/_text-cta.njk" %}
                                             {% endblock %} 

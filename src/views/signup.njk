@@ -1,0 +1,41 @@
+{# extending #}
+{% extends "layout/_default.njk" %}
+{% set pgRegistrationForm = true %}
+{% block bodyClass %} registrationform {% endblock %}
+{% import "macros/macro-formField.njk" as formfield %} 
+
+{% block pagestyle %}
+<link rel="stylesheet" type="text/css" href="content/css/my-account.css">
+{% endblock %} 
+
+{% block content %}
+<div class="content registration-form">
+
+    <div class="container-lg">
+
+       <!--Table-->
+        
+        <section class="reg-section">
+           
+            <form class="form_content parsley js_form_validation" data-parsley-validate>
+                   
+                {% block registrationMain %}
+                    {% include "partials/signup/_personal-data.njk" %}
+                {% endblock %} 
+                
+            
+              
+
+              
+            </form>
+
+        </section>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block pagescript %}
+   <script type="text/javascript" src="content/js/my-account.js"></script>
+
+{% endblock %}

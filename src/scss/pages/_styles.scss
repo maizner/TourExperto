@@ -6,7 +6,29 @@
     'styles/hero',
     'styles/loginform';
 
-   
+    h1 {
+        color: $brand-color;
+        font-size: 40px;
+        font-weight: $bold-font-weight;
+        text-align: center;
+    }
+    #login-msg{
+        font-size: 16px;
+        color:$brand-color;
+        font-weight: $medium-font-weight;
+        margin-bottom: 10px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        margin-top:20px;
+    
+        a, .hero-login {
+            font-weight: $bold-font-weight;
+            color: $Pink-brand-1;
+            border-bottom: 1px solid;
+            padding-bottom:5px;
+        }
+    }
 
 .bottom-data{
     font-size: $t13;
@@ -117,7 +139,7 @@
 		color: $grey-text-default;
 		font-weight: 700;
 		font-size: $t14;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		vertical-align: middle;
 		background-color: transparent;
 		padding-bottom: 5px;
@@ -128,21 +150,25 @@
 .date-group{
     display:flex;
     flex-direction:row;
-    max-width: 264px;
+    max-width: 335px;
     width: 100%;
     justify-content: space-between;
+
+    .form-group input{
+        width:100%;
+    }
     .form-group.error .parsley-errors-list li{
         
         white-space: nowrap;
     }
-    #day, #month{
-        //min-width: reseteo input x default
-        width:65px;min-width:65px;
-    }
-    #year{
-         //min-width: reseteo input x default
-        width:80px;min-width:80px;
-    }
+    // #day, #month{
+    //     //min-width: reseteo input x default
+    //     width:65px;min-width:65px;
+    // }
+    // #year{
+    //      //min-width: reseteo input x default
+    //     width:80px;min-width:80px;
+    // }
     
 }
 .radio.error .parsley-errors-list li{
@@ -177,15 +203,26 @@
     .lg-row{
         max-width:100%;
     }
-    .button-container{
-        margin-top:50px
+    .reg-section .button-container{
+        width: 120px;
+        margin-left: auto;
+        margin-right:20px;
     }
+   
 
     .registrationform .default.form-group{
         align-items: flex-start;
     }
-    .registrationform .label-help{
-        max-width:230px;
+    .registrationform .form-group.radio{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    // .registrationform .label-help{
+    //     max-width:230px;
+    // }
+    .registrationform .left .error .label-help{
+        width: 230px;
     }
     .tyc{
         max-width: 750px;
