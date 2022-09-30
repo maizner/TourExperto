@@ -1,7 +1,8 @@
 Documentation - Gulp - Nunjucks
 ======
+<p align="center"><img src="./readme_assets/te-hero.jpg"></p>
 
-What this framework does for you:
+What is included:
 
 * Clean and minify JavaScript.
 * Compile sass with [`libSass`](https://github.com/sass/libsass "libsass").
