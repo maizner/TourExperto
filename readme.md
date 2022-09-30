@@ -1,193 +1,193 @@
 Marco sass - Gulp - Nunjucks
 ======
 
-Lo que este marco hace por usted:
+What this framework does for you:
 
-* Limpia y minifica JavaScript.
-* Compila sass con [`libSass`](https://github.com/sass/libsass "libsass"). 
-* Autoprefija, minimiza y elimina CSS no utilizado.
-* Optimiza imágenes: PNG, JPG, GIF y SVG.
-* Renderiza plantillas de Nunjucks con [`gulp-nunjucks-render`](https://github.com/carlosl/gulp-nunjucks-render "gulp-nunjucks-render").
-* Utiliza [`gulp-data`](https://github.com/colynb/gulp-data "gulp-data") para llenar las plantillas de Nunjucks con datos JSON.
+* Clean and minify JavaScript.
+* Compile sass with [`libSass`](https://github.com/sass/libsass "libsass").
+* Autoprefix, minify, and remove unused CSS.
+* Optimize images: PNG, JPG, GIF and SVG.
+* Render Nunjucks templates with [`gulp-nunjucks-render`](https://github.com/carlosl/gulp-nunjucks-render "gulp-nunjucks-render").
+* Use [`gulp-data`](https://github.com/colynb/gulp-data "gulp-data") to populate Nunjucks templates with JSON data.
 
 
 
-Empezando:
-------  
-
-1. [Instalación](#installation)
-  * [Requerimientos](#requirements)
-2. [Estructura del proyecto](#structure)  
-3. [Configuración](#config)  
-  * [Sass](#sass)
-  * [Nunjucks](#nunjucks)
-4. [Dependencias](#dependencies)  
-
-<a name="installation"></a> Instalación
+Starting:
 ------
-### <a name="requirements"></a>Requerimientos
 
-* [Node.js](https://nodejs.org/en/ "Node.js") 
+1. [Installation](#installation)
+  * [Requirements](#requirements)
+2. [Project structure](#structure)
+3. [Settings](#config)
+  * [sass](#sass)
+  * [Nunjucks](#nunjucks)
+4. [Dependencies](#dependencies)
 
-Los usuarios de OS X pueden instalar Node con [Homebrew](http://brew.sh/ "Homebrew").
+<a name="installation"></a> Installation
+------
+### <a name="requirements"></a>Requirements
+
+* [Node.js](https://nodejs.org/en/ "Node.js")
+
+OS X users can install Node with [Homebrew](http://brew.sh/ "Homebrew").
 
 ```shell
 $ brew install node
 ```
 
-* [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md "Primeros pasos con Gulp")  
+* [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md "Getting started with Gulp")
 
-Instale Gulp globalmente en su máquina.
+Install Gulp globally on your machine.
 
 ```shell
 $ npm install -g gulp-cli
 ```
 
-<a name="Structure"></a> Estructura
+<a name="Structure"></a> Structure
 ------
-Así es como se ve la estructura del proyecto:
+This is what the project structure looks like:
 
-
+3,094 / 5,000
+Resultados de traducción
 ```
 Front-Starter/
 │
 │
-├── dist/                     # Salida compilada y lista para producción
-├── node_modules/             # Módulos de instalación  de paquetes NPM
-├── src/                      # Código fuente; estos son los únicos archivos que necesita tocar 
-│   │ 
-│   ├── fonts/                # Archivos de fuentes del proyecto (Raleway)
-│   ├── images/               # Carpeta de imágenes con subdirectorios
-│   ├── js/                   # Carpeta de scripts con subdirectorios
-│   ├── scss/                 # Carpeta Sass; más información a continuación
-│   ├── views/                # Plantillas Nunjucks; más información a continuación
-│   ├── libs/                 # Archivos de terceros para el proyecto
-│   │   ├── js/               # Compilado en un archivo minificado ubicado dist/content/libs/libs.js
-│   │   └── scss/             # Compilado en un archivo minificado ubicado dist/content/libs/libs.css
-│   └── data.json             # datos JSON; utilizado para poblar plantillas de Nunjucks
+├── dist/ # Output compiled and ready for production
+├── node_modules/ # NPM package installation modules
+├── src/ # Source code; these are the only files you need to touch
+│ │
+│ ├── fonts/ # Project font files (Raleway)
+│ ├── images/ # Images folder with subdirectories
+│ ├── js/ # Scripts folder with subdirectories
+│ ├── scss/ # Sass folder; more info below
+│ ├── views/ # Templates Nunjucks; more info below
+│ ├── libs/ # Third party files for the project
+│ │ ├── js/ # Compiled into a minified file located dist/content/libs/libs.js
+│ │ └── scss/ # Compiled into a minified file located dist/content/libs/libs.css
+│ └── data.json # JSON data; used to populate Nunjucks templates
 │
 │
-└── package.json              # Lista de bibliotecas y utilidades de terceros
-```  
-**¿Qué pasa con los archivos estáticos?**  
-Los archivos estáticos se pueden colocar en la raíz de la carpeta `src` y se copiarán en la carpeta `dist` sin cambiar nada (e.g. favicon.ico, robots.txt, ...).
+└── package.json # List of third-party libraries and utilities
+```
+**What about static files?**
+Static files can be placed in the root of the `src` folder and will be copied to the `dist` folder without changing anything (e.g. favicon.ico, robots.txt, ...).
 
-> **Note**: Make sure you are working in the `src/` folder. The `gulp` and `gulp dev` commands will delete the `dist/` and `.tmp/` folder before compiling again, so changes made in these folders will be lost.  
+> **Note**: Make sure you are working in the `src/` folder. The `gulp` and `gulp dev` commands will delete the `dist/` and `.tmp/` folder before compiling again, so changes made in these folders will be lost.
 
-<a name="config"></a> Configuración
+<a name="config"></a> Configuration
 ------
-### <a name="sass"></a>Sass
+### <a name="sass"></a>sass
 
 
 
-La estructura de carpetas de Sass se ve así:
+The Sass folder structure looks like this:
 
 
 ```
 scss/
 │
-├── base/
-│   │   
-│   ├── _base.scsss           # Estilos estándar de uso común
-│   ├── _fonts.scss           # Estilos sass
-│   ├── _helpers.scss         # Estilos helpers o ayudantes para usar en todos los sitios.
-│   └── _Typography.scss      # Grupo de estilos de tipografía base
-│  
-├── pages/
-│   │   
-│   ├── _page1.scss           # Solo estilos relacionados a páginas globales         
-│   └── _page2.scss           #...
-│        
-├── pages/mainPage/
-│   │
-│	  └── _jumbotron.scss       # Estilos específicos de secciones de cada página
-│	
-├── shared/
-│   │   
-│   ├── _modal.scss           # Componentes que compartieron con otras vistas
-│   ├── _loader.scss          # Navegación
-│   └── _mask.scss            # Componentes que compartieron con otras vistas
-│  
-│  
-├── layout/  
-│   │    
-│   ├── _Header.scss          # Botones
-│   └──_footer.scss           # Pie de página
-│  
-├── utilities/     				  
-│   │              
-│   ├── _functions.scss       # Funciones Sass
-│   ├── _variables.scss       # variables
-│   └── _mixins.scss          # Mixins de Sass
-│  
-├── Components/ 
-│   │     
-│   ├── _button.scss          # Componentes 
-│   └── _cards.scss           	"
-│   ├── _checkbox.scss          "
-│   └── _tables.scss            "
-│   └── _....scss 
-│  
-└── mainPage.scss             # Principales archivos Sass. Los principales archivos de compilación de cada página (compilaremos un archivo css principal por página)
-```
-
-
-La estructura de carpetas de Nunjucks se ve así:
-
-
-``` 
-Views/                                                                       
+├── basis/
+│ │
+│ ├── _base.scsss # Commonly used standard styles
+│ ├── _fonts.scss # sass styles
+│ ├── _helpers.scss # Styles helpers or helpers to use on all sites.
+│ └── _Typography.scss # Base typography style group
 │
-├── layout/                                                                                           
-│      │   
-│      └── default.njk                   # Default template you can reuse(extend) 
-│  
-├── partials/                            #Partial sections. Easy to change folder to shared.                 
-│       │                                                                                  
-│       ├── _page1/...njk                # Only Related global pages styles   │
-│       └── _page2/...njk                # Only Related global pages styles 
-│        
-├── macros/
-│	     └── _macro-formField.njk          #allows you to define reusable chunks of content.
-│	
-├── shared/                                     
-│      │   
-│      ├── _meta.njk                     # Components that shared with other views
-│      ├── _loader.njk             
-│      └── _...njk                                                                                    
-│                                                                                                    
-│                                                                              
-└── pageOne.njk                          # The result of all partials(shared, partials, layout). In charge of HTML page in ./dist folder
+├── pages/
+│ │
+│ ├── _page1.scss # Only styles related to global pages
+│ └── _page2.scss #...
+│
+├── pages/mainPage/
+│ │
+│ └── _jumbotron.scss # Styles specific to sections of each page
+│
+├── share/
+│ │
+│ ├── _modal.scss # Components that shared with other views
+│ ├── _loader.scss # Navigation
+│ └── _mask.scss # Components shared with other views
+│
+│
+├──layout/
+│ │
+│ ├── _Header.scss # Buttons
+│ └──_footer.scss # Footer
+│
+├──Utilities/
+│ │
+│ ├── _functions.scss # Sass functions
+│ ├── _variables.scss # variables
+│ └── _mixins.scss # Sass mixins
+│
+├── Components/
+│ │
+│ ├── _button.scss # Components
+│ └── _cards.scss "
+│ ├── _checkbox.scss"
+│ └── _tables.scss"
+│ └── _....scss
+│
+└── mainPage.scss # Main Sass files. The main build files for each page (we will build one main css file per page)
+```
+
+The Nunjucks folder structure looks like this:
+
+
+```
+Views/
+│
+├──layout/
+│ │
+│ └── default.njk # Default template you can reuse(extend)
+│
+├── partials/ #Partial sections. Easy to change folder to shared.
+│ │
+│ ├── _page1/...njk # Only Related global pages styles │
+│ └── _page2/...njk # Only Related global pages styles
+│
+├── macro/
+│ └── _macro-formField.njk #allows you to define reusable chunks of content.
+│
+├── share/
+│ │
+│ ├── _meta.njk # Components that shared with other views
+│ ├── _loader.njk
+│ └── _...njk
+│
+│
+└── pageOne.njk # The result of all partials(shared, partials, layout). In charge of HTML page in ./dist folder
 
 ```
 
 
 
-<a name="dependencies"></a>Dependencias
-------  
-Una lista de todas las dependencias utilizadas en este proyecto y una breve explicación de lo que se utiliza.  
-### NPM
-* [`autoprefixer`](https://github.com/postcss/autoprefixer "autoprefixer"): Agrega automáticamente prefijos de proveedores a las reglas de CSS.
-* [`del`](https://github.com/sindresorhus/del "del"): Elimina archivos y carpetas. En este caso, la carpeta `dist/` siempre que ejecute el comando `gulp`.
-* [`gulp`](http://gulpjs.com/ "gulp"):Cree un sistema que automatice las tareas comunes durante el desarrollo.
-* [`gulp-cache`](https://github.com/jgable/gulp-cache "gulp-cache"): Guarda en caché el resultado de una tarea.
-* [`gulp-concat`](https://github.com/contra/gulp-concat "gulp-concat"): Concatena múltiples archivos en uno.
-* [`gulp-data`](https://github.com/colynb/gulp-data "gulp-data"): Genera el objeto de datos, utilizado en las plantillas Nunjucks.
-* [`gulp-cssnano`](http://cssnano.co/ "gulp-cssnano"): Minimiza y optimiza CSS (si es necesario)
-* [`gulp-imagemin`](https://github.com/sindresorhus/gulp-imagemin "gulp-imagemin"): Optimiza imágenes: PNG, JPG, GIF y SVG.
-* [`gulp-jshint`](https://github.com/spalger/gulp-jshint "gulp-jshint"): Complemento Gulp para JSHint. Elimina errores de JavaScript.
+<a name="dependencies"></a>Dependencies
+------
+A list of all the dependencies used in this project and a brief explanation of what is used.
+###NPM
+* [`autoprefixer`](https://github.com/postcss/autoprefixer "autoprefixer"): Automatically add vendor prefixes to CSS rules.
+* [`del`](https://github.com/sindresorhus/del "del"): Delete files and folders. In this case, the `dist/` folder whenever you run the `gulp` command.
+* [`gulp`](http://gulpjs.com/ "gulp"): Create a system that automates common tasks during development.
+* [`gulp-cache`](https://github.com/jgable/gulp-cache "gulp-cache"): Cache the result of a task.
+* [`gulp-concat`](https://github.com/contra/gulp-concat "gulp-concat"): Concatenate multiple files into one.
+* [`gulp-data`](https://github.com/colynb/gulp-data "gulp-data"): Generate the data object, used in Nunjucks templates.
+* [`gulp-cssnano`](http://cssnano.co/ "gulp-cssnano"): Minify and optimize CSS (if necessary)
+* [`gulp-imagemin`](https://github.com/sindresorhus/gulp-imagemin "gulp-imagemin"): Optimizes images: PNG, JPG, GIF and SVG.
+* [`gulp-jshint`](https://github.com/spalger/gulp-jshint "gulp-jshint"): Gulp plugin for JSHint. Eliminate JavaScript errors.
 * [`gulp-nunjucks-render`](https://github.com/carlosl/gulp-nunjucks-render "gulp-nunjucks-render"): Render Nunjucks templates.
-* [`gulp-plumber`](https://github.com/floatdrop/gulp-plumber "gulp-plumber"): Previene la rotura de tuberías causada por errores de los complementos de GULP.
-* [`gulp-postcss`]( "gulp-postcss"): Canalice CSS a través de varios preprocesadores (`autoprefixer`, `cssnano`), pero solo analícelo una vez.
-* [`gulp-purgecss`](https://github.com/FullHuman/gulp-purgecss "gulp-purgecss"): Elimina CSS no utilizado. Excelente para limpiar recursos externos (por ejemplo, Bootstrap, Font Awesome).
-* [`gulp-sass`](https://github.com/dlmanning/gulp-sass "gulp-sass"): Compila Sass a CSS con [`libSass`](https://github.com/sass/libsass "libsass").
+* [`gulp-plumber`](https://github.com/floatdrop/gulp-plumber "gulp-plumber"): Prevents pipe breaks caused by GULP plugin errors.
+* [`gulp-postcss`]( "gulp-postcss"): Pipe CSS through multiple preprocessors (`autoprefixer`, `cssnano`), but only parse it once.
+* [`gulp-purgecss`](https://github.com/FullHuman/gulp-purgecss "gulp-purgecss"): Remove unused CSS. Great for cleaning up external resources (eg Bootstrap, Font Awesome).
+* [`gulp-sass`](https://github.com/dlmanning/gulp-sass "gulp-sass"): Compile Sass to CSS with [`libSass`](https://github.com/sass/ libsass "libsass").
 
-* [`gulp-size`](https://github.com/sindresorhus/gulp-size "gulp-size"): Muestre el tamaño de la salida compilada en su línea de comando/terminal.
-* [`gulp-sourcemaps`](https://github.com/floridoo/gulp-sourcemaps "gulp-sourcemaps"): Agrega mapas de origen en línea o externos. Útil al depurar código comprimido.
-* [`gulp-uglify`](https://github.com/terinjokes/gulp-uglify "gulp-uglify"): Minifica JavaScript. 
-* [`gulp-useref`](https://github.com/jonkemp/gulp-useref "gulp-useref"): Concatena archivos entre `build` bloques en tu HTML.
-* [`jshint`](https://github.com/jshint/jshint "jshint"): Detecta errores en su código JavaScript.
-* [`lazypipe`](https://github.com/OverZealous/lazypipe "lazypipe"): Le permite crear una canalización inicializada de forma diferida.
+* [`gulp-size`](https://github.com/sindresorhus/gulp-size "gulp-size"): Display the size of the compiled output in your command line/terminal.
+* [`gulp-sourcemaps`](https://github.com/floridoo/gulp-sourcemaps "gulp-sourcemaps"): Add online or external source maps. Useful when debugging compressed code.
+* [`gulp-uglify`](https://github.com/terinjokes/gulp-uglify "gulp-uglify"): Minifies JavaScript.
+* [`gulp-useref`](https://github.com/jonkemp/gulp-useref "gulp-useref"): Concatenate files between `build` blocks in your HTML.
+* [`jshint`](https://github.com/jshint/jshint "jshint"): Catches errors in your JavaScript code.
+* [`lazypipe`](https://github.com/OverZealous/lazypipe "lazypipe"): Allows you to create a lazy-initialized pipeline.
 
 
 
