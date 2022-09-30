@@ -47,8 +47,7 @@ $ npm install -g gulp-cli
 ------
 This is what the project structure looks like:
 
-3,094 / 5,000
-Resultados de traducción
+
 ```
 Front-Starter/
 │
